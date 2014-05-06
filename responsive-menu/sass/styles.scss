@@ -1,0 +1,213 @@
+@import url('reset.css');
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700);
+
+/* COLOR VARIABLES */
+
+/* Backgrounds */
+$color-background-body: 		#f6f6f6;
+$color-background-nav: 			#3f4b54;
+$color-nav-header: 				#4ec48b;
+$color-nav-header-button: 		#3e9f70;
+
+/* Borders */
+$color-border: 					#dddddd;
+$color-border-dark: 			#aaaaaa;
+
+/* Type */
+$color-text-body: 				#666666;
+$color-text-body-light: 		#aaaaaa;
+$color-text-body-extra-light: 	$color-border;
+$color-text-headlines: 			$color-background-nav;
+$color-text-link: 				#3d8ab1;
+$color-text-link-hover: 		#1e5b79;
+$color-text-link-active: 		$color-text-link-hover;
+
+/* TYPE SIZES */
+$type-size-body: 				16px;
+$type-size-mobile-nav: 			2rem;
+$type-size-heading1: 			1.625rem;
+$type-size-small: 				0.875rem;
+$type-size-extra-small: 		0.75rem;
+
+/* SPACING VARIABLES */
+$spacing-extra-small:			5px;
+$spacing-small: 				10px;
+$spacing-medium: 				20px;
+$spacing-large: 				30px;
+$spacing-extra-large: 			40px;
+
+@mixin border-radius($value) {
+	border-radius: $value;
+}
+
+@mixin tab-border-radius($value) {
+	border-top-right-radius: $value;
+	border-top-left-radius: $value;
+}
+
+@mixin border-box() {
+	box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+}
+
+@mixin box-shadow() {
+	box-shadow: 0 2px 1px #333;
+		-webkit-box-shadow: 0 2px 4px #333;
+		-moz-box-shadow: 0 2px 4px #333;
+}
+
+
+body {
+	background: $color-background-body;
+	font-family: 'Lato', helvetica, arial, sans;
+	font-size: $type-size-body;
+	line-height: 1.5rem;
+}
+
+header {
+	display: inline-block;
+	width: 100%;
+
+	.mobile-nav {
+		background: $color-background-nav;
+		padding: $spacing-small;
+		width: auto;
+
+		a {
+			color: #ffffff;
+			display: inline-block;
+			float: right;
+			font-size: $type-size-mobile-nav;
+			padding: $spacing-medium $spacing-small 0 0;
+		}
+
+		.logo {
+			float: left;
+
+			h1 a {
+				background: url('../images/retailstore.svg') center no-repeat;
+				display: block;
+				height: 55px;
+				text-indent: -9999px;
+				width: 235px;
+			}
+		}
+	}
+	
+	nav {
+		background: $color-background-nav;
+		bottom: 0;
+		display: none;
+		left: 0;
+		margin: 0 auto;
+		position: fixed;
+		overflow-y: scroll;
+ 		overflow-x: hidden;
+ 			-webkit-overflow-scrolling: touch;
+		right: 0;
+		top: 95px;
+
+		.inner {
+			@include border-radius(5px);
+			@include box-shadow();
+			background: #ffffff;
+			bottom: 10px;
+			left: 10px;
+			position: fixed;
+			overflow: scroll;
+			right: 10px;
+			top: 95px;
+		}
+
+		a {
+			color: $color-text-body;
+			display: block;
+			font-size: 1.5rem;
+			font-weight: bold;
+			padding: $spacing-small $spacing-medium;
+			text-decoration: none;
+
+			i {
+				color: $color-text-body-extra-light;
+				float: right;
+				font-size: $type-size-extra-small;
+				padding-top: $spacing-extra-small;
+			}
+		}
+
+		a:active {
+			background: $color-nav-header;
+			color: #ffffff;
+
+			i {
+				color: #ffffff;
+			}
+		}
+
+		ul li {
+
+			border-bottom: 1px solid $color-border;
+
+			ul {
+				@include border-radius(5px);
+				background: #ffffff;
+				bottom: 10px;
+				display: none;
+				left: 10px;
+				position: fixed;
+				overflow: scroll;
+				right: 10px;
+				top: 95px;
+			}
+
+			li.list-head {
+				@include tab-border-radius(5px);
+				@include border-box();
+				background: $color-nav-header;
+				border-bottom: 0;
+				color: #ffffff;
+				left: 10px;
+				padding: $spacing-small;
+				position: fixed;
+				right: 10px;
+			}
+
+			li.second {
+				margin-top: 54px;
+			}
+		}
+
+		ul li:last-child {
+			border: 0;
+		}
+
+		a.back {
+			@include border-radius(3px);
+			background: $color-nav-header-button;
+			color: #ffffff;
+			float: left;
+			font-size: $type-size-small;
+			padding: $spacing-extra-small $spacing-small;
+
+			i {
+				color: #ffffff;
+				float: none;
+			}
+		}
+
+		a.see-all {
+			@include border-radius(3px);
+			background: $color-nav-header-button;
+			color: #ffffff;
+			display: inline-block;
+			float: right;
+			font-size: $type-size-small;
+			padding: $spacing-extra-small $spacing-small;
+		}
+
+		a.close {
+			float: right;
+		}
+	}
+}
