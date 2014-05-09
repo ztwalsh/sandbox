@@ -125,14 +125,24 @@ header nav ul li a i {
   padding-top: 9px;
 }
 /* line 180, ../sass/styles.scss */
+header nav ul li a:first-child {
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+/* line 184, ../sass/styles.scss */
+header nav ul li a:last-child {
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+/* line 188, ../sass/styles.scss */
 header nav ul li a:hover {
   background: #f6f6f6;
 }
-/* line 186, ../sass/styles.scss */
+/* line 194, ../sass/styles.scss */
 header nav ul li:last-child {
   border: 0;
 }
-/* line 192, ../sass/styles.scss */
+/* line 200, ../sass/styles.scss */
 header a.back,
 header a.all {
   border-radius: 3px;
@@ -143,14 +153,14 @@ header a.all {
   padding: 5px 10px;
   text-decoration: none;
 }
-/* line 201, ../sass/styles.scss */
+/* line 209, ../sass/styles.scss */
 header a.back i,
 header a.all i {
   color: #ffffff;
   float: none;
   font-size: 0.75rem;
 }
-/* line 208, ../sass/styles.scss */
+/* line 216, ../sass/styles.scss */
 header a.all {
   float: right;
 }

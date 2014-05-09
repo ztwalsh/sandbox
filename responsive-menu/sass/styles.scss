@@ -177,6 +177,14 @@ header {
 				}
 			}
 
+			a:first-child {
+				@include top-border-radius(5px);
+			}
+
+			a:last-child {
+				@include bottom-border-radius(5px);
+			}
+
 			a:hover {
 				background: $color-background-body;
 			}
