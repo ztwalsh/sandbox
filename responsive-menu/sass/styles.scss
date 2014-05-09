@@ -24,14 +24,17 @@ $color-text-link-active: 		$color-text-link-hover;
 
 /* TYPE SIZES */
 $type-size-body: 				16px;
-$type-size-mobile-nav: 			2rem;
-$type-size-heading1: 			1.625rem;
-$type-size-small: 				0.875rem;
-$type-size-extra-small: 		0.75rem;
+$type-size-mobile-nav: 			2rem;			/* 32px */
+$type-size-heading1: 			1.625rem;		/* 26px */
+$type-size-heading2: 			1.375rem;		/* 22px */
+$type-size-heading3: 			1.125rem;		/* 18px */
+$type-size-small: 				0.875rem;		/* 14px */
+$type-size-extra-small: 		0.75rem;		/* 12px */
 
 /* SPACING VARIABLES */
 $spacing-extra-small:			5px;
 $spacing-small: 				10px;
+$spacing-mix: 					15px;
 $spacing-medium: 				20px;
 $spacing-large: 				30px;
 $spacing-extra-large: 			40px;
@@ -134,7 +137,7 @@ header {
 			background: $color-nav-header;
 			box-sizing: border-box;
 			float: left;
-			padding: $spacing-medium;
+			padding: $spacing-mix $spacing-medium;
 			width: 100%;
 		}
 
@@ -163,9 +166,9 @@ header {
 			a {
 				color: $color-text-body;
 				display: block;
-				font-size: $type-size-heading1;
+				font-size: $type-size-heading2;
 				font-weight: 900;
-				padding: $spacing-medium;
+				padding: $spacing-mix $spacing-medium;
 				text-decoration: none;
 
 				i {

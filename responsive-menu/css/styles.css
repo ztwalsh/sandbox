@@ -5,8 +5,14 @@
 /* Borders */
 /* Type */
 /* TYPE SIZES */
+/* 32px */
+/* 26px */
+/* 22px */
+/* 18px */
+/* 14px */
+/* 12px */
 /* SPACING VARIABLES */
-/* line 66, ../sass/styles.scss */
+/* line 69, ../sass/styles.scss */
 body {
   background: #f6f6f6;
   font-family: 'Lato', helvetica, arial, sans;
@@ -14,22 +20,22 @@ body {
   line-height: 1.5rem;
 }
 
-/* line 73, ../sass/styles.scss */
+/* line 76, ../sass/styles.scss */
 header {
   display: inline-block;
   width: 100%;
 }
-/* line 77, ../sass/styles.scss */
+/* line 80, ../sass/styles.scss */
 header .mobile-nav {
   background: #3f4b54;
   padding: 10px;
   width: auto;
 }
-/* line 82, ../sass/styles.scss */
+/* line 85, ../sass/styles.scss */
 header .mobile-nav .logo {
   float: left;
 }
-/* line 85, ../sass/styles.scss */
+/* line 88, ../sass/styles.scss */
 header .mobile-nav .logo h1 a {
   background: url("../images/retailstore.svg") center no-repeat;
   background-size: 171px 40px;
@@ -38,7 +44,7 @@ header .mobile-nav .logo h1 a {
   text-indent: -9999px;
   width: 171px;
 }
-/* line 95, ../sass/styles.scss */
+/* line 98, ../sass/styles.scss */
 header .mobile-nav a {
   color: #ffffff;
   display: inline-block;
@@ -46,7 +52,7 @@ header .mobile-nav a {
   font-size: 2rem;
   padding: 10px 10px 0 0;
 }
-/* line 104, ../sass/styles.scss */
+/* line 107, ../sass/styles.scss */
 header nav {
   background: #3f4b54;
   bottom: 0;
@@ -60,7 +66,7 @@ header nav {
   right: 0;
   top: 70px;
 }
-/* line 118, ../sass/styles.scss */
+/* line 121, ../sass/styles.scss */
 header nav .inner,
 header nav .subnavigation-layer {
   border-radius: 5px;
@@ -72,19 +78,19 @@ header nav .subnavigation-layer {
   right: 20px;
   top: 95px;
 }
-/* line 129, ../sass/styles.scss */
+/* line 132, ../sass/styles.scss */
 header nav .subnavigation-layer {
   overflow: hidden;
 }
-/* line 133, ../sass/styles.scss */
+/* line 136, ../sass/styles.scss */
 header nav .menu-header {
   background: #4ec48b;
   box-sizing: border-box;
   float: left;
-  padding: 20px;
+  padding: 15px 20px;
   width: 100%;
 }
-/* line 141, ../sass/styles.scss */
+/* line 144, ../sass/styles.scss */
 header nav .menu-header:after {
   content: " ";
   display: block;
@@ -93,30 +99,30 @@ header nav .menu-header:after {
   line-height: 0;
   height: 0;
 }
-/* line 150, ../sass/styles.scss */
+/* line 153, ../sass/styles.scss */
 header nav .scroll {
   height: 100%;
   overflow: auto;
   width: 100%;
 }
-/* line 156, ../sass/styles.scss */
+/* line 159, ../sass/styles.scss */
 header nav ul li {
   border-bottom: 1px solid #dddddd;
 }
-/* line 159, ../sass/styles.scss */
+/* line 162, ../sass/styles.scss */
 header nav ul li .subnavigation {
   display: none;
 }
-/* line 163, ../sass/styles.scss */
+/* line 166, ../sass/styles.scss */
 header nav ul li a {
   color: #666666;
   display: block;
-  font-size: 1.625rem;
+  font-size: 1.375rem;
   font-weight: 900;
-  padding: 20px;
+  padding: 15px 20px;
   text-decoration: none;
 }
-/* line 171, ../sass/styles.scss */
+/* line 174, ../sass/styles.scss */
 header nav ul li a i {
   color: #aaaaaa;
   display: inline-block;
@@ -124,25 +130,25 @@ header nav ul li a i {
   font-size: 0.75rem;
   padding-top: 9px;
 }
-/* line 180, ../sass/styles.scss */
+/* line 183, ../sass/styles.scss */
 header nav ul li a:first-child {
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
 }
-/* line 184, ../sass/styles.scss */
+/* line 187, ../sass/styles.scss */
 header nav ul li a:last-child {
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
 }
-/* line 188, ../sass/styles.scss */
+/* line 191, ../sass/styles.scss */
 header nav ul li a:hover {
   background: #f6f6f6;
 }
-/* line 194, ../sass/styles.scss */
+/* line 197, ../sass/styles.scss */
 header nav ul li:last-child {
   border: 0;
 }
-/* line 200, ../sass/styles.scss */
+/* line 203, ../sass/styles.scss */
 header a.back,
 header a.all {
   border-radius: 3px;
@@ -153,14 +159,14 @@ header a.all {
   padding: 5px 10px;
   text-decoration: none;
 }
-/* line 209, ../sass/styles.scss */
+/* line 212, ../sass/styles.scss */
 header a.back i,
 header a.all i {
   color: #ffffff;
   float: none;
   font-size: 0.75rem;
 }
-/* line 216, ../sass/styles.scss */
+/* line 219, ../sass/styles.scss */
 header a.all {
   float: right;
 }
