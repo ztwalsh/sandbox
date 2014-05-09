@@ -6,7 +6,7 @@
 /* Type */
 /* TYPE SIZES */
 /* SPACING VARIABLES */
-/* line 61, ../sass/styles.scss */
+/* line 66, ../sass/styles.scss */
 body {
   background: #f6f6f6;
   font-family: 'Lato', helvetica, arial, sans;
@@ -14,38 +14,39 @@ body {
   line-height: 1.5rem;
 }
 
-/* line 68, ../sass/styles.scss */
+/* line 73, ../sass/styles.scss */
 header {
   display: inline-block;
   width: 100%;
 }
-/* line 72, ../sass/styles.scss */
+/* line 77, ../sass/styles.scss */
 header .mobile-nav {
   background: #3f4b54;
   padding: 10px;
   width: auto;
 }
-/* line 77, ../sass/styles.scss */
+/* line 82, ../sass/styles.scss */
+header .mobile-nav .logo {
+  float: left;
+}
+/* line 85, ../sass/styles.scss */
+header .mobile-nav .logo h1 a {
+  background: url("../images/retailstore.svg") center no-repeat;
+  background-size: 171px 40px;
+  display: block;
+  height: 40px;
+  text-indent: -9999px;
+  width: 171px;
+}
+/* line 95, ../sass/styles.scss */
 header .mobile-nav a {
   color: #ffffff;
   display: inline-block;
   float: right;
   font-size: 2rem;
-  padding: 20px 10px 0 0;
+  padding: 10px 10px 0 0;
 }
-/* line 85, ../sass/styles.scss */
-header .mobile-nav .logo {
-  float: left;
-}
-/* line 88, ../sass/styles.scss */
-header .mobile-nav .logo h1 a {
-  background: url("../images/retailstore.svg") center no-repeat;
-  display: block;
-  height: 55px;
-  text-indent: -9999px;
-  width: 235px;
-}
-/* line 98, ../sass/styles.scss */
+/* line 104, ../sass/styles.scss */
 header nav {
   background: #3f4b54;
   bottom: 0;
@@ -57,111 +58,99 @@ header nav {
   overflow-x: hidden;
   -webkit-overflow-scrolling: touch;
   right: 0;
-  top: 95px;
+  top: 70px;
 }
-/* line 111, ../sass/styles.scss */
-header nav .inner {
+/* line 118, ../sass/styles.scss */
+header nav .inner,
+header nav .subnavigation-layer {
   border-radius: 5px;
-  box-shadow: 0 2px 1px #333;
-  -webkit-box-shadow: 0 2px 4px #333;
-  -moz-box-shadow: 0 2px 4px #333;
   background: #ffffff;
-  bottom: 10px;
-  left: 10px;
+  bottom: 20px;
+  left: 20px;
+  overflow: auto;
   position: fixed;
-  overflow: scroll;
-  right: 10px;
+  right: 20px;
   top: 95px;
 }
-/* line 123, ../sass/styles.scss */
-header nav a {
-  color: #666666;
-  display: block;
-  font-size: 1.5rem;
-  font-weight: bold;
-  padding: 10px 20px;
-  text-decoration: none;
+/* line 129, ../sass/styles.scss */
+header nav .subnavigation-layer {
+  overflow: hidden;
 }
-/* line 131, ../sass/styles.scss */
-header nav a i {
-  color: #dddddd;
-  float: right;
-  font-size: 0.75rem;
-  padding-top: 5px;
-}
-/* line 139, ../sass/styles.scss */
-header nav a:active {
+/* line 133, ../sass/styles.scss */
+header nav .menu-header {
   background: #4ec48b;
-  color: #ffffff;
+  box-sizing: border-box;
+  float: left;
+  padding: 20px;
+  width: 100%;
 }
-/* line 143, ../sass/styles.scss */
-header nav a:active i {
-  color: #ffffff;
+/* line 141, ../sass/styles.scss */
+header nav .menu-header:after {
+  content: " ";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
 }
-/* line 148, ../sass/styles.scss */
+/* line 150, ../sass/styles.scss */
+header nav .scroll {
+  height: 100%;
+  overflow: auto;
+  width: 100%;
+}
+/* line 156, ../sass/styles.scss */
 header nav ul li {
   border-bottom: 1px solid #dddddd;
 }
-/* line 152, ../sass/styles.scss */
-header nav ul li ul {
-  border-radius: 5px;
-  background: #ffffff;
-  bottom: 10px;
+/* line 159, ../sass/styles.scss */
+header nav ul li .subnavigation {
   display: none;
-  left: 10px;
-  position: fixed;
-  overflow: scroll;
-  right: 10px;
-  top: 95px;
 }
-/* line 164, ../sass/styles.scss */
-header nav ul li li.list-head {
-  border-top-right-radius: 5px;
-  border-top-left-radius: 5px;
-  box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  background: #4ec48b;
-  border-bottom: 0;
-  color: #ffffff;
-  left: 10px;
-  padding: 10px;
-  position: fixed;
-  right: 10px;
+/* line 163, ../sass/styles.scss */
+header nav ul li a {
+  color: #666666;
+  display: block;
+  font-size: 1.625rem;
+  font-weight: 900;
+  padding: 20px;
+  text-decoration: none;
 }
-/* line 176, ../sass/styles.scss */
-header nav ul li li.second {
-  margin-top: 54px;
+/* line 171, ../sass/styles.scss */
+header nav ul li a i {
+  color: #aaaaaa;
+  display: inline-block;
+  float: right;
+  font-size: 0.75rem;
+  padding-top: 9px;
 }
-/* line 181, ../sass/styles.scss */
+/* line 180, ../sass/styles.scss */
+header nav ul li a:hover {
+  background: #f6f6f6;
+}
+/* line 186, ../sass/styles.scss */
 header nav ul li:last-child {
   border: 0;
 }
-/* line 185, ../sass/styles.scss */
-header nav a.back {
+/* line 192, ../sass/styles.scss */
+header a.back,
+header a.all {
   border-radius: 3px;
   background: #3e9f70;
   color: #ffffff;
   float: left;
   font-size: 0.875rem;
   padding: 5px 10px;
+  text-decoration: none;
 }
-/* line 193, ../sass/styles.scss */
-header nav a.back i {
+/* line 201, ../sass/styles.scss */
+header a.back i,
+header a.all i {
   color: #ffffff;
   float: none;
+  font-size: 0.75rem;
 }
-/* line 199, ../sass/styles.scss */
-header nav a.see-all {
-  border-radius: 3px;
-  background: #3e9f70;
-  color: #ffffff;
-  display: inline-block;
-  float: right;
-  font-size: 0.875rem;
-  padding: 5px 10px;
-}
-/* line 209, ../sass/styles.scss */
-header nav a.close {
+/* line 208, ../sass/styles.scss */
+header a.all {
   float: right;
 }

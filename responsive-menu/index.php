@@ -10,20 +10,20 @@
 	<body>
 		<header>
 			<div class="mobile-nav cf">
-				<a href="#"><i class="fa fa-bars"></i></a>
 				<div class="logo">
 					<h1><a href="#">RetailStore</a></h1>
 				</div>
+				<a href="#"><i class="fa fa-bars"></i></a>
 			</div>
 			<nav>
 				<div class="inner">
-					<ul class="cf">
+					<ul class="navigation cf">
 						<li>
 							<a href="http://www.google.com">Women</a>
-							<ul class="child">
+							<ul class="subnavigation">
 								<li>
 									<a href="http://www.google.com">Clothing</a>
-									<ul class="child">
+									<ul class="subnavigation">
 										<li><a href="http://www.google.com">Activewear</a></li>
 										<li><a href="http://www.google.com">Blazers &amp; Jackets</a></li>
 										<li><a href="http://www.google.com">Dresses</a></li>
@@ -42,7 +42,7 @@
 								</li>
 								<li>
 									<a href="http://www.google.com">Shoes</a>
-									<ul class="child">
+									<ul class="subnavigation">
 										<li><a href="http://www.google.com">Athletic</a></li>
 										<li><a href="http://www.google.com">Boots</a></li>
 										<li><a href="http://www.google.com">Flats</a></li>
@@ -56,7 +56,7 @@
 								</li>
 								<li>
 									<a href="http://www.google.com">Accessories</a>
-									<ul class="child">
+									<ul class="subnavigation">
 										<li><a href="http://www.google.com">Handbags</a></li>
 										<li><a href="http://www.google.com">Hats, Scarves &amp; Gloves</a></li>
 										<li><a href="http://www.google.com">Jewelry</a></li>
@@ -71,10 +71,10 @@
 						</li>
 						<li>
 							<a href="http://www.google.com">Men</a>
-							<ul class="child">
+							<ul class="subnavigation">
 								<li>
 									<a href="http://www.google.com">Clothes</a>
-									<ul class="child">
+									<ul class="subnavigation">
 										<li><a href="http://www.google.com">Shirts</a></li>
 										<li><a href="http://www.google.com">Graphic Tees</a></li>
 										<li><a href="http://www.google.com">Casual Button Downs</a></li>
@@ -94,7 +94,7 @@
 								</li>
 								<li>
 									<a href="http://www.google.com">Shoes</a>
-									<ul class="child">
+									<ul class="subnavigation">
 										<li><a href="http://www.google.com">Athletic</a></li>
 										<li><a href="http://www.google.com">Boots</a></li>
 										<li><a href="http://www.google.com">Loafers &amp; Slip-ons</a></li>
@@ -107,7 +107,7 @@
 								</li>
 								<li>
 									<a href="http://www.google.com">Accessories</a>
-									<ul class="child">
+									<ul class="subnavigation">
 										<li><a href="http://www.google.com">Bags</a></li>
 										<li><a href="http://www.google.com">Belts &amp; Buckles</a></li>
 										<li><a href="http://www.google.com">Hats, Scarves &amp; Gloves</a></li>
@@ -123,10 +123,10 @@
 						</li>
 						<li>
 							<a href="http://www.google.com">Baby</a>
-							<ul class="child">
+							<ul class="subnavigation">
 								<li>
 									<a href="http://www.google.com">Activity Gear &amp; Toys</a>
-									<ul class="child">
+									<ul class="subnavigation">
 										<li><a href="http://www.google.com">Bouncers &amp; Rockers</a></li>
 										<li><a href="http://www.google.com">Gyms, Play Mats &amp; Jumpers</a></li>
 										<li><a href="http://www.google.com">Playards</a></li>
@@ -142,7 +142,7 @@
 								</li>
 								<li>
 									<a href="http://www.google.com">Boys' Clothing</a>
-									<ul class="child">
+									<ul class="subnavigation">
 										<li><a href="http://www.google.com">Outerwear</a></li>
 										<li><a href="http://www.google.com">Outfits</a></li>
 										<li><a href="http://www.google.com">Pants &amp; Shorts</a></li>
@@ -157,7 +157,7 @@
 								</li>
 								<li>
 									<a href="http://www.google.com">Car Seats</a>
-									<ul class="child">
+									<ul class="subnavigation">
 										<li><a href="http://www.google.com">Convertible Car Seats</a></li>
 										<li><a href="http://www.google.com">Infant Car Seats</a></li>
 										<li><a href="http://www.google.com">Travel Systems</a></li>
@@ -166,7 +166,7 @@
 								</li>
 								<li>
 									<a href="http://www.google.com">Diapering</a>
-									<ul class="child">
+									<ul class="subnavigation">
 										<li><a href="http://www.google.com">Cloth Diapers</a></li>
 										<li><a href="http://www.google.com">Diaper Bags</a></li>
 										<li><a href="http://www.google.com">Disposable Diapers</a></li>
@@ -176,7 +176,7 @@
 								</li>
 								<li>
 									<a href="http://www.google.com">Feeding</a>
-									<ul class="child">
+									<ul class="subnavigation">
 										<li><a href="http://www.google.com">Baby Food</a></li>
 										<li><a href="http://www.google.com">Bottle Feeding</a></li>
 										<li><a href="http://www.google.com">Breastfeeding</a></li>
@@ -187,7 +187,7 @@
 								</li>
 								<li>
 									<a href="http://www.google.com">Girls' Clothes</a>
-									<ul class="child">
+									<ul class="subnavigation">
 										<li><a href="http://www.google.com">Bodysuits</a></li>
 										<li><a href="http://www.google.com">Dresses & skirts</a></li>
 										<li><a href="http://www.google.com">Outerwear</a></li>
@@ -204,7 +204,7 @@
 								</li>
 								<li>
 									<a href="http://www.google.com">Health &amp; Safety</a>
-									<ul class="child">
+									<ul class="subnavigation">
 										<li><a href="http://www.google.com">Baby Monitors</a></li>
 										<li><a href="http://www.google.com">Safety Gates</a></li>
 										<li><a href="http://www.google.com">All Health & Safety</a></li>
@@ -217,10 +217,10 @@
 						</li>
 						<li>
 							<a href="http://www.google.com">Kids</a>
-							<ul class="child">
+							<ul class="subnavigation">
 								<li>
 									<a href="http://www.google.com">Boys' Clothing</a>
-									<ul class="child">
+									<ul class="subnavigation">
 										<li><a href="http://www.google.com">Accessories</a></li>
 										<li><a href="http://www.google.com">Activewear</a></li>
 										<li><a href="http://www.google.com">Bottoms</a></li>
@@ -236,7 +236,7 @@
 								</li>
 								<li>
 									<a href="http://www.google.com">Girls' Clothing</a>
-									<ul class="child">
+									<ul class="subnavigation">
 										<li><a href="http://www.google.com">Accessories</a></li>
 										<li><a href="http://www.google.com">Activewear</a></li>
 										<li><a href="http://www.google.com">Bottoms</a></li>
@@ -253,7 +253,7 @@
 								</li>
 								<li>
 									<a href="http://www.google.com">Boys' Shoes</a>
-									<ul class="child">
+									<ul class="subnavigation">
 										<li><a href="http://www.google.com">Athletic</a></li>
 										<li><a href="http://www.google.com">Boots</a></li>
 										<li><a href="http://www.google.com">Casual</a></li>
@@ -264,7 +264,7 @@
 								</li>
 								<li>
 									<a href="http://www.google.com">Girls' Shoes</a>
-									<ul class="child">
+									<ul class="subnavigation">
 										<li><a href="http://www.google.com">Athletic</a></li>
 										<li><a href="http://www.google.com">Boots</a></li>
 										<li><a href="http://www.google.com">Casual</a></li>
@@ -277,10 +277,10 @@
 						</li>
 						<li>
 							<a href="http://www.google.com">Home</a>
-							<ul class="child">
+							<ul class="subnavigation">
 								<li>
 									<a href="http://www.google.com">Bath</a>
-									<ul class="child">
+									<ul class="subnavigation">
 										<li><a href="http://www.google.com">Bath Accessories</a></li>
 										<li><a href="http://www.google.com">Bath Towels</a></li>
 										<li><a href="http://www.google.com">Beach Towels</a></li>
@@ -292,7 +292,7 @@
 								</li>
 								<li>
 									<a href="http://www.google.com">Bedding</a>
-									<ul class="child">
+									<ul class="subnavigation">
 										<li><a href="http://www.google.com">Bed Pillows & Protectors</a></li>
 										<li><a href="http://www.google.com">Bedding Sets</a></li>
 										<li><a href="http://www.google.com">Blankets & Throws</a></li>
@@ -306,7 +306,7 @@
 								</li>
 								<li>
 									<a href="http://www.google.com">Home Appliances</a>
-									<ul class="child">
+									<ul class="subnavigation">
 										<li><a href="http://www.google.com">Air purifiers</a></li>
 										<li><a href="http://www.google.com">Fans</a></li>
 										<li><a href="http://www.google.com">Heaters</a></li>
@@ -318,7 +318,7 @@
 								</li>
 								<li>
 									<a href="http://www.google.com">Home Decor</a>
-									<ul class="child">
+									<ul class="subnavigation">
 										<li><a href="http://www.google.com">Candles & Scents</a></li>
 										<li><a href="http://www.google.com">Curtains, Blinds & Shades</a></li>
 										<li><a href="http://www.google.com">Decorative Accents</a></li>
@@ -334,7 +334,7 @@
 								</li>
 								<li>
 									<a href="http://www.google.com">Home Improvement</a>
-									<ul class="child">
+									<ul class="subnavigation">
 										<li><a href="http://www.google.com">Hardware</a></li>
 										<li><a href="http://www.google.com">Ladders & Stepstools</a></li>
 										<li><a href="http://www.google.com">Snow Removal</a></li>
@@ -344,7 +344,7 @@
 								</li>
 								<li>
 									<a href="http://www.google.com">Kitchen &amp; Dining</a>
-									<ul class="child">
+									<ul class="subnavigation">
 										<li><a href="http://www.google.com">Bakeware</a></li>
 										<li><a href="http://www.google.com">Coffee, Tea & Espresso</a></li>
 										<li><a href="http://www.google.com">Cookware</a></li>
@@ -360,7 +360,7 @@
 								</li>
 								<li>
 									<a href="http://www.google.com">Patio & Garden</a>
-									<ul class="child">
+									<ul class="subnavigation">
 										<li><a href="http://www.google.com">Fire Pits & Patio Heaters</a></li>
 										<li><a href="http://www.google.com">Grills & Outdoor Cooking</a></li>
 										<li><a href="http://www.google.com">Lawn & Garden</a></li>
@@ -370,7 +370,7 @@
 								</li>
 								<li>
 									<a href="http://www.google.com">Storage & Organization</a>
-									<ul class="child">
+									<ul class="subnavigation">
 										<li><a href="http://www.google.com">Baskets, Bins & Containers</a></li>
 										<li><a href="http://www.google.com">Closet Organization</a></li>
 										<li><a href="http://www.google.com">Desk Organization</a></li>
@@ -385,10 +385,10 @@
 						</li>
 						<li>
 							<a href="http://www.google.com">Patio</a>
-							<ul class="child">
+							<ul class="subnavigation">
 								<li>
 									<a href="http://www.google.com">Fire Pits &amp; Patio Heaters</a>
-									<ul class="child">
+									<ul class="subnavigation">
 										<li><a href="http://www.google.com">Grills & Outdoor Cooking</a></li>
 										<li><a href="http://www.google.com">BBQ Tools</a></li>
 										<li><a href="http://www.google.com">Grill Covers</a></li>
@@ -398,7 +398,7 @@
 								</li>
 								<li>
 									<a href="http://www.google.com">Lawn &amp; Garden</a>
-									<ul class="child">
+									<ul class="subnavigation">
 										<li><a href="http://www.google.com">garden supplies</a></li>
 										<li><a href="http://www.google.com">gardening tools</a></li>
 										<li><a href="http://www.google.com">hoses & sprinklers</a></li>
@@ -411,7 +411,7 @@
 								</li>
 								<li>
 									<a href="http://www.google.com">Outdoor Decor</a>
-									<ul class="child">
+									<ul class="subnavigation">
 										<li><a href="http://www.google.com">bird baths, houses & feeders</a></li>
 										<li><a href="http://www.google.com">fountains, ponds & accessories</a></li>
 										<li><a href="http://www.google.com">garden decor</a></li>
@@ -421,7 +421,7 @@
 								</li>
 								<li>
 									<a href="http://www.google.com">Outdoor Lighting</a>
-									<ul class="child">
+									<ul class="subnavigation">
 										<li><a href="http://www.google.com">decorative outdoor lighting</a></li>
 										<li><a href="http://www.google.com">landscape & pathway lighting</a></li>
 										<li><a href="http://www.google.com">patio lamps & posts</a></li>
@@ -431,7 +431,7 @@
 								</li>
 								<li>
 									<a href="http://www.google.com">Patio Accessories</a>
-									<ul class="child">
+									<ul class="subnavigation">
 										<li><a href="http://www.google.com">deck storage</a></li>
 										<li><a href="http://www.google.com">outdoor cushions & pillows</a></li>
 										<li><a href="http://www.google.com">patio furniture covers</a></li>
@@ -442,7 +442,7 @@
 								</li>
 								<li>
 									<a href="http://www.google.com">Patio Furniture</a>
-									<ul class="child">
+									<ul class="subnavigation">
 										<li><a href="http://www.google.com">day beds & chaises</a></li>
 										<li><a href="http://www.google.com">gazebos</a></li>
 										<li><a href="http://www.google.com">patio chairs</a></li>
@@ -457,10 +457,10 @@
 						</li>
 						<li>
 							<a href="http://www.google.com">Furniture</a>
-							<ul class="child">
+							<ul class="subnavigation">
 								<li>
 									<a href="http://www.google.com">Bathroom Furniture</a>
-									<ul class="child">
+									<ul class="subnavigation">
 										<li><a href="http://www.google.com">bedroom furniture</a></li>
 										<li><a href="http://www.google.com">bedroom sets</a></li>
 										<li><a href="http://www.google.com">bedroom storage</a></li>
@@ -479,7 +479,7 @@
 								</li>
 								<li>
 									<a href="http://www.google.com">Entryway Furniture</a>
-									<ul class="child">
+									<ul class="subnavigation">
 										<li><a href="http://www.google.com">entryway benches</a></li>
 										<li><a href="http://www.google.com">entryway tables</a></li>
 										<li><a href="http://www.google.com">all entryway furniture</a></li>
@@ -487,7 +487,7 @@
 								</li>
 								<li>
 									<a href="http://www.google.com">Home Office Furniture</a>
-									<ul class="child">
+									<ul class="subnavigation">
 										<li><a href="http://www.google.com">bookcases</a></li>
 										<li><a href="http://www.google.com">desks & desk hutches</a></li>
 										<li><a href="http://www.google.com">office chairs</a></li>
@@ -496,7 +496,7 @@
 								</li>
 								<li>
 									<a href="http://www.google.com">Kids' Furniture</a>
-									<ul class="child">
+									<ul class="subnavigation">
 										<li><a href="http://www.google.com">beds & headboards</a></li>
 										<li><a href="http://www.google.com">bookcases</a></li>
 										<li><a href="http://www.google.com">desks, tables & vanities</a></li>
@@ -508,7 +508,7 @@
 								</li>
 								<li>
 									<a href="http://www.google.com">Kitchen &amp; Dining Furniture</a>
-									<ul class="child">
+									<ul class="subnavigation">
 										<li><a href="http://www.google.com">bar & counter stools</a></li>
 										<li><a href="http://www.google.com">dining chairs & benches</a></li>
 										<li><a href="http://www.google.com">dining room sets</a></li>
@@ -519,7 +519,7 @@
 								</li>
 								<li>
 									<a href="http://www.google.com">Living Room Furniture</a>
-									<ul class="child">
+									<ul class="subnavigation">
 										<li><a href="http://www.google.com">accent furniture</a></li>
 										<li><a href="http://www.google.com">chairs</a></li>
 										<li><a href="http://www.google.com">coffee tables & sets</a></li>
@@ -535,7 +535,7 @@
 								</li>
 								<li>
 									<a href="http://www.google.com">Lounge Seating</a>
-									<ul class="child">
+									<ul class="subnavigation">
 										<li><a href="http://www.google.com">bean bags & lounge chairs</a></li>
 										<li><a href="http://www.google.com">futons & sofa beds</a></li>
 										<li><a href="http://www.google.com">gaming chairs</a></li>
@@ -544,7 +544,7 @@
 								</li>
 								<li>
 									<a href="http://www.google.com">Patio Furniture</a>
-									<ul class="child">
+									<ul class="subnavigation">
 										<li><a href="http://www.google.com">day beds & chaises</a></li>
 										<li><a href="http://www.google.com">patio chairs</a></li>
 										<li><a href="http://www.google.com">patio sets</a></li>
@@ -557,10 +557,10 @@
 						</li>
 						<li>
 							<a href="http://www.google.com">Electronics</a>
-							<ul class="child">
+							<ul class="subnavigation">
 								<li>
 									<a href="http://www.google.com">TVs &amp; Home Theater</a>
-									<ul class="child">
+									<ul class="subnavigation">
 										<li><a href="http://www.google.com">TVs</a></li>
 										<li><a href="http://www.google.com">smart TVs & streaming devices</a></li>
 										<li><a href="http://www.google.com">Blu-ray & DVD players</a></li>
@@ -571,7 +571,7 @@
 								</li>
 								<li>
 									<a href="http://www.google.com">Cell Phones</a>
-									<ul class="child">
+									<ul class="subnavigation">
 										<li><a href="http://www.google.com">phones with plans</a></li>
 										<li><a href="http://www.google.com">prepaid cell phones</a></li>
 										<li><a href="http://www.google.com">prepaid phone cards</a></li>
@@ -585,7 +585,7 @@
 								</li>
 								<li>
 									<a href="http://www.google.com">iPads &amp; Tablets</a>
-									<ul class="child">
+									<ul class="subnavigation">
 										<li><a href="http://www.google.com">iPad</a></li>
 										<li><a href="http://www.google.com">tablets</a></li>
 										<li><a href="http://www.google.com">accessories</a></li>
@@ -594,7 +594,7 @@
 								</li>
 								<li>
 									<a href="http://www.google.com">Computers &amp; Office</a>
-									<ul class="child">
+									<ul class="subnavigation">
 										<li><a href="http://www.google.com">laptops</a></li>
 										<li><a href="http://www.google.com">printers & scanners</a></li>
 										<li><a href="http://www.google.com">ink & toner</a></li>
@@ -607,7 +607,7 @@
 								</li>
 								<li>
 									<a href="http://www.google.com">Cameras &amp; Camcorders</a>
-									<ul class="child">
+									<ul class="subnavigation">
 										<li><a href="http://www.google.com">point & shoot cameras</a></li>
 										<li><a href="http://www.google.com">DSLR cameras</a></li>
 										<li><a href="http://www.google.com">compact system cameras</a></li>
@@ -619,7 +619,7 @@
 								</li>
 								<li>
 									<a href="http://www.google.com">iPod &amp; Audio</a>
-									<ul class="child">
+									<ul class="subnavigation">
 										<li><a href="http://www.google.com">iPod & MP3 players</a></li>
 										<li><a href="http://www.google.com">headphones</a></li>
 										<li><a href="http://www.google.com">speakers & docks</a></li>
@@ -630,7 +630,7 @@
 								</li>
 								<li>
 									<a href="http://www.google.com">Video Games</a>
-									<ul class="child">
+									<ul class="subnavigation">
 										<li><a href="http://www.google.com">PlayStation 4</a></li>
 										<li><a href="http://www.google.com">Xbox One</a></li>
 										<li><a href="http://www.google.com">PlayStation 3</a></li>
@@ -651,10 +651,10 @@
 						</li>
 						<li>
 							<a href="http://www.google.com">Entertainment</a>
-							<ul class="child">
+							<ul class="subnavigation">
 								<li>
 									<a href="http://www.google.com">Books</a>
-									<ul class="child">
+									<ul class="subnavigation">
 										<li><a href="http://www.google.com">new</a></li>
 										<li><a href="http://www.google.com">pre-orders</a></li>
 										<li><a href="http://www.google.com">bestsellers</a></li>
@@ -669,7 +669,7 @@
 								</li>
 								<li>
 									<a href="http://www.google.com">Movies</a>
-									<ul class="child">
+									<ul class="subnavigation">
 										<li><a href="http://www.google.com">new</a></li>
 										<li><a href="http://www.google.com">pre-orders</a></li>
 										<li><a href="http://www.google.com">bestsellers</a></li>
@@ -682,7 +682,7 @@
 								</li>
 								<li>
 									<a href="http://www.google.com">Music</a>
-									<ul class="child">
+									<ul class="subnavigation">
 										<li><a href="http://www.google.com">new</a></li>
 										<li><a href="http://www.google.com">pre-orders</a></li>
 										<li><a href="http://www.google.com">bestsellers</a></li>
@@ -694,7 +694,7 @@
 								</li>
 								<li>
 									<a href="http://www.google.com">TV Shows</a>
-									<ul class="child">
+									<ul class="subnavigation">
 										<li><a href="http://www.google.com">new</a></li>
 										<li><a href="http://www.google.com">pre-orders</a></li>
 										<li><a href="http://www.google.com">bestsellers</a></li>
@@ -704,7 +704,7 @@
 								</li>
 								<li>
 									<a href="http://www.google.com">Video Games</a>
-									<ul class="child">
+									<ul class="subnavigation">
 										<li><a href="http://www.google.com">Nintendo 3DS</a></li>
 										<li><a href="http://www.google.com">PlayStation 3</a></li>
 										<li><a href="http://www.google.com">PlayStation 4</a></li>
@@ -717,7 +717,7 @@
 						</li>
 						<li>
 							<a href="http://www.google.com">Toys</a>
-							<ul class="child">
+							<ul class="subnavigation">
 								<li>
 									<a href="http://www.google.com">Action Figures &amp; Playsets</a>
 								</li>
@@ -729,7 +729,7 @@
 								</li>
 								<li>
 									<a href="http://www.google.com">Dolls</a>
-									<ul class="child">
+									<ul class="subnavigation">
 										<li><a href="http://www.google.com">baby dolls</a></li>
 										<li><a href="http://www.google.com">doll clothes & accessories</a></li>
 										<li><a href="http://www.google.com">doll furniture</a></li>
@@ -743,7 +743,7 @@
 								</li>
 								<li>
 									<a href="http://www.google.com">Games &amp; Puzzles</a>
-									<ul class="child">
+									<ul class="subnavigation">
 										<li><a href="http://www.google.com">board games</a></li>
 										<li><a href="http://www.google.com">party games</a></li>
 										<li><a href="http://www.google.com">puzzles</a></li>
@@ -752,7 +752,7 @@
 								</li>
 								<li>
 									<a href="http://www.google.com">Kids' Electronics</a>
-									<ul class="child">
+									<ul class="subnavigation">
 										<li><a href="http://www.google.com">learning toys</a></li>
 										<li><a href="http://www.google.com">kids' tablet software</a></li>
 										<li><a href="http://www.google.com">kids' tablets</a></li>
@@ -763,7 +763,7 @@
 								</li>
 								<li>
 									<a href="http://www.google.com">Outdoor Toys</a>
-									<ul class="child">
+									<ul class="subnavigation">
 										<li><a href="http://www.google.com">bounce houses & ball pits</a></li>
 										<li><a href="http://www.google.com">swing sets, slides & climbers</a></li>
 										<li><a href="http://www.google.com">trampolines</a></li>
@@ -772,7 +772,7 @@
 								</li>
 								<li>
 									<a href="http://www.google.com">Riding Toys</a>
-									<ul class="child">
+									<ul class="subnavigation">
 										<li><a href="http://www.google.com">kids' bikes</a></li>
 										<li><a href="http://www.google.com">pedal & push riding toys</a></li>
 										<li><a href="http://www.google.com">powered riding toys</a></li>
@@ -789,10 +789,10 @@
 						</li>
 						<li>
 							<a href="http://www.google.com">Sports</a>
-							<ul class="child">
+							<ul class="subnavigation">
 								<li>
 									<a href="http://www.google.com">Bikes</a>
-									<ul class="child">
+									<ul class="subnavigation">
 										<li><a href="http://www.google.com">bike accessories</a></li>
 										<li><a href="http://www.google.com">bmx & freestyle</a></li>
 										<li><a href="http://www.google.com">comfort</a></li>
@@ -805,7 +805,7 @@
 								</li>
 								<li>
 									<a href="http://www.google.com">Camping</a>
-									<ul class="child">
+									<ul class="subnavigation">
 										<li><a href="http://www.google.com">airbeds, cots & mats</a></li>
 										<li><a href="http://www.google.com">camp kitchen</a></li>
 										<li><a href="http://www.google.com">canopies & shelters</a></li>
@@ -818,7 +818,7 @@
 								</li>
 								<li>
 									<a href="http://www.google.com">Exercise &amp; Fitness</a>
-									<ul class="child">
+									<ul class="subnavigation">
 										<li><a href="http://www.google.com">accessories</a></li>
 										<li><a href="http://www.google.com">boxing</a></li>
 										<li><a href="http://www.google.com">ellipticals & steppers</a></li>
@@ -841,7 +841,7 @@
 								</li>
 								<li>
 									<a href="http://www.google.com">Pools &amp; Waterslides</a>
-									<ul class="child">
+									<ul class="subnavigation">
 										<li><a href="http://www.google.com">floats & tubes</a></li>
 										<li><a href="http://www.google.com">learn to swim</a></li>
 										<li><a href="http://www.google.com">maintenance & cleaning</a></li>
@@ -856,7 +856,7 @@
 								</li>
 								<li>
 									<a href="http://www.google.com">Sports Equipment</a>
-									<ul class="child">
+									<ul class="subnavigation">
 										<li><a href="http://www.google.com">baseball & softball</a></li>
 										<li><a href="http://www.google.com">basketball</a></li>
 										<li><a href="http://www.google.com">golf</a></li>
@@ -869,7 +869,7 @@
 						</li>
 						<li>
 							<a href="http://www.google.com">Health</a>
-							<ul class="child">
+							<ul class="subnavigation">
 								<li>
 									<a href="http://www.google.com">Diet &amp; Nutrition</a>
 								</li>
@@ -881,7 +881,7 @@
 								</li>
 								<li>
 									<a href="http://www.google.com">Home Medical Equipment</a>
-									<ul class="child">
+									<ul class="subnavigation">
 										<li><a href="http://www.google.com">blood pressure monitors</a></li>
 										<li><a href="http://www.google.com">glucose monitors</a></li>
 										<li><a href="http://www.google.com">hearing aids</a></li>
@@ -895,7 +895,7 @@
 								</li>
 								<li>
 									<a href="http://www.google.com">Medicine Cabinet</a>
-									<ul class="child">
+									<ul class="subnavigation">
 										<li><a href="http://www.google.com">allergy & sinus</a></li>
 										<li><a href="http://www.google.com">digestion & nausea</a></li>
 										<li><a href="http://www.google.com">arthritis & pain</a></li>
@@ -908,7 +908,7 @@
 								</li>
 								<li>
 									<a href="http://www.google.com">Oral Care</a>
-									<ul class="child">
+									<ul class="subnavigation">
 										<li><a href="http://www.google.com">electric toothbrushes</a></li>
 										<li><a href="http://www.google.com">mouthwash</a></li>
 										<li><a href="http://www.google.com">tooth whiteners</a></li>
@@ -922,7 +922,7 @@
 								</li>
 								<li>
 									<a href="http://www.google.com">Personal Care</a>
-									<ul class="child">
+									<ul class="subnavigation">
 										<li><a href="http://www.google.com">deodorant</a></li>
 										<li><a href="http://www.google.com">eye care</a></li>
 										<li><a href="http://www.google.com">feminine products</a></li>
@@ -933,7 +933,7 @@
 								</li>
 								<li>
 									<a href="http://www.google.com">Shaving &amp; Grooming</a>
-									<ul class="child">
+									<ul class="subnavigation">
 										<li><a href="http://www.google.com">aftershave</a></li>
 										<li><a href="http://www.google.com">body hair removal</a></li>
 										<li><a href="http://www.google.com">electric shavers</a></li>
@@ -946,7 +946,7 @@
 								</li>
 								<li>
 									<a href="http://www.google.com">Pharmacy</a>
-									<ul class="child">
+									<ul class="subnavigation">
 										<li><a href="http://www.google.com">find a pharmacy</a></li>
 										<li><a href="http://www.google.com">prescriptions</a></li>
 										<li><a href="http://www.google.com">$4 generics</a></li>
@@ -961,7 +961,7 @@
 								</li>
 								<li>
 									<a href="http://www.google.com">Clinic</a>
-									<ul class="child">
+									<ul class="subnavigation">
 										<li><a href="http://www.google.com">find a clinic</a></li>
 										<li><a href="http://www.google.com">clinic services</a></li>
 										<li><a href="http://www.google.com">all clinic</a></li>
@@ -971,10 +971,10 @@
 						</li>
 						<li>
 							<a href="http://www.google.com">Beauty</a>
-							<ul class="child">
+							<ul class="subnavigation">
 								<li>
 									<a href="http://www.google.com">Bath &amp; Body</a>
-									<ul class="child">
+									<ul class="subnavigation">
 										<li><a href="http://www.google.com">bar soap</a></li>
 										<li><a href="http://www.google.com">bath & body sets</a></li>
 										<li><a href="http://www.google.com">bath accessories</a></li>
@@ -986,7 +986,7 @@
 								</li>
 								<li>
 									<a href="http://www.google.com">Fragrances</a>
-									<ul class="child">
+									<ul class="subnavigation">
 										<li><a href="http://www.google.com">fragrance sets</a></li>
 										<li><a href="http://www.google.com">men's cologne</a></li>
 										<li><a href="http://www.google.com">women's perfume</a></li>
@@ -995,7 +995,7 @@
 								</li>
 								<li>
 									<a href="http://www.google.com">Spa &amp; Massage</a>
-									<ul class="child">
+									<ul class="subnavigation">
 										<li><a href="http://www.google.com">aromatherapy & relaxation</a></li>
 										<li><a href="http://www.google.com">foot & hand spas</a></li>
 										<li><a href="http://www.google.com">light & sound therapy</a></li>
@@ -1005,7 +1005,7 @@
 								</li>
 								<li>
 									<a href="http://www.google.com">Hair Care</a>
-									<ul class="child">
+									<ul class="subnavigation">
 										<li><a href="http://www.google.com">hair & scalp treatments</a></li>
 										<li><a href="http://www.google.com">hair accessories</a></li>
 										<li><a href="http://www.google.com">hair brushes & combs</a></li>
@@ -1020,7 +1020,7 @@
 								</li>
 								<li>
 									<a href="http://www.google.com">Oral Care</a>
-									<ul class="child">
+									<ul class="subnavigation">
 										<li><a href="http://www.google.com">electric toothbrushes</a></li>
 										<li><a href="http://www.google.com">mouthwash</a></li>
 										<li><a href="http://www.google.com">tooth whiteners</a></li>
@@ -1029,7 +1029,7 @@
 								</li>
 								<li>
 									<a href="http://www.google.com">Makeup</a>
-									<ul class="child">
+									<ul class="subnavigation">
 										<li><a href="http://www.google.com">bags & organizers</a></li>
 										<li><a href="http://www.google.com">beauty accessories</a></li>
 										<li><a href="http://www.google.com">makeup sets</a></li>
@@ -1044,7 +1044,7 @@
 								</li>
 								<li>
 									<a href="http://www.google.com">Shaving &amp; Grooming</a>
-									<ul class="child">
+									<ul class="subnavigation">
 										<li><a href="http://www.google.com">body hair removal</a></li>
 										<li><a href="http://www.google.com">electric shavers</a></li>
 										<li><a href="http://www.google.com">razors</a></li>
@@ -1056,7 +1056,7 @@
 								</li>
 								<li>
 									<a href="http://www.google.com">Skin Care</a>
-									<ul class="child">
+									<ul class="subnavigation">
 										<li><a href="http://www.google.com">body lotions & creams</a></li>
 										<li><a href="http://www.google.com">eye treatments</a></li>
 										<li><a href="http://www.google.com">facial cleansers</a></li>
@@ -1070,7 +1070,7 @@
 								</li>
 								<li>
 									<a href="http://www.google.com">Personal Care</a>
-									<ul class="child">
+									<ul class="subnavigation">
 										<li><a href="http://www.google.com">eye care</a></li>
 										<li><a href="http://www.google.com">feminine products</a></li>
 										<li><a href="http://www.google.com">foot care</a></li>
@@ -1081,10 +1081,10 @@
 						</li>
 						<li>
 							<a href="http://www.google.com">Clearance</a>
-							<ul class="child">
+							<ul class="subnavigation">
 								<li>
 									<a href="http://www.google.com">Baby</a>
-									<ul class="child">
+									<ul class="subnavigation">
 										<li><a href="http://www.google.com">boys' clothing & shoes</a></li>
 										<li><a href="http://www.google.com">girls' clothing & shoes</a></li>
 										<li><a href="http://www.google.com">all baby</a></li>
@@ -1092,7 +1092,7 @@
 								</li>
 								<li>
 									<a href="http://www.google.com">Home &amp; Furniture</a>
-									<ul class="child">
+									<ul class="subnavigation">
 										<li><a href="http://www.google.com">bedding</a></li>
 										<li><a href="http://www.google.com">furniture</a></li>
 										<li><a href="http://www.google.com">home decor</a></li>
@@ -1103,7 +1103,7 @@
 								</li>
 								<li>
 									<a href="http://www.google.com">Kids</a>
-									<ul class="child">
+									<ul class="subnavigation">
 										<li><a href="http://www.google.com">boys' clothing & shoes</a></li>
 										<li><a href="http://www.google.com">girls' clothing & shoes</a></li>
 										<li><a href="http://www.google.com">all kids</a></li>
@@ -1111,7 +1111,7 @@
 								</li>
 								<li>
 									<a href="http://www.google.com">Women's</a>
-									<ul class="child">
+									<ul class="subnavigation">
 										<li><a href="http://www.google.com">accessories</a></li>
 										<li><a href="http://www.google.com">clothing</a></li>
 										<li><a href="http://www.google.com">shoes</a></li>
@@ -1119,7 +1119,7 @@
 								</li>
 								<li>
 									<a href="http://www.google.com">More Categories</a>
-									<ul class="child">
+									<ul class="subnavigation">
 										<li><a href="http://www.google.com">electronics</a></li>
 										<li><a href="http://www.google.com">health & beauty</a></li>
 										<li><a href="http://www.google.com">men's</a></li>
@@ -1130,7 +1130,7 @@
 								</li>
 								<li>
 									<a href="http://www.google.com">More Deals</a>
-									<ul class="child">
+									<ul class="subnavigation">
 										<li><a href="http://www.google.com">all the deals</a></li>
 										<li><a href="http://www.google.com">Cartwheel</a></li>
 										<li><a href="http://www.google.com">coupons</a></li>
@@ -1141,13 +1141,13 @@
 						</li>
 						<li>
 							<a href="http://www.google.com">More</a>
-							<ul class="child">
+							<ul class="subnavigation">
 								<li>
 									<a href="http://www.google.com">Automotive</a>
 								</li>
 								<li>
 									<a href="http://www.google.com">Grocery &amp; Essentials</a>
-									<ul class="child">
+									<ul class="subnavigation">
 										<li><a href="http://www.google.com">bakery & bread</a></li>
 										<li><a href="http://www.google.com">beverages</a></li>
 										<li><a href="http://www.google.com">breakfast & cereal</a></li>
@@ -1161,7 +1161,7 @@
 								</li>
 								<li>
 									<a href="http://www.google.com">Health</a>
-									<ul class="child">
+									<ul class="subnavigation">
 										<li><a href="http://www.google.com">home medical equipment</a></li>
 										<li><a href="http://www.google.com">medicine cabinet</a></li>
 										<li><a href="http://www.google.com">oral care</a></li>
@@ -1173,7 +1173,7 @@
 								</li>
 								<li>
 									<a href="http://www.google.com">Luggage</a>
-									<ul class="child">
+									<ul class="subnavigation">
 										<li><a href="http://www.google.com">backpacks</a></li>
 										<li><a href="http://www.google.com">duffels & gym bags</a></li>
 										<li><a href="http://www.google.com">laptop bags</a></li>
@@ -1184,7 +1184,7 @@
 								</li>
 								<li>
 									<a href="http://www.google.com">Movies, Music, &amp; Books</a>
-									<ul class="child">
+									<ul class="subnavigation">
 										<li><a href="http://www.google.com">movies</a></li>
 										<li><a href="http://www.google.com">digital movies</a></li>
 										<li><a href="http://www.google.com">music</a></li>
@@ -1196,7 +1196,7 @@
 								</li>
 								<li>
 									<a href="http://www.google.com">Party Supplies &amp; Holidays</a>
-									<ul class="child">
+									<ul class="subnavigation">
 										<li><a href="http://www.google.com">birthday</a></li>
 										<li><a href="http://www.google.com">wedding & anniversary</a></li>
 										<li><a href="http://www.google.com">costumes</a></li>
@@ -1206,7 +1206,7 @@
 								</li>
 								<li>
 									<a href="http://www.google.com">Pets</a>
-									<ul class="child">
+									<ul class="subnavigation">
 										<li><a href="http://www.google.com">cat supplies</a></li>
 										<li><a href="http://www.google.com">dog supplies</a></li>
 										<li><a href="http://www.google.com">small animal supplies</a></li>
@@ -1215,7 +1215,7 @@
 								</li>
 								<li>
 									<a href="http://www.google.com">School &amp; Office Supplies</a>
-									<ul class="child">
+									<ul class="subnavigation">
 										<li><a href="http://www.google.com">calendars, planners & journals</a></li>
 										<li><a href="http://www.google.com">organization</a></li>
 										<li><a href="http://www.google.com">paper</a></li>
@@ -1229,7 +1229,7 @@
 								</li>
 								<li>
 									<a href="http://www.google.com">Sports &amp; Outdoors</a>
-									<ul class="child">
+									<ul class="subnavigation">
 										<li><a href="http://www.google.com">bikes</a></li>
 										<li><a href="http://www.google.com">camping & outdoors</a></li>
 										<li><a href="http://www.google.com">exercise & fitness</a></li>
@@ -1246,7 +1246,7 @@
 								</li>
 								<li>
 									<a href="http://www.google.com">Subscriptions</a>
-									<ul class="child">
+									<ul class="subnavigation">
 										<li><a href="http://www.google.com">baby</a></li>
 										<li><a href="http://www.google.com">beauty</a></li>
 										<li><a href="http://www.google.com">grocery</a></li>

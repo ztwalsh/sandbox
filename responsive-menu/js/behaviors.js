@@ -1,4 +1,5 @@
 $(document).ready(function() {
+	// Add icons to any items with a sub menu
 	$('a').each(function () {
 		if ($(this).next().is('ul')) {
 			var linkContent = $(this).text();
@@ -7,13 +8,15 @@ $(document).ready(function() {
 
 		}
 	});
-	// Mobile menu icon
+
+	// Mobile menu icon behavior
 	$('.mobile-nav a').click(function() {
 		if ($(this).hasClass('on')) {
 			$(this).html('<i class="fa fa-bars"></i>');
 			$(this).removeClass('on');
-			$('ul.child').fadeOut(100);
-			$('nav').fadeOut(100);
+			$('nav').fadeOut(100, function() {
+				$('.subnavigation-layer').remove();
+			});
 		} else {
 			$(this).html('<i class="fa fa-times"></i>');
 			$(this).addClass('on');
@@ -22,43 +25,58 @@ $(document).ready(function() {
 		return false;
 	});
 
-	// Navigation
-	$('nav a').click(function(event) {
-		// If the link has beed clicked, check to see if there is a <ul> next
+	// Navigation click function
+	/*$(document).on('click', 'nav a', function(event) {
 		if ($(this).next().is('ul')) {
-			// If there is a <ul>, stop the link and show the <ul>
 			event.preventDefault;
-			$(this).next('ul').fadeIn(100);
+			$(this).closest('ul').fadeOut(100);
+
+			// Create nav header
+			var category_link = $(this).attr('href');
+			var category_name = $(this).text();
+			var sub_header = '<a class="back" href="#"><i class="fa fa-chevron-left"></i> Back</a> <a class="all" href="' + category_link + '">See All ' + category_name + ' <i class="fa fa-chevron-right"></i></a>';
+			$('.menu-head').html(sub_header);
+
+			// Show sub nav
+			// take out the nav-container from the mark up. add it in on click height 100% position absolute. layerthem on. "back" closes each created layer
+			//$('.nav-container').append(sub_list);
+			var sub_list =  $(this).next('ul');
+			var menu_list = '<div class="nav-container">' + sub_list + '</div>';
+			$('nav').prepend(menu_list);
 		} else {
-			// Allow the link to go to the href
 			href = $(this).attr('href');
 			window.location = href;
 		}
+		return false;
+	});*/
 
-		// If the link has already been clicked and there is a list nav
-		if ($(this).next('ul').children().hasClass('list-head')) {
-			// Do nothing
+
+	$(document).on('click', 'nav a', function(event) {
+		if ($(this).next().is('ul')) {
+			event.preventDefault;
+
+			// Create overlay layer with menu options
+			var sub_list =  $(this).next('ul').html();
+			var category_link = $(this).attr('href');
+			var category_name = $(this).text();
+			var sub_header = '<div class="menu-header cf"><a class="back" href="#"><i class="fa fa-chevron-left"></i> Back</a> <a class="all" href="' + category_link + '">See All ' + category_name + ' <i class="fa fa-chevron-right"></i></a></div>';
+			var menu_list = '<div class="subnavigation-layer">' + sub_header + '<div class="scroll"><ul class="subnavigation">' + sub_list + '</ul></div></div>';
+			//var menu_list = '<div class="subnavigation-layer"></div>';
+
+			// Insert it in nav
+			$('nav').append(menu_list).hide().fadeIn(50);
 		} else {
-			// Create a list nav at the top to navigate back or close the menu
-			category = $(this).text();
-			link = $(this).attr('href');
-			$(this).next('ul').prepend('<li class="list-head cf"><a class="back" href="#"><i class="fa fa-chevron-left"></i> Back</a> <a class="see-all" href="' + link + '">See all ' + category + '</a></li>');
-			$('.list-head').next('li').addClass('second');
+			href = $(this).attr('href');
+			window.location = href;
 		}
+		return false;
+	});
 
-		// Close the parent menu when clicking back
-		$('a.back').click(function() {
-			$(this).parent().parent('ul').fadeOut(100);
-			return false;
+	// Back button
+	$(document).on('click', 'a.back', function() {
+		$(this).closest('.subnavigation-layer').fadeOut(50, function() {
+			$(this).remove();
 		});
-
-		// Close all menus when clicking close
-		$('a.close').click(function() {
-			$('ul.child').fadeOut(100);
-			$('nav').fadeOut(100);
-			return false;
-		});
-		
 		return false;
 	});
 });

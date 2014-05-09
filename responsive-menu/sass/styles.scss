@@ -40,9 +40,14 @@ $spacing-extra-large: 			40px;
 	border-radius: $value;
 }
 
-@mixin tab-border-radius($value) {
+@mixin top-border-radius($value) {
 	border-top-right-radius: $value;
 	border-top-left-radius: $value;
+}
+
+@mixin bottom-border-radius($value) {
+	border-bottom-right-radius: $value;
+	border-bottom-left-radius: $value;
 }
 
 @mixin border-box() {
@@ -74,24 +79,25 @@ header {
 		padding: $spacing-small;
 		width: auto;
 
-		a {
-			color: #ffffff;
-			display: inline-block;
-			float: right;
-			font-size: $type-size-mobile-nav;
-			padding: $spacing-medium $spacing-small 0 0;
-		}
-
 		.logo {
 			float: left;
 
 			h1 a {
 				background: url('../images/retailstore.svg') center no-repeat;
+				background-size: 171px 40px;
 				display: block;
-				height: 55px;
+				height: 40px;
 				text-indent: -9999px;
-				width: 235px;
+				width: 171px;
 			}
+		}
+
+		a {
+			color: #ffffff;
+			display: inline-block;
+			float: right;
+			font-size: $type-size-mobile-nav;
+			padding: $spacing-small $spacing-small 0 0;
 		}
 	}
 	
@@ -106,108 +112,100 @@ header {
  		overflow-x: hidden;
  			-webkit-overflow-scrolling: touch;
 		right: 0;
-		top: 95px;
+		top: 70px;
 
-		.inner {
+		.inner,
+		.subnavigation-layer {
 			@include border-radius(5px);
-			@include box-shadow();
 			background: #ffffff;
-			bottom: 10px;
-			left: 10px;
+			bottom: $spacing-medium;
+			left: $spacing-medium;
+			overflow: auto;
 			position: fixed;
-			overflow: scroll;
-			right: 10px;
+			right: $spacing-medium;
 			top: 95px;
 		}
 
-		a {
-			color: $color-text-body;
-			display: block;
-			font-size: 1.5rem;
-			font-weight: bold;
-			padding: $spacing-small $spacing-medium;
-			text-decoration: none;
-
-			i {
-				color: $color-text-body-extra-light;
-				float: right;
-				font-size: $type-size-extra-small;
-				padding-top: $spacing-extra-small;
-			}
+		.subnavigation-layer {
+			overflow: hidden;
 		}
 
-		a:active {
+		.menu-header {
 			background: $color-nav-header;
-			color: #ffffff;
+			box-sizing: border-box;
+			float: left;
+			padding: $spacing-medium;
+			width: 100%;
+		}
 
-			i {
-				color: #ffffff;
-			}
+		.menu-header:after { 
+			content: " ";
+			display: block;
+			clear: both;
+			visibility: hidden;
+			line-height: 0;
+			height: 0;
+		}
+
+		.scroll {
+			height: 100%;
+			overflow: auto;
+			width: 100%;
 		}
 
 		ul li {
-
 			border-bottom: 1px solid $color-border;
-
-			ul {
-				@include border-radius(5px);
-				background: #ffffff;
-				bottom: 10px;
+			
+			.subnavigation {
 				display: none;
-				left: 10px;
-				position: fixed;
-				overflow: scroll;
-				right: 10px;
-				top: 95px;
 			}
 
-			li.list-head {
-				@include tab-border-radius(5px);
-				@include border-box();
-				background: $color-nav-header;
-				border-bottom: 0;
-				color: #ffffff;
-				left: 10px;
-				padding: $spacing-small;
-				position: fixed;
-				right: 10px;
+			a {
+				color: $color-text-body;
+				display: block;
+				font-size: $type-size-heading1;
+				font-weight: 900;
+				padding: $spacing-medium;
+				text-decoration: none;
+
+				i {
+					color: $color-text-body-light;
+					display: inline-block;
+					float: right;
+					font-size: $type-size-extra-small;
+					padding-top: $spacing-small - 1;
+				}
 			}
 
-			li.second {
-				margin-top: 54px;
+			a:hover {
+				background: $color-background-body;
 			}
+
 		}
 
 		ul li:last-child {
 			border: 0;
 		}
+	}
 
-		a.back {
-			@include border-radius(3px);
-			background: $color-nav-header-button;
+	a.back,
+	a.all  {
+		@include border-radius(3px);
+		background: $color-nav-header-button;
+		color: #ffffff;
+		float: left;
+		font-size: $type-size-small;
+		padding: $spacing-extra-small $spacing-small;
+		text-decoration: none;
+
+		i {
 			color: #ffffff;
-			float: left;
-			font-size: $type-size-small;
-			padding: $spacing-extra-small $spacing-small;
-
-			i {
-				color: #ffffff;
-				float: none;
-			}
+			float: none;
+			font-size: $type-size-extra-small;
 		}
+	}
 
-		a.see-all {
-			@include border-radius(3px);
-			background: $color-nav-header-button;
-			color: #ffffff;
-			display: inline-block;
-			float: right;
-			font-size: $type-size-small;
-			padding: $spacing-extra-small $spacing-small;
-		}
-
-		a.close {
-			float: right;
-		}
+	a.all {
+		float: right;
 	}
 }
