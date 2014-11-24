@@ -1,0 +1,45 @@
+body {
+	font-size: 16px;
+}
+
+.select-button {
+	background-image:linear-gradient(#ffffff, #f6f6f6);
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	display: block;
+	padding: 10px 10px;
+}
+
+.select-button:hover {
+	background-image:linear-gradient(#ffffff, #dddddd);
+}
+
+.select-button:hover {
+	cursor: pointer;
+}
+
+.select-button i {
+	float: right;
+}
+
+.select-list {
+	background: #ffffff;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	box-sizing: border-box;
+	display: block;
+	display: none;
+	margin-top: 10px;
+	position: absolute;
+	width: 100%;
+}
+
+.select-list span {
+	display: block;
+	padding: 10px;
+}
+
+.select-list span:hover {
+	background: #f6f6f6;
+	cursor: pointer;
+}

@@ -1,0 +1,130 @@
+@import url('reset.css');
+@import url('global.css');
+
+section > div {
+	border-right: 1px solid #cccccc;
+	box-sizing: border-box;
+	float: left;
+	min-height: 200px;
+	padding: 15px;
+	width: 33.33333%;
+}
+
+section > div:last-child {
+	border: 0;
+}
+
+.span6 {
+	float: left;
+	margin-right: 2.08%;
+	width: 48.96%;
+}
+
+.span6:last-child {
+	margin: 0;
+}
+
+table.histogram {
+	border-collapse: separate;
+	border-spacing: 5px 3px;
+	width: 100%;
+}
+
+tr {
+	border-bottom: 3px solid #ffffff;
+	margin-bottom: 3px;
+	transition: all 0.25s ease;
+}
+
+tr:hover {
+	border-radius: 3px;
+	cursor: pointer;
+	padding: 10px;
+}
+
+td {
+	vertical-align: middle;
+}
+
+td.rating,
+td.count {
+	color: #4a99ca;
+	width: 30px;
+}
+
+td.rating i {
+	color: #cccccc;
+	font-size: 0.875em;
+}
+
+td.count {
+	font-size: 0.875em;
+	width: 30px;
+}
+
+tr.inactive td.rating,
+tr.inactive td.count {
+	color: #aaaaaa;
+}
+
+td.bar {
+	background: #f6f6f6;
+	border-radius: 3px;
+	line-height: 1;
+	height: 24px;
+}
+
+td.bar > div {
+	background: #e75d38;
+	border-top-left-radius: 3px;
+	border-bottom-left-radius: 3px;
+	height: 100%;
+	transition: all 0.25s ease;
+}
+
+tr:hover td.bar,
+tr td.on {
+	background: #dddddd;
+}
+
+tr:hover td.bar > div,
+tr td.on > div {
+	background: #c93a14;
+}
+
+tr.inactive:hover {
+	cursor: auto;
+}
+
+tr.inactive:hover td.bar {
+	background: #f6f6f6;
+}
+
+.off {
+	opacity: 0.2;
+}
+
+@media screen and (max-width: 600px) {
+	.span6 {
+		float: none;
+		margin-right: 0;
+		width: 100%;
+	}
+
+	section > div {
+		border: 0;
+		border-bottom: 1px solid #cccccc;
+		float: none;
+		min-height: 0;
+		padding: 15px;
+		width: 100%;
+	}
+
+	.collapse h3:hover {
+		cursor: pointer;
+	}
+
+	 .collapse ul {
+		display: none;
+	}
+}

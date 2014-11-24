@@ -1,0 +1,101 @@
+@import url('reset.css');
+@import url('global.css');
+
+section {
+	background: #ffffff;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+}
+
+section > div {
+	border-right: 1px solid #cccccc;
+	box-sizing: border-box;
+	float: left;
+	min-height: 224px;
+	padding: 15px;
+	width: 25%;
+}
+
+section > div:last-child {
+	border: 0;
+}
+
+div.column,
+div.inactive {
+	box-sizing: border-box;
+	float: left;
+	margin-right: 5%;
+	text-align: center;
+	transition: all 0.25s ease;
+	width: 16%;
+}
+
+div.column:hover {
+	cursor: pointer;
+}
+
+div.inactive:hover {
+	cursor: auto;
+}
+
+div.off {
+	opacity: 0.2;
+}
+
+div.column:last-child {
+	margin-right: 0;
+}
+
+div.column small,
+div.inactive small {
+	color: #aaaaaa;
+	font-size: 0.785em;
+}
+
+div.column table,
+div.inactive table {
+	height: 120px;
+	margin-bottom: 10px;
+	width: 100%;
+}
+
+div.column table td,
+div.inactive table td {
+	background: #f6f6f6;
+	border-radius: 3px;
+	vertical-align: bottom;
+	width: 100%;
+}
+
+div.column table td > div,
+div.inactive table td > div {
+	background: #e75d38;
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+	width: 100%;
+}
+
+div.column .score,
+div.inactive .score {
+	color: #4a99ca;
+	font-size: 1.142em;
+}
+
+div.inactive .score {
+	color: #aaaaaa;
+}
+
+@media screen and (max-width: 690px) {
+	section > div {
+		border-right: 0;
+		border-bottom: 1px solid #cccccc;
+		float: none;
+		min-height: 0;
+		padding: 15px;
+		width: 100%;
+	}
+
+	section > div:last-child {
+		border: 0;
+	}
+}
