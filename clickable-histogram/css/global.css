@@ -151,20 +151,21 @@ section {
 }
 
 #filter-feedback h5 a {
-	background: #dddddd;
+	background: #fff9bf;
 	border-radius: 3px;
-	color: #666666;
-	display: inline-block;
+	color: #e9aa01;
+	display: block;
 	font-size: 1.125em;
 	padding: 8px 12px;
 	text-decoration: none;
 	transition: all 0.25s ease;
 }
 
-#filter-feedback h5 a i {
-	color: #aaaaaa;
+#filter-feedback h5 a span {
+	float: right;
 }
 
 #filter-feedback h5 a:hover {
-	background: #cccccc;
+	background: #fdd045;
+	color: #333333;
 }

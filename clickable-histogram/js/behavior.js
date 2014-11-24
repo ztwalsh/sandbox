@@ -24,14 +24,14 @@ $(document).ready(function() {
 	});
 	$('tr.distro-bar').click(function() {
 		var column_clicked 	= $(this).attr('id');
-		var breadcrumb 		= '<h5><a href="#">Showing ' + column_clicked + '-Star Reviews <i class="fa fa-times-circle"></i></a></h5>';
+		var breadcrumb 		= '<h5><a href="#">Showing ' + column_clicked + '-Star Reviews <span>Clear <i class="fa fa-times"></i></span></a></h5>';
 		var show_reviews	=  column_clicked + '-star';
 
 		$(this).parent().children().removeClass('off');
 		$('td.bar').removeClass('on');
 		$(this).parent().children().not(this).addClass('off');
 		$(this).children('td.bar').addClass('on');
-		$('#filter-feedback').html(breadcrumb);
+		$('#filter-feedback').html($(breadcrumb).fadeIn(50));
 
 		$('html, body').animate({
 	        scrollTop: $('#filter-feedback').offset().top
@@ -41,7 +41,7 @@ $(document).ready(function() {
 	    $('.' + show_reviews).show();
 
 		$('#filter-feedback h5 a').click(function() {
-			$(this).parent().remove();
+			$(this).parent().fadeOut(50);
 			$('.off').removeClass('off');
 			$('.on').removeClass('on');
 			$('#reviews').children().show();
