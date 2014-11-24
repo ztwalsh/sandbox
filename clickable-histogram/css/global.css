@@ -151,9 +151,9 @@ section {
 }
 
 #filter-feedback h5 a {
-	background: #fff9bf;
+	background: #ffe9bf;
 	border-radius: 3px;
-	color: #e9aa01;
+	color: #db9f10;
 	display: block;
 	font-size: 1.125em;
 	padding: 8px 12px;
@@ -166,6 +166,6 @@ section {
 }
 
 #filter-feedback h5 a:hover {
-	background: #fdd045;
-	color: #333333;
+	background: #fbb817;
+	color: #303533;
 }
