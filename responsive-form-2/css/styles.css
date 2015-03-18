@@ -94,6 +94,10 @@ p {
 	padding: 0 0 20px 0;
 }
 
+.product-info p {
+	clear: none;
+}
+
 p:last-child {
 	padding: 0;
 }
@@ -301,6 +305,16 @@ div.star-selected {
 	font-size: 10px;
 }
 
+.input-group {
+	display: none;
+	padding-left: 24px;
+}
+
+.drop-inputs,
+.small-check {
+	cursor: pointer;
+}
+
 input.text,
 textarea,
 input.add-tag-input {
@@ -327,7 +341,7 @@ textarea {
 
 input.add-tag-input {
 	margin-right: 10px;
-	width: 82%;
+	width: 84%;
 }
 
 input.file {
@@ -467,7 +481,20 @@ input.caption {
 		border-bottom: 2px solid #dddddd;
 	}
 
+	input.add-tag-input {
+		width: 75%;
+	}
+
+	.uploaded_image img {
+		max-width: 60px;
+	}
+
 	input.caption {
 		width: 55%;
+		margin-top: 0;
+	}
+
+	a.trash {
+		margin-top: 0;
 	}
 }

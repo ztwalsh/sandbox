@@ -78,6 +78,7 @@ $(document).ready(function () {
     	}
 	});
 
+	// Inputs for images
 	function readURL(input) {
     	if (input.files && input.files[0]) {
         	var reader = new FileReader();
@@ -99,5 +100,22 @@ $(document).ready(function () {
 
 	$("input.file").change(function(){
     	readURL(this);
+	});
+
+	// Accessories drop down
+	$('.drop_inputs').click(function() {
+		if ($(this).children().prop('checked') == true) {
+			$(this).next('.input-group').show()
+		} else {
+			$(this).next('.input-group').hide()
+		}
+	});
+
+	$('.small-check').click(function() {
+		if ($(this).prop('checked') == true) {
+			$(this).parent().next('.input-group').show()
+		} else {
+			$(this).parent().next('.input-group').hide()
+		}
 	});
 });

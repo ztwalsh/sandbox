@@ -123,6 +123,24 @@
 					</div>
 				</section>
 				<section class="cf">
+					<label class="main drop-inputs" for="accessories"><input type="checkbox" class="small-check" id="accessories" /> You Recommend Accessories</label>
+					<div class="input-group">
+						<p>List the names of the accessories you recommend.</p>
+						<input class="text" type="text" />
+						<input class="text" type="text" />
+						<input class="text" type="text" />
+					</div>
+				</section>
+				<section class="cf">
+					<label class="main drop-inputs" for="similar"><input type="checkbox" class="small-check" id="similar" /> You Own Similar Products</label>
+					<div class="input-group">
+						<p>List the names of these products.</p>
+						<input class="text" type="text" />
+						<input class="text" type="text" />
+						<input class="text" type="text" />
+					</div>
+				</section>
+				<section class="cf">
 					<div class="span2">
 						<label class="main">Describe Yourself</label>
 					</div>
