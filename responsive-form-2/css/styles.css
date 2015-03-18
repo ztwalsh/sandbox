@@ -317,13 +317,56 @@ input.add-tag-input {
 	width: 100%;
 }
 
+input.caption {
+
+}
+
 textarea {
 	min-height: 150px;
 }
 
 input.add-tag-input {
 	margin-right: 10px;
-	width: 85%;
+	width: 82%;
+}
+
+input.file {
+	display: none;
+}
+
+.uploaded_image {
+	background: #f9f9f9;
+	border: 1px solid #dddddd;
+	border-radius: 2px;
+	margin-bottom: 8px;
+	padding: 10px;
+}
+
+.uploaded_image img {
+	float: left;
+	height: auto;
+	margin-right: 10px;
+	max-width: 90px;
+}
+
+input.caption {
+	float: left;
+	margin-top: 13px;
+	width: 68%;
+}
+
+.trash{
+	border: 1px solid #c0451e;
+	border-bottom: 2px solid #c0451e;
+	border-radius: 3px;
+	background: #f05e24;
+	color: #ffffff;
+	cursor: pointer;
+	float: right;
+	font-size: 24px;
+	font-weight: bold;
+	margin-top: 13px;
+	padding: 8px 12px 6px 12px;
 }
 
 ::-webkit-input-placeholder {  
@@ -365,6 +408,7 @@ input.add-tag-input {
 	border-radius: 2px;
 	clear: both;
 	color: #4a99ca;
+	cursor: pointer;
 	display: inline-block;
 	font-weight: normal;
 	padding: 12px 15px;
@@ -389,7 +433,7 @@ input.add-tag-input {
 }
 
 
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 525px) {
 	label.tags {
 		margin: 0 0 5px 0;
 		width: 100%;
@@ -421,5 +465,9 @@ input.add-tag-input {
 		border-bottom-right-radius: 3px;
 		border-bottom-left-radius: 3px;
 		border-bottom: 2px solid #dddddd;
+	}
+
+	input.caption {
+		width: 55%;
 	}
 }

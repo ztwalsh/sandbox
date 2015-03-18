@@ -67,7 +67,6 @@
 					<div class="span4">
 						<?php display_error('product_comments'); ?>
 						<?php form_textarea('product_comments', 'How you use the product? What things are great about it? What things aren\'t so great about it?'); ?>
-						<p><a class="secondary action add-image" href="#" id="add-image"><i class="fa fa-plus"></i> Add an image</a></p>
 					</div>
 				</section>
 				<section class="cf">
@@ -140,6 +139,14 @@
 					<div class="span4 radioset_vert cf">
 						<?php display_error('bottom_line'); ?><?php form_radio('bottom_line', 'Yes, you would recommend this to a friend', 'recommend'); ?><?php form_radio('bottom_line', 'No, you would not recommend this to a friend', 'not_recommend'); ?>
 					</div>
+				</section>
+				<section>
+					<p>
+						<input class="file" type="file" id="file_upload">
+						<label for="file_upload" class="secondary action add-image">
+							Add an Image <i class="fa fa-plus"></i>
+						</label>
+					</p>
 				</section>
 				<section>
 					<p><?php primary_submit('Submit Review'); ?></p>
