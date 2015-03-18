@@ -32,18 +32,22 @@ $(document).ready(function () {
 
 	// Add a Checkbox
 	$('a.add-check').click(function() {
-		var field_add = '<input type="text" class="add-tag-input" /><a class="add-tag" href="">Add</a>';
+		var field_add = '<input type="text" class="add-tag-input" /><a class="add-tag" href="#">Add</a>';
 		var field_name = $(this).attr('id');
-		var root_element = $(this);
+		var root_element = $(this).closest('p');
 
 		$(field_add).insertBefore(root_element);
+		$('.add-tag-input').focus();
+		$(this).parent().hide();
 
 		$('a.add-tag').click(function() {
 			checkbox_value = $('.add-tag-input').val();
 			checkbox = '<label class="tags selected" for="new-tag"><input type="checkbox" id="new-tag" name="' + field_name + '" value="' + checkbox_value + '" />' + checkbox_value + '</label>';
+			
 			$(this).remove();
 			$('.add-tag-input').remove();
 			$(checkbox).insertBefore(root_element);
+			//$(root_element).parent().insertBefore(checkbox);
 			$(root_element).show();
 			return false;
 		});
@@ -57,5 +61,20 @@ $(document).ready(function () {
 		$('<span> Sorry, you can\'t add images on this prototype</span>').insertAfter(link);
 
 		return false;
+	});
+
+	// Character counter
+	$('input#headline').keyup(function () {
+		var max = 40;
+
+		$(this).prop('maxlength', max);
+
+    	var left = max - $(this).val().length;
+    	if (left < 0) {
+        	left = 0;
+    	}
+    	if (left < 20) {
+    		$('#counter').text(left + ' character left');
+    	}
 	});
 });

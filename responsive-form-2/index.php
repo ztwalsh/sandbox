@@ -42,7 +42,8 @@
 					</div>
 					<div class="span4">
 						<?php display_error('headline'); ?>
-						<?php form_input('headline', '', 'headline', ''); ?>
+						<?php form_input('headline', '', 'headline', 'ex. I would buy this product again and again'); ?>
+						<span id="counter"></span>
 					</div>
 				</section>
 				<section class="cf">
@@ -65,7 +66,7 @@
 					</div>
 					<div class="span4">
 						<?php display_error('product_comments'); ?>
-						<?php form_textarea('product_comments', 'Talk about the product'); ?>
+						<?php form_textarea('product_comments', 'How you use the product? What things are great about it? What things aren\'t so great about it?'); ?>
 						<p><a class="secondary action add-image" href="#" id="add-image"><i class="fa fa-plus"></i> Add an image</a></p>
 					</div>
 				</section>
@@ -75,7 +76,7 @@
 					</div>
 					<div class="span4">
 						<?php display_error('firstname'); ?>
-						<?php form_input('firstname', '', 'firstname', ''); ?>
+						<?php form_input('firstname', '', 'firstname', 'ex. DavidS, Jim the Runner'); ?>
 					</div>
 				</section>
 				<section class="cf">
@@ -84,7 +85,7 @@
 					</div>
 					<div class="span4">
 						<?php display_error('location'); ?>
-						<?php form_input('location', '', 'location', 'i.e. Chicago, IL'); ?>
+						<?php form_input('location', '', 'location', 'ex. San Jose, CA'); ?>
 					</div>
 				</section>
 				<section class="cf">
@@ -93,7 +94,7 @@
 					</div>
 					<div class="span4">
 						<?php form_checkbox('pros[]', 'All the connections I could ever need', 'all_connections'); ?><?php form_checkbox('pros[]', 'Best looking TV out there', 'best_looking'); ?><?php form_checkbox('pros[]', 'Easy Set Up', 'easy'); ?><?php form_checkbox('pros[]', 'Energy Efficient', 'energy_efficient'); ?><?php form_checkbox('pros[]', 'Good Remote Control', 'good_remote'); ?><?php form_checkbox('pros[]', 'Great Picture Quality', 'great_picture_quality'); ?><?php form_checkbox('pros[]', 'Great Sound Quality', 'great_sound_quality'); ?><?php form_checkbox('pros[]', 'LED Backlit', 'led'); ?><?php form_checkbox('pros[]', 'Reduced Glare', 'reduced_glare'); ?>
-						<a id="pros[]" class="secondary action add-check" href="#"><i class="fa fa-plus"></i> Add your own</a>
+						<p><a id="pros[]" class="secondary action add-check" href="#">Add your own <i class="fa fa-plus"></i></a></p>
 					</div>
 				</section>
 				<section class="cf">
@@ -102,7 +103,7 @@
 					</div>
 					<div class="span4">
 						<?php form_checkbox('cons[]', 'Confusing / Bad remote control', 'bad_remote'); ?><?php form_checkbox('cons[]', 'Difficult to Set Up', 'difficult_setup'); ?><?php form_checkbox('cons[]', 'Glare', 'glare'); ?><?php form_checkbox('cons[]', 'Poor Connection Options', 'poor_connections'); ?><?php form_checkbox('cons[]', 'Poor Image Quality', 'poor_image_quality'); ?><?php form_checkbox('cons[]', 'Poor Reception / Weak Antenna', 'poor_reception'); ?><?php form_checkbox('cons[]', 'Poor Sound Quality', 'poor_sound'); ?>
-						<a id="cons[]" class="secondary action add-check" href="#"><i class="fa fa-plus"></i> Add your own</a>
+						<p><a id="cons[]" class="secondary action add-check" href="#">Add your own <i class="fa fa-plus"></i></a></p>
 					</div>
 				</section>
 				<section class="cf">
@@ -111,14 +112,14 @@
 					</div>
 					<div class="span4">
 						<?php form_checkbox('best[]', 'Attached to a Computer', 'computer'); ?><?php form_checkbox('best[]', 'Bedroom', 'bedroom'); ?><?php form_checkbox('best[]', 'Business', 'business'); ?><?php form_checkbox('best[]', 'Home', 'home'); ?><?php form_checkbox('best[]', 'Home Theater', 'home_theater'); ?><?php form_checkbox('best[]', 'Movies', 'movies'); ?><?php form_checkbox('best[]', 'Video Games', 'video_games'); ?><?php form_checkbox('best[]', 'Wall Mounting', 'wall'); ?>
-						<a id="best[]" class="secondary action add-check" href="#"><i class="fa fa-plus"></i> Add your own</a>
+						<p><a id="best[]" class="secondary action add-check" href="#">Add your own <i class="fa fa-plus"></i></a></p>
 					</div>
 				</section>
 				<section class="cf">
 					<div class="span2">
 						<label class="main">Was this a gift?</label>
 					</div>
-					<div class="span4 radioset cf">
+					<div class="span4 radioset_bin cf">
 						<?php form_radio('gift', 'Yes', 'yes'); ?><?php form_radio('gift', 'No', 'no'); ?>
 					</div>
 				</section>
@@ -126,19 +127,18 @@
 					<div class="span2">
 						<label class="main">Describe Yourself</label>
 					</div>
-					<div class="span4 radioset cf">
+					<div class="span4 radioset_vert cf">
 						<?php form_radio('describe', 'Casual User', 'casual'); ?><?php form_radio('describe', 'Enthusiast', 'enthusiast'); ?><?php form_radio('describe', 'Power User', 'power'); ?>
 					</div>
 				</section>
 				<section class="cf">
 					<div class="span2">
 						<label class="main">
-							Bottom Line<br />
-							<span>Would you recommend this to a friend?</span>
+							Bottom Line
 						</label>
 					</div>
-					<div class="span4 radioset cf">
-						<?php display_error('bottom_line'); ?><?php form_radio('bottom_line', 'I would recommend', 'recommend'); ?><?php form_radio('bottom_line', 'I would NOT recommend', 'not_recommend'); ?>
+					<div class="span4 radioset_vert cf">
+						<?php display_error('bottom_line'); ?><?php form_radio('bottom_line', 'Yes, you would recommend this to a friend', 'recommend'); ?><?php form_radio('bottom_line', 'No, you would not recommend this to a friend', 'not_recommend'); ?>
 					</div>
 				</section>
 				<section>
