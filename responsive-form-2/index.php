@@ -90,6 +90,7 @@
 				<section class="cf">
 					<div class="span2">
 						<label class="main">Pros</label>
+						<p>Select all that apply from this list<br />&nbsp;</p>
 					</div>
 					<div class="span4">
 						<?php form_checkbox('pros[]', 'All the connections I could ever need', 'all_connections'); ?><?php form_checkbox('pros[]', 'Best looking TV out there', 'best_looking'); ?><?php form_checkbox('pros[]', 'Easy Set Up', 'easy'); ?><?php form_checkbox('pros[]', 'Energy Efficient', 'energy_efficient'); ?><?php form_checkbox('pros[]', 'Good Remote Control', 'good_remote'); ?><?php form_checkbox('pros[]', 'Great Picture Quality', 'great_picture_quality'); ?><?php form_checkbox('pros[]', 'Great Sound Quality', 'great_sound_quality'); ?><?php form_checkbox('pros[]', 'LED Backlit', 'led'); ?><?php form_checkbox('pros[]', 'Reduced Glare', 'reduced_glare'); ?>
@@ -99,6 +100,7 @@
 				<section class="cf">
 					<div class="span2">
 						<label class="main">Cons</label>
+						<p>Select all that apply<br />&nbsp;</p>
 					</div>
 					<div class="span4">
 						<?php form_checkbox('cons[]', 'Confusing / Bad remote control', 'bad_remote'); ?><?php form_checkbox('cons[]', 'Difficult to Set Up', 'difficult_setup'); ?><?php form_checkbox('cons[]', 'Glare', 'glare'); ?><?php form_checkbox('cons[]', 'Poor Connection Options', 'poor_connections'); ?><?php form_checkbox('cons[]', 'Poor Image Quality', 'poor_image_quality'); ?><?php form_checkbox('cons[]', 'Poor Reception / Weak Antenna', 'poor_reception'); ?><?php form_checkbox('cons[]', 'Poor Sound Quality', 'poor_sound'); ?>
@@ -108,6 +110,7 @@
 				<section class="cf">
 					<div class="span2">
 						<label class="main">Best Uses</label>
+						<p>Select all that apply<br />&nbsp;</p>
 					</div>
 					<div class="span4">
 						<?php form_checkbox('best[]', 'Attached to a Computer', 'computer'); ?><?php form_checkbox('best[]', 'Bedroom', 'bedroom'); ?><?php form_checkbox('best[]', 'Business', 'business'); ?><?php form_checkbox('best[]', 'Home', 'home'); ?><?php form_checkbox('best[]', 'Home Theater', 'home_theater'); ?><?php form_checkbox('best[]', 'Movies', 'movies'); ?><?php form_checkbox('best[]', 'Video Games', 'video_games'); ?><?php form_checkbox('best[]', 'Wall Mounting', 'wall'); ?>

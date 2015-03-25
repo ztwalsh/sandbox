@@ -47,10 +47,24 @@ $(document).ready(function () {
 			$(this).remove();
 			$('.add-tag-input').remove();
 			$(checkbox).insertBefore(root_element);
-			//$(root_element).parent().insertBefore(checkbox);
 			$(root_element).show();
 			return false;
 		});
+
+		$(document).keypress(function(e) {
+		    if(e.which == 13) {
+		    	e.preventDefault();
+		        checkbox_value = $('.add-tag-input').val();
+				checkbox = '<label class="tags selected" for="new-tag"><input type="checkbox" id="new-tag" name="' + field_name + '" value="' + checkbox_value + '" />' + checkbox_value + '</label>';
+				
+				$('a.add-tag').remove();
+				$('.add-tag-input').remove();
+				$(checkbox).insertBefore(root_element);
+				$(root_element).show();
+				return false;
+		    }
+		});
+
 		return false;
 	});
 

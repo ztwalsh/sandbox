@@ -11,7 +11,7 @@
 		?>
 	</head>
 	<body>
-		<img src="images/abt-header.png" height="auto" width="1440" />
+		<div class="abt-header"></div>
 		<div class="wrapper">
 			<h1 class="headline1">Thank you!</h1>
 			<p>We'll process your review. Accepted reviews will be posted within 3&ndash;5 business days.</p>

@@ -448,6 +448,14 @@ input.caption {
 
 
 @media screen and (max-width: 525px) {
+	.abt-header {
+		background: url('../images/abt-header-small.png') no-repeat;
+		background-size: 100% auto;
+		height: 110px;
+		margin: 0 auto;
+		width: 100%;
+	}
+
 	label.tags {
 		margin: 0 0 5px 0;
 		width: 100%;
