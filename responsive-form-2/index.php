@@ -126,7 +126,7 @@
 					</div>
 				</section>
 				<section class="cf">
-					<label class="main drop-inputs" for="accessories"><input type="checkbox" class="small-check" id="accessories" /> You Recommend Accessories</label>
+					<label class="main drop-inputs" for="accessories"><input type="checkbox" class="small-check" id="accessories" /> Do you recommend any accessories?</label>
 					<div class="input-group">
 						<p>List the names of the accessories you recommend.</p>
 						<input class="text" type="text" />
@@ -135,7 +135,7 @@
 					</div>
 				</section>
 				<section class="cf">
-					<label class="main drop-inputs" for="similar"><input type="checkbox" class="small-check" id="similar" /> You Own Similar Products</label>
+					<label class="main drop-inputs" for="similar"><input type="checkbox" class="small-check" id="similar" /> Do you own any similar products?</label>
 					<div class="input-group">
 						<p>List the names of these products.</p>
 						<input class="text" type="text" />
@@ -171,7 +171,7 @@
 				</section>
 				<section>
 					<p><?php primary_submit('Submit Review'); ?></p>
-					<p class="legal">Your review may end up on the Ace Hardware Website as well as Buzillions.com, a network site that informs the shopping community. Read our privacy policy and terms of use for more details.</p>
+					<p class="legal">By submitting, you agree to our <a href="javascript:showSmallPopup('http://www.powerreviews.com/legal/terms_of_use_en_US.html');">Terms</a>, and that you have read our <a href="javascript:showSmallPopup('http://www.powerreviews.com/legal/privacy_policy_en_US.html');">Privacy Policy</a>.</p>
 				</section>
 			</form>
 		</div>

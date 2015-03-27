@@ -2,7 +2,7 @@ body {
 	-webkit-text-size-adjust: 100%;
 	color: #666666;
 	font-family: helvetica, arial, sans;
-	font-size: 14px;
+	font-size: 15px;
 	line-height: 150%;
 }
 
@@ -147,8 +147,9 @@ hr {
 }
 
 .filter {
-	border-top: 1px solid #dddddd;
-	padding: 20px 0 10px 0;
+	border-bottom: 1px solid #dddddd;
+	margin-bottom: 20px;
+	padding-bottom: 20px;
 }
 
 .filter h4 {
@@ -197,7 +198,6 @@ hr {
 	background: #f6f6f6;
 	color: #303533;
 	font-weight: bold;
-	margin-bottom: 30px;
 	padding: 10px 15px;
 }
 
@@ -269,4 +269,35 @@ hr {
 #filter-feedback h5 a:hover {
 	background: #fbb817;
 	color: #303533;
+}
+
+@media screen and (max-width: 590px) {
+	.divider-count {
+		float: none;
+	}
+
+	.divider-sort {
+		float: none;
+		text-align: center;
+	}
+
+	.divider-sort span {
+		display: none;
+	}
+
+	.divider-sort select {
+		box-sizing: border-box;
+		width: 100%;
+	}
+
+	.review-author {
+		float: none;
+		padding-bottom: 10px;
+		width: 100%;
+	}
+
+	.review-content {
+		float: none;
+		width: 100%;
+	}
 }

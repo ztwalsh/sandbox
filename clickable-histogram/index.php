@@ -34,33 +34,33 @@
 					</span>
 				</div>
 			</div>
-			<div class="wrapper-dark">
+			<div class="wrapper-dark" id="buckets">
 				<section class="cf">
 					<div class="tag">
 						<h3>Rating Breakdown</h3>
 						<table class="histogram">
 							<tr id="5" class="distro-bar">
-								<td class="rating">5-star</td>
+								<td class="rating">5 stars</td>
 								<td><div class="bar"><div style="width: 58%;"></div></div></td>
 								<td class="count">25</td>
 							</tr>
 							<tr id="4" class="distro-bar">
-								<td class="rating">4-star</td>
+								<td class="rating">4 stars</td>
 								<td><div class="bar"><div style="width: 14%;"></div></div></td>
 								<td class="count">7</td>
 							</tr>
 							<tr id="3" class="distro-bar">
-								<td class="rating">3-star</td>
+								<td class="rating">3 stars</td>
 								<td><div class="bar"><div style="width: 11%;"></div></div></td>
 								<td class="count">5</td>
 							</tr>
 							<tr id="2" class="inactive">
-								<td class="rating">2-star</td>
+								<td class="rating">2 stars</td>
 								<td><div class="bar"></div></td>
 								<td class="count">0</td>
 							</tr>
 							<tr id="1" class="distro-bar">
-								<td class="rating">1-star</td>
+								<td class="rating">1 star</td>
 								<td><div class="bar"><div style="width: 14%;"></div></div></td>
 								<td class="count">7</td>
 							</tr>
@@ -85,14 +85,10 @@
 				</section>
 			</div>
 			<div class="wrapper">
-				<div id="filter-feedback">
-				</div>
-			</div>
-			<div class="wrapper">
 				<div class="reviews-divider cf">
 					<div class="divider-count">Reviewed by 44 customers</div>
 					<div class="divider-sort">
-						Sort by 
+						<span>Sort by </span>
 						<select>
 							<option>Newest</option>
 							<option>Oldest</option>
@@ -101,6 +97,10 @@
 							<option>Most Helpful</option>
 						</select>
 					</div>
+				</div>
+			</div>
+			<div class="wrapper">
+				<div id="filter-feedback">
 				</div>
 			</div>
 			<div class="wrapper">

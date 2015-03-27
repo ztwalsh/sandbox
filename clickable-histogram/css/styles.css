@@ -49,7 +49,8 @@
 }
 
 .tag ul {
-	font-size: 12px;
+	font-size: 14px;
+	line-height: 1.8;
 	padding: 15px;
 }
 
@@ -80,13 +81,13 @@ tr:hover {
 
 td {
 	line-height: 1;
-	padding-bottom: 11px;
+	padding-bottom: 2px;
 	vertical-align: middle;
 }
 
 td.rating {
 	color: #4a99ca;
-	width: 40px;
+	width: 48px;
 }
 
 td.rating i {
@@ -97,7 +98,7 @@ td.rating i {
 td.count {
 	color: #999999;
 	font-size: 0.875em;
-	width: 30px;
+	width: 20px;
 }
 
 tr.inactive td.rating,
@@ -106,15 +107,18 @@ tr.inactive td.count {
 }
 
 td .bar {
-	background: #eeeeee;
-	border-bottom: 1px solid #dddddd;
+	background: #f6f6f6;
+	/*border-bottom: 1px solid #dddddd;*/
+	-moz-box-shadow:    inset 0 0 3px #aaaaaa;
+   	-webkit-box-shadow: inset 0 0 3px #aaaaaa;
+   	box-shadow:         inset 0 0 3px #aaaaaa;
 	border-radius: 2px;
 	line-height: 1;
-	height: 16px;
+	height: 24px;
 }
 
 td .bar > div {
-	background: #f7941d;
+	background: linear-gradient(#f4ad58, #f7941d);
 	border-top-left-radius: 3px;
 	border-bottom-left-radius: 3px;
 	height: 100%;
@@ -122,13 +126,13 @@ td .bar > div {
 }
 
 tr:hover td .bar,
-tr td.on {
+tr.on td > div{
 	background: #dddddd;
 }
 
 tr:hover td .bar > div,
-tr td.on > div {
-	background: #c93a14;
+tr.on td .bar > div {
+	background: linear-gradient(#E99B3E, #CF7912);
 }
 
 tr.inactive:hover {
@@ -140,7 +144,7 @@ tr.inactive:hover td .bar {
 }
 
 .off {
-	opacity: 0.2;
+	/*opacity: 0.2;*/
 }
 
 .collapse h3 i {
@@ -183,6 +187,14 @@ tr.inactive:hover td .bar {
 
 	h3 {
 		padding: 0;
+	}
+
+	table.histogram {
+		padding: 10px 10px 10px 10px;
+	}
+
+	td .bar {
+		height: 35px;
 	}
 
 	.collapse h3:hover {

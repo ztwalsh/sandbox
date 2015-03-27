@@ -30,6 +30,25 @@ $(document).ready(function () {
 		$('.rating-text').text(rating_text);
 	});
 
+	// Rating Text
+	$('.rating input[type=radio]').mouseover(function() {
+		var selection = $(this).attr('id');
+
+		if (selection == 'star_1') {
+			var rating_text = 'Not good.';
+		} else if (selection == 'star_2') {
+			var rating_text = 'Nothing special.';
+		} else if (selection == 'star_3') {
+			var rating_text = 'Average, ordinary.';
+		} else if (selection == 'star_4') {
+			var rating_text = 'Good stuff.';
+		} else if (selection == 'star_5') {
+			var rating_text = 'Perfect! Doesn\'t get better.';
+		}
+
+		$('.rating-text').text(rating_text);
+	});
+
 	// Add a Checkbox
 	$('a.add-check').click(function() {
 		var field_add = '<input type="text" class="add-tag-input" /><a class="add-tag" href="#">Add</a>';
