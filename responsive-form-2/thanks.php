@@ -24,18 +24,18 @@
 					</div>
 					<h1 class="headline1"><?php echo stripslashes($_SESSION['review']['headline']); ?></h1>
 					By <?php echo stripslashes($_SESSION['review']['firstname']); ?> from <?php echo stripslashes($_SESSION['review']['location']); ?> on <?php echo date('m/d/Y'); ?>
+					<div class="tags cf">
+						<div class="span3"><?php show_selections($_SESSION['review']['pros'], 'Pros'); ?></div>
+						<div class="span3"><?php show_selections($_SESSION['review']['cons'], 'Cons'); ?></div>
+						<div class="span3"><?php show_selections($_SESSION['review']['best'], 'Best for'); ?></div>
+					</div>
 				</header>
-				<section class="content">
+				<section>
 					<?php
 						echo stripslashes($_SESSION['review']['product_comments']);
 					?>
 				</section>
 				<section class="content">
-					<?php 
-						show_selections($_SESSION['review']['pros'], 'Pros');
-						show_selections($_SESSION['review']['cons'], 'Cons');
-						show_selections($_SESSION['review']['best'], 'Best for');
-					?>
 					<h3 class="headline3">Bottom Line</h3>
 					<p class="small">
 					<?php

@@ -31,8 +31,8 @@ $(document).ready(function () {
 	});
 
 	// Rating Text
-	$('.rating input[type=radio]').mouseover(function() {
-		var selection = $(this).attr('id');
+	$('.star').hover(function() {
+		var selection = $(this).children('input').attr('id');
 
 		if (selection == 'star_1') {
 			var rating_text = 'Not good.';
@@ -107,7 +107,7 @@ $(document).ready(function () {
         	left = 0;
     	}
     	if (left < 20) {
-    		$('#counter').text(left + ' character left');
+    		$('#counter').text(left + ' characters left');
     	}
 	});
 
@@ -150,5 +150,12 @@ $(document).ready(function () {
 		} else {
 			$(this).parent().next('.input-group').hide()
 		}
+	});
+
+	$('.legal_link').popupWindow({ 
+		height:500, 
+		width:800, 
+		top:50, 
+		left:50 
 	});
 });

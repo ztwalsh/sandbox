@@ -116,17 +116,12 @@
 	function show_selections($data, $title) {
 		if ($data) {
 			$count = count($data);
-			$i = 1;
 			echo '<h3 class="headline3">'.$title.'</h3>';
-			echo '<p class="small">';
+			echo '<ul class="small">';
 			foreach($data as $item) {
-				echo $item;
-				if ($i < $count) {
-					echo ', ';
-				}
-				$i++;
+				echo '<li>'.$item.'</li>';
 			}
-			echo '</p>';
+			echo '</ul>';
 		}
 	}
 

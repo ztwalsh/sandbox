@@ -24,6 +24,7 @@ body {
 	color: #666666;
 	font-family: Helvetica, Arial, sans-serif;
 	font-size: 14px;
+	line-height: 1.5;
 }
 
 .abt-header {
@@ -46,6 +47,10 @@ body {
 	margin-bottom: 20px;
 	padding-bottom: 20px;
 	width: 100%;
+}
+
+ul {
+	list-style-type: none;
 }
 
 header {
@@ -78,6 +83,21 @@ section:last-child {
 	padding-top: 20px;
 }
 
+.tags {
+	line-height: 1.5;
+	padding: 20px 0;
+}
+
+.span3 {
+	float: left;
+	margin-right: 1%;
+	width: 32%;
+}
+
+.span3:last-child {
+	margin: 0;
+}
+
 .headline1,
 .headline3 {
 	color: #000000;
@@ -86,7 +106,14 @@ section:last-child {
 
 .headline3 {
 	font-size: 14px;
-	padding-bottom: 5px;
+	padding-bottom: 8px;
+}
+
+.tags .span3 .headline3 {
+	background: #f6f6f6;
+	border-radius: 3px;
+	margin-bottom: 10px;
+	padding: 5px;
 }
 
 p {
@@ -254,6 +281,7 @@ div.star-selected {
 	float: right;
 	display: inline-block;
 	cursor: pointer;
+	line-height: 1;
 	margin-right: 5px;
 	padding: 8px 8px 5px 8px;
 }
@@ -454,6 +482,20 @@ input.caption {
 		height: 110px;
 		margin: 0 auto;
 		width: 100%;
+	}
+
+	.span3 {
+		float: none;
+		margin: 0;
+		width: 100%;
+	}
+
+	ul {
+		padding-bottom: 10px;
+	}
+
+	.span3:last-child {
+		margin: 0;
 	}
 
 	label.tags {

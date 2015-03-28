@@ -66,7 +66,7 @@
 					</div>
 					<div class="span4">
 						<?php display_error('product_comments'); ?>
-						<?php form_textarea('product_comments', 'How you use the product? What things are great about it? What things aren\'t so great about it?'); ?>
+						<?php form_textarea('product_comments', 'How do you use the product? What things are great about it? What things aren\'t so great about it?'); ?>
 					</div>
 				</section>
 				<section class="cf">
@@ -100,7 +100,7 @@
 				<section class="cf">
 					<div class="span2">
 						<label class="main">Cons</label>
-						<p>Select all that apply<br />&nbsp;</p>
+						<p>Select all that apply from this list<br />&nbsp;</p>
 					</div>
 					<div class="span4">
 						<?php form_checkbox('cons[]', 'Confusing / Bad remote control', 'bad_remote'); ?><?php form_checkbox('cons[]', 'Difficult to Set Up', 'difficult_setup'); ?><?php form_checkbox('cons[]', 'Glare', 'glare'); ?><?php form_checkbox('cons[]', 'Poor Connection Options', 'poor_connections'); ?><?php form_checkbox('cons[]', 'Poor Image Quality', 'poor_image_quality'); ?><?php form_checkbox('cons[]', 'Poor Reception / Weak Antenna', 'poor_reception'); ?><?php form_checkbox('cons[]', 'Poor Sound Quality', 'poor_sound'); ?>
@@ -110,7 +110,7 @@
 				<section class="cf">
 					<div class="span2">
 						<label class="main">Best Uses</label>
-						<p>Select all that apply<br />&nbsp;</p>
+						<p>Select all that apply from this list<br />&nbsp;</p>
 					</div>
 					<div class="span4">
 						<?php form_checkbox('best[]', 'Attached to a Computer', 'computer'); ?><?php form_checkbox('best[]', 'Bedroom', 'bedroom'); ?><?php form_checkbox('best[]', 'Business', 'business'); ?><?php form_checkbox('best[]', 'Home', 'home'); ?><?php form_checkbox('best[]', 'Home Theater', 'home_theater'); ?><?php form_checkbox('best[]', 'Movies', 'movies'); ?><?php form_checkbox('best[]', 'Video Games', 'video_games'); ?><?php form_checkbox('best[]', 'Wall Mounting', 'wall'); ?>
@@ -170,8 +170,8 @@
 					</p>
 				</section>
 				<section>
+					<p class="legal">By submitting, you agree to our <a class="legal_link" href="http://www.powerreviews.com/legal/terms_of_use_en_US.html">Terms</a>, and that you have read our <a class="legal_link" href="http://www.powerreviews.com/legal/privacy_policy_en_US.html">Privacy Policy</a>.</p>
 					<p><?php primary_submit('Submit Review'); ?></p>
-					<p class="legal">By submitting, you agree to our <a href="javascript:showSmallPopup('http://www.powerreviews.com/legal/terms_of_use_en_US.html');">Terms</a>, and that you have read our <a href="javascript:showSmallPopup('http://www.powerreviews.com/legal/privacy_policy_en_US.html');">Privacy Policy</a>.</p>
 				</section>
 			</form>
 		</div>
