@@ -90,7 +90,7 @@
 				<section class="cf">
 					<div class="span2">
 						<label class="main">Pros</label>
-						<p>Select all that apply from this list<br />&nbsp;</p>
+						<p>Select all that apply<br />&nbsp;</p>
 					</div>
 					<div class="span4">
 						<?php form_checkbox('pros[]', 'All the connections I could ever need', 'all_connections'); ?><?php form_checkbox('pros[]', 'Best looking TV out there', 'best_looking'); ?><?php form_checkbox('pros[]', 'Easy Set Up', 'easy'); ?><?php form_checkbox('pros[]', 'Energy Efficient', 'energy_efficient'); ?><?php form_checkbox('pros[]', 'Good Remote Control', 'good_remote'); ?><?php form_checkbox('pros[]', 'Great Picture Quality', 'great_picture_quality'); ?><?php form_checkbox('pros[]', 'Great Sound Quality', 'great_sound_quality'); ?><?php form_checkbox('pros[]', 'LED Backlit', 'led'); ?><?php form_checkbox('pros[]', 'Reduced Glare', 'reduced_glare'); ?>
@@ -100,7 +100,7 @@
 				<section class="cf">
 					<div class="span2">
 						<label class="main">Cons</label>
-						<p>Select all that apply from this list<br />&nbsp;</p>
+						<p>Select all that apply<br />&nbsp;</p>
 					</div>
 					<div class="span4">
 						<?php form_checkbox('cons[]', 'Confusing / Bad remote control', 'bad_remote'); ?><?php form_checkbox('cons[]', 'Difficult to Set Up', 'difficult_setup'); ?><?php form_checkbox('cons[]', 'Glare', 'glare'); ?><?php form_checkbox('cons[]', 'Poor Connection Options', 'poor_connections'); ?><?php form_checkbox('cons[]', 'Poor Image Quality', 'poor_image_quality'); ?><?php form_checkbox('cons[]', 'Poor Reception / Weak Antenna', 'poor_reception'); ?><?php form_checkbox('cons[]', 'Poor Sound Quality', 'poor_sound'); ?>
@@ -110,7 +110,7 @@
 				<section class="cf">
 					<div class="span2">
 						<label class="main">Best Uses</label>
-						<p>Select all that apply from this list<br />&nbsp;</p>
+						<p>Select all that apply<br />&nbsp;</p>
 					</div>
 					<div class="span4">
 						<?php form_checkbox('best[]', 'Attached to a Computer', 'computer'); ?><?php form_checkbox('best[]', 'Bedroom', 'bedroom'); ?><?php form_checkbox('best[]', 'Business', 'business'); ?><?php form_checkbox('best[]', 'Home', 'home'); ?><?php form_checkbox('best[]', 'Home Theater', 'home_theater'); ?><?php form_checkbox('best[]', 'Movies', 'movies'); ?><?php form_checkbox('best[]', 'Video Games', 'video_games'); ?><?php form_checkbox('best[]', 'Wall Mounting', 'wall'); ?>
@@ -128,7 +128,7 @@
 				<section class="cf">
 					<label class="main drop-inputs" for="accessories"><input type="checkbox" class="small-check" id="accessories" /> Do you recommend any accessories?</label>
 					<div class="input-group">
-						<p>List the names of the accessories you recommend.</p>
+						<p>List the names of the accessories you recommend</p>
 						<input class="text" type="text" />
 						<input class="text" type="text" />
 						<input class="text" type="text" />
@@ -137,7 +137,7 @@
 				<section class="cf">
 					<label class="main drop-inputs" for="similar"><input type="checkbox" class="small-check" id="similar" /> Do you own any similar products?</label>
 					<div class="input-group">
-						<p>List the names of these products.</p>
+						<p>List the names of the products you own</p>
 						<input class="text" type="text" />
 						<input class="text" type="text" />
 						<input class="text" type="text" />
@@ -170,7 +170,7 @@
 					</p>
 				</section>
 				<section>
-					<p class="legal">By submitting, you agree to our <a class="legal_link" href="http://www.powerreviews.com/legal/terms_of_use_en_US.html">Terms</a>, and that you have read our <a class="legal_link" href="http://www.powerreviews.com/legal/privacy_policy_en_US.html">Privacy Policy</a>.</p>
+					<p class="legal">By submitting, you agree to our <a class="legal_link" href="http://www.powerreviews.com/legal/terms_of_use_en_US.html">Terms of Use</a> and that you have read our <a class="legal_link" href="http://www.powerreviews.com/legal/privacy_policy_en_US.html">Privacy Policy</a>.</p>
 					<p><?php primary_submit('Submit Review'); ?></p>
 				</section>
 			</form>
