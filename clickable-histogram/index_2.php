@@ -39,11 +39,11 @@
 					<div class="tag">
 						<h3>Pros</h3>
 						<ul>
-							<li>Even heat (5)</li>
-							<li>Easy to use (4)</li>
-							<li>Short grill time (4)</li>
-							<li>Craftsmanship (3)</li>
-							<li>Durable (3)</li>
+							<li>Even heat (7)</li>
+							<li>Easily Portable (6)</li>
+							<li>Large Cooking Space (6)</li>
+							<li>Natural Gas-Ready (5)</li>
+							<li>Easy to Assemble (5)</li>
 						</ul>
 					</div>
 					<div class="tag">
@@ -55,7 +55,7 @@
 					<div class="tag">
 						<h3>Best Uses</h3>
 						<ul>
-							<li>For self/couple (8)</li>
+							<li>Family meals (8)</li>
 							<li>Small gatherings (7)</li>
 							<li>Great searing (3)</li>
 						</ul>

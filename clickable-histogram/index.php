@@ -69,11 +69,11 @@
 					<div class="tag collapse">
 						<h3>Pros <i class="fa fa-angle-down"></i></h3>
 						<ul>
-							<li>Good image quality (7)</li>
-							<li>Image stabilization (6)</li>
-							<li>Large clear LCD (6)</li>
-							<li>Easy to use (5)</li>
-							<li>Fast / accurate auto-focus (5)</li>
+							<li>Even heat (7)</li>
+							<li>Easily Portable (6)</li>
+							<li>Large Cooking Space (6)</li>
+							<li>Natural Gas-Ready (5)</li>
+							<li>Easy to Assemble (5)</li>
 						</ul>
 					</div>
 					<div class="tag collapse">
