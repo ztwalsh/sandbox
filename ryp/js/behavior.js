@@ -1,11 +1,11 @@
 $(document).ready(function () {
 	// Highlighted Radio
 	$('input[type=radio]').change(function() {
-		var tmp=$(this).attr('name');
+		var tmp = $(this).attr('name');
     	$('input[name="'+tmp+'"]').parent('label').removeClass('selected');
 		$(this).closest('label').toggleClass('selected', this.selected);
-		$(this).parent().parent().next().slideDown(100);
-		$(this).parent().parent().next().children('textarea').focus();
+		$(this).parent().parent().parent().parent().next().slideDown(100);
+		$(this).parent().parent().parent().parent().next().children('.product-comments-wrapper').children('textarea').focus();
 	});
 
 
@@ -52,9 +52,16 @@ $(document).ready(function () {
 	// Submit a review
 	$('button.primary').click(function (event) {
 		event.preventDefault();
-		$(this).parent().parent().parent().html('<h3 class="headline1 success"><i class="fa fa-check-circle-o"></i> Thank you for your review!</h3><p>Your review will be posted in 3&ndash;5 business days.</p>');
-
-	})
+		var windowWidth = $( window ).width();
+		$(this).parent().parent().hide();
+		$(this).parent().parent().prev().children('.product-title').html('<h3 class="headline1 success">Thank you for your review!</h3><p>It will be posted in 3&ndash;5 business days.</p>');
+		if (windowWidth < 510) {
+			$('html, body').animate({
+	    		scrollTop: $(this).parent().parent().prev().parent().parent().offset().top
+			}, 200);
+		}
+		$(this).parent().parent().prev().parent().parent().delay(2500).fadeOut(500);
+	});
 
 	// Inputs for images
 	function readURL(input) {

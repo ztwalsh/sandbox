@@ -1,4 +1,4 @@
-/* line 1, ../scss/_reset.scss */
+/* GLOBAL RESET */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { 
 	margin: 0;
 	padding: 0;
@@ -27,6 +27,18 @@ body {
 	line-height: 1.5;
 }
 
+ul {
+	list-style-type: none;
+}
+
+
+
+
+
+
+
+
+/*STRUCTURE*/
 .wrapper {
 	box-sizing: border-box;
 	margin: 20px auto;
@@ -43,15 +55,25 @@ body {
 	width: 100%;
 }
 
-ul {
-	list-style-type: none;
+
+
+
+
+
+
+
+/* PRODUCT LIST */
+section.product {
+	border: 1px solid #dddddd;
+	border-radius: 3px;
+	box-sizing: border-box;
+	margin-bottom: 20px;
+	width: 100%;
 }
 
-section {
-	border: 1px solid #eeeeee;
+section.product-header {
 	box-sizing: border-box;
 	display: table;
-	margin-bottom: 20px;
 	padding: 20px;
 	width: 100%;
 }
@@ -62,25 +84,89 @@ section {
 	width: 130px;
 }
 
-.product-form {
+.product-image img {
+	max-width: 150px;
+}
+
+.product-title {
 	display: table-cell;
 	padding-left: 30px;
 	vertical-align: middle;
 }
 
-.product-form-expand {
+.purchase-date {
+	background: url('../images/checkmark_34x34.png') no-repeat;
+	background-size: 16px 16px;
+	background-position-y: 2px;
+	color: #999999;
+	padding-left: 20px;
+}
+
+section.product-comments {
 	display: none;
 }
+
+.product-comments-wrapper {
+	padding: 0 20px 20px 20px;
+}
+
+.image-container {
+	border-radius: 3px;
+	padding: 10px 0 0 0;
+}
+
+.product-submit-wrapper {
+	background: #f6f6f6;
+	border-top: 1px solid #dddddd;
+	padding: 20px;
+}
+
+.author {
+	color: #aaaaaa;
+	padding-left: 10px;
+}
+
+@media screen and (max-width: 510px) {
+	section.product-header {
+		display: block;
+		padding: 20px;
+		text-align: center;
+		width: 100%;
+	}
+
+	.product-image {
+		display: block;
+		width: 100%;
+	}
+
+	.product-title {
+		display: block;
+		padding: 0;
+	}
+
+	.purchase-date {
+		display: inline-block;
+	}
+}
+
+
+
+
+
+
+
+
+/* TYPE STYLES */
 
 .headline1,
 .headline3 {
 	color: #303533;
 	font-size: 28px;
+	line-height: 1;
 }
 
 .headline3 {
 	font-size: 16px;
-	padding-bottom: 10px;
 }
 
 .headline1 i {
@@ -102,15 +188,6 @@ p.legal {
 	line-height: 1.2;
 }
 
-.purchase-date {
-	color: #999999;
-}
-
-.purchase-date i {
-	color: #96c153;
-	font-size: 17px;
-}
-
 .success {
 	color: #96c153;
 }
@@ -130,17 +207,6 @@ a {
 	overflow: hidden;
 	display: inline-block;
 	padding-bottom: 5px;
-}
-
-.image-container {
-	border-radius: 3px;
-	margin-bottom: 20px;
-	padding: 5px 0;
-}
-
-.author {
-	color: #aaaaaa;
-	padding-left: 10px;
 }
 
 label.star,

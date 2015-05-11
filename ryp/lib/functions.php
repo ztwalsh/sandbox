@@ -174,22 +174,27 @@
 
 
 	function show_review_item($image, $title, $id, $date) {
-		echo '<section class="cf">';
-			echo '<div class="product-image">';
-				echo '<img height="auto" src="'.$image.'" width="100%" />';
-			echo '</div>';
-			echo '<div class="product-form">';
-				echo '<h3 class="headline3">'.$title.'</h3>';
-				echo '<form action="index.php" id="form_1" method="post">';
-					echo '<span class="rating cf">';
-						form_stars('rating', '5', 'star_5_'.$id);
-						form_stars('rating', '4', 'star_4'.$id);
-						form_stars('rating', '3', 'star_3'.$id);
-						form_stars('rating', '2', 'star_2'.$id);
-						form_stars('rating', '1', 'star_1'.$id);
+		echo '<section class="product cf">';
+			echo '<form action="index.php" id="form_1" method="post">';
+				echo '<section class="product-header">';
+					echo '<div class="product-image">';
+						echo '<img height="auto" src="'.$image.'" width="100%" />';
+					echo '</div>';
+					echo '<div class="product-title">';
+						echo '<h3 class="headline3">'.$title.'</h3>';
+						echo '<p class="purchase-date">Purchased on '.$date.'</p>';
+						echo '<span class="rating cf">';
+							form_stars('rating', '5', 'star_5_'.$id);
+							form_stars('rating', '4', 'star_4'.$id);
+							form_stars('rating', '3', 'star_3'.$id);
+							form_stars('rating', '2', 'star_2'.$id);
+							form_stars('rating', '1', 'star_1'.$id);
 
-					echo '</span>';
-					echo '<div class="product-form-expand">';
+						echo '</span>';
+					echo '</div>';
+				echo '</section>';
+				echo '<section class="product-comments">';
+					echo '<div class="product-comments-wrapper">';
 						form_textarea('product_comments', 'How do you use the product? What things are great about it? What things aren\'t so great about it?');
 						echo '<div class="image-container">';
 							echo '<input class="file" type="file" id="file_upload">';
@@ -197,11 +202,13 @@
 								echo 'Add an Image <i class="fa fa-plus"></i>';
 							echo '</label> ';
 						echo '</div>';
+					echo '</div>';
+					echo '<div class="product-submit-wrapper">';
 						primary_submit('Submit');
 						echo '<span class="author">Posted as Zach Walsh</span>';
 					echo '</div>';
-				echo '</form>';
-			echo '</div>';
+				echo '</section>';
+			echo '</form>';
 		echo '</section>';
 	}
 ?>
