@@ -36,10 +36,10 @@ body {
 }
 
 .header {
-	background: #f6f6f6;
+	box-sizing: border-box;
 	border-radius: 3px;
 	margin-bottom: 20px;
-	padding: 10px 15px;
+	padding: 10px 0;
 	width: 100%;
 }
 
@@ -48,11 +48,14 @@ ul {
 }
 
 section {
-	border-bottom: 1px solid #eeeeee;
+	border: 1px solid #eeeeee;
+	box-sizing: border-box;
 	display: table;
-	padding: 10px 0 25px 0;
+	margin-bottom: 20px;
+	padding: 20px;
 	width: 100%;
 }
+
 .product-image {
 	display: table-cell;
 	vertical-align: top;
@@ -71,12 +74,13 @@ section {
 
 .headline1,
 .headline3 {
-	color: #000000;
-	font-size: 20px;
+	color: #303533;
+	font-size: 28px;
 }
 
 .headline3 {
 	font-size: 16px;
+	padding-bottom: 10px;
 }
 
 .headline1 i {
@@ -126,6 +130,17 @@ a {
 	overflow: hidden;
 	display: inline-block;
 	padding-bottom: 5px;
+}
+
+.image-container {
+	border-radius: 3px;
+	margin-bottom: 20px;
+	padding: 5px 0;
+}
+
+.author {
+	color: #aaaaaa;
+	padding-left: 10px;
 }
 
 label.star,
@@ -205,6 +220,7 @@ input.add-tag-input {
 }
 
 textarea {
+	margin: 0;
 	min-height: 150px;
 }
 
@@ -238,18 +254,21 @@ input.caption {
 	width: 68%;
 }
 
-.trash{
-	border: 1px solid #c0451e;
-	border-bottom: 2px solid #c0451e;
-	border-radius: 3px;
-	background: #f05e24;
-	color: #ffffff;
+.trash {
+	border: 0;
+	border-radius: 2px;
+	background: #f9f9f9;
+	color: #4a99ca;
 	cursor: pointer;
 	float: right;
 	font-size: 24px;
 	font-weight: bold;
 	margin-top: 13px;
-	padding: 8px 12px 6px 12px;
+	padding: 5px 18px 3px 18px;
+}
+
+.trash:hover {
+	background: #eeeeee;
 }
 
 ::-webkit-input-placeholder {  
@@ -276,6 +295,7 @@ input.caption {
 	background: #f05e24;
 	color: #ffffff;
 	cursor: pointer;
+	display: inline-block;
 	font-size: 16px;
 	font-weight: bold;
 	padding: 10px 15px;
@@ -292,7 +312,6 @@ input.caption {
 	color: #4a99ca;
 	font-size: 14px;
 	font-weight: normal;
-	padding: 14px 15px 11px 15px;
 }
 
 .secondary:hover {

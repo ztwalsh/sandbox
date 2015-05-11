@@ -180,7 +180,6 @@
 			echo '</div>';
 			echo '<div class="product-form">';
 				echo '<h3 class="headline3">'.$title.'</h3>';
-				echo '<p class="purchase-date"><i class="fa fa-check-circle-o"></i> Purchased on '.$date.'</p>';
 				echo '<form action="index.php" id="form_1" method="post">';
 					echo '<span class="rating cf">';
 						form_stars('rating', '5', 'star_5_'.$id);
@@ -192,11 +191,14 @@
 					echo '</span>';
 					echo '<div class="product-form-expand">';
 						form_textarea('product_comments', 'How do you use the product? What things are great about it? What things aren\'t so great about it?');
-						echo '<input class="file" type="file" id="file_upload">';
-						echo '<label for="file_upload" class="secondary action add-image">';
-							echo 'Add an Image <i class="fa fa-plus"></i>';
-						echo '</label> ';
+						echo '<div class="image-container">';
+							echo '<input class="file" type="file" id="file_upload">';
+							echo '<label for="file_upload" class="secondary action add-image">';
+								echo 'Add an Image <i class="fa fa-plus"></i>';
+							echo '</label> ';
+						echo '</div>';
 						primary_submit('Submit');
+						echo '<span class="author">Posted as Zach Walsh</span>';
 					echo '</div>';
 				echo '</form>';
 			echo '</div>';
