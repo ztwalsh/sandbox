@@ -116,7 +116,7 @@ section.product-comments {
 }
 
 .product-submit-wrapper {
-	background: #f6f6f6;
+	background: #f9f9f9;
 	border-top: 1px solid #dddddd;
 	padding: 20px;
 }
@@ -372,7 +372,7 @@ input.caption {
 }
 
 .secondary {
-	background: #f6f6f6;
+	background: #f9f9f9;
 	border: 1px solid #dddddd;
 	border-bottom: 2px solid #dddddd;
 	color: #4a99ca;
@@ -395,7 +395,7 @@ input.caption {
 }
 
 .add-tag:hover {
-	background: #f6f6f6;
+	background: #f9f9f9;
 }
 
 
