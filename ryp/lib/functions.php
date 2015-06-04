@@ -191,11 +191,17 @@
 							form_stars('rating', '1', 'star_1'.$id);
 
 						echo '</span>';
+						echo '<div class="start-helper">Select a rating to start your review</div>';
 					echo '</div>';
 				echo '</section>';
 				echo '<section class="product-comments">';
 					echo '<div class="product-comments-wrapper">';
+						echo '<p>';
 						form_textarea('product_comments', 'How do you use the product? What things are great about it? What things aren\'t so great about it?');
+						echo '</p>';
+						echo '<p>';
+						form_input('headline', '', 'headline', 'Add a headline for the review');
+						echo '</p>';
 						echo '<div class="image-container">';
 							echo '<input class="file" type="file" id="file_upload">';
 							echo '<label for="file_upload" class="secondary action add-image">';
@@ -204,8 +210,8 @@
 						echo '</div>';
 					echo '</div>';
 					echo '<div class="product-submit-wrapper">';
-						primary_submit('Submit');
-						echo '<span class="author">Posted as Zach Walsh</span>';
+						primary_submit('Submit Review');
+						echo '<span class="author"><input type="checkbox" checked />Post as Dan Smith</span>';
 					echo '</div>';
 				echo '</section>';
 			echo '</form>';

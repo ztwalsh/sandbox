@@ -5,48 +5,7 @@ $(document).ready(function () {
     	$('input[name="'+tmp+'"]').parent('label').removeClass('selected');
 		$(this).closest('label').toggleClass('selected', this.selected);
 		$(this).parent().parent().parent().parent().next().slideDown(100);
-		$(this).parent().parent().parent().parent().next().children('.product-comments-wrapper').children('textarea').focus();
-	});
-
-
-	// Rating Text
-	$('.rating input[type=radio]').click(function() {
-		var selection = $('.rating input[type=radio]:checked').attr('id');
-
-		if (selection == 'star_1') {
-			var rating_text = 'Not good.';
-		} else if (selection == 'star_2') {
-			var rating_text = 'Nothing special.';
-		} else if (selection == 'star_3') {
-			var rating_text = 'Average, ordinary.';
-		} else if (selection == 'star_4') {
-			var rating_text = 'Good stuff.';
-		} else if (selection == 'star_5') {
-			var rating_text = 'Perfect! Doesn\'t get better.';
-		}
-
-		$(this).parent().closest('.rating-text').text(rating_text);
-
-		$(this).closest('.product-form-expand').slideToggle();
-	});
-
-	// Rating Text
-	$('.star').hover(function() {
-		var selection = $(this).children('input').attr('id');
-
-		if (selection == 'star_1') {
-			var rating_text = 'Not good.';
-		} else if (selection == 'star_2') {
-			var rating_text = 'Nothing special.';
-		} else if (selection == 'star_3') {
-			var rating_text = 'Average, ordinary.';
-		} else if (selection == 'star_4') {
-			var rating_text = 'Good stuff.';
-		} else if (selection == 'star_5') {
-			var rating_text = 'Perfect! Doesn\'t get better.';
-		}
-
-		$(this).parent().closest('.rating-text').text(rating_text);
+		$(this).parent().parent().parent().parent().next().children('.product-comments-wrapper').children().children('textarea').focus();
 	});
 
 	// Submit a review
