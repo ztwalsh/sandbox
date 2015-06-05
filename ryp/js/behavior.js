@@ -5,7 +5,7 @@ $(document).ready(function () {
     	$('input[name="'+tmp+'"]').parent('label').removeClass('selected');
 		$(this).closest('label').toggleClass('selected', this.selected);
 		$(this).parent().parent().parent().parent().next().slideDown(100);
-		$(this).parent().parent().parent().parent().next().children('.product-comments-wrapper').children().children('textarea').focus();
+		//$(this).parent().parent().parent().parent().next().children('.product-comments-wrapper').children().children('textarea').focus();
 	});
 
 	// Submit a review

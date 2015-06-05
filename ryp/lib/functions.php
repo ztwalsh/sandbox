@@ -211,7 +211,6 @@
 					echo '</div>';
 					echo '<div class="product-submit-wrapper">';
 						primary_submit('Submit Review');
-						echo '<span class="author"><input type="checkbox" checked />Post as Dan Smith</span>';
 					echo '</div>';
 				echo '</section>';
 			echo '</form>';
