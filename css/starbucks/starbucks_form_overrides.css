@@ -1,0 +1,709 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #707070;
+}
+
+a,
+p.tiptoggle a {
+	color: #006241;
+	text-decoration: none;
+}
+
+.prwrapper {
+	border: 1px solid #e6e6e6;
+	box-sizing: border-box;
+	margin: 0 auto;
+	max-width: 600px;
+	padding: 20px;
+	width: 100%;
+}
+
+.printro h1 {
+	color: #000000;
+	font-size: 18px;
+}
+
+.printro p {
+	display: none;
+}
+
+.prMainInstructions {
+	display: none;
+}
+
+.prproductsummary {
+	background: #ffffff;
+	background-image: none;
+	border: 0;
+	border-radius: 3px;
+	width: 100%;
+}
+
+.prproductsummary img {
+	vertical-align: middle;
+	width: 130px;
+}
+
+.prproductsummary h2 {
+	color: #000000;
+	font-size: 18px;
+	vertical-align: middle;
+	width: 73%;
+}
+
+.prproductdescription {
+	display: block;
+}
+
+.prlabel {
+	margin-right: 4%;
+	width: 23%;
+}
+
+.prfieldwrap {
+	border: 0;
+}
+
+#pros,
+#cons,
+#bestuses {
+	display: none;
+}
+
+.prinputgroup .prfieldwrap {
+	background: #ffffff;
+	background-image: none;
+	border-radius: 3px;
+	display: block;
+	padding: 0;
+	width: 73%;
+}
+
+.prfields {
+	padding: 10px;
+}
+
+.prlabel h3 {
+	color: #000000;
+	font-size: 14px;
+}
+
+.inputBox {
+	box-sizing: border-box;
+	color: #707070;
+	font-size: 14px;
+	padding: 5px;
+	width: 100%;
+}
+
+span.show,
+.shown span.hide {
+	background: none;
+	display: inline-block;
+	font-size: 12px;
+	padding: 5px 0 0 0;
+}
+
+.addTags {
+	background: none;
+	margin: 0;
+	padding: 0;
+}
+
+.checkboxes a {
+	color: #707070;
+}
+
+.radioOpt {
+	padding: 0 0 6px 0;
+}
+
+table.radioScale {
+	margin: 0 0 10px -5px;
+}
+
+.prClearRadio {
+	display: none;
+}
+
+#bottomline_click_all_text {
+	display: none;
+}
+
+#bottomline .prfieldwrap .prfields p {
+	display: none;
+}
+
+ul.tabs li {
+	margin-right: 0;
+}
+
+.tabs a,
+.tabs span {
+	background: none;
+	border: 0;
+	color: #4a99ca;
+	font-size: 14px;
+	font-weight: normal;
+	padding: 10px;
+	text-decoration: none;
+}
+
+.tabs a.viewing {
+	background: #ffffff;
+	border: 1px solid #cccccc;
+	border-bottom: 1px solid #ffffff;
+	color: #707070;
+	font-size: 14px;
+	font-weight: normal;
+	padding: 10px;
+	text-decoration: none;
+}
+
+.tabsheet {
+	background: #ffffff;
+	border: 1px solid #cccccc;
+	border-bottom: 0;
+	color: #707070;
+	padding: 10px;
+}
+
+.tabsheet .pr_tabbed_comment_prompts {
+	background: #ffffff;
+	border: 0;
+	font-size: 12px;
+	padding: 0 0 10px 0;
+	width: auto !important;
+}
+
+#pr_tabbed_comment_prompts_bottom {
+	background: #ffffff;
+	border: 1px solid #cccccc;
+	border-top: 0;
+	font-size: 10px;
+	padding: 0 10px 10px 10px;
+	width: auto !important;
+}
+
+#pr_tabbed_comment_prompts_bottom i {
+	font-style: normal;
+}
+
+.tabsheet textarea,
+#experience textarea {
+	box-sizing: border-box;
+	font-size: 14px;
+	margin: 0;
+	width: 100%;
+}
+
+.prwrapper .break .prCImainform {
+	background: #ffffff;
+	border: 0;
+	border-radius: 3px;
+	color: #707070;
+	float: right;
+	line-height: 150%;
+	width: 73%;
+}
+
+.prCImainform h3 {
+	color: #000000;
+	font-size: 14px;
+	margin: 0 0 10px 0;
+}
+
+.prCImainform p,
+.prCIpreview p {
+	font-size: 12px;
+	width: auto;
+}
+
+.prCImainform .actions {
+	bottom: auto;
+	position: static;
+	right: auto;
+	text-align: right;
+}
+
+.prCIcontent {
+	display: none;
+}
+
+.button,
+.button:hover,
+#prBtnContainer button,
+#prPreview button,
+#prSubmit,
+#prSubmit:hover,
+#prEditReview,
+#prEditReview:hover,
+#prCancel,
+#prCancel:hover,
+#prPreview,
+#prPreview:hover,
+#prBtnContainer button,
+#prPreview button {
+	background: #ffffff;
+	border: 2px solid #574c3f;
+	border-radius: 3px;
+	color: #574c3f;
+	cursor: pointer;
+	padding: 5px 15px;
+}
+
+#prPreview button,
+#prBtnContainer button {
+	height: auto;
+}
+
+.button span {
+	background: none;
+	padding: 0;
+}
+
+#prAddImage,
+#prAddImage:hover {
+	color: #ffffff;
+	font-weight: normal;
+	padding: 10px;
+}
+
+.prsubmit.mainform {
+	padding: 20px 0 0 15px;
+}
+
+.rtarrow,
+.lfarrow {
+	padding: 0;
+}
+
+a.button.tagsuggest {
+	max-height: 18px;
+	padding: 9px 10px 3px 10px;
+	top: auto;
+}
+
+a.button.tagsuggest span {
+	padding: 0;
+}
+
+.addInstructions {
+	display: none;
+}
+
+.prfootertext {
+	font-size: 12px;
+}
+
+.prfootertext ul {
+	padding: 0 0 0 18px;
+}
+
+@media screen and (max-width: 460px) {
+	.prproductsummary {
+		display: block;
+		max-height: 100%;
+		text-align: center;
+		width: auto;
+	}
+
+	.prproductsummary img {
+		display: inline-block;
+		float: none;
+		margin: 0;
+		vertical-align: auto;
+		width: 130px;
+	}
+
+	.prproductsummary h2 {
+		display: block;
+		margin-bottom: 0;
+		vertical-align: auto;
+		text-align: center;
+		width: 100%;
+	}
+
+	.prlabel,
+	.prfieldwrap {
+		float: none;
+		text-align: left;
+		width: 100%;
+	}
+
+	.addTags {
+		height: auto;
+		width: 100%;
+	}
+
+	.checkboxes {
+		float: none;
+		margin-bottom: 15px;
+		width: 100%;
+	}
+
+	p.checkitem {
+		margin: 0;
+		text-indent: 0;
+	}
+
+	.checkboxes a {
+		display: block;
+		padding: 5px;
+		margin-bottom: 15px;
+	}
+
+	p.checkitem a.checkbox {
+		border: 1px solid #ffffff;
+		border-radius: 3px;
+		cursor: pointer;
+		padding: 12px 12px 12px 32px;
+		margin-bottom: 2px;
+	}
+
+	a.unchecked {
+		background-position: 12px;
+	}
+
+	.addTags p:first-child {
+		display: none;
+	}
+
+	.addTags p {
+		width: 100%;
+	}
+
+	.tabs a,
+	.tabs span {
+		font-size: 12px;
+		padding: 8px;
+	}
+
+	.tabs a.viewing {
+		font-size: 12px;
+		padding: 8px;
+	}
+
+	.prCImainform {
+		width: 100%;
+	}
+
+	.prsubmit.mainform {
+		margin: 0;
+		padding-left: 0;
+		width: 100%;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+/*PREVIEW PAGE*/
+.prcontentwrap {
+	background: none;
+	width: 75%;
+}
+
+.prReviewWrapper {
+	border: 0;
+	padding: 0;
+}
+
+.prcontent h3 {
+	color: #000000;
+	font-size: 18px;
+}
+
+.customer,
+.customer strong {
+	font-size: 14px;
+	font-weight: normal;
+}
+
+.prReviewKey {
+	color: #000000;
+	font-size: 14px;
+	font-weight: bold;
+	text-align: left;
+	width: 40%;
+}
+
+.prReviewValue {
+	font-size: 14px;
+	width: 58%;
+}
+
+.comments {
+	border: 0;
+	border-bottom: 1px solid #cccccc;
+	font-size: 16px;
+	margin: 0;
+	padding: 10px 0;
+}
+
+.prconfirmWrapper {
+	border: 0;
+	color: #707070;
+	font-size: 14px;
+	padding: 0;
+}
+
+.prPubDisclaimer {
+	color: #999999;
+	font-style: normal;
+	line-height: 1.3;
+}
+
+.prconfirm {
+	background: none;
+	font-size: 14px;
+	line-height: 1.6;
+	margin: 0;
+	padding-bottom: 20px;
+}
+
+@media screen and (max-width: 460px) {
+	.prgroup {
+		width: auto;
+	}
+
+	.prlabel.preview {
+		float: none;
+		text-align: left;
+		width: 100%;
+	}
+
+	.prcontent {
+		padding: 0;
+	}
+
+	.prcontentwrap {
+		width: 100%;
+	}
+
+	.break .prCImainform {
+		width: 100%;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+/*THANKS PAGE*/
+.prfieldwrap.prshop {
+	background: #ffffff;
+	border-top: 1px solid #cccccc;
+	border-radius: 0;
+	font-size: 14px;
+	padding: 20px 0 0 0;
+	width: 100%;
+}
+
+#fanPageSection .prfieldwrap.prshop {
+	border: 0;
+	float: none !important;
+	margin: 0;
+	padding: 0;
+}
+
+.prFbCtaRail {
+	padding: 20px 0 0 0;
+	text-align: left;
+}
+
+.prFbWrapper .prDisclaimer {
+	float: none;
+}
+
+.prPrivacyPopUp {
+	float: none;
+}
+
+h2.prInline {
+	color: #000000;
+	font-size: 16px;
+}
+
+.prSmallFont {
+	font-size: 14px;
+}
+
+.prFbWrapper ul.prFbFeaturesList {
+	margin: 0 0 20px 18px;
+}
+
+.prFbFanPageWrapper {
+	float: none;
+	margin: 0;
+	padding: 10px 0;
+	position: static;
+	width: 100%;
+}
+
+
+
+
+
+
+
+
+
+/*ASK A QUESTION*/
+.prPaHeader {
+	border: 0;
+	color: #000000;
+	font-size: 18px;
+}
+
+h3.input_label {
+	color: #000000;
+	font-size: 16px;
+}
+
+.prwrapper .prfieldwrap {
+	box-sizing: border-box;
+	/*width: 100%;*/
+}
+
+.prfieldwrap {
+	color: #707070;
+	font-size: 14px;
+	line-height: 1.5;
+}
+
+#question-type-example {
+	font-size: 12px;
+	margin: 5px 0 10px 0;
+}
+
+.prfieldwrap input,
+#nickname_value,
+#location_value {
+	border: 1px solid #cccccc;
+}
+
+.prfieldwrap textarea {
+	border: 1px solid #cccccc;
+	box-sizing: border-box;
+}
+
+.prPaInputLabel {
+	font-weight: normal;
+}
+
+#pr_comment_prompts_bot,
+.prfieldwrap .instructions {
+	font-size: 12px;
+}
+
+#prPreview,
+#prPreview:hover {
+	padding: 20px 0 0 0;
+}
+
+#prPreview .yui-button,
+#prBtnContainer #prNotifyMeButton.yui-button,
+#prPreview .yui-button span.first-child,
+#prBtnContainer #prEditButton.yui-button,
+#prBtnContainer #prEditButton span.first-child,
+#prBtnContainer #prSubmitButton.yui-button,
+#prBtnContainer #prSubmitButton span.first-child {
+	background: none;
+	padding: 0;
+}
+
+@media screen and (max-width: 460px) {
+	#email_value,
+	#nickname_value,
+	#location_value {
+		width: 100%;
+	}
+
+	.prfieldwrap .instructions {
+		padding: 0;
+	}
+
+	.prfieldwrap ul {
+		padding-left: 18px;
+	}
+}
+
+
+/*QUESTION PREVIEW*/
+.prPaDisclaimer {
+	display: none;
+}
+
+.pr-preview-container {
+	border: 0;
+	border-radius: 3px;
+}
+
+.pr-preview-container h3,
+.pr-preview-container strong {
+	font-size: 16px;
+	font-weight: normal;
+	margin-bottom: 5px;
+}
+
+#prPaConfirmCont {
+	font-size: 14px;
+	line-height: 1.5;
+	padding: 20px 0;
+}
+
+#prPaConfirmCont label {
+	margin-right: 20px;
+}
+
+
+
+
+
+
+
+/*ANSWER A QUESTION*/
+.prPaHeaderDiv {
+	border: 0;
+}
+
+.prPaHeaderDiv .prPaHeaderNoBorder {
+	color: #000000;
+	font-size: 18px;
+}
+
+.prContainer {
+	border: 0;
+	padding: 10px;
+}
+
+.prContainer p {
+	margin-top: 0;
+	font-size: 14px;
+}
+
+.prContainer p:last-child {
+	margin-bottom: 0;
+}
+
+#normalQuestionDiv .prfieldwrap,
+.prPaCustomerSaleInfo.prfieldwrap,
+#editPage .prwrapper .prfieldwrap {
+	border: 0;
+	border-radius: 3px;
+	width: auto;
+}
+

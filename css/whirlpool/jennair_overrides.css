@@ -1,0 +1,809 @@
+/* 06.02.2015 - 10:00:00 */
+/* ############ FORM STYLES ############ */
+
+/*REVIEW FORM - HEADER*/
+.printro h1 {
+	color: #000000;
+	font-size: 18px;
+}
+
+.printro p {
+	display: none;
+}
+
+.prMainInstructions {
+	display: none;
+}
+
+.requirednotice {
+	text-align: left;
+}
+
+
+
+
+
+/*REVIEW FORM - GLOBAL FORM ELEMENTS*/
+.prwrapper {
+	border: 1px solid #e6e6e6;
+	box-sizing: border-box;
+	color: #707070;
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0 auto;
+	max-width: 600px;
+	padding: 20px;
+	width: 100%;
+}
+
+div.ratingMessage {
+	font-size: 10px;
+	margin: 0 0 0 155px;
+	padding-top: 4px;
+}
+
+.prlabel {
+	margin-right: 4%;
+	width: 23%;
+}
+
+.prfieldwrap {
+	border: 0;
+}
+
+#wasthisagift_click_all_text,
+#wasthisagift {
+	display: none;
+}
+
+#pros,
+#cons,
+#bestuses,
+#describeyourself {
+	display: none;
+}
+
+.prinputgroup {
+	padding: 0;
+}
+
+.prinputgroup .prfieldwrap {
+	background: #ffffff;
+	background-image: none;
+	border-radius: 3px;
+	display: block;
+	padding: 0;
+	width: 73%;
+}
+
+.prfields {
+	padding: 10px;
+}
+
+#pr_comment_prompts_bottom {
+	border: 0;
+	font-size: 10px;
+	padding: 0;
+	width: auto;
+}
+
+#pr_comment_prompts_bottom i {
+	font-style: normal;
+}
+
+.prCImainform {
+	background: none;
+	border: 0;
+}
+
+@media screen and (max-width: 550px) {
+	.prlabel,
+	.prfieldwrap,
+	.prinputgroup .prfieldwrap {
+		float: none;
+		text-align: left;
+		width: 100%;
+	}
+
+	.prinputgroup { 
+		padding: 0 0 10px 0;
+	}
+
+	.prfields {
+		padding: 0;
+	}
+
+	#pr_comment_prompts {
+		display: none;
+	}
+
+	.prCImainform {
+		margin: 0;
+		top: auto;
+		width: auto;
+	}
+}
+
+
+
+
+
+/*REVIEW FORM - INPUT TYPES AND LABELS*/
+.prlabel h3 {
+	color: #000000;
+	font-size: 14px;
+}
+
+.inputBox {
+	box-sizing: border-box;
+	color: #707070;
+	font-size: 16px;
+	padding: 8px;
+	width: 100%;
+}
+
+a,
+p.tiptoggle a {
+	color: #333;
+	text-decoration: none;
+}
+
+span.show,
+.shown span.hide {
+	background: none;
+	display: inline-block;
+	font-size: 12px;
+	padding: 5px 0 0 0;
+}
+
+.addTags {
+	background: none;
+	height: auto;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+.checkboxes {
+	float: none;
+	margin-bottom: 15px;
+	width: 100%;
+}
+
+p.checkitem {
+	margin: 0;
+	text-indent: 0;
+}
+
+.checkboxes a {
+	color: #707070;
+	display: block;
+	padding: 5px;
+	margin-bottom: 15px;
+}
+
+p.checkitem a.checkbox {
+	border: 1px solid #ffffff;
+	border-radius: 3px;
+	cursor: pointer;
+	padding: 12px 12px 12px 26px;
+	margin-bottom: 2px;
+}
+
+a.unchecked,
+a.checked {
+	background-position: 0;
+}
+
+p.checkitemcustom {
+	margin: 0;
+}
+
+p.checkitemcustom a.checkbox {
+	padding: 4px 0 0 48px;
+}
+
+.addTags p:first-child {
+	display: none;
+}
+
+.addTags p {
+	width: 100%;
+}
+
+.radioOpt {
+	padding: 0 0 6px 0;
+}
+
+table.radioScale {
+	margin: 0 0 10px -5px;
+}
+
+.prClearRadio {
+	display: none;
+}
+
+#bottomline_click_all_text {
+	display: none;
+}
+
+#bottomline .prfieldwrap .prfields p {
+	display: none;
+}
+
+@media screen and (max-width: 550px) {
+	
+}
+
+
+
+
+
+/*REVIEW FORM - TABBED COMMENT BOXES*/
+textarea#experience_value {
+	border: 1px solid #cccccc;
+	font-size: 16px;
+	padding: 8px;
+}
+
+ul.tabs li {
+	margin-right: 0;
+}
+
+.tabs a,
+.tabs span {
+	background: none;
+	border: 0;
+	color: #4a99ca;
+	font-size: 14px;
+	font-weight: normal;
+	padding: 10px;
+	text-decoration: none;
+}
+
+.tabs a.viewing {
+	background: #ffffff;
+	border: 1px solid #cccccc;
+	border-bottom: 1px solid #ffffff;
+	color: #707070;
+	font-size: 14px;
+	font-weight: normal;
+	padding: 10px;
+	text-decoration: none;
+}
+
+.tabsheet {
+	background: #ffffff;
+	border: 1px solid #cccccc;
+	border-bottom: 0;
+	color: #707070;
+	padding: 10px;
+}
+
+.tabsheet .pr_tabbed_comment_prompts {
+	background: #ffffff;
+	border: 0;
+	font-size: 12px;
+	padding: 0 0 10px 0;
+	width: auto !important;
+}
+
+#pr_tabbed_comment_prompts_bottom {
+	background: #ffffff;
+	border: 1px solid #cccccc;
+	border-top: 0;
+	font-size: 10px;
+	padding: 0 10px 10px 10px;
+	width: auto !important;
+}
+
+#pr_tabbed_comment_prompts_bottom i {
+	font-style: normal;
+}
+
+.tabsheet textarea,
+#experience textarea {
+	box-sizing: border-box;
+	font-size: 14px;
+	margin: 0;
+	width: 100%;
+}
+
+@media screen and (max-width: 550px) {
+	.tabs a,
+	.tabs span {
+		font-size: 12px;
+		padding: 8px;
+	}
+
+	.tabs a.viewing {
+		font-size: 12px;
+		padding: 8px;
+	}
+}
+
+
+
+
+
+/*REVIEW FORM - SELECT FIELDS*/
+.prfields select {
+	max-width: 100%;
+}
+
+
+
+
+
+/*REVIEW FORM - SUBRATINGS*/
+div.prStars.prStarsSubrating {
+	background-image: url('https://www.whirlpoolinsidepass.com/assets/global/powereviews/whirlpool_bar_subrating.gif') !important;
+	margin: 0;
+	width: 142px;
+}
+
+div.prStars.prStarsSubrating div.prStar {
+	width: 27px;
+}
+
+div.prStars.prStarsSubrating .prStar.prS2 {
+	left: 28px;
+}
+
+div.prStars.prStarsSubrating .prStar.prS3 {
+	left: 58px;
+}
+
+div.prStars.prStarsSubrating .prStar.prS4 {
+	left: 86px;
+}
+
+div.prStars.prStarsSubrating .prStar.prS5 {
+	left: 114px;
+}
+
+
+
+
+
+/*REVIEW FORM - IMAGES AND VIDEO*/
+.break .prCImainform {
+	background: none;
+	border: 0;
+	float: right;
+	line-height: 150%;
+	padding: 0 0 10px 0;
+	width: 73%;
+}
+
+.prCImainform h3 {
+	color: #000000;
+	font-size: 14px;
+	margin: 0 0 10px 0;
+}
+
+.prCImainform p,
+.prCIpreview p {
+	font-size: 12px;
+	width: auto;
+}
+
+.prCIcontent {
+	padding: 0;
+}
+
+.prCIcontent > h3,
+.prCIcontent > p {
+	display: none;
+}
+
+.prCImainform .actions {
+	bottom: auto;
+	position: static;
+	right: auto;
+}
+
+#prAddImage,
+#prAddImage:hover {
+	color: #333333;
+	font-weight: normal;
+	padding: 10px;
+}
+
+@media screen and (max-width: 550px) {
+	.prwrapper .break .prCImainform {
+		width: 100%;
+	}
+}
+
+
+
+
+
+/*REVIEW FORM - SUBMIT*/
+.button,
+.button:hover,
+#prBtnContainer button,
+#prPreview button,
+#prSubmit,
+#prSubmit:hover,
+#prEditReview,
+#prEditReview:hover,
+#prCancel,
+#prCancel:hover,
+#prPreview,
+#prPreview:hover,
+#prBtnContainer button,
+#prPreview button,
+a#prPreview {
+	background: #ffffff;
+	border: 1px solid #999;
+	border-radius: 3px;
+	color: #333333;
+	cursor: pointer;
+	display: inline-block;
+	font-weight: bold !important;
+	height: auto !important;
+	padding: 10px 20px;
+}
+
+.button span {
+	background: none;
+	padding: 0;
+}
+
+a#prSubmit {
+	font-size: 16px;
+	font-weight: normal;
+}
+
+a.button.tagsuggest {
+	color: #333333;
+	padding: 11px 10px;
+	top: auto;
+}
+
+a.button.tagsuggest span {
+	padding: 0;
+}
+
+.prsubmit,
+.prsubmit.upload {
+	background: #f0f0f0;
+	border-radius: 3px;
+	float: none;
+	height: auto;
+	margin: 0;
+	padding: 20px;
+	width: auto;
+}
+
+.prCancelUpload {
+		margin: 15px 0;
+		position: static !important;
+	}
+
+.rtarrow,
+.lfarrow {
+	padding: 0;
+}
+
+.addInstructions {
+	display: none;
+}
+
+.prfootertext {
+	color: #999999;
+	font-size: 12px;
+}
+
+.prfootertext ul {
+	padding: 0 0 0 18px;
+}
+
+@media screen and (max-width: 550px) {
+	.prfootertext {
+		margin: 0;
+	}
+}
+
+
+
+
+
+/*REVIEW FORM - PREVIEW PAGE*/
+.prgroup {
+	margin: 0;
+	width: auto;
+}
+
+.prcontentwrap {
+	background: none;
+}
+
+.prcontent {
+	padding-bottom: 1em;
+}
+
+.prReviewWrapper {
+	padding: 10px;
+}
+
+.customer {
+	padding-top: 5px;
+}
+
+.prReviewWrapper .prReviewKey {
+	text-align: left;
+}
+
+.comments {
+	font-size: 14px;
+}
+
+.prconfirmWrapper {
+	margin: 0;
+	padding: 10px;
+}
+
+.prPubDisclaimer {
+	color: #666666;
+}
+
+.prconfirm {
+	color: #666666;
+	font-size: 12px;
+	margin: 0;
+}
+
+.predit {
+	margin: 0;
+	padding: 20px 0;
+}
+
+.prcontentwrap .prsubmit {
+	margin: 0;
+	padding: 20px;
+}
+
+.prwrapper .break .prCImainform {
+	width: 80% !important;
+}
+
+@media screen and (max-width: 550px) {
+	.prcontentwrap {
+		width: auto;
+	}
+}
+
+
+
+
+
+/*THANKS PAGE*/
+.prcontentwrap.verify {
+	width: auto;
+}
+
+.prfieldwrap.prshop {
+	background: #ffffff;
+	border-top: 1px solid #cccccc;
+	border-radius: 0;
+	font-size: 14px;
+	padding: 20px 0 0 0;
+	width: 100%;
+}
+
+#fanPageSection .prfieldwrap.prshop {
+	border: 0;
+	float: none !important;
+	margin: 0;
+	padding: 0;
+}
+
+.prFbCtaRail {
+	padding: 20px 0 0 0;
+	text-align: left;
+}
+
+.prFbWrapper .prDisclaimer {
+	float: none;
+}
+
+.prPrivacyPopUp {
+	float: none;
+}
+
+h2.prInline {
+	color: #000000;
+	font-size: 16px;
+}
+
+.prSmallFont {
+	font-size: 14px;
+}
+
+.prFbWrapper ul.prFbFeaturesList {
+	margin: 0 0 20px 18px;
+}
+
+.prFbFanPageWrapper {
+	float: none;
+	margin: 0;
+	padding: 10px 0;
+	position: static;
+	width: 100%;
+}
+
+
+
+
+
+/*ASK A QUESTION*/
+.prPaHeader {
+	border: 0;
+	color: #000000;
+	font-size: 18px;
+}
+
+h3.input_label {
+	color: #000000;
+	font-size: 16px;
+}
+
+.prwrapper .prfieldwrap {
+	box-sizing: border-box;
+	/*width: 100%;*/
+}
+
+.prfieldwrap {
+	color: #707070;
+	font-size: 14px;
+	line-height: 1.5;
+}
+
+#question-type-example {
+	font-size: 12px;
+	margin: 5px 0 10px 0;
+}
+
+.prfieldwrap input,
+#nickname_value,
+#location_value {
+	border: 1px solid #cccccc;
+}
+
+.prfieldwrap textarea {
+	border: 1px solid #cccccc;
+	box-sizing: border-box;
+}
+
+.prPaInputLabel {
+	font-weight: normal;
+}
+
+#pr_comment_prompts_bot,
+.prfieldwrap .instructions {
+	font-size: 12px;
+}
+
+#prPreview,
+#prPreview:hover {
+	padding: 20px 0 0 0;
+}
+
+#prPreview .yui-button,
+#prBtnContainer #prNotifyMeButton.yui-button,
+#prPreview .yui-button span.first-child,
+#prBtnContainer #prEditButton.yui-button,
+#prBtnContainer #prEditButton span.first-child,
+#prBtnContainer #prSubmitButton.yui-button,
+#prBtnContainer #prSubmitButton span.first-child {
+	background: none;
+	padding: 0;
+}
+
+@media screen and (max-width: 460px) {
+	#email_value,
+	#nickname_value,
+	#location_value {
+		width: 100%;
+	}
+
+	.prfieldwrap .instructions {
+		padding: 0;
+	}
+
+	.prfieldwrap ul {
+		padding-left: 18px;
+	}
+}
+
+
+
+
+
+/*QUESTION PREVIEW*/
+.prPaDisclaimer {
+	display: none;
+}
+
+.pr-preview-container {
+	border: 0;
+	border-radius: 3px;
+}
+
+.pr-preview-container h3,
+.pr-preview-container strong {
+	font-size: 16px;
+	font-weight: normal;
+	margin-bottom: 5px;
+}
+
+#prPaConfirmCont {
+	font-size: 14px;
+	line-height: 1.5;
+	padding: 20px 0;
+}
+
+#prPaConfirmCont label {
+	margin-right: 20px;
+}
+
+
+
+
+
+/*ANSWER A QUESTION*/
+.prPaHeaderDiv {
+	border: 0;
+}
+
+.prPaHeaderDiv .prPaHeaderNoBorder {
+	color: #000000;
+	font-size: 18px;
+}
+
+.prContainer {
+	border: 0;
+	padding: 10px;
+}
+
+.prContainer p {
+	margin-top: 0;
+	font-size: 14px;
+}
+
+.prContainer p:last-child {
+	margin-bottom: 0;
+}
+
+#normalQuestionDiv .prfieldwrap,
+.prPaCustomerSaleInfo.prfieldwrap,
+#editPage .prwrapper .prfieldwrap {
+	border: 0;
+	border-radius: 3px;
+	width: auto;
+}
+
+
+
+
+
+
+
+
+
+.pr-star {
+	display: none;
+}
+
+/*TEMP OVERRIDES FOR MOBILE*/
+body.mobile .pr-snippet-write-review,
+body.mobile .pr-snippet-write-first-review,
+body.mobile .pr-snapshot-no-ratings {
+	/*display: none;*/
+}
+
+body.mobile .pr-snippet-read-reviews {
+	border: 0;
+}
