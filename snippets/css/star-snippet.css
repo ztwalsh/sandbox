@@ -35,18 +35,6 @@
 	padding: 0 8px;
 }
 
-.v1-read-write {
-	float: left;
-	padding-top: 1px;
-}
-
-.v1-read,
-.v1-write {
-	float: left;
-}
-
-.v1-read a,
-.v1-write a,
 .v1-count a {
 	color: #4a99ca;
 	text-decoration: none;
@@ -64,22 +52,33 @@
 	display: none;
 	margin-top: 10px;
 	max-width: 400px;
-	padding: 15px;
 	position: absolute;
 	width: 100%;
-	z-index: ;
 }
 
-.v1-histogram a {
+.v1-inner {
+	padding: 15px;
+}
+
+.v1-inner:last-child {
+	border-top: 1px solid #dddddd;
+}
+
+a.v1-action {
 	color: #4a99ca;
+	display: inline-block;
+	padding-right: 20px;
 	text-decoration: none;
 }
 
 .v1-histogram h3 {
+	background: #f6f6f6;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
 	color: #303533;
 	font-size: 16px;
 	font-weight: bold;
-	padding: 0 0 10px 0;
+	padding: 15px;
 }
 
 table.histogram {
