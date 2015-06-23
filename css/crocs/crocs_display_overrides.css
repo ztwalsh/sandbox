@@ -364,7 +364,7 @@ ul.pr-ratings-histogram-content li p.pr-histogram-count {
 }
 
 .pr-snapshot-consensus-value {
-	background: #8db013;
+	background: #79B800;
 	border: 0;
 	border-radius: 3px;
 	display: table-cell;
@@ -384,7 +384,7 @@ ul.pr-ratings-histogram-content li p.pr-histogram-count {
 
 /*WRITE A REVIEW*/
 .pr-write-review-link {
-	background: #8db013;
+	background: #79B800;
 	color: #ffffff;
 	display: inline-block;
 	font-family: 'MuseoRounded700', Arial, Helvetica, sans-serif;
@@ -724,7 +724,7 @@ ul.pr-attribute-value-list {
 }
 
 .pr-review-helpful-response {
-	color: #8db013;
+	color: #79B800;
 	padding: 10px 0;
 }
 
@@ -793,7 +793,7 @@ ul.pr-attribute-value-list {
 
 button.pr-submit-button,
 button.pr-cancel-button {
-	background: #8db013;
+	background: #79B800;
 	color: #ffffff;
 	font-size: 14px;
 	margin-right: 5px;
@@ -863,7 +863,7 @@ button.pr-cancel-button {
 	border: 0;
 	box-shadow: 0 0 4px #999999;
 	height: auto;
-	width: 115px;
+	max-width: 150px;
 }
 
 .pr-pic .pr-caption {
@@ -956,7 +956,7 @@ button.pr-cancel-button {
 
 .prPaAskQuestionLnk {
 	background: none;
-	background: #8db013;
+	background: #79B800;
 	color: #ffffff;
 	display: inline-block;
 	font-family: 'MuseoRounded700', Arial, Helvetica, sans-serif;
