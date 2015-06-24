@@ -9,7 +9,7 @@
 		<script src="js/star-reco-behaviors.js" type="text/javascript"></script>
 	</head>
 	<body>
-		<?php //include('lib/include.header.php'); ?>
+		<?php include('lib/include.header.php'); ?>
 		<section class="content">
 			<article>
 				<h1>PDP Star Rating</h1>
