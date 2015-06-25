@@ -1,0 +1,9 @@
+.p-w-r .pr-rating-star {
+	display: none;
+}
+
+.p-w-r .pr-star {
+    /* Custom Star Images */
+    /*background: url('http://url.com/x/y.png');*/
+    background: url('') #ffffff;
+}
