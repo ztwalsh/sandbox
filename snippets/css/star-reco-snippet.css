@@ -24,12 +24,13 @@
 }
 
 .v1-star,
-.v1-score {
+.v1-score  {
 	border-radius: 2px;
 	display: inline-block;
 	float: left;
+	line-height: 1.1;
 	margin-right: 2px;
-	padding: 3px 3px 4px 3px;
+	padding: 2px 3px 4px 3px;
 }
 
 .v1-active {
@@ -43,14 +44,52 @@
 .v1-score {
 	border: 1px solid #cccccc;
 	color: #666666;
+	line-height: 1.4;
 	padding: 0 8px;
 }
 
-a.v1-action {
-	border-radius: 3px;
+.v1-arrow {
 	color: #4a99ca;
-	display: inline-block;
-	margin-right: 20px;
+	float: left;
+	font-size: 18px;
+	padding: 2px 0 0 8px;
+}
+
+.v1-read-write {
+	float: left;
+	min-width: 230px;
+}
+
+@media screen and (max-width: 475px) {
+	.v1-read-write {
+		clear: both;
+		float: none;
+		padding-top: 10px;
+	}
+}
+
+.v1-count {
+	color: #aaaaaa;
+	float: left;
+}
+
+@media screen and (max-width: 475px) {
+	.v1-count {
+		border-left: 0;
+		padding-left: 0;
+	}
+}
+
+.v1-write {
+	color: #aaaaaa;
+	float: left;
+	padding-left: 15px;
+}
+
+.v1-count a,
+.v1-write a {
+	color: #4a99ca;
+	font-size: 13px;
 	text-decoration: none;
 }
 

@@ -1,9 +1,33 @@
+.p-w-r .pr-star,
+.p-w-r .pr-star:hover,
+.p-w-r .pr-star-selected {
+	border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	padding: 0;
+}
+
+.p-w-r .pr-star,
+.p-w-r .pr-star-selected {
+    /*Host the included star image asset and replace the background image url*/
+    background: url('http://sandbox.ztwalsh.com/css/eddiebauer/eb-star.png') no-repeat;
+    background-size: 51px;
+}
+
+.p-w-r .pr-star-selected {
+    background-position: 0 -50px;
+}
+
 .p-w-r .pr-rating-star {
 	display: none;
 }
 
-.p-w-r .pr-star {
-    /* Custom Star Images */
-    /*background: url('http://url.com/x/y.png');*/
-    background: url('http://sandbox.ztwalsh.com/css/eddie%20bauer/eb-star.png') #ffffff;
+.p-w-r .pr-subrating {
+    background-size: 40px;
+    height: 40px;
+    width: 40px;
+}
+
+.p-w-r .pr-subrating.pr-star-selected {
+    background-position: 0 -39px;
 }

@@ -23,10 +23,14 @@
 							<div class="v1-star v1-active"><img src="images/star.svg" height="16" width="16" /></div>
 							<div class="v1-star v1-inactive"><img src="images/star.svg" height="16" width="16" /></div>
 							<div class="v1-score">4.1</div>
+							<div class="v1-arrow"><i class="fa fa-angle-down"></i></div>
 						</div>
 						<div class="v1-read-write cf">
 							<div class="v1-count">
-								<a href="#">25 Reviews <i class="fa fa-angle-down"></i></a>
+								<a href="#">25 Reviews</a>
+							</div>
+							<div class="v1-write">
+								<a href="#">Write a Review</a>
 							</div>
 						</div>
 					</div>
@@ -60,10 +64,6 @@
 									<td class="count">7</td>
 								</tr>
 							</table>
-						</div>
-						<div class="v1-inner">
-							<a class="v1-action" href="#">Read Reviews</a>
-							<a class="v1-action" href="#">Write a Review</a>
 						</div>
 					</div>
 				</div>

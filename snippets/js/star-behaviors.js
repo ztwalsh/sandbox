@@ -1,6 +1,6 @@
 $(document).ready(function() {
-	$('.v1-wrapper').click(function() {
-		$(this).children('.v1-histogram').fadeToggle(100);
+	$('.v1-summary').click(function() {
+		$(this).next().fadeToggle(100);
 		return false;
 	});
 

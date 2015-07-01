@@ -1,7 +1,7 @@
 /*PDP - Reco Score*/
 a.v1-wrapper {
 	display: inline-block;
-	margin: 0 auto 40px auto;
+	margin: 0 auto 10px auto;
 	min-width: 120px;
 	text-align: center;
 	text-decoration: none;
@@ -13,7 +13,7 @@ a.v1-wrapper {
 	border-top-left-radius: 3px;
 	border-top-right-radius: 3px;
 	color: #ffffff;
-	font-size: 30px;
+	font-size: 24px;
 	font-weight: bold;
 	line-height: 1;
 	padding: 10px;
@@ -90,6 +90,32 @@ a.v2-wrapper:hover .v2-percentage .count {
 
 a.v2-wrapper:hover .v2-percentage .review-count {
 	font-size: 11px;
+}
+
+
+/*SLIM - Version*/
+a.v3-wrapper {
+	color: #ffffff;
+	display: inline-block;
+	margin-bottom: 8px;
+	text-decoration: none;
+	transition: all ease 0.2s;
+}
+
+a.v3-wrapper:hover,
+a.v3-wrapper:active {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.v3-percentage {
+	background: #cccccc;
+	border-radius: 2px;
+	padding: 4px 10px;
+}
+
+.v3-percentage .count {
+	font-weight: bold;
 }
 
 /*Colors*/

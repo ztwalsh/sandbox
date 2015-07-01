@@ -19,7 +19,7 @@ $(document).ready(function() {
 	    });
 	});
 
-	$('.v1-percentage, .v2-circle').delay(1000).queue(function(next){
+	$('.countdown').delay(1000).queue(function(next){
 		var percentage = $(this).children('.count').text();
 
 		switch (percentage) {
