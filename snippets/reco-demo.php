@@ -1,24 +1,4 @@
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <!doctype html>
 <!--[if lt IE 7]> <html class="ie6 oldie" lang="en"> <![endif]-->
 <!--[if IE 7]> <html class="ie7 oldie" lang="en"> <![endif]-->
@@ -52,7 +32,7 @@
 
 
 <link rel="canonical" href="http://www.uggaustralia.com/men-slippers/lyle-tweed/1005262.html" />
- 
+
 <meta name="description" content="Shop our collection of Men's Footwear including the Lyle Tweed.  Free Shipping &amp; Free Returns on Authentic UGG&reg; Men's Footwear at UGGAustralia.com. Feels Like Nothing Else"/>
 <meta name="keywords" content="Lyle Tweed"/>
 
@@ -149,11 +129,11 @@
 
 
 
-	 
+
 	<script type="text/javascript" src="http://t.p.mybuys.com/js/mybuys3.js"></script>
 	<script type="text/javascript" src="http://t.p.mybuys.com/clients/UGGAUSTRALIA/js/setup2.js"></script>
 	<!-- End MyBuys libraries and style sheet -->
-	
+
 
 
 
@@ -182,7 +162,7 @@ var monetateT = new Date().getTime();
 	*	Global Monetate array for tracking
 	*/
 	window.monetateQ = window.monetateQ || [];
-	
+
 	/*
 	*	Temporary storage for data: cartrows, breadcrumbs, products on the plp/clp/search pages
 	*/
@@ -236,7 +216,7 @@ var pr_locale = "en_US";
 
 <aside id="mobile-navigation" class="mobile-menu">
   <nav class="secondary-nav">
-    
+
     <ul>
       <li>
         <a class="mobile-cart-btn" href="https://www.uggaustralia.com/cart" title="View Cart" rel="nofollow">
@@ -263,7 +243,7 @@ var pr_locale = "en_US";
           <span class="label">Help</span>
         </a>
       </li>
-      
+
 <li>
   <a href="http://www.iheartugg.com/" class="mobile-iheartugg-btn" rel="nofollow">
     <span aria-hidden="true" class="icon-iheartugg"></span>
@@ -271,13 +251,8 @@ var pr_locale = "en_US";
 </li>
     </ul>
   </nav>
-  <nav> 
+  <nav>
     <!--  category navigation -->
-    
-    
-    
-      
-
 
 
 
@@ -987,7 +962,7 @@ Care &amp; Cleaning
 
 
 
-<div class="custom "><!-- UPDATE FOR 6/22/15 --> 
+<div class="custom "><!-- UPDATE FOR 6/22/15 -->
 <a href="http://www.uggaustralia.com/men/?icid=menu_men"><div data-src="http://demandware.edgesuite.net/aaff_prd/on/demandware.static/Sites-UGG-US-Site/Sites-siteCatalogUgg-US/default/dw363ed531/nav-banner/S15-JUN-m-drop-down.jpg" data-alt="Shop Men"></div></a></div>
 
 
@@ -1522,7 +1497,7 @@ Design Your Own
 
 </ul>
 
-    
+
   </nav>
 </aside>
 
@@ -1536,14 +1511,14 @@ Design Your Own
 <div id="header" role="banner" class="">
 <header>
 
-	 
 
-	
+
+
 <div class="header-banner">
 
-	 
 
-	
+
+
 </div>
 <section class="header-mobile">
 <a class="mobile-menu-btn btn btn-sm" href="#mobile-navigation">
@@ -1577,13 +1552,13 @@ Design Your Own
 </nav>
 <section class="header-free-shipping">
 
-	 
 
 
-	
 
 
-	
+
+
+
 </section>
 <div class="header-search ">
 
@@ -2362,7 +2337,7 @@ Care &amp; Cleaning
 
 
 
-<div class="custom "><!-- UPDATE FOR 6/22/15 --> 
+<div class="custom "><!-- UPDATE FOR 6/22/15 -->
 <a href="http://www.uggaustralia.com/men/?icid=menu_men"><div data-src="http://demandware.edgesuite.net/aaff_prd/on/demandware.static/Sites-UGG-US-Site/Sites-siteCatalogUgg-US/default/dw363ed531/nav-banner/S15-JUN-m-drop-down.jpg" data-alt="Shop Men"></div></a></div>
 
 
@@ -3204,7 +3179,7 @@ if(dw&&dw.__ac){dw.__ac.pv({id:'1005262'})};
 
 
 <div id="product-social" class="social-widgets">
-</div> 
+</div>
 
 
 <div class="product-sub-details-widget">
@@ -3285,7 +3260,7 @@ if(dw&&dw.__ac){dw.__ac.pv({id:'1005262'})};
 
 
 <div class="product-review-links">
-	<a class="v1-wrapper" href="#">
+	<!-- <a class="v1-wrapper" href="#">
 		<div class="v1-percentage countdown">
 			<span class="count">94</span>%
 			<small>Recommended</small>
@@ -3293,7 +3268,16 @@ if(dw&&dw.__ac){dw.__ac.pv({id:'1005262'})};
 		<div class="v1-review-count">
 			Read 25 Reviews
 		</div>
-	</a>
+	</a> -->
+  <a class="v3-wrapper" href="#">
+    <div class="v3-percentage countdown">
+      <span class="count">89</span>%
+      <small>Recommended</small>
+    </div>
+    <div class="v3-count">
+      From 25 Reviews
+    </div>
+  </a>
 </div>
 
 
@@ -3806,7 +3790,7 @@ data-lgimg='{"url":"http://demandware.edgesuite.net/aaff_prd/on/demandware.stati
 <div class="product-long-description" itemprop="description">
 <h2>Details</h2>
 Constructed from Woolrich® Herringbone tweed and soft suede, the Lyle boasts the renowned comfort of all UGG® slippers. The cozy wool interior confirms its lounging expertise, but a rubber outsole affirms its outdoor sensibilities, which begs the question: are these slippers or the most comfortable chukka boots you’ve ever owned?
-<p><br><strong>Details:</strong></p> 
+<p><br><strong>Details:</strong></p>
 <ul>
     <li>Suede and Woolrich® herringbone tweed</li>
     <li>Fully lined with UGGpure™</li>
@@ -4040,15 +4024,15 @@ POWERREVIEWS.display.engine(document);
 
 
 
-	
-		<script type="text/javascript">	
+
+		<script type="text/javascript">
 		mybuys.setPageType("PRODUCT_DETAILS");
 		mybuys.set("productid","1005262");
-		
+
 		jQuery(function() {mybuys.setDataResponseCallback(loadzone)});
 		</script>
 		<div mybuyszone="1"></div>
-	
+
 
 
 
@@ -4165,10 +4149,10 @@ POWERREVIEWS.display.engine(document);
 <div id="main-bottom" class="clearfix">
 <section>
 
-	 
 
 
-	
+
+
 
 <div id="main-bottom-slot" class="email-signup-slot blk-email-signup">
 <div class="d-container">
@@ -4296,17 +4280,17 @@ Email
 </div>
 
 </div>
-</div> 
-	
+</div>
+
 </section>
 </div>
 <div id="footer" role="contentinfo">
 <footer>
 <a class="back-to-top" data-offset="1000" href="#wrapper"></a>
 
-	 
 
-	
+
+
 
 
 
@@ -4391,7 +4375,7 @@ Email
   <div class="footer-block last-block">
     <h4 class="toggle">My Account</h4>
 		<ul class="">
-			
+
 
 <li>
 <a rel="nofollow" title="Sign In" href="https://www.uggaustralia.com/account" class="user-login">
@@ -4458,9 +4442,9 @@ Register
 
 
 
-	 
 
-	
+
+
 </footer>
 </div><!-- /footer -->
 
@@ -4566,10 +4550,9 @@ brightcove.createExperiences();
 
 
 
-		
+
 		<script type="text/javascript">mybuys.initPage();</script>
-		<!-- End MyBuys Page Initialization -->	
-	
+		<!-- End MyBuys Page Initialization -->
 
 
 
@@ -4578,9 +4561,10 @@ brightcove.createExperiences();
 
 
 
- 
 
-        
+
+
+
 
 
 <script type="text/javascript">var utag_data = {
@@ -4645,11 +4629,11 @@ brightcove.createExperiences();
 try{
   var trackingUrl = "http://www.uggaustralia.com/on/demandware.store/Sites-UGG-US-Site/default/__Analytics-Tracking";
   var dwAnalytics = dw.__dwAnalytics.getTracker(trackingUrl);
-  if (typeof dw.ac == "undefined") { 
+  if (typeof dw.ac == "undefined") {
      dwAnalytics.trackPageView();
-  } else {        
+  } else {
      dw.ac.setDWAnalytics(dwAnalytics);
-  } 
+  }
 }catch(err) {};
 /* ]]> */
 // -->

@@ -110,12 +110,24 @@ a.v3-wrapper:active {
 
 .v3-percentage {
 	background: #cccccc;
-	border-radius: 2px;
+	border-top-left-radius: 3px;
+	border-bottom-left-radius: 3px;
+	float: left;
 	padding: 4px 10px;
 }
 
 .v3-percentage .count {
 	font-weight: bold;
+}
+
+.v3-count {
+	background: #f0f0f0;
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+	color: #999999;
+	float: left;
+	font-size: 13px;
+	padding: 6px 10px;
 }
 
 /*Colors*/
@@ -146,11 +158,3 @@ a.v3-wrapper:active {
 .dark-green {
 	background: #22813f !important;
 }
-
-
-
-
-
-
-
-

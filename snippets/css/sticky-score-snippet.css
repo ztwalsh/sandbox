@@ -1,0 +1,53 @@
+.v1-wrapper {
+  background: #ffffff;
+  border: 1px solid #dddddd;
+  border-top: 3px solid #4ca968;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  left: 0;
+  padding: 10px;
+  position: fixed;
+  text-align: center;
+  top: 40%;
+}
+
+.v1-score h1 {
+  color: #303533;
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 0;
+}
+
+.v1-score h1 small {
+  color: #999999;
+  font-size: 16px;
+}
+
+.v1-star-container {
+	float: left;
+	margin: 0 auto;
+}
+
+.v1-star  {
+	border-radius: 2px;
+	display: inline-block;
+	float: left;
+	line-height: 1.1;
+	margin-right: 2px;
+	padding: 2px 3px 4px 3px;
+}
+
+.v1-active {
+	background: #f7941d;
+}
+
+.v1-inactive {
+	background: #cccccc;
+}
+
+.v1-read-write {
+  border-top: 1px solid #dddddd;
+  clear: both;
+  margin-top: 10px;
+  padding: 10px 0;
+}

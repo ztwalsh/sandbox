@@ -1,0 +1,53 @@
+.widget-wrapper {
+	background: #ffffff;
+	border-top-right-radius: 3px;
+	border-top-left-radius: 3px;
+	bottom: 0;
+	box-shadow: 0 0 5px rgba(0,0,0,0.4);
+	max-width: 430px;
+	position: absolute;
+	right: 20px;
+	width: 100%;
+}
+
+@keyframes pulse { 
+  50% { background-color: #307fb0 }
+}
+
+.widget-header {
+	background: #4a99ca;
+	border-top-right-radius: 3px;
+	border-top-left-radius: 3px;
+	color: #ffffff;
+	font-size: 18px;
+	padding: 15px;
+	animation: none;
+}
+
+.widget-header.on {
+	animation: pulse 1.25s infinite;
+}
+
+.widget-header:hover {
+	cursor: pointer;
+}
+
+.widget-header i {
+	float: right;
+	font-size: 25px;
+	transition: all ease 0.15s;
+}
+
+.widget-header.on i {
+	-webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.widget-body {
+	display: none;
+	padding: 15px;
+}
+

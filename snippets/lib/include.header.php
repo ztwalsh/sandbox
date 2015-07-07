@@ -1,7 +1,6 @@
 <header>
-	<a href="reco.php">Reco Score</a>
-	<a href="star.php">Star Score</a>
-	<a href="star-histo.php">Star/Histogram Score</a>
-	<a href="star-reco.php">Star/Reco Score</a>
-	<a href="testing.php">Testing</a>
+	<a href="reco-demo.php" target="_blank">Reco Score</a>
+	<a href="star-demo.php" target="_blank">Star Score</a>
+	<a href="star-reco-demo.php" target="_blank">Star/Reco Score</a>
+	<a href="sticky-score-demo.php" target="_blank">Sticky Score</a>
 </header>
