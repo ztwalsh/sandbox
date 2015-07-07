@@ -1,14 +1,23 @@
 .v1-wrapper {
   background: #ffffff;
   border: 1px solid #dddddd;
-  border-top: 3px solid #4ca968;
-  border-top-right-radius: 2px;
-  border-bottom-right-radius: 2px;
-  left: 0;
-  padding: 10px;
+  border-top: 5px solid #dddddd;
+  border-right: 0;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+  min-width: 150px;
+  padding: 10px 0 0 0;
   position: fixed;
+  right: 0;
   text-align: center;
   top: 40%;
+  transition: all ease 0.25s;
+  text-decoration: none;
+  z-index: 1000000;
+}
+
+.v1-wrapper:hover {
+  text-decoration: none;
 }
 
 .v1-score h1 {
@@ -16,6 +25,7 @@
   font-size: 30px;
   font-weight: bold;
   letter-spacing: 0;
+  margin: 0;
 }
 
 .v1-score h1 small {
@@ -24,8 +34,8 @@
 }
 
 .v1-star-container {
-	float: left;
 	margin: 0 auto;
+  width: 90px;
 }
 
 .v1-star  {
@@ -34,20 +44,63 @@
 	float: left;
 	line-height: 1.1;
 	margin-right: 2px;
-	padding: 2px 3px 4px 3px;
+	padding: 0;
 }
 
-.v1-active {
-	background: #f7941d;
-}
-
-.v1-inactive {
-	background: #cccccc;
-}
-
-.v1-read-write {
+.v1-count {
   border-top: 1px solid #dddddd;
-  clear: both;
+  color: #4a99ca;
+  font-size: 12px;
   margin-top: 10px;
-  padding: 10px 0;
+  padding: 10px;
+}
+
+.good {
+  border-top: 5px solid #4ca968;
+}
+
+.ok {
+  border-top: 5px solid #f0bb1c;
+}
+
+.danger {
+  border-top: 5px solid #d83e13;
+}
+
+.dead {
+  border-top: 5px solid #dddddd;
+}
+
+
+
+@media screen and (max-width: 600px) {
+  .v1-wrapper {
+    background: none;
+    border: 0;
+    min-width: 0;
+    padding: 0;
+    position: initial;
+    right: auto;
+    text-align: left;
+    top: auto;
+    z-index: auto;
+  }
+
+  .v1-score h1 {
+    float: left;
+    position: inline-block;
+  }
+
+  .v1-star-container {
+  	float: left;
+    padding: 12px 0 0 8px;
+    width: 100px;
+  }
+
+  .v1-count {
+    border: 0;
+    clear: both;
+    font-size: 14px;
+    padding: 10px 0 0 0;
+  }
 }

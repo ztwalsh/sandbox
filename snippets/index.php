@@ -14,7 +14,7 @@
 				<h1>Snippet Exploration</h1>
 				<ul class="main-bullets">
 					<li>Focus: Product Detail Page</li>
-					<li>Metric: Viewed Reviews</li>
+					<li>Metric: Viewed Reviews Rate</li>
 					<li>Usability: Attention getting, engaging, useful</li>
 				</ul>
 			</article>

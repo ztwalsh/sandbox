@@ -3269,7 +3269,7 @@ if(dw&&dw.__ac){dw.__ac.pv({id:'1005262'})};
 			Read 25 Reviews
 		</div>
 	</a> -->
-  <a class="v3-wrapper" href="#">
+  <a class="v3-wrapper" href="#reviewstab">
     <div class="v3-percentage countdown">
       <span class="count">89</span>%
       <small>Recommended</small>

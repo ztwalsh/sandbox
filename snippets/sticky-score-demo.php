@@ -3285,25 +3285,23 @@ if(dw&&dw.__ac){dw.__ac.pv({id:'1005262'})};
 
 
 <div class="product-review-links">
-  <div class="v1-wrapper cf" href="#">
+  <a class="v1-wrapper cf" href="#reviewstab">
     <div class="v1-score">
-        <h1>4.1<small>/5.0</small></h1>
+        <h1><span class="v1-inner-score">4.1</span><small>/5.0</small></h1>
     </div>
     <div class="v1-summary cf">
       <div class="v1-star-container cf">
-        <div class="v1-star v1-active"><img src="images/star.svg" height="16" width="16" /></div>
-        <div class="v1-star v1-active"><img src="images/star.svg" height="16" width="16" /></div>
-        <div class="v1-star v1-active"><img src="images/star.svg" height="16" width="16" /></div>
-        <div class="v1-star v1-active"><img src="images/star.svg" height="16" width="16" /></div>
-        <div class="v1-star v1-inactive"><img src="images/star.svg" height="16" width="16" /></div>
+        <div class="v1-star"><img src="images/star-orange.svg" height="16" width="16" /></div>
+        <div class="v1-star"><img src="images/star-orange.svg" height="16" width="16" /></div>
+        <div class="v1-star"><img src="images/star-orange.svg" height="16" width="16" /></div>
+        <div class="v1-star"><img src="images/star-orange.svg" height="16" width="16" /></div>
+        <div class="v1-star"><img src="images/star-grey.svg" height="16" width="16" /></div>
       </div>
-      <div class="v1-read-write cf">
-        <div class="v1-count">
-          <a href="#">Read 25 Reviews</a>
-        </div>
+      <div class="v1-count">
+        Read 25 Reviews
       </div>
     </div>
-  </div>
+  </a>
 </div>
 
 
