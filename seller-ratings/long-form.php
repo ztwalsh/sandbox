@@ -11,12 +11,13 @@
 		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 		<script src="js/jquery.js" type="text/javascript"></script>
 		<script src="js/behaviors.js" type="text/javascript"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 	</head>
 	<body>
 		<?php include('lib/include.header.php'); ?>
 		<div class="widget-wrapper">
 			<div class="widget-header">
-				Thank you! We'd love your feedback. <i class="fa fa-angle-down"></i>
+				Rate your shopping experience <i class="fa fa-angle-down"></i>
 			</div>
 			<div class="widget-body">
 				<section class="cf">
@@ -41,7 +42,23 @@
 					<label class="main" for="service_comments">Comments</label>
 					<?php form_textarea('service_comments', ''); ?>
 				</p>
-				<section>
+				<?php if (isset($_GET['long'])) { ?>
+				<p>
+					<label class="main" for="">Nickname</label>
+					<?php form_input('nickname', '', 'nickname', ''); ?>
+				</p>
+				<p>
+					<label class="main" for="">Location</label>
+					<?php form_input('location', '', 'location', ''); ?>
+				</p>
+				<p>
+					<label class="main" for="">Email</label>
+					<?php form_input('email', '', 'email', ''); ?>
+				</p>
+				<?php
+					}
+				?>
+				<section class="submit">
 					<p><?php primary_submit('Submit Review'); ?></p>
 				</section>
 			</div>

@@ -1,31 +1,41 @@
+
+/* ############### LAYOUT ############### */
+.mobile-cta {
+		display: none;
+}
+
 .widget-wrapper {
 	background: #ffffff;
-	border-top-right-radius: 3px;
-	border-top-left-radius: 3px;
-	bottom: 0;
+	border-radius: 3px;
+	bottom: 20px;
 	box-shadow: 0 0 5px rgba(0,0,0,0.4);
+	max-height: 600px;
 	max-width: 430px;
 	position: absolute;
 	right: 20px;
 	width: 100%;
 }
 
-@keyframes pulse { 
+@keyframes pulse {
   50% { background-color: #307fb0 }
 }
 
 .widget-header {
-	background: #4a99ca;
+	animation: none;
+	background: #f0f0f0;
 	border-top-right-radius: 3px;
 	border-top-left-radius: 3px;
-	color: #ffffff;
-	font-size: 18px;
+	color: #303533;
+	font-size: 20px;
 	padding: 15px;
-	animation: none;
+	transition: background ease 0.5s;
 }
 
-.widget-header.on {
+.widget-header.pulse {
 	animation: pulse 1.25s infinite;
+	background: #4a99ca;
+	border-radius: 3px;
+	color: #ffffff;
 }
 
 .widget-header:hover {
@@ -35,10 +45,10 @@
 .widget-header i {
 	float: right;
 	font-size: 25px;
-	transition: all ease 0.15s;
+	transition: all ease 0.5s;
 }
 
-.widget-header.on i {
+.widget-header.pulse i {
 	-webkit-transform: rotate(180deg);
     -moz-transform: rotate(180deg);
     -o-transform: rotate(180deg);
@@ -51,3 +61,63 @@
 	padding: 15px;
 }
 
+@media screen and (max-width: 500px) {
+	.mobile-cta {
+		background: #4a99ca;
+		border-top-left-radius: 3px;
+		border-top-right-radius: 3px;
+		color: #ffffff;
+		display: inline-block;
+		font-size: 16px;
+		padding: 10px;
+		position: absolute;
+		right: 0;
+		top: 40%;
+		transform: rotate(-90deg);
+		-webkit-transform: rotate(-90deg);
+		-moz-transform: rotate(-90deg);
+		-ms-transform: rotate(-90deg);
+		-o-transform: rotate(-90deg);
+		-webkit-transform-origin: 100% 100%;
+	}
+
+	.mobile-cta:hover {
+		cursor: pointer;
+	}
+
+	.widget-wrapper {
+		bottom: auto;
+		display: none;
+		left: 10px;
+		position: fixed;
+		right: 10px;
+		top: 10px;
+		width: auto;
+	}
+}
+
+
+/* ############### CONTENT ############### */
+.success-icon {
+	display: block;
+	height: 0;
+	margin: 0 auto;
+	width: 0;
+	transition: all ease 0.3s;
+}
+
+.success-icon.open {
+	height: 125px;
+	width: 125px;
+}
+
+.success {
+	color: #96c153;
+	font-size: 28px;
+	padding: 80px 0 0 0;
+	text-align: center;
+}
+
+.success h3 {
+	font-weight: normal;
+}

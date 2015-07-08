@@ -1,7 +1,7 @@
 label.main {
 	color: #000000;
 	display: block;
-	font-size: 16px;
+	font-size: 14px;
 	font-weight: bold;
 	padding-bottom: 5px;
 }
@@ -140,21 +140,21 @@ label.star img {
 }
 
 div.star,
-div.star-selected { 
-	font-size: 1.125rem; 
-	padding: 6px; 
+div.star-selected {
+	font-size: 1.125rem;
+	padding: 6px;
 }
 
-label.star input { 
-	display: none; 
+label.star input {
+	display: none;
 }
 
-label.star:hover, 
-label.star:hover ~ label.star, 
-.rating label.selected ~ label.star, 
-label.star:active, 
-.rating label.selected, 
-div.star-selected { 
+label.star:hover,
+label.star:hover ~ label.star,
+.rating label.selected ~ label.star,
+label.star:active,
+.rating label.selected,
+div.star-selected {
 	background: #f7941d;
 }
 
@@ -259,20 +259,20 @@ input.caption {
 	padding: 8px 12px 6px 12px;
 }
 
-::-webkit-input-placeholder {  
-   color: #cccccc;  
+::-webkit-input-placeholder {
+   color: #cccccc;
 }
 
-:-moz-placeholder {  
-   color: #cccccc;  
+:-moz-placeholder {
+   color: #cccccc;
 }
 
-::-moz-placeholder {  
-   color: #cccccc;  
+::-moz-placeholder {
+   color: #cccccc;
 }
 
-:-ms-input-placeholder {  
-   color: #cccccc;  
+:-ms-input-placeholder {
+   color: #cccccc;
 }
 
 .primary {
@@ -308,6 +308,10 @@ input.caption {
 	background: #dddddd;
 	border: solid #cccccc 1px;
 	border-bottom: solid #cccccc 2px;
+}
+
+section.submit {
+	margin-top: 20px;
 }
 
 .add-tag {
