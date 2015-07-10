@@ -126,6 +126,7 @@ div.star,
 div.star-selected {
 	background: #dddddd;
 	border-radius: 3px;
+	border-bottom: 2px solid #bbbbbb;
 	float: right;
 	display: inline-block;
 	cursor: pointer;
@@ -156,6 +157,7 @@ label.star:active,
 .rating label.selected,
 div.star-selected {
 	background: #f7941d;
+	border-bottom: 2px solid #d77f15;
 }
 
 .rating div {

@@ -1,4 +1,5 @@
 <header>
-	<a href="short-form.php" target="_blank">Short Form</a>
-	<a href="long-form.php" target="_blank">Long Form</a>
+	<a href="short-form.php">Short Form</a>
+	<a href="long-form.php?long=true">Long Form</a>
+	<a href="star-widget.php">Star Widget</a>
 </header>
