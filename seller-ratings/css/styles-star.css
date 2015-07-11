@@ -28,7 +28,24 @@
   z-index: 1000000;
 }
 
-.hidden {
+@media screen and (max-width: 600px) {
+  .widget-wrapper {
+    animation: pulse 1.25s infinite;
+    background: #ffffff;
+    border-radius: 3px;
+    border-top: 8px solid #4a99ca;
+    bottom: 10px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.4);
+    left: 10px;
+    padding: 10px 15px 15px 15px;
+    position: fixed;
+    right: 10px;
+    top: auto;
+    width: auto;
+  }
+}
+
+.widget-hidden {
   display: none;
 }
 
@@ -41,7 +58,7 @@
 .success-icon {
 	display: block;
 	height: 0;
-	margin: 0 auto;
+	margin: 0 auto 10px auto;
 	width: 0;
 	transition: all ease 0.3s;
 }
@@ -52,12 +69,12 @@
 }
 
 .success {
-	color: #96c153;
 	font-size: 28px;
 	padding: 50px 0 0 0;
 	text-align: center;
 }
 
 .success h3 {
-	font-weight: normal;
+	color: #96c153;
+  font-weight: normal;
 }

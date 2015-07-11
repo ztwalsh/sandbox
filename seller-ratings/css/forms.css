@@ -3,7 +3,7 @@ label.main {
 	display: block;
 	font-size: 14px;
 	font-weight: bold;
-	padding-bottom: 5px;
+	padding: 0 0 5px 0 !important;
 }
 
 label.main span {
@@ -196,7 +196,7 @@ div.star-selected {
 input.text,
 textarea,
 input.add-tag-input {
-	border: 1px solid #dddddd;
+	border: 1px solid #dddddd !important;
 	border-radius: 3px;
 	box-sizing: border-box;
 	box-shadow: rgba(0, 0, 0, 0.0745098) 0px 1px 1px 0px inset;

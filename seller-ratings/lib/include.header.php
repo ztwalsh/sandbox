@@ -1,5 +1,6 @@
 <header>
-	<a href="short-form.php">Short Form</a>
-	<a href="long-form.php?long=true">Long Form</a>
-	<a href="star-widget.php">Star Widget</a>
+	<a href="confirmation.php">Confirmation</a>
+	<a href="widget-chat.php">Chat Widget Short</a>
+	<a href="widget-chat.php?long=true">Chat Widget Long</a>
+	<a href="widget-star.php">Star Widget</a>
 </header>

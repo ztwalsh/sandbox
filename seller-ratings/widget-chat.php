@@ -5,16 +5,19 @@
 <html>
 	<head>
 		<title>Thanks Page Seller Ratings Widget</title>
+		<link href="//cdn.shopify.com/app/services/5565437/assets/9170767/checkout_stylesheet/v2-c1f57026ad560753f1f35ee0342ce857-15668890328285695284" media="all" rel="stylesheet" />
 		<link href="css/global.css" media="screen" rel="stylesheet" type="text/css" />
-		<link href="css/styles.css" media="screen" rel="stylesheet" type="text/css" />
+		<link href="css/styles-chat.css" media="screen" rel="stylesheet" type="text/css" />
 		<link href="css/forms.css" media="screen" rel="stylesheet" type="text/css" />
 		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 		<script src="js/jquery.js" type="text/javascript"></script>
-		<script src="js/behaviors.js" type="text/javascript"></script>
+		<script src="js/behaviors-chat.js" type="text/javascript"></script>
 		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 	</head>
 	<body>
-		<?php include('lib/include.header.php'); ?>
+		<div class="mobile-cta">
+			Give us your feedback!
+		</div>
 		<div class="widget-wrapper">
 			<div class="widget-header">
 				Rate your shopping experience <i class="fa fa-angle-down"></i>
@@ -22,7 +25,7 @@
 			<div class="widget-body">
 				<section class="cf">
 					<div class="span2">
-						<label class="main" for="rating">Overall rating<span class="required">*</span> <span class="rating-text"></span></label>
+						<label class="main" for="rating">Overall rating</label>
 					</div>
 					<div class="span4">
 						<span class="rating cf">
@@ -58,10 +61,11 @@
 				<?php
 					}
 				?>
-				<section class="submit">
+				<section>
 					<p><?php primary_submit('Submit Review'); ?></p>
 				</section>
 			</div>
 		</div>
+		<?php include('lib/include.content.php'); ?>
 	</body>
 </html>
