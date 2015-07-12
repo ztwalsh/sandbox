@@ -66,34 +66,39 @@
 @media screen and (max-width: 500px) {
 	.mobile-cta {
 		background: #4a99ca;
-		border-top-left-radius: 3px;
-		border-top-right-radius: 3px;
+		border-radius: 3px;
+		bottom: 15px;
 		color: #ffffff;
 		display: inline-block;
 		font-size: 16px;
+		left: 15px;
 		padding: 10px;
-		position: absolute;
-		right: 0;
-		top: 40%;
-		transform: rotate(-90deg);
-		-webkit-transform: rotate(-90deg);
-		-moz-transform: rotate(-90deg);
-		-ms-transform: rotate(-90deg);
-		-o-transform: rotate(-90deg);
-		-webkit-transform-origin: 100% 100%;
+		position: fixed;
+		right: 15px;
+		z-index: 100000;
 	}
 
 	.mobile-cta:hover {
 		cursor: pointer;
 	}
 
+	.mobile-cta i {
+		float: right;
+		font-size: 22px;
+	}
+
 	.widget-wrapper {
 		bottom: auto;
 		display: none;
 		left: 10px;
+		position: absolute;
 		right: 10px;
 		top: 10px;
 		width: auto;
+	}
+
+	.widget-body {
+		max-height: auto;
 	}
 }
 

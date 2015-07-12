@@ -16,11 +16,11 @@
 	</head>
 	<body>
 		<div class="mobile-cta">
-			Give us your feedback!
+			Rate this experience! <i class="fa fa-angle-up"></i>
 		</div>
 		<div class="widget-wrapper">
 			<div class="widget-header">
-				Rate your shopping experience <i class="fa fa-angle-down"></i>
+				How was shopping with us? <i class="fa fa-angle-down"></i>
 			</div>
 			<div class="widget-body">
 				<section class="cf">
