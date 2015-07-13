@@ -64,8 +64,8 @@
 	text-decoration: none;
 }
 
-.pr-snippet-read-write a:hover, 
-.pr-snippet-read-write a:hover span { 
+.pr-snippet-read-write a:hover,
+.pr-snippet-read-write a:hover span {
 	color: #eeb111;
 	text-decoration: underline;
 }
@@ -136,7 +136,7 @@ li.applince div.pr-snippet {
 /*SNIPPET - COMPARE PAGE*/
 .rating .pr-snippet-wrapper {
 	padding: 0 0 10px 0;
-}	
+}
 
 .rating .pr-snippet-stars .pr-snippet-rating-decimal {
 	display: none;
@@ -409,7 +409,7 @@ p.pr-fb-follow-modal-header {
 	width: 92%;
 }
 
-#pr-snapshot-histogram-header span { 
+#pr-snapshot-histogram-header span {
 	color: #666;
 }
 
@@ -453,7 +453,7 @@ ul.pr-ratings-histogram-content li {
 	border-bottom-left-radius: 3px;
 	height: 18px;
 	background-color: #eeb111 !important;
-    background-image: -moz-linear-gradient(center top , rgba(255, 255, 255, 0.3) 0px, rgba(255, 255, 255, 0) 100%) !important;	
+    background-image: -moz-linear-gradient(center top , rgba(255, 255, 255, 0.3) 0px, rgba(255, 255, 255, 0) 100%) !important;
 }
 
 ul.pr-ratings-histogram-content li p.pr-histogram-count {
@@ -501,14 +501,14 @@ ul.pr-ratings-histogram-content li p.pr-histogram-count {
 	display: none;
 }
 
-.pr-other-attributes-subratings{ 
-	display: block !important; 
-	float:right; 
-	height: none; 
-	position: relative; 
-	top: -110px; 
-	left:50px; 
-	width:330px; 
+.pr-other-attributes-subratings{
+	display: block !important;
+	float:right;
+	height: none;
+	position: relative;
+	top: -110px;
+	left:50px;
+	width:330px;
 	margin-bottom: -70px;
 }
 
@@ -561,20 +561,20 @@ ul.pr-ratings-histogram-content li p.pr-histogram-count {
 
 }
 
-.pr-snapshot-write-review:hover { 
+.pr-snapshot-write-review:hover {
 	border-color: #ffffff;
 }
 
-.pr-snapshot-write-review span { 
-	color: #333; 
-	font-weight: bolder; 
+.pr-snapshot-write-review span {
+	color: #333;
+	font-weight: bolder;
 }
 
 .pr-snapshot-write-review:hover span {
 	color: #eeb111;
 }
 
-@media screen and (max-width: 805px) {	
+@media screen and (max-width: 805px) {
 	.pr-snapshot-footer {
 		padding-top: 20px;
 	}
@@ -593,44 +593,44 @@ ul.pr-ratings-histogram-content li p.pr-histogram-count {
 
 
 /*SNAPSHOT - FACEOFF*/
-.pr-review-faceoff { 
-	background: none; 
-	border: none; 
+.pr-review-faceoff {
+	background: none;
+	border: none;
 	padding: .25em 0.5em 0.5em;
 }
 
-.pr-review-faceoff-review-wrapper { 
-	border:none; 
-	border-top: 3px solid #f3f3f3; 
-	border-bottom: 3px solid #f3f3f3; 
-	padding-top: 30px; 
-	padding-bottom: 30px; 
+.pr-review-faceoff-review-wrapper {
+	border:none;
+	border-top: 3px solid #f3f3f3;
+	border-bottom: 3px solid #f3f3f3;
+	padding-top: 30px;
+	padding-bottom: 30px;
 }
 
-.pr-review-faceoff-img { 
-	height: 75%; 
-	top: 20px; 
+.pr-review-faceoff-img {
+	height: 75%;
+	top: 20px;
 	border-right: 1px solid #ededed;
 }
 
-.pr-review-faceoff-img-txt{ 
-	top: 30%; 
-	padding: 12px 8px 9px 8px; 
-	border: 0; 
-	border-radius: 300px; 
-	background: #f3f3f3; 
-	line-height: 23px; 
+.pr-review-faceoff-img-txt{
+	top: 30%;
+	padding: 12px 8px 9px 8px;
+	border: 0;
+	border-radius: 300px;
+	background: #f3f3f3;
+	line-height: 23px;
 	text-align: center;
 }
 
-.pr-review-faceoff-review-positive { 
-	width: 41%; 
-	padding: 0 9% 0 0; 
+.pr-review-faceoff-review-positive {
+	width: 41%;
+	padding: 0 9% 0 0;
 }
 
-.pr-review-faceoff-review-negative { 
-	width: 41% !important; 
-	margin-left: 9% !important; 
+.pr-review-faceoff-review-negative {
+	width: 41% !important;
+	margin-left: 9% !important;
 	padding: 0 !important;
 }
 
@@ -654,29 +654,29 @@ ul.pr-ratings-histogram-content li p.pr-histogram-count {
 	padding-bottom: 12px;
 }
 
-.pr-review-sort .pr-review-sort-wrapper .pr-review-count { 
-	font-size: 11px !important; 
-	font-weight: normal; 
-	margin: 11px 0 0 11px; 
+.pr-review-sort .pr-review-sort-wrapper .pr-review-count {
+	font-size: 11px !important;
+	font-weight: normal;
+	margin: 11px 0 0 11px;
 }
 
-.pr-review-sort-box { 
+.pr-review-sort-box {
 	padding: 10px 10px 0 10px;
 }
 
-.pr-review-sort-box p.pr-review-sort-by { 
-	font-size: 11px; 
-	margin: 0 5px 0 0; 
-	vertical-align: auto; 
+.pr-review-sort-box p.pr-review-sort-by {
+	font-size: 11px;
+	margin: 0 5px 0 0;
+	vertical-align: auto;
 }
 
-.pr-review-sort-box p.pr-review-sort-by:after { 
-	font-size: 11px; 
-	position: relative; 
-	left: 82px; 
+.pr-review-sort-box p.pr-review-sort-by:after {
+	font-size: 11px;
+	position: relative;
+	left: 82px;
 }
 
-.pr-review-sort-box select { 
+.pr-review-sort-box select {
 	background: #ffffff;
 	border-radius: 2px;
 	color: #666;
@@ -716,9 +716,9 @@ ul.pr-ratings-histogram-content li p.pr-histogram-count {
 }
 
 .pr-pagination-bottom {
-	background: #f3f3f3; 
-	color: #666666; 
-	margin: 20px 0 40px 0; 
+	background: #f3f3f3;
+	color: #666666;
+	margin: 20px 0 40px 0;
 	padding: 10px 6px 10px 12px;
 }
 
@@ -732,17 +732,17 @@ ul.pr-ratings-histogram-content li p.pr-histogram-count {
 	margin: 0;
 }
 
-.pr-review-wrap:last-child{ 
-	border: 1px solid red !important; 
+.pr-review-wrap:last-child{
+	border: 1px solid red !important;
 }
 
-.pr-page-nav-wrapper { 
+.pr-page-nav-wrapper {
 	text-align: right;
-	width: auto; 
+	width: auto;
 }
 
-.pr-page-nav span:hover{ 
-	text-decoration: underline !important; 
+.pr-page-nav span:hover{
+	text-decoration: underline !important;
 }
 
 
@@ -821,6 +821,10 @@ p.pr-review-author-location span {
 	display: none;
 }
 
+.pr-review-author-badge-wrapper {
+	max-width: 100px;
+}
+
 
 
 
@@ -843,7 +847,7 @@ p.pr-review-author-location span {
 	margin: 0;
 }
 
-.pr-review-rating-wrapper { 
+.pr-review-rating-wrapper {
 	padding-bottom: 20px;
 }
 
@@ -888,32 +892,32 @@ p.pr-review-author-location span {
 	padding: 20px 0 0 0;
 }
 
-ul.pr-other-attributes-list { 
+ul.pr-other-attributes-list {
 	padding: 5px 0 0 0;
 }
 
-.pr-other-attributes-list li { 
-	margin: 0 0 4px 0; 
+.pr-other-attributes-list li {
+	margin: 0 0 4px 0;
 	width: 100%;
 }
 
-.pr-other-attributes-list li.pr-other-attribute-label { 
-	background: none !important; 
-	width: 120px; 
-	padding: 0; 
-	font-size: 13px; 
-	font-weight: normal; 
-	text-transform: none; 
+.pr-other-attributes-list li.pr-other-attribute-label {
+	background: none !important;
+	width: 120px;
+	padding: 0;
+	font-size: 13px;
+	font-weight: normal;
+	text-transform: none;
 }
 
-.pr-other-attributes-list li.pr-other-attribute-value { 
-	margin: 0; 
+.pr-other-attributes-list li.pr-other-attribute-value {
+	margin: 0;
 }
 
 .pr-stars-small-subrating {
 	background: url('https://www.whirlpoolinsidepass.com/assets/global/powereviews/whirlpool_bar_subrating.gif');
 	width: 142px;
-} 
+}
 
 @media screen and (max-width: 805px) {
 	.pr-other-attributes-list li.pr-other-attribute-label {
@@ -937,10 +941,10 @@ ul.pr-other-attributes-list {
 	display: none;
 }
 
-.pr-review-bottom-line-wrapper p { 
-	color: #666 !important; 
-	font-size: 11px; 
-	font-weight: bold; 
+.pr-review-bottom-line-wrapper p {
+	color: #666 !important;
+	font-size: 11px;
+	font-weight: bold;
 }
 
 @media screen and (max-width: 805px) {
@@ -961,9 +965,9 @@ ul.pr-other-attributes-list {
 	padding: 0 0 10px 0;
 }
 
-.pr-customer-media-user { 
-	display: block; 
-	margin-bottom: 0 !important; 
+.pr-customer-media-user {
+	display: block;
+	margin-bottom: 0 !important;
 }
 
 .pr-pic {
@@ -982,13 +986,13 @@ ul.pr-other-attributes-list {
 	padding: none;
 }
 
-.pr-pic .pr-pic-tags { 
-	margin: 10px 0 0 10px; 
+.pr-pic .pr-pic-tags {
+	margin: 10px 0 0 10px;
 	width: auto;
 }
 
-.pr-customer-media-wrapper { 
-	display: block; width: 100%; 
+.pr-customer-media-wrapper {
+	display: block; width: 100%;
 }
 
 
@@ -1160,22 +1164,22 @@ p.pr-review-report-issue {
 	margin-right: 5px;
 }
 
-.pr-review-helpful-text-link { 
-	color: #666 !important; 
+.pr-review-helpful-text-link {
+	color: #666 !important;
 }
 
-.pr-review-helpful-text-link:hover { 
-	text-decoration: underline; 
+.pr-review-helpful-text-link:hover {
+	text-decoration: underline;
 }
 
-.pr-review-wrap:hover .pr-review-helpful-text a { 
+.pr-review-wrap:hover .pr-review-helpful-text a {
 	background:#eeeeee;
-	transition: all 250ms ease; 
+	transition: all 250ms ease;
 }
 
-.pr-review-tools .pr-review-helpful-text a:hover { 
-	background:#666 !important; 
-	color: #fff !important; 
+.pr-review-tools .pr-review-helpful-text a:hover {
+	background:#666 !important;
+	color: #fff !important;
 	transition: all 250ms ease;
 }
 
@@ -1309,7 +1313,7 @@ div.ratingMessage {
 		width: 100%;
 	}
 
-	.prinputgroup { 
+	.prinputgroup {
 		padding: 0 0 10px 0;
 	}
 
@@ -1763,6 +1767,12 @@ a.button.tagsuggest span {
 
 .prwrapper .break .prCImainform {
 	width: 80% !important;
+}
+
+@media screen and (max-width: 460px) {
+	.prcontentwrap {
+		width: auto;
+	}
 }
 
 
