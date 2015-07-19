@@ -87,13 +87,18 @@
 		font-size: 22px;
 	}
 
+	.widget-header {
+		border-radius: 0;
+	}
+
 	.widget-wrapper {
-		bottom: auto;
+		border-radius: 0;
+		bottom: 0;
 		display: none;
-		left: 10px;
-		position: absolute;
-		right: 10px;
-		top: 10px;
+		left: 0;
+		position: fixed;
+		right: 0;
+		top: 0;
 		width: auto;
 	}
 
