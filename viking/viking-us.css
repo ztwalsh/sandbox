@@ -1,0 +1,495 @@
+/* Viking US Reviews Styles */
+
+.pr-review-engine {
+    padding: 20px 50px 30px 20px !important;
+}
+
+.pr-review-rating-wrapper {
+    background: rgb(255, 255, 255);
+    /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(243, 243, 243, 1) 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 1)), color-stop(100%, rgba(243, 243, 243, 1)));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(243, 243, 243, 1) 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(243, 243, 243, 1) 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(243, 243, 243, 1) 100%);
+    /* IE10+ */
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(243, 243, 243, 1) 100%);
+    /* W3C */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f3f3f3', GradientType=0);
+    /* IE6-9 */
+    border: 1px solid #ccc !important;
+    padding: 15px !important;
+    width: 97% !important;
+    clear:both !important;
+}
+
+@media only screen and (min-device-width: 504px) and (max-device-width: 1024px) {
+    .pr-review-rating-wrapper {
+        width: 95% !important;
+        background: rgb(255, 255, 255);
+        /* Old browsers */
+        background: -moz-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(243, 243, 243, 1) 100%);
+        /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 1)), color-stop(100%, rgba(243, 243, 243, 1)));
+        /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(243, 243, 243, 1) 100%);
+        /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(243, 243, 243, 1) 100%);
+        /* Opera 11.10+ */
+        background: -ms-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(243, 243, 243, 1) 100%);
+        /* IE10+ */
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(243, 243, 243, 1) 100%);
+        /* W3C */
+        filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f3f3f3', GradientType=0);
+        /* IE6-9 */
+        border: 1px solid #ccc !important;
+        padding: 15px !important;
+        clear: both !important;
+    }
+}
+
+@media (max-width: 749px) {
+    /*.pr-review-main-wrapper {
+        border-left: 0px !important;
+        padding-left: 0px !important;
+        width: 100% !important;
+    }
+
+    .pr-review-author {
+        color: #ff0000 !important;
+        margin-right: 0px !important;
+        margin-left: 0px !important;
+        width: 100% !important;
+    }
+
+    .pr-review-wrap {
+      position: relative;
+    }
+
+    .pr-review-engine .pr-other-attributes {
+      position: relative;
+    }*/
+
+    /*Zachs Changes*/
+    .pr-review-rating-wrapper,
+    .pr-review-engine-min-width-690px .pr-review-rating-wrapper {
+      box-sizing: border-box !important;
+      float: none;
+      width: 100% !important;
+    }
+
+    .pr-review-wrap {
+      position: relative;
+    }
+
+    .pr-review-engine .pr-comments-header {
+      font-weight: bold;
+    }
+
+    .pr-review-engine .pr-review-text:nth-child(2) .pr-comments-header {
+      display: none !important;
+    }
+
+    .pr-review-author,
+    .pr-review-engine-min-width-690px .pr-review-author {
+      float: none;
+      margin: 0;
+      padding: 0 20px;
+      width: auto;
+    }
+
+    .pr-review-main-wrapper,
+    .pr-review-engine-min-width-690px .pr-review-main-wrapper,
+    .pr-review-engine-min-width-690px .pr-review-rating-wrapper {
+      padding: 0 20px;
+      width: auto;
+    }
+
+    .pr-other-attributes {
+      display: none;
+    }
+}
+
+
+
+@media (min-width: 750px) and (max-width: 999px) {
+    /*.pr-review-main-wrapper {
+        border-left: 1px solid #aaa !important;
+        float: left !important;
+        padding-left: 20px !important;
+        width: 49% !important;
+    }
+
+    .pr-review-author {
+        color: #ff0000 !important;
+        float: left !important;
+        margin-left: 24px !important;
+        margin-right: 20px !important;
+        width: 230px !important;
+    }
+
+    .pr-review-wrap {
+      position: relative;
+    }
+
+    .pr-review-engine .pr-other-attributes {
+      position: absolute !important;
+      left: 25px !important;
+      top: 140px !important;
+    }*/
+
+    /*Zachs Changes*/
+    .pr-review-rating-wrapper,
+    .pr-review-engine-min-width-690px .pr-review-rating-wrapper {
+      box-sizing: border-box !important;
+      float: none;
+      width: 100% !important;
+    }
+
+    .pr-review-wrap {
+      position: relative;
+    }
+
+    .pr-review-author,
+    .pr-review-engine-min-width-690px .pr-review-author {
+      float: left;
+      margin: 0 20px 0 0;
+      min-height: 160px;
+      padding-left: 20px;
+      width: 230px;
+    }
+
+    .pr-review-main-wrapper,
+    .pr-review-engine-min-width-690px .pr-review-main-wrapper,
+    .pr-review-engine-min-width-690px .pr-review-rating-wrapper {
+      border-left: 1px solid #cccccc;
+      float: none;
+      overflow: hidden;
+      width: auto;
+    }
+
+    .pr-review-engine .pr-comments-header {
+      font-weight: bold;
+    }
+
+    .pr-other-attributes {
+      margin: auto;
+      left: 20px;
+      margin: 0 20px 0 0;
+      position: absolute;
+      top: 150px;
+      width: 230px;
+    }
+}
+
+
+
+@media (min-width: 1000px) {
+
+    /*.pr-review-main-wrapper{
+        border-left: 1px solid #aaa !important;
+        float: left !important;
+        padding-left: 20px !important;
+        width: 50% !important;
+        }
+
+    .pr-review-author {
+        color: #ff0000 !important;
+        margin-right: 20px !important;
+        margin-left: 24px !important;
+        width: 230px !important;
+    }
+
+    .pr-review-wrap {
+      position: relative;
+    }
+
+    .pr-review-engine .pr-other-attributes {
+          position: absolute;
+          left: 25px;
+          top: 140px;
+    }*/
+
+    /*.pr-review-text:nth-child(2n+1)  {
+        position: relative;
+    }
+    .pr-review-text:nth-child(2n+1) .pr-comments-header {
+        float: right !important;
+        position: absolute !important;
+        right: -117px !important;
+        top: -333px !important;
+    }
+    .pr-review-text:nth-child(2n+1) .pr-comments {
+        float: right !important;
+        position: absolute !important;
+        right: -117px !important;
+        top: -333px !important;
+    }*/
+
+    /*Zachs Changes*/
+    .pr-review-rating-wrapper,
+    .pr-review-engine-min-width-690px .pr-review-rating-wrapper {
+      box-sizing: border-box !important;
+      float: none;
+      width: 100% !important;
+    }
+
+    .pr-review-wrap {
+      position: relative;
+    }
+
+    .pr-review-author,
+    .pr-review-engine-min-width-690px .pr-review-author {
+      float: left;
+      margin: 0 20px 0 0;
+      min-height: 160px;
+      padding-left: 20px;
+      width: 230px;
+    }
+
+    .pr-review-main-wrapper,
+    .pr-review-engine-min-width-690px .pr-review-main-wrapper,
+    .pr-review-engine-min-width-690px .pr-review-rating-wrapper {
+      border-left: 1px solid #cccccc;
+      float: none;
+      overflow: hidden;
+      padding-left: 20px;
+      width: auto;
+    }
+
+    .pr-review-engine .pr-comments-header {
+      font-weight: bold;
+    }
+
+    .pr-review-text:nth-child(2) {
+      float: left;
+      width: 65%;
+    }
+
+    .pr-review-text:nth-child(3) {
+      float: right;
+      padding-left: 20px;
+      width: 30%;
+    }
+
+    .pr-other-attributes {
+      margin: auto;
+      left: 20px;
+      margin: 0 20px 0 0;
+      position: absolute;
+      top: 150px;
+      width: 230px;
+    }
+}
+
+
+
+.pr-review-author-name {
+    visibility: hidden !important;
+}
+
+.pr-review-author-name span {
+    visibility: visible !important;
+    float: left !important;
+    margin-left: 0px !important;
+    font-weight: bold !important;
+}
+
+.pr-review-author-location {
+    visibility: hidden !important;
+}
+
+.pr-review-author-location span {
+    visibility: visible !important;
+    float: left !important;
+    margin-left: 0px !important;
+    margin-bottom: 20px !important;
+    clear: both;
+}
+
+.pr-customer-media-wrapper {
+    margin-right: 15px !important;
+}
+
+.pr-customer-media {
+    background: rgb(255, 255, 255);
+    /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(243, 243, 243, 1) 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 1)), color-stop(100%, rgba(243, 243, 243, 1)));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(243, 243, 243, 1) 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(243, 243, 243, 1) 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(243, 243, 243, 1) 100%);
+    /* IE10+ */
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(243, 243, 243, 1) 100%);
+    /* W3C */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f3f3f3', GradientType=0);
+    /* IE6-9 */
+    padding: 15px 0px 0 15px !important;
+    border: 1px solid #aaa !important;
+    float: left !important;
+    clear: both !important;
+    margin-bottom: 25px !important;
+}
+
+.pr-pic-content {
+    padding: 0 !important;
+    margin: 0 !important;
+    border: 0 none !important;
+    display: inline !important;
+}
+
+.pr-caption {
+    margin-bottom: 0 !important;
+}
+
+
+/* Hidden Elements */
+
+#pr-review-engine-1234 .pr-header {
+    display: none !important;
+}
+
+.pr-review-points {
+    display: none !important;
+}
+
+.pr-customer-media-user {
+    display: none !important;
+}
+
+.pr-review-author-date {
+    display: none !important;
+}
+
+.pr-rating {
+    display: none !important;
+}
+
+.pr-review-tools {
+    display: none;
+}
+
+.pr-other-attributes {
+    /*display: none !important;*/
+}
+
+.pr-review-bottom-line-wrapper {
+    display: none;
+}
+
+.pr-stars-small {
+    background-image: url(http://shoaibuddin.com/projects/pr/viking-us/images/stars_small.gif) !important;
+}
+
+.pr-review-rating-headline {
+    text-transform: uppercase !important;
+    color: #454646 !important;
+}
+
+.pr-other-attribute-tag-group .pr-other-attribute-label {
+  display: none;
+}
+
+.pr-comments-header {
+    display: block !important;
+    font-size: 16px !important;
+    color: #303533 !important;
+}
+
+.pr-review-wrap {
+    border-bottom: 0px none !important;
+}
+
+.pr-review-text:after {
+    color: #ff0000 !important;
+}
+
+/* Write Review Form */
+.p-w-r .pr-war {
+  margin: 0 auto !important;
+}
+
+.p-w-r .pr-star-selected{
+  background-color: #ad1e37 !important;
+}
+
+.pr-header-product-img {
+    text-align: left !important;
+    width: 100px !important;
+}
+
+.pr-header-title {
+    display: none;
+}
+
+.pr-header-product-name {
+    font-size: 16px !important;
+    color: #303533 !important!
+    font-weight: bold !important;
+    text-transform: capitalize !important;
+}
+.pr-required-indicator {
+    display: none !important;
+}
+
+#pr-pros {
+  display: none !important;
+}
+
+#pr-cons {
+  display: none !important;
+}
+
+#pr-bestuses {
+  display: none !important;
+}
+
+#pr-bottomline {
+  display: none !important;
+}
+
+.pr-footer-logo-container {
+  display: none !important;
+}
+
+select {
+  background: url('http://www.vikingrivercruises.com/Content/images/v2/drop_arrow.gif') 372px 15px no-repeat !important;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+/*[data-reactid=".0.3.0.1.1.2.1"] { display:none !important; }
+[data-reactid=".0.3.1.0.$ag8"] { display:none !important; }
+[data-reactid=".0.3.1.0.$ag54605"] { display:none !important; }
+[data-reactid=".0.3.1.0.$ag107424_msq42679.0.2.$add-tag-button"] { display:none !important; }
+[data-reactid=".0.3.2.4"] { display:none !important; }
+[data-reactid=".0.3.1.0.$ag107420_msq42675.0.2.$add-tag-button"] { display:none !important; }*/
+
+.pr-btn-add-tag {
+    display:none !important;
+}
+
+#pr-wasthisagift {
+    display:none !important;
+}
+
+.pr-btn-review {
+
+}
+
+.p-w-r .pr-btn-review:hover, .p-w-r .pr-btn-review:focus, .p-w-r .pr-btn-review:active, .p-w-r .pr-btn-review.active {
+    background-color: #ad1e37 !important;
+}
+
+.subscript {
+    display:none !important;
+}
