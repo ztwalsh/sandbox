@@ -94,6 +94,10 @@ div.ratingMessage {
 	display: none;
 }
 
+p.checkitem a.checkbox {
+	padding: 5px 12px 5px 26px;
+}
+
 .prCImainform {
 	background: none;
 	border: 0;
