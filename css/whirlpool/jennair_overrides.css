@@ -90,6 +90,10 @@ div.ratingMessage {
 	font-style: normal;
 }
 
+#bottomline {
+	display: none;
+}
+
 .prCImainform {
 	background: none;
 	border: 0;
@@ -104,7 +108,7 @@ div.ratingMessage {
 		width: 100%;
 	}
 
-	.prinputgroup { 
+	.prinputgroup {
 		padding: 0 0 10px 0;
 	}
 
@@ -231,7 +235,7 @@ table.radioScale {
 }
 
 @media screen and (max-width: 550px) {
-	
+
 }
 
 
