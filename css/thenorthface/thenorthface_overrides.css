@@ -1,6 +1,12 @@
 
 
-.pr-snapshot-head {
+.pr-snapshot-head,
+.pr-snapshot-body,
+.pr-review-content-header,
+.pr-review-sort,
+.pr-contents {
 	background: none;
-	border: ;
+	border: 0;
+	margin: 0;
+	padding: 0;
 }
