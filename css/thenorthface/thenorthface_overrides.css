@@ -1,10 +1,12 @@
 
 
 .pr-snapshot-head,
+.pr-snapshot-head-wrapper,
 .pr-snapshot-body,
 .pr-snapshot-body-wrapper,
-.pr-attribute-key,
-.pr-attribute-value,
+.pr-attribute-group,
+.pr-review-sort,
+.pr-review-sort-wrapper,
 .pr-review-content-header,
 .pr-review-sort,
 .pr-contents,
