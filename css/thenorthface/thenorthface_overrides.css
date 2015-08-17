@@ -1,5 +1,4 @@
-
-
+/* RESET */
 .pr-snapshot-head,
 .pr-snapshot-head-wrapper,
 .pr-snapshot-body,
@@ -13,6 +12,9 @@
 .pr-contents-wrapper {
 	background: none;
 	border: 0;
+	color: #2a2a34;
+	font-size: 13px;
+	line-height: 150%;
 	margin: 0;
 	padding: 0;
 }
