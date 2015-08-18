@@ -28,7 +28,7 @@
 .pr-review-rating-headline,
 .pr-snapshot-title,
 .pr-other-attributes-list li.pr-other-attribute-label,
-.pr-snapshot-histogram-header,
+#pr-snapshot-histogram-header,
 .pr-snapshot-write-review {
 	font-family: 'HelveticaNeueW02-77BdCn_694066', Helvetica, sans-serif;
 }
@@ -94,6 +94,7 @@
 }
 
 #pr-snapshot-histogram-wrapper {
+	padding-top: 20px;
 	position: static;
 }
 
@@ -158,7 +159,7 @@ ul.pr-ratings-histogram-content li p.pr-histogram-count {
 	display: block;
 	float: left;
 	margin: 0;
-	padding: 50px 0 0 40px;
+	padding: 35px 0 0 40px;
 	width: 65%;
 }
 
