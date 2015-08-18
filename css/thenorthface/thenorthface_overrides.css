@@ -72,6 +72,10 @@
 	padding: 0;
 }
 
+.pr-other-attribute-label {
+	font-size: 16px;
+}
+
 
 /**/
 /**/
@@ -153,7 +157,7 @@ ul.pr-ratings-histogram-content li p.pr-histogram-count {
 	display: block;
 	float: left;
 	margin: 0;
-	padding: 0 0 0 20px;
+	padding: 50px 0 0 40px;
 	width: 65%;
 }
 
@@ -189,7 +193,7 @@ ul.pr-ratings-histogram-content li p.pr-histogram-count {
 .pr-other-attribute-value-histogram-element td.pr-other-attribute-value-histogram-bar {
 	font-size: 12px;
 	line-height: 1;
-	padding: 0 0 8px 0;
+	padding: 0;
 }
 
 .pr-other-attribute-value-histogram-label {
