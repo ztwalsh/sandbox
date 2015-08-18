@@ -1,4 +1,5 @@
 /* RESET */
+.pr-review-engine,
 .pr-snapshot-head,
 .pr-snapshot-head-wrapper,
 .pr-snapshot-body,
@@ -19,12 +20,18 @@
 	padding: 0;
 }
 
+.pr-review-engine {
+	padding: 20px 0;
+}
+
 .pr-review-rating-headline,
 .pr-snapshot-title {
 	font-family: 'HelveticaNeueW02-77BdCn_694066', Helvetica, sans-serif;
 }
 
 
+/**/
+/**/
 /*SNAPSHOT*/
 .pr-snapshot-body-wrapper {
 	border-bottom: 1px solid #bcc0c4;
@@ -52,12 +59,16 @@
 }
 
 
+/**/
+/**/
 /*SORT/PAGINATION*/
 .pr-pagination-top {
 	visibility: hidden;
 }
 
 
+/**/
+/**/
 /*REVIEWS*/
 .pr-review-most-helpful,
 .pr-review-rating .pr-rating,
