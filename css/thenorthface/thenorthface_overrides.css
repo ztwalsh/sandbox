@@ -19,8 +19,17 @@
 	padding: 0;
 }
 
+.pr-review-rating-headline,
+.pr-snapshot-title {
+	font-family: 'HelveticaNeueW02-77BdCn_694066', Helvetica, sans-serif;
+}
+
 
 /*SNAPSHOT*/
+.pr-snapshot-title {
+	font-size: 28px;
+}
+
 .pr-snapshot-cobrand {
 		display: none;
 }
@@ -35,6 +44,14 @@
 
 
 /*REVIEWS*/
+.pr-review-rating .pr-rating {
+	display: none;
+}
+
+.pr-review-rating .pr-review-rating-headline {
+	clear: both;
+}
+
 .pr-review-points {
 	display: none;
 }
