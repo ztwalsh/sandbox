@@ -18,3 +18,23 @@
 	margin: 0;
 	padding: 0;
 }
+
+
+/*SNAPSHOT*/
+.pr-snapshot-cobrand {
+		display: none;
+}
+
+.pr-other-attributes-histogram {
+	display: block;
+}
+
+.pr-other-attributes {
+	display: none;
+}
+
+
+/*REVIEWS*/
+.pr-review-points {
+	display: none;
+}
