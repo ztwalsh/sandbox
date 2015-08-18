@@ -51,8 +51,14 @@
 	display: none;
 }
 
+.pr-review-rating .pr-stars {
+	padding-bottom: 10px;
+}
+
 .pr-review-rating .pr-review-rating-headline {
 	clear: both;
+	font-size: 18px;
+	text-transform: uppercase;
 }
 
 .pr-review-points {
