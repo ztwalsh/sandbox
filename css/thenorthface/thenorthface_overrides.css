@@ -26,6 +26,12 @@
 
 
 /*SNAPSHOT*/
+.pr-snapshot-body-wrapper {
+	border-bottom: 1px solid #bcc0c4;
+	margin: 0 0 20px 0;
+	padding: 0 0 20px 0;
+}
+
 .pr-snapshot-title {
 	font-size: 28px;
 	font-style: italic;
@@ -46,6 +52,12 @@
 }
 
 
+/*SORT/PAGINATION*/
+.pr-pagination-top {
+	visibility: hidden;
+}
+
+
 /*REVIEWS*/
 .pr-review-most-helpful,
 .pr-review-rating .pr-rating,
@@ -58,8 +70,10 @@
 	background: #ffffff;
 	border: 1px solid #dddddd;
 	border-radius: 2px;
+	color: #666666;
+	line-height: 1;
 	margin: 0;
-	padding: 5px 8px;
+	padding: 5px 8px 6px 8px;
 }
 
 .pr-review-rating {
@@ -75,4 +89,5 @@
 
 .pr-review-text {
 	margin: 0;
+	padding: 0 0 20px 0;
 }
