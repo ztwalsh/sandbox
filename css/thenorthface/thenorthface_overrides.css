@@ -54,6 +54,14 @@
 	display: none;
 }
 
+.pr-review-author-date {
+	background: #ffffff;
+	border: 1px solid #dddddd;
+	border-radius: 2px;
+	margin: 0;
+	padding: 5px 8px;
+}
+
 .pr-review-rating {
 	margin: 0;
 }
@@ -61,7 +69,7 @@
 .pr-review-rating .pr-review-rating-headline {
 	clear: both;
 	font-size: 18px;
-	padding: 10px 0 20px 0;
+	padding: 5px 0 10px 0;
 	text-transform: uppercase;
 }
 
