@@ -298,8 +298,17 @@ ul.pr-ratings-histogram-content li p.pr-histogram-count {
 .pr-review-most-helpful,
 .pr-review-rating .pr-rating,
 .pr-review-points,
-.pr-review-text .pr-comments-header {
+.pr-review-text .pr-comments-header,
+.pr-review-main-wrapper .pr-other-attributes {
 	display: none;
+}
+
+.pr-review-author {
+	width: 20%;
+}
+
+.pr-review-main-wrapper {
+	width: 78%;
 }
 
 .pr-review-author-date {
