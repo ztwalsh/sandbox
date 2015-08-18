@@ -307,6 +307,7 @@ ul.pr-ratings-histogram-content li p.pr-histogram-count {
 	width: 20%;
 }
 
+.pr-review-rating-wrapper,
 .pr-review-main-wrapper {
 	width: 78%;
 }
