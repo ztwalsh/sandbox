@@ -28,6 +28,9 @@
 /*SNAPSHOT*/
 .pr-snapshot-title {
 	font-size: 28px;
+	font-style: italic;
+	letter-spacing: 0.14em;
+	text-transform: uppercase;
 }
 
 .pr-snapshot-cobrand {
