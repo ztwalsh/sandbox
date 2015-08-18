@@ -61,6 +61,79 @@
 
 /**/
 /**/
+/*PRIMARY HISTOGRAM*/
+.pr-closed {
+	display: block;
+}
+
+#pr-snapshot-histogram {
+	clear: both;
+	float: none;
+	margin: 0;
+}
+
+#pr-snapshot-histogram-wrapper {
+	position: static;
+}
+
+#pr-snapshot-histogram-lnk {
+	display: none;
+}
+
+#pr-snapshot-histogram-header {
+	color: #000000;
+	font-family: 'MuseoRounded700', Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	padding: 0;
+}
+
+#pr-snapshot-histogram-container {
+	border: 0;
+	margin: 0;
+	position: static;
+}
+
+ul.pr-ratings-histogram-content {
+	padding: 0;
+}
+
+ul.pr-ratings-histogram-content li {
+	display: table;
+	margin: 0;
+	padding-bottom: 4px;
+}
+
+.pr-histogram-label {
+	display: table-cell;
+	font-size: 13px;
+	width: 50px;
+}
+
+.pr-ratings-histogram-bar {
+	border-radius: 3px;
+	display: table-cell;
+	float: none;
+	vertical-align: top;
+	width: 100%;
+}
+
+.pr-ratings-histogram-bar .pr-ratings-histogram-barValue {
+	background: #e6af33;
+	background-image: none;
+	border-top-left-radius: 3px;
+	border-bottom-left-radius: 3px;
+}
+
+ul.pr-ratings-histogram-content li p.pr-histogram-count {
+	display: table-cell;
+	font-size: 11px;
+	padding-left: 5px;
+	width: 30px;
+}
+
+
+/**/
+/**/
 /*ATTRIBUTE HISTOGRAM*/
 .pr-other-attributes-histogram {
 	display: block;
