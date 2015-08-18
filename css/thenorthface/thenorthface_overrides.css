@@ -52,6 +52,38 @@
 
 .pr-other-attributes-histogram {
 	display: block;
+	float: left;
+	margin: 0;
+	padding: 0 0 0 20px;
+	width: 65%;
+}
+
+.pr-other-attributes-list li {
+	float: left;
+	width: 48%;
+}
+
+.pr-snapshot-body-wrapper .pr-other-attributes-list li.pr-other-attribute-label {
+	float: none;
+}
+
+.pr-snapshot-body-wrapper .pr-other-attributes-list li.pr-other-attribute-value {
+	width: 100%;
+}
+
+.pr-other-attributes-histogram table {
+	width: 100%;
+}
+
+.pr-other-attributes-histogram table tbody,
+.pr-other-attributes-histogram table tbody tr td {
+	background: none !important;
+	border: 0 !important;
+	box-shadow: none;
+}
+
+.pr-snapshot-body-wrapper .pr-other-attributes {
+	display: none;
 }
 
 .pr-other-attributes {
