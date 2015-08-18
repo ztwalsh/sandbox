@@ -27,7 +27,8 @@
 .pr-review-rating-headline,
 .pr-snapshot-title,
 .pr-other-attributes-list li.pr-other-attribute-label,
-.pr-snapshot-histogram-header {
+.pr-snapshot-histogram-header,
+.pr-snapshot-write-review {
 	font-family: 'HelveticaNeueW02-77BdCn_694066', Helvetica, sans-serif;
 }
 
@@ -227,6 +228,25 @@ ul.pr-ratings-histogram-content li p.pr-histogram-count {
 
 .pr-snippet-review-count {
 	display: none !important;
+}
+
+
+/**/
+/**/
+/*FOOTER*/
+.pr-snapshot-footer {
+	margin: -49px 0 0 0;
+	padding: 0;
+	position: absolute;
+	text-align: right;
+	width: 96%;
+}
+
+.pr-snapshot-write-review {
+	background: #000000;
+	display: inline-block;
+	line-height: 1;
+	padding: 5px 10px;
 }
 
 
