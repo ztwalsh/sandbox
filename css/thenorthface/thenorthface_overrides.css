@@ -50,6 +50,18 @@
 		display: none;
 }
 
+.pr-snapshot-body-wrapper .pr-other-attributes {
+	display: none;
+}
+
+.pr-other-attributes {
+	display: none;
+}
+
+
+/**/
+/**/
+/*ATTRIBUTE HISTOGRAM*/
 .pr-other-attributes-histogram {
 	display: block;
 	float: left;
@@ -82,12 +94,52 @@
 	box-shadow: none;
 }
 
-.pr-snapshot-body-wrapper .pr-other-attributes {
+.pr-other-attribute-sizing {
 	display: none;
 }
 
-.pr-other-attributes {
-	display: none;
+.pr-other-attribute-value-histogram-element td,
+.pr-other-attribute-value-histogram-element td.pr-other-attribute-value-histogram-bar {
+	font-size: 12px;
+	line-height: 1;
+	padding: 0 0 8px 0;
+}
+
+.pr-other-attribute-value-histogram-label {
+	width: 50%;
+}
+
+.pr-other-attribute-value-histogram-bar {
+	border: 0;
+	width: 75px;
+}
+
+.pr-other-attribute-value-histogram-stats {
+	width: auto;
+}
+
+.pr-other-attribute-value-histogram-wrapper {
+	border-radius: 3px;
+	height: 8px;
+	width: auto;
+}
+
+.pr-other-attribute-value-histogram-element-max {
+	font-weight: normal;
+}
+
+.pr-other-attribute-value-histogram-element-max .pr-other-attribute-value-histogram-barValue,
+.pr-other-attribute-value-histogram-barValue {
+	background: #e6af33;
+	height: 8px;
+}
+
+.pr-other-attribute-value-histogram-stats p {
+	padding-left: 5px;
+}
+
+.pr-snippet-review-count {
+	display: none !important;
 }
 
 
