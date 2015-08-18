@@ -47,6 +47,10 @@
 	padding: 0 0 20px 0;
 }
 
+.pr-snapshot-head {
+	padding: 0 0 20px 0;
+}
+
 .pr-snapshot-title {
 	font-size: 28px;
 	font-style: italic;
@@ -258,9 +262,13 @@ ul.pr-ratings-histogram-content li p.pr-histogram-count {
 /**/
 /**/
 /*SORT/PAGINATION*/
+.pr-review-content-header,
 .pr-review-sort {
-	border-bottom: 1px solid #bcc0c4;
 	clear: both;
+}
+
+.pr-review-sort {
+	border-top: 1px solid #bcc0c4;
 }
 
 .pr-pagination-top {
