@@ -100,8 +100,6 @@
 }
 
 #pr-snapshot-histogram-header {
-	color: #000000;
-	font-family: 'MuseoRounded700', Arial, Helvetica, sans-serif;
 	font-size: 16px;
 	padding: 0;
 }
@@ -137,7 +135,7 @@ ul.pr-ratings-histogram-content li {
 }
 
 .pr-ratings-histogram-bar .pr-ratings-histogram-barValue {
-	background: #e6af33;
+	background: #f4c00d;
 	background-image: none;
 	border-top-left-radius: 3px;
 	border-bottom-left-radius: 3px;
@@ -222,7 +220,7 @@ ul.pr-ratings-histogram-content li p.pr-histogram-count {
 
 .pr-other-attribute-value-histogram-element-max .pr-other-attribute-value-histogram-barValue,
 .pr-other-attribute-value-histogram-barValue {
-	background: #e6af33;
+	background: #f4c00d;
 	height: 8px;
 }
 
