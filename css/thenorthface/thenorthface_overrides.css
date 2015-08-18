@@ -33,6 +33,11 @@
 /**/
 /**/
 /*SNAPSHOT*/
+.pr-snapshot-cobrand,
+.pr-snapshot-body-wrapper .pr-other-attributes {
+		display: none;
+}
+
 .pr-snapshot-body-wrapper {
 	border-bottom: 1px solid #bcc0c4;
 	margin: 0 0 20px 0;
@@ -46,16 +51,14 @@
 	text-transform: uppercase;
 }
 
-.pr-snapshot-cobrand {
-		display: none;
+.pr-snapshot-rating-wrapper {
+	float: left;
+	width: 30%;
 }
 
-.pr-snapshot-body-wrapper .pr-other-attributes {
-	display: none;
-}
-
-.pr-other-attributes {
-	display: none;
+.pr-other-attributes-histogram {
+	float: right;
+	width: 65%;
 }
 
 
