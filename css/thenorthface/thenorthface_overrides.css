@@ -47,15 +47,15 @@
 
 
 /*REVIEWS*/
-.pr-review-most-helpful {
+.pr-review-most-helpful,
+.pr-review-rating .pr-rating,
+.pr-review-points,
+.pr-review-text .pr-comments-header {
 	display: none;
 }
 
 .pr-review-rating {
 	margin: 0;
-}
-.pr-review-rating .pr-rating {
-	display: none;
 }
 
 .pr-review-rating .pr-review-rating-headline {
@@ -67,9 +67,4 @@
 
 .pr-review-text {
 	margin: 0;
-}
-
-.pr-review-text .pr-review-points,
-.pr-review-text .pr-comments-header {
-	display: none;
 }
