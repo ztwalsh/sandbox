@@ -69,11 +69,8 @@
 
 .pr-other-attributes-list li.pr-other-attribute-label {
 	background-image: none;
-	padding: 0;
-}
-
-.pr-other-attribute-label {
 	font-size: 16px;
+	padding: 0;
 	width: auto;
 }
 
