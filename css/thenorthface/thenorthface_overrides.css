@@ -43,7 +43,6 @@
 }
 
 .pr-snapshot-body-wrapper {
-	border-bottom: 1px solid #bcc0c4;
 	margin: 0 0 20px 0;
 	padding: 0 0 20px 0;
 }
@@ -248,8 +247,9 @@ ul.pr-ratings-histogram-content li p.pr-histogram-count {
 	background: #000000;
 	color: #ffffff;
 	display: inline-block;
-	font-size: 20px;
+	font-size: 18px;
 	float: right;
+	letter-spacing: 0.14em;
 	line-height: 1;
 	padding: 10px 20px;
 }
@@ -258,6 +258,11 @@ ul.pr-ratings-histogram-content li p.pr-histogram-count {
 /**/
 /**/
 /*SORT/PAGINATION*/
+.pr-review-sort {
+	border-bottom: 1px solid #bcc0c4;
+	clear: both;
+}
+
 .pr-pagination-top {
 	visibility: hidden;
 }
