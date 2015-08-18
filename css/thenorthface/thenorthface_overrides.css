@@ -26,7 +26,8 @@
 
 .pr-review-rating-headline,
 .pr-snapshot-title,
-.pr-other-attributes-list li.pr-other-attribute-label {
+.pr-other-attributes-list li.pr-other-attribute-label,
+.pr-snapshot-histogram-header {
 	font-family: 'HelveticaNeueW02-77BdCn_694066', Helvetica, sans-serif;
 }
 
@@ -55,6 +56,10 @@
 .pr-snapshot-rating-wrapper {
 	float: left;
 	width: 30%;
+}
+
+.pr-snapshot-histogram {
+	padding-top: 20px;
 }
 
 .pr-other-attributes-histogram {
