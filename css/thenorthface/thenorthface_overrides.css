@@ -299,9 +299,12 @@ ul.pr-ratings-histogram-content li p.pr-histogram-count {
 .pr-review-most-helpful,
 .pr-review-rating .pr-rating,
 .pr-review-points,
-.pr-review-text .pr-comments-header,
-.pr-review-main-wrapper .pr-other-attributes {
+.pr-review-text .pr-comments-header {
 	display: none;
+}
+
+.pr-review-wrap {
+	position: relative;
 }
 
 .pr-review-author {
@@ -357,4 +360,8 @@ ul.pr-ratings-histogram-content li p.pr-histogram-count {
 .pr-review-text {
 	margin: 0;
 	padding: 0 0 20px 0;
+}
+
+.pr-review-main-wrapper .pr-other-attributes {
+	position: absolute;
 }
