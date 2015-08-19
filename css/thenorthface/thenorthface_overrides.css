@@ -310,6 +310,8 @@ ul.pr-ratings-histogram-content li p.pr-histogram-count {
 .pr-review-wrap a {
 	color: #2a2a34;
 	font-family: arial, sans;
+	font-weight: bold;
+	text-transform: none;
 }
 
 .pr-review-author {
