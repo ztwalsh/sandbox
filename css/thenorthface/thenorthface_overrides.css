@@ -386,8 +386,8 @@ a.prReviewAuthorProfileLnk {
 	width: 200px;
 }
 
-.pr-other-attributes-list li.pr-other-attribute-label:last-child,
-.pr-other-attributes-list li.pr-other-attribute-value:last-child {
+.pr-review-main-wrapper .pr-other-attributes-list li.pr-other-attribute-label:nth-child(5n),
+.pr-review-main-wrapper .pr-other-attributes-list li.pr-other-attribute-value:nth-child(6n) {
 	display: none;
 }
 
