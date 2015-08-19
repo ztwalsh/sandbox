@@ -290,8 +290,16 @@ ul.pr-ratings-histogram-content li p.pr-histogram-count {
 	padding: 15px;
 }
 
+.pr-review-sort-box {
+	color: #666666;
+}
+
 .pr-review-sort-box p {
 	display: none;
+}
+
+.pr-review-sort-box select {
+	margin: 0;
 }
 
 .pr-pagination-top {
