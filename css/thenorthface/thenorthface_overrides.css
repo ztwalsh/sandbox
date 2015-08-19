@@ -308,6 +308,7 @@ ul.pr-ratings-histogram-content li p.pr-histogram-count {
 }
 
 .pr-review-author {
+	color: #666666;
 	float: none;
 	width: 100%;
 }
@@ -319,6 +320,10 @@ ul.pr-ratings-histogram-content li p.pr-histogram-count {
 
 .pr-review-author p {
 	margin-right: 5px;
+}
+
+.prReviewAuthorProfileLnk {
+	font-family: arial, sans;
 }
 
 .pr-review-author-affinities {
