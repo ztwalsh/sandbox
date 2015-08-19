@@ -322,8 +322,9 @@ ul.pr-ratings-histogram-content li p.pr-histogram-count {
 	margin-right: 5px;
 }
 
-.prReviewAuthorProfileLnk {
+a.prReviewAuthorProfileLnk {
 	font-family: arial, sans;
+	text-transform: none;
 }
 
 .pr-review-author-affinities {
