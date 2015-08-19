@@ -30,7 +30,8 @@
 .pr-other-attributes-list li.pr-other-attribute-label,
 #pr-snapshot-histogram-header,
 .pr-snapshot-write-review,
-.pr-review-content-header-label {
+.pr-review-content-header-label,
+.pr-review-bottom-line {
 	font-family: 'HelveticaNeueW02-77BdCn_694066', Helvetica, sans-serif;
 }
 
@@ -324,6 +325,7 @@ ul.pr-ratings-histogram-content li p.pr-histogram-count {
 
 a.prReviewAuthorProfileLnk {
 	font-family: arial, sans;
+	font-weight: normal;
 	text-transform: none;
 }
 
@@ -376,4 +378,8 @@ a.prReviewAuthorProfileLnk {
 	right: 0;
 	top: 20px;
 	width: 200px;
+}
+
+.pr-review-bottom-line {
+	
 }
