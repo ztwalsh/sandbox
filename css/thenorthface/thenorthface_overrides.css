@@ -380,6 +380,6 @@ a.prReviewAuthorProfileLnk {
 	width: 200px;
 }
 
-.pr-review-bottom-line {
+.pr-review-bottom-line-wrapper .pr-review-bottom-line {
 	color: #2a2a34;
 }
