@@ -358,10 +358,13 @@ ul.pr-ratings-histogram-content li p.pr-histogram-count {
 }
 
 .pr-review-text {
-	margin: 0;
+	margin: 0 220px 0 0;
 	padding: 0 0 20px 0;
 }
 
 .pr-review-main-wrapper .pr-other-attributes {
 	position: absolute;
+	right: 0;
+	top: 20px;
+	width: 200px;
 }
