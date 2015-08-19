@@ -403,13 +403,20 @@ a.prReviewAuthorProfileLnk {
 .pr-review-main-wrapper .pr-other-attributes-list li.pr-other-attribute-value {
 	color: #2a2a34;
 	display: block;
+	float: none;
 	font-family: arial, sans;
+	font-size: 16px;
 	font-weight: normal;
+	margin: 0;
 	text-transform: none;
 }
 
 .pr-review-main-wrapper .pr-other-attributes-list li.pr-other-attribute-label {
 	font-weight: bold;
+}
+
+.pr-review-main-wrapper .pr-other-attributes-list li.pr-other-attribute-value {
+	padding-bottom: 10px;
 }
 
 .pr-review-main-wrapper .pr-other-attributes-list li.pr-other-attribute-label:nth-child(5n),
