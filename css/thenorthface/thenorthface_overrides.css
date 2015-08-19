@@ -386,6 +386,11 @@ a.prReviewAuthorProfileLnk {
 	width: 200px;
 }
 
+.pr-other-attributes-list li.pr-other-attribute-label:last-child,
+.pr-other-attributes-list li.pr-other-attribute-value:last-child {
+	display: none;
+}
+
 .pr-review-bottom-line-wrapper .pr-review-bottom-line {
 	color: #2a2a34;
 }
