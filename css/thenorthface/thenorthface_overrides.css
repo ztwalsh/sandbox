@@ -312,8 +312,8 @@ ul.pr-ratings-histogram-content li p.pr-histogram-count {
 	width: 100%;
 }
 
-.pr-review-author-name,
-.pr-review-author-location {
+.pr-review-author-name p,
+.pr-review-author-location p {
 	float: left;
 	margin-right: 5px;
 }
