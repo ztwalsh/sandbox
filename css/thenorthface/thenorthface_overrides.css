@@ -401,17 +401,20 @@ a.prReviewAuthorProfileLnk {
 
 .pr-review-main-wrapper .pr-other-attributes-list li.pr-other-attribute-label,
 .pr-review-main-wrapper .pr-other-attributes-list li.pr-other-attribute-value {
+	color: #2a2a34;
+	display: block;
 	font-family: arial, sans;
 	font-weight: normal;
+	text-transform: none;
+}
+
+.pr-review-main-wrapper .pr-other-attributes-list li.pr-other-attribute-label {
+	font-weight: bold;
 }
 
 .pr-review-main-wrapper .pr-other-attributes-list li.pr-other-attribute-label:nth-child(5n),
 .pr-review-main-wrapper .pr-other-attributes-list li.pr-other-attribute-value:nth-child(6n) {
 	display: none;
-}
-
-.pr-review-main-wrapper .pr-other-attributes-list li.pr-other-attribute-label {
-
 }
 
 .pr-review-bottom-line-wrapper .pr-review-bottom-line {
