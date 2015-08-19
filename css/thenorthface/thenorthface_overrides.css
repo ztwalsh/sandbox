@@ -55,6 +55,7 @@
 .pr-snapshot-title {
 	font-size: 28px;
 	font-style: italic;
+	font-weight: bold;
 	letter-spacing: 0.14em;
 	text-transform: uppercase;
 }
@@ -312,6 +313,10 @@ ul.pr-ratings-histogram-content li p.pr-histogram-count {
 	width: 78%;
 }
 
+.pr-review-main-wrapper {
+	color: #666666;
+}
+
 .pr-review-author-date {
 	background: #ffffff;
 	border: 1px solid #dddddd;
@@ -333,7 +338,7 @@ ul.pr-ratings-histogram-content li p.pr-histogram-count {
 .pr-review-rating .pr-review-rating-headline {
 	clear: both;
 	font-size: 18px;
-	padding: 5px 0 10px 0;
+	padding: 5px 0 0 0;
 	text-transform: uppercase;
 }
 
