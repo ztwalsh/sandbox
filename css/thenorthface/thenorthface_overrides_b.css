@@ -618,6 +618,8 @@ a.prReviewAuthorProfileLnk {
 	background: #eeeeee;
 	border: 0;
 	padding: 15px;
+	max-width: 300px;
+	width: auto;
 }
 
 .pr-error > div {
