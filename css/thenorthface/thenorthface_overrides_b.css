@@ -481,8 +481,9 @@ ul.pr-ratings-histogram-content li p.pr-histogram-count {
 	text-transform: none;
 }
 
-.pr-page-nav {
-
+.pr-page-nav-wrapper {
+	font-size: 18px;
+	text-transform: uppercase;
 }
 
 @media screen and (max-width: 600px) {
@@ -494,7 +495,8 @@ ul.pr-ratings-histogram-content li p.pr-histogram-count {
 		float: none;
 	}
 
-	.pr-pagination-bottom {
+	.pr-page-nav-wrapper,
+	.pr-review-engine.pr-review-engine-max-width-690px .pr-page-nav-wrapper {
 		text-align: center;
 		width: 100%;
 	}
