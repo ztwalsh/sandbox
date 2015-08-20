@@ -437,8 +437,12 @@ a.prReviewAuthorProfileLnk {
 @media screen and (max-width: 830px) {
 	.pr-review-author,
 	.pr-review-rating-wrapper,
-	.pr-review-main-wrapper {
+	.pr-review-main-wrapper,
+	.pr-review-main-wrapper .pr-other-attributes {
 		float: none;
+		position: static;
+		right: auto;
+		top: auto;
 		width: 100%;
 	}
 }
