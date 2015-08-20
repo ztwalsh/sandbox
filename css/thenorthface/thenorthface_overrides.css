@@ -177,12 +177,16 @@ ul.pr-ratings-histogram-content li {
 	width: 100%;
 }
 
+ul.pr-ratings-histogram-content li p {
+	height: 10px;
+}
+
 .pr-ratings-histogram-bar .pr-ratings-histogram-barValue {
 	background: #f4c00d;
 	background-image: none;
 	border-top-left-radius: 3px;
 	border-bottom-left-radius: 3px;
-	height: 10px;
+	height: 14px;
 }
 
 ul.pr-ratings-histogram-content li p.pr-histogram-count {
