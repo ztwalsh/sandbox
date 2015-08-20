@@ -1,12 +1,6 @@
 
 <?php
-	if ($_GET['option'] == "a") {
-		$stylesheet = 'http://sandbox.ztwalsh.com/css/thenorthface/thenorthface_overrides_a.css';
-	} elseif ($_GET['option'] == "b") {
-		$stylesheet = 'http://sandbox.ztwalsh.com/css/thenorthface/thenorthface_overrides_b.css';
-	} else {
-		$stylesheet = 'http://sandbox.ztwalsh.com/css/thenorthface/thenorthface_overrides_a.css';
-	}
+	$stylesheet = 'http://sandbox.ztwalsh.com/css/thenorthface/thenorthface_overrides_b.css';
 ?>
 <!doctype html>
 
