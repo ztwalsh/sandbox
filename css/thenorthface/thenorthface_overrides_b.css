@@ -474,6 +474,10 @@ ul.pr-ratings-histogram-content li p.pr-histogram-count {
 	padding: 10px 0;
 }
 
+.pr-page-count {
+	color: #666666;
+}
+
 .pr-nav-back-to-top a {
 	color: #2a2a34;;
 	font-family: arial, sans;
@@ -499,7 +503,8 @@ ul.pr-ratings-histogram-content li p.pr-histogram-count {
 		padding-bottom: 10px;
 	}
 
-	.pr-page-count {
+	.pr-page-count,
+	.pr-nav-back-to-top {
 		float: none;
 	}
 
