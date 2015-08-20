@@ -75,6 +75,12 @@
 	width: 65%;
 }
 
+.pr-snapshot-body-wrapper .pr-other-attributes-histogram ul.pr-other-attributes-list li.pr-other-attributes-group {
+	float: left;
+	margin-right: 2%;
+	width: 48%;
+}
+
 .pr-other-attributes-list li.pr-other-attribute-label {
 	background-image: none;
 	font-size: 16px;
@@ -84,6 +90,15 @@
 
 .pr-stars {
 	background-image: url('http://sandbox.ztwalsh.com/css/thenorthface/tnf_stars.gif');
+}
+
+@media screen and (max-width: 800px) {
+	.pr-snapshot-rating-wrapper,
+	.pr-other-attributes-histogram {
+		float: none;
+		padding: 0;
+		width: 100%;
+	}
 }
 
 
@@ -449,7 +464,7 @@ a.prReviewAuthorProfileLnk {
 	margin-bottom: 10px;
 }
 
-@media screen and (max-width: 830px) {
+@media screen and (max-width: 800px) {
 	.pr-review-author,
 	.pr-review-rating-wrapper,
 	.pr-review-main-wrapper,
@@ -465,5 +480,13 @@ a.prReviewAuthorProfileLnk {
 
 	.pr-review-engine.pr-review-engine-max-width-690px .pr-review-wrap .pr-stars-small {
 		margin-bottom: 5px;
+	}
+
+	.pr-review-bottom-line-wrapper {
+		padding-bottom: 10px;
+	}
+
+	.pr-review-tools {
+		display: none;
 	}
 }
