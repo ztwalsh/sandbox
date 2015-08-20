@@ -614,6 +614,22 @@ a.prReviewAuthorProfileLnk {
 	margin-bottom: 10px;
 }
 
+.pr-error {
+	background: #eeeeee;
+	border: 0;
+	padding: 15px;
+}
+
+.pr-error > div {
+	clear: both;
+	padding-bottom: 5px;
+}
+
+.pr-error > div input {
+	float: left;
+	margin-right: 5px;
+}
+
 @media screen and (max-width: 800px) {
 	.pr-review-author,
 	.pr-review-rating-wrapper,
