@@ -333,7 +333,7 @@ ul.pr-ratings-histogram-content li p.pr-histogram-count {
 .pr-review-author {
 	color: #666666;
 	float: left;
-	width: 18%;
+	width: 16%;
 }
 
 .pr-review-author-name,
@@ -358,7 +358,7 @@ a.prReviewAuthorProfileLnk {
 .pr-review-rating-wrapper,
 .pr-review-main-wrapper {
 	color: #666666;
-	width: 80%;
+	width: 82%;
 }
 
 .pr-review-author-date {
@@ -391,7 +391,7 @@ a.prReviewAuthorProfileLnk {
 .pr-review-main-wrapper .pr-other-attributes {
 	position: absolute;
 	right: 0;
-	top: 20px;
+	top: 75px;
 	width: 300px;
 }
 
@@ -423,4 +423,12 @@ a.prReviewAuthorProfileLnk {
 
 .pr-review-bottom-line-wrapper .pr-review-bottom-line {
 	color: #2a2a34;
+}
+
+.pr-review-bottom-line-wrapper {
+	padding-bottom: 20px;
+}
+
+.pr-review-tools {
+	margin-bottom: 10px;
 }
