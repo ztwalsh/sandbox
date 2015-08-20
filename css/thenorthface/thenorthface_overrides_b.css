@@ -143,6 +143,10 @@
 	top: 75px;
 }
 
+.pr-snapshot-consensus {
+	margin: 20px 0;
+}
+
 .pr-snapshot-consensus-value {
 	background: #74beb7;
 	background-image: none;

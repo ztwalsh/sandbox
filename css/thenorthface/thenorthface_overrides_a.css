@@ -115,6 +115,22 @@
 	top: 75px;
 }
 
+.pr-snapshot-consensus-value {
+	background: #74beb7;
+	background-image: none;
+	border: 0;
+	display: inline-block;
+	font-size: 14px;
+	height: 40px;
+	padding-top: 8px;
+	text-align: center;
+	width: 40px;
+}
+
+.pr-snapshot-consensus-value.pr-rounded {
+	border-radius: 50%;
+}
+
 @media screen and (max-width: 800px) {
 	.pr-snapshot-rating-wrapper {
 		float: none;
