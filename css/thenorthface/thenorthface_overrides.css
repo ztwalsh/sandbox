@@ -93,14 +93,14 @@
 	left: 50%;
 	margin-left: -45px;
 	position: absolute;
-	top: 85px;
+	top: 75px;
 }
 
 .pr-snapshot-rating .pr-rating {
 	left: 50%;
 	margin-left: 75px;
 	position: absolute;
-	top: 85px;
+	top: 75px;
 }
 
 .pr-snapshot-rating .pr-snapshot-average-based-on-text {
@@ -110,7 +110,7 @@
 	margin-left: -35px;
 	padding-top: 25px;
 	position: absolute;
-	top: 85px;
+	top: 75px;
 }
 
 @media screen and (max-width: 800px) {
