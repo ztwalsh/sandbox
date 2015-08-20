@@ -93,8 +93,7 @@
 }
 
 @media screen and (max-width: 800px) {
-	.pr-snapshot-rating-wrapper,
-	.pr-other-attributes-histogram {
+	.pr-snapshot-rating-wrapper {
 		float: none;
 		padding: 0;
 		width: 100%;
@@ -256,6 +255,14 @@ ul.pr-ratings-histogram-content li p.pr-histogram-count {
 
 .pr-snippet-review-count {
 	display: none !important;
+}
+
+@media screen and (max-width: 800px) {
+	.pr-other-attributes-histogram {
+		float: none;
+		padding: 0;
+		width: 100%;
+	}
 }
 
 
