@@ -76,10 +76,6 @@
 	width: 65%;
 }
 
-.pr-review-points {
-	display: block;
-}
-
 .pr-snapshot-body-wrapper .pr-other-attributes-histogram ul.pr-other-attributes-list li.pr-other-attributes-group {
 	float: left;
 	margin-right: 2%;
@@ -423,7 +419,7 @@ ul.pr-ratings-histogram-content li p.pr-histogram-count {
 /*REVIEWS*/
 .pr-review-most-helpful,
 .pr-review-rating .pr-rating,
-.pr-review-points,
+.pr-review-main-wrapper .pr-review-points,
 .pr-review-text .pr-comments-header {
 	display: none;
 }
@@ -498,10 +494,6 @@ a.prReviewAuthorProfileLnk {
 	font-size: 18px;
 	padding: 5px 0 0 0;
 	text-transform: uppercase;
-}
-
-.pr-review-main-wrapper .pr-review-points {
-	display: none;
 }
 
 .pr-review-text {
