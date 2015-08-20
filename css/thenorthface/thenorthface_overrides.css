@@ -91,7 +91,7 @@
 .pr-snapshot-rating .pr-stars {
 	background-image: url('http://sandbox.ztwalsh.com/css/thenorthface/tnf_stars.gif');
 	left: 50%;
-	margin-left: -50px;
+	margin-left: -45px;
 	position: absolute;
 }
 
@@ -105,7 +105,8 @@
 	color: #999999;
 	left: 50%;
 	font-size: 12px;
-	padding-top: 20px;
+	margin-left: -35px;
+	padding-top: 25px;
 	position: absolute;
 }
 
@@ -181,11 +182,13 @@ ul.pr-ratings-histogram-content li {
 	background-image: none;
 	border-top-left-radius: 3px;
 	border-bottom-left-radius: 3px;
+	height: 10px;
 }
 
 ul.pr-ratings-histogram-content li p.pr-histogram-count {
 	display: table-cell;
 	font-size: 11px;
+	height: 10px;
 	padding-left: 5px;
 	width: 30px;
 }
