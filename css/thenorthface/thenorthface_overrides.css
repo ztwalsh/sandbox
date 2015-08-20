@@ -135,9 +135,10 @@
 	}
 
 	.pr-snapshot-rating .pr-snapshot-average-based-on-text {
+		float: none;
 		left: auto;
 		margin-left: auto;
-		padding-top: auto;
+		padding-top: 0;
 		position: absolute;
 		top: auto;
 	}
