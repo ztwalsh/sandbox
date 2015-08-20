@@ -211,7 +211,7 @@ ul.pr-ratings-histogram-content li p {
 }
 
 .pr-ratings-histogram-bar .pr-ratings-histogram-barValue {
-	background: ##e72b1e;
+	background: #e72b1e;
 	background-image: none;
 	border-top-left-radius: 3px;
 	border-bottom-left-radius: 3px;
@@ -298,7 +298,7 @@ ul.pr-ratings-histogram-content li p.pr-histogram-count {
 
 .pr-other-attribute-value-histogram-element-max .pr-other-attribute-value-histogram-barValue,
 .pr-other-attribute-value-histogram-barValue {
-	background: #f4c00d;
+	background: #e72b1e;
 	height: 8px;
 }
 
