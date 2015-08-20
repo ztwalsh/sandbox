@@ -320,7 +320,11 @@ ul.pr-ratings-histogram-content li p.pr-histogram-count {
 
 .pr-other-attribute-value-histogram-label {
 	color: #666666;
-	width: 50%;
+	width: 30%;
+}
+
+.pr-other-attribute-value-histogram-element td.pr-other-attribute-value-histogram-bar {
+	width: 40%
 }
 
 .pr-other-attribute-value-histogram-bar {
