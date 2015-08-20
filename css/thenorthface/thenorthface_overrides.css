@@ -332,7 +332,7 @@ ul.pr-ratings-histogram-content li p.pr-histogram-count {
 
 .pr-review-author {
 	color: #666666;
-	float: none;
+	float: left;
 	width: 18%;
 }
 
@@ -377,6 +377,7 @@ a.prReviewAuthorProfileLnk {
 
 .pr-review-rating .pr-review-rating-headline {
 	clear: both;
+	color: #2a2a34;
 	font-size: 18px;
 	padding: 5px 0 0 0;
 	text-transform: uppercase;
