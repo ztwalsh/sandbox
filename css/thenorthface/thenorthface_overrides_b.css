@@ -90,6 +90,11 @@
 .pr-attribute-key p {
 	background: none;
 	font-size: 16px;
+	padding: 10px 15px;
+}
+
+.pr-attribute-value {
+	padding: 0 15px 15px 15px;
 }
 
 .pr-snapshot-histogram {
