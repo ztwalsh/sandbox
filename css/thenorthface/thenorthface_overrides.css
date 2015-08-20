@@ -309,6 +309,16 @@ ul.pr-ratings-histogram-content li p.pr-histogram-count {
 	visibility: hidden;
 }
 
+@media screen and (max-width: 600px) {
+	.pr-review-count {
+		margin-bottom: 5px;
+	}
+
+	.pr-review-sort-box {
+		float: none;
+	}
+}
+
 
 /**/
 /**/
@@ -451,5 +461,9 @@ a.prReviewAuthorProfileLnk {
 
 	.pr-review-main-wrapper .pr-other-attributes {
 		display: none;
+	}
+
+	.pr-review-engine.pr-review-engine-max-width-690px .pr-review-wrap .pr-stars-small {
+		margin-bottom: 5px;
 	}
 }
