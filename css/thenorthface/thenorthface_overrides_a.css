@@ -412,10 +412,17 @@ ul.pr-ratings-histogram-content li p.pr-histogram-count {
 	color: #2a2a34;;
 	font-family: arial, sans;
 	font-weight: bold;
+	text-transform: none;
+}
+
+.pr-page-nav-wrapper {
+	font-size: 18px;
+	text-transform: uppercase;
 }
 
 @media screen and (max-width: 600px) {
 	.pr-review-count {
+		float: none;
 		margin-bottom: 5px;
 	}
 
@@ -423,7 +430,14 @@ ul.pr-ratings-histogram-content li p.pr-histogram-count {
 		float: none;
 	}
 
-	.pr-pagination-bottom {
+	.pr-page-count-wrapper {
+		padding-bottom: 10px;
+	}
+
+	.pr-page-nav-wrapper,
+	.pr-review-engine.pr-review-engine-max-width-690px .pr-page-nav-wrapper,
+	.pr-page-count-wrapper,
+	.pr-review-engine.pr-review-engine-max-width-690px .pr-page-count-wrapper {
 		text-align: center;
 		width: 100%;
 	}
