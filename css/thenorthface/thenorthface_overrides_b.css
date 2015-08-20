@@ -96,6 +96,7 @@
 }
 
 .pr-attribute-value {
+	color: #666666;
 	padding: 0 15px 15px 15px;
 }
 
@@ -298,6 +299,7 @@ ul.pr-ratings-histogram-content li p.pr-histogram-count {
 }
 
 .pr-other-attribute-value-histogram-label {
+	color: #666666;
 	width: 50%;
 }
 
