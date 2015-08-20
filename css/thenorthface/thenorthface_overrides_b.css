@@ -96,11 +96,6 @@
 	padding-top: 20px;
 }
 
-.pr-other-attributes-histogram {
-	float: right;
-	width: 65%;
-}
-
 .pr-snapshot-body-wrapper .pr-other-attributes-histogram ul.pr-other-attributes-list li.pr-other-attributes-group {
 	float: left;
 	margin-right: 2%;
@@ -255,10 +250,8 @@ ul.pr-ratings-histogram-content li p.pr-histogram-count {
 /*ATTRIBUTE HISTOGRAM*/
 .pr-other-attributes-histogram {
 	display: block;
-	float: left;
 	margin: 0;
-	padding: 35px 0 0 40px;
-	width: 65%;
+	padding: 0;
 }
 
 .pr-other-attributes-list li {
