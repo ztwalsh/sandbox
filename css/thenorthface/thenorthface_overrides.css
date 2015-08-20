@@ -480,6 +480,10 @@ a.prReviewAuthorProfileLnk {
 	padding: 5px 8px 6px 8px;
 }
 
+.pr-review-rating {
+	margin: 0;
+}
+
 .pr-review-rating .pr-stars {
 	background-image: url('http://sandbox.ztwalsh.com/css/thenorthface/tnf_stars_small.gif');
 }
