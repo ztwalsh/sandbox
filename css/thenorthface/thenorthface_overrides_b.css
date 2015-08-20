@@ -83,13 +83,13 @@
 	margin-right: 2%;
 }
 
-.pr-review-points-attr-wrapper .pr-attribute-group:first-child {
+.pr-review-points-attr-wrapper .pr-attribute-group.pr-last {
 	margin-right: 0;
 }
 
 .pr-attribute-key p {
 	background: none;
-	color: #2
+	font-size: 16px;
 }
 
 .pr-snapshot-histogram {
