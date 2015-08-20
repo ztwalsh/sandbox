@@ -173,6 +173,18 @@
 		position: absolute;
 		top: auto;
 	}
+
+	.pr-snapshot-body-wrapper .pr-review-points {
+		float: none;
+		margin: 0;
+		padding-top: 20px;
+		width: 100%;
+	}
+
+	.pr-review-points-attr-wrapper .pr-attribute-group {
+		border: 0;
+		margin-right: 0;
+	}
 }
 
 
