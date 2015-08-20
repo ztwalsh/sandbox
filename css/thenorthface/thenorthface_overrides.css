@@ -90,6 +90,22 @@
 
 .pr-stars {
 	background-image: url('http://sandbox.ztwalsh.com/css/thenorthface/tnf_stars.gif');
+	left: 50%;
+	margin-left: -50px;
+	position: absolute;
+}
+
+.pr-rating {
+	left: 50%;
+	margin-left: 75px;
+	position: absolute;
+}
+
+.pr-snapshot-average-based-on-text {
+	color: #666666;
+	left: 50%;
+	font-size: 12px;
+	position: absolute;
 }
 
 @media screen and (max-width: 800px) {
@@ -291,11 +307,11 @@ ul.pr-ratings-histogram-content li p.pr-histogram-count {
 	background: #000000;
 	color: #ffffff;
 	display: inline-block;
-	font-size: 18px;
+	font-size: 14px;
 	float: right;
 	letter-spacing: 0.14em;
 	line-height: 1;
-	padding: 10px 20px;
+	padding: 9px 15px 8px 15px;
 }
 
 @media screen and (max-width: 800px) {
@@ -307,9 +323,7 @@ ul.pr-ratings-histogram-content li p.pr-histogram-count {
 	}
 
 	.pr-snapshot-write-review {
-		font-size: 14px;
 		float: none;
-		padding: 9px 15px 8px 15px;
 	}
 }
 
