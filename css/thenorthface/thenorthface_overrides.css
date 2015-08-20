@@ -292,7 +292,7 @@ ul.pr-ratings-histogram-content li p.pr-histogram-count {
 
 @media screen and (max-width: 800px) {
 	.pr-snapshot-footer {
-		padding: 0;
+		padding: 10px 0 0 0;
 		position: static;
 		text-align: left;
 		width: auto;
@@ -301,7 +301,7 @@ ul.pr-ratings-histogram-content li p.pr-histogram-count {
 	.pr-snapshot-write-review {
 		font-size: 14px;
 		float: none;
-		padding: 8px 15px;
+		padding: 9px 15px 8px 15px;
 	}
 }
 
