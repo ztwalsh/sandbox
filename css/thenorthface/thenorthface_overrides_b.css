@@ -143,6 +143,19 @@
 	top: 75px;
 }
 
+.pr-snapshot-consensus-value {
+	background: #afdcd0;
+	background-image: none;
+	border: 0;
+	font-size: 16px;
+	padding-top: 8px;
+	text-align: center;
+}
+
+.pr-snapshot-consensus-value.pr-rounded {
+	border-radius: 50%;
+}
+
 @media screen and (max-width: 800px) {
 	.pr-snapshot-rating-wrapper {
 		float: none;
