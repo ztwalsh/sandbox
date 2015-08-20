@@ -144,12 +144,14 @@
 }
 
 .pr-snapshot-consensus-value {
-	background: #afdcd0;
+	background: #74beb7;
 	background-image: none;
 	border: 0;
 	font-size: 16px;
+	height: 40px;
 	padding-top: 8px;
 	text-align: center;
+	width: 40px;
 }
 
 .pr-snapshot-consensus-value.pr-rounded {
