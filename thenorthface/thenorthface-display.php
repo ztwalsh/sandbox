@@ -1,4 +1,13 @@
 
+<?php
+	if ($_GET['option'] == "a") {
+		$stylesheet = 'http://sandbox.ztwalsh.com/css/thenorthface/thenorthface_overrides_a.css';
+	} elseif ($_GET['option'] == "b") {
+		$stylesheet = 'http://sandbox.ztwalsh.com/css/thenorthface/thenorthface_overrides_b.css';
+	} else {
+		$stylesheet = 'http://sandbox.ztwalsh.com/css/thenorthface/thenorthface_overrides_a.css';
+	}
+?>
 <!doctype html>
 
 
@@ -57,7 +66,7 @@
 		<script type="text/javascript">
 			var pr_locale = 'en_US';
 			var pr_zip_location = 'https://www.thenorthface.com/wcsstore/tnf/';
-			var customCss = "http://sandbox.ztwalsh.com/css/thenorthface/thenorthface_overrides.css";
+			var customCss = "<?php echo $stylesheet; ?>";
 			if (customCss != null && customCss.indexOf("???") == -1 && customCss != "") {
 				var pr_style_sheet=customCss;
 			}
