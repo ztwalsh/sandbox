@@ -2,6 +2,7 @@
 .pr-review-engine,
 .pr-snapshot-head,
 .pr-snapshot-head-wrapper,
+.pr-review-engine.pr-review-engine-max-width-690px .pr-snapshot-head-wrapper,
 .pr-snapshot-body,
 .pr-snapshot-body-wrapper,
 .pr-attribute-group,
