@@ -80,6 +80,8 @@
 }
 
 .pr-review-points-attr-wrapper .pr-attribute-group {
+	border: 0;
+	border-left: 1px solid #cccccc;
 	margin-right: 2%;
 }
 
@@ -90,7 +92,7 @@
 .pr-attribute-key p {
 	background: none;
 	font-size: 16px;
-	padding: 10px 15px;
+	padding: 0 15px 15px 15px;
 }
 
 .pr-attribute-value {
@@ -254,6 +256,7 @@ ul.pr-ratings-histogram-content li p.pr-histogram-count {
 /**/
 /*ATTRIBUTE HISTOGRAM*/
 .pr-other-attributes-histogram {
+	clear: both;
 	display: block;
 	margin: 0;
 	padding: 0;
