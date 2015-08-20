@@ -259,6 +259,7 @@ ul.pr-ratings-histogram-content li p.pr-histogram-count {
 
 @media screen and (max-width: 800px) {
 	.pr-other-attributes-histogram {
+		clear: both;
 		float: none;
 		padding: 0;
 		width: 100%;
@@ -287,6 +288,26 @@ ul.pr-ratings-histogram-content li p.pr-histogram-count {
 	letter-spacing: 0.14em;
 	line-height: 1;
 	padding: 10px 20px;
+}
+
+@media screen and (max-width: 800px) {
+	.pr-snapshot-footer {
+		padding: 0;
+		position: statis;
+		text-align: left;
+		width: auto;
+	}
+
+	.pr-snapshot-write-review {
+		background: #000000;
+		color: #ffffff;
+		display: inline-block;
+		font-size: 14px;
+		float: right;
+		letter-spacing: 0.14em;
+		line-height: 1;
+		padding: 8px 15px;
+	}
 }
 
 
