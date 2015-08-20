@@ -303,6 +303,9 @@ ul.pr-ratings-histogram-content li p.pr-histogram-count {
 }
 
 .pr-pagination-top {
+	margin: 0;
+	max-height: 1px;
+	padding: 0;
 	visibility: hidden;
 }
 
@@ -388,7 +391,7 @@ a.prReviewAuthorProfileLnk {
 }
 
 .pr-review-text {
-	margin: 0 220px 0 0;
+	margin: 0 320px 0 0;
 	padding: 0 0 20px 0;
 }
 
@@ -396,7 +399,7 @@ a.prReviewAuthorProfileLnk {
 	position: absolute;
 	right: 0;
 	top: 20px;
-	width: 200px;
+	width: 300px;
 }
 
 .pr-review-main-wrapper .pr-other-attributes-list li.pr-other-attribute-label,
@@ -405,7 +408,7 @@ a.prReviewAuthorProfileLnk {
 	display: block;
 	float: none;
 	font-family: arial, sans;
-	font-size: 14px;
+	font-size: 13spx;
 	font-weight: normal;
 	margin: 0;
 	text-transform: none;
@@ -416,7 +419,7 @@ a.prReviewAuthorProfileLnk {
 }
 
 .pr-review-main-wrapper .pr-other-attributes-list li.pr-other-attribute-value {
-	padding-bottom: 10px;
+	padding-bottom: 15px;
 }
 
 .pr-review-main-wrapper .pr-other-attributes-list li.pr-other-attribute-label:nth-child(5n),
