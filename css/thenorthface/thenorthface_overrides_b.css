@@ -469,6 +469,16 @@ ul.pr-ratings-histogram-content li p.pr-histogram-count {
 	visibility: hidden;
 }
 
+.pr-pagination-bottom {
+	padding: 10px 0;
+}
+
+.pr-nav-back-to-top a {
+	color: #2a2a34;;
+	font-family: arial, sans;
+	font-weight: bold;
+}
+
 @media screen and (max-width: 600px) {
 	.pr-review-count {
 		margin-bottom: 5px;
@@ -476,6 +486,11 @@ ul.pr-ratings-histogram-content li p.pr-histogram-count {
 
 	.pr-review-sort-box {
 		float: none;
+	}
+
+	.pr-pagination-bottom {
+		text-align: center;
+		width: 100%;
 	}
 }
 
@@ -618,7 +633,7 @@ a.prReviewAuthorProfileLnk {
 	background: #eeeeee;
 	border: 0;
 	padding: 15px;
-	max-width: 300px;
+	max-width: 350px;
 	width: auto;
 }
 
