@@ -374,6 +374,14 @@ ul.pr-ratings-histogram-content li p.pr-histogram-count {
 		margin-right: 0;
 		width: 100%;
 	}
+
+	.pr-other-attribute-value-histogram-label {
+		width: 40%;
+	}
+
+	.pr-other-attribute-value-histogram-element td.pr-other-attribute-value-histogram-bar {
+		width: 40%
+	}
 }
 
 
