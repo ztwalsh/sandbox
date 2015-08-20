@@ -185,6 +185,14 @@
 		border: 0;
 		margin-right: 0;
 	}
+
+	.pr-attribute-key p {
+		padding: 0;
+	}
+
+	.pr-attribute-value {
+		padding: 0 0 15px 0;
+	}
 }
 
 
