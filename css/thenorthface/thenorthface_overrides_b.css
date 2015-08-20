@@ -495,8 +495,14 @@ ul.pr-ratings-histogram-content li p.pr-histogram-count {
 		float: none;
 	}
 
+	.pr-page-count-wrapper {
+		padding-bottom: 10px;
+	}
+
 	.pr-page-nav-wrapper,
-	.pr-review-engine.pr-review-engine-max-width-690px .pr-page-nav-wrapper {
+	.pr-review-engine.pr-review-engine-max-width-690px .pr-page-nav-wrapper,
+	.pr-page-count-wrapper,
+	.pr-review-engine.pr-review-engine-max-width-690px .pr-page-count-wrapper,  {
 		text-align: center;
 		width: 100%;
 	}
