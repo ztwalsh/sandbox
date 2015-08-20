@@ -366,14 +366,6 @@ ul.pr-ratings-histogram-content li p.pr-histogram-count {
 		padding: 0;
 		width: 100%;
 	}
-}
-
-@media screen and (max-width: 600px) {
-	.pr-snapshot-body-wrapper .pr-other-attributes-histogram ul.pr-other-attributes-list li.pr-other-attributes-group {
-		float: none;
-		margin-right: 0;
-		width: 100%;
-	}
 
 	.pr-other-attribute-value-histogram-label {
 		width: 40%;
@@ -381,6 +373,14 @@ ul.pr-ratings-histogram-content li p.pr-histogram-count {
 
 	.pr-other-attribute-value-histogram-element td.pr-other-attribute-value-histogram-bar {
 		width: 40%
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.pr-snapshot-body-wrapper .pr-other-attributes-histogram ul.pr-other-attributes-list li.pr-other-attributes-group {
+		float: none;
+		margin-right: 0;
+		width: 100%;
 	}
 }
 
