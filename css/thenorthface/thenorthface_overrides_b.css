@@ -76,6 +76,10 @@
 	width: 65%;
 }
 
+.pr-review-points {
+	display: block;
+}
+
 .pr-snapshot-body-wrapper .pr-other-attributes-histogram ul.pr-other-attributes-list li.pr-other-attributes-group {
 	float: left;
 	margin-right: 2%;
