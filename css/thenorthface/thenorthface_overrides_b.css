@@ -488,7 +488,6 @@ ul.pr-ratings-histogram-content li p.pr-histogram-count {
 
 @media screen and (max-width: 600px) {
 	.pr-review-count {
-		float: none;
 		margin-bottom: 5px;
 	}
 
@@ -498,6 +497,10 @@ ul.pr-ratings-histogram-content li p.pr-histogram-count {
 
 	.pr-page-count-wrapper {
 		padding-bottom: 10px;
+	}
+
+	.pr-page-count {
+		float: none;
 	}
 
 	.pr-page-nav-wrapper,
