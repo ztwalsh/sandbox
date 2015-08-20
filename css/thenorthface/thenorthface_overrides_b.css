@@ -631,7 +631,7 @@ a.prReviewAuthorProfileLnk {
 }
 
 .pr-error > button {
-	margin: 0 0 10px 0;
+	margin: 0 10px 0 0;
 }
 
 @media screen and (max-width: 800px) {
