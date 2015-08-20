@@ -343,6 +343,7 @@ ul.pr-ratings-histogram-content li p.pr-histogram-count {
 
 .pr-review-author p {
 	margin-right: 5px;
+	padding: 0;
 }
 
 a.prReviewAuthorProfileLnk {
@@ -431,4 +432,13 @@ a.prReviewAuthorProfileLnk {
 
 .pr-review-tools {
 	margin-bottom: 10px;
+}
+
+@media screen and (max-width: 830px) {
+	.pr-review-author,
+	.pr-review-rating-wrapper,
+	.pr-review-main-wrapper {
+		float: none;
+		width: 100%;
+	}
 }
