@@ -88,23 +88,24 @@
 	width: auto;
 }
 
-.pr-stars {
+.pr-snapshot-rating .pr-stars {
 	background-image: url('http://sandbox.ztwalsh.com/css/thenorthface/tnf_stars.gif');
 	left: 50%;
 	margin-left: -50px;
 	position: absolute;
 }
 
-.pr-rating {
+.pr-snapshot-rating .pr-rating {
 	left: 50%;
 	margin-left: 75px;
 	position: absolute;
 }
 
-.pr-snapshot-average-based-on-text {
-	color: #666666;
+.pr-snapshot-rating .pr-snapshot-average-based-on-text {
+	color: #999999;
 	left: 50%;
 	font-size: 12px;
+	padding-top: 20px;
 	position: absolute;
 }
 
