@@ -35,6 +35,7 @@
 .pr-attribute-label-cons,
 .pr-attribute-label-bestuses,
 .pr-snapshot-write-review,
+.pr-page-nav-wrapper,
 .pr-review-content-header-label,
 .pr-review-bottom-line {
 	font-family: 'HelveticaNeueW02-77BdCn_694066', Helvetica, sans-serif;
@@ -477,6 +478,11 @@ ul.pr-ratings-histogram-content li p.pr-histogram-count {
 	color: #2a2a34;;
 	font-family: arial, sans;
 	font-weight: bold;
+	text-transform: none;
+}
+
+.pr-page-nav {
+
 }
 
 @media screen and (max-width: 600px) {
