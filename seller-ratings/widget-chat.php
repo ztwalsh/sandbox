@@ -5,7 +5,7 @@
 <html>
 	<head>
 		<title>Thanks Page Seller Ratings Widget</title>
-		<link href="//cdn.shopify.com/app/services/5565437/assets/9170767/checkout_stylesheet/v2-c1f57026ad560753f1f35ee0342ce857-15668890328285695284" media="all" rel="stylesheet" />
+		<link href="css/confirmation.css" media="all" rel="stylesheet" />
 		<link href="css/global.css" media="screen" rel="stylesheet" type="text/css" />
 		<link href="css/styles-chat.css" media="screen" rel="stylesheet" type="text/css" />
 		<link href="css/forms.css" media="screen" rel="stylesheet" type="text/css" />
