@@ -46,6 +46,22 @@
 /**/
 /**/
 /*SNAPSHOT*/
+.pr-snapshot-no-ratings {
+	text-align: center;
+}
+
+.pr-snapshot-no-ratings .pr-write-review-link {
+	background: #000000;
+	color: #ffffff;
+	display: block;
+	font-size: 14px;
+	float: right;
+	letter-spacing: 0.14em;
+	line-height: 1;
+	padding: 9px 15px 8px 15px;
+	max-width: 300px;
+}
+
 .pr-snapshot-cobrand,
 .pr-snapshot-body-wrapper .pr-other-attributes {
 		display: none;
