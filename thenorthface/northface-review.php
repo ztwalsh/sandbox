@@ -94,7 +94,7 @@
 	<![endif]-->
 
 <!-- HTML5 IE Enabling Script --><!--[if lt IE 9]>
-	<script href="https://www.thenorthface.com/wcsstore/vf-storefront/js/lib/html5.js"></script>
+	<script src="https://www.thenorthface.com/wcsstore/vf-storefront/js/lib/html5.js"></script>
 	<script>
 	   (function() {
 		  var link = document.createElement("link");
@@ -108,7 +108,7 @@
 <!-- generated: Fri Aug 28 09:00:41 EDT 2015 -->
 
 
-<link rel="vf-store-messages" href="https://www.thenorthface.com/www.thenorthface.com/shop/VFAjaxStoreMessagesView?isJSONPEnabled=true&langId=-1&storeId=7001" />
+<link rel="vf-store-messages" href="https://www.thenorthface.com/shop/VFAjaxStoreMessagesView?isJSONPEnabled=true&langId=-1&storeId=7001" />
 
 
 <meta name="storeId" content="7001" />
@@ -271,7 +271,7 @@
 </script>
 
 
-<link rel="stylesheet" type="text/css" href="https://www.thenorthface.com/www.thenorthface.com/wcsstore/vf-storefront/css/scene7-override.css?v=10"/>
+<link rel="stylesheet" type="text/css" href="http://www.thenorthface.com/wcsstore/vf-storefront/css/scene7-override.css?v=10"/>
 <script type="text/javascript" src="https://images.thenorthface.com/s7viewers/html5/js/ZoomViewer.js"></script>
 
 
@@ -321,12 +321,12 @@
 
 
 
-<script href="https://www.thenorthface.com/www.thenorthface.com/wcsstore/vf-storefront/js/wcs-manifest.js?v=10"></script>
+<script src="www.thenorthface.com/wcsstore/vf-storefront/js/wcs-manifest.js?v=10"></script>
 <script type="text/javascript">
 	require.urlArgs = "v=" + 10;
 	require.waitSeconds = 120;
 </script>
-<script data-main="//www.thenorthface.com/wcsstore/vf-storefront/js/global.js" type="text/javascript" src="https://www.thenorthface.com/www.thenorthface.com/wcsstore/vf-storefront/js/lib/require.js?v=10"></script>
+<script data-main="//www.thenorthface.com/wcsstore/vf-storefront/js/global.js" type="text/javascript" src="https://www.thenorthface.com/wcsstore/vf-storefront/js/lib/require.js?v=10"></script>
 <!-- -->
 
 
@@ -334,13 +334,13 @@
 
 
 		<!-- -->
-<script type="text/javascript" src="https://www.thenorthface.com/www.thenorthface.com/wcsstore/vf-storefront/js/metrics/zmetrics.js?v=10"></script>
+<script type="text/javascript" src="https://www.thenorthface.com/wcsstore/vf-storefront/js/metrics/zmetrics.js?v=10"></script>
 
 
 	<script type="text/javascript" src="https://www.thenorthface.com/libs.coremetrics.com/eluminate.js"></script>
-	<script type="text/javascript" src="https://www.thenorthface.com/www.thenorthface.com/wcsstore/vf-storefront/js/metrics/cm-listener.js?v=10"></script>
+	<script type="text/javascript" src="https://www.thenorthface.com/wcsstore/vf-storefront/js/metrics/cm-listener.js?v=10"></script>
 <!-- Google Tag Manager GTM-TSP4T9 --><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-TSP4T9');</script><!-- End Google Tag Manager -->
-<script type="text/javascript" src="https://www.thenorthface.com/www.thenorthface.com/wcsstore/vf-storefront/js/metrics/gtm-listener.js?v=10"></script>
+<script type="text/javascript" src="https://www.thenorthface.com/wcsstore/vf-storefront/js/metrics/gtm-listener.js?v=10"></script>
 
 
 
