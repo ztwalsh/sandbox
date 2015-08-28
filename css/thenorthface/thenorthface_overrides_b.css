@@ -567,6 +567,7 @@ ul.pr-ratings-histogram-content li p.pr-histogram-count {
 /**/
 /**/
 /*REVIEWS*/
+.pr-review-most-helpful,
 .pr-review-main-wrapper .pr-review-points,
 .pr-review-text .pr-comments-header {
 	display: none;
@@ -723,6 +724,11 @@ a.prReviewAuthorProfileLnk {
 	background: none;
 	border: 0;
 	padding: 0;
+}
+
+.pr-review-most-helpful-bottom {
+	color: #333333;
+	font-size: 13px;
 }
 
 .pr-review-tools {
