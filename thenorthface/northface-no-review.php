@@ -369,7 +369,7 @@
 	<script type="text/javascript">
 		require(["product-detail"]);
 	</script>
-	<link rel="stylesheet" type="text/css" href="https://www.thenorthface.com/wcsstore/tnf/css/product-detail.css?v=10" />
+	<link rel="stylesheet" type="text/css" href="https://www.thenorthface.com/wcsstore/tnf/css/product-detail.css?v=9" />
 
 		</head>
 
