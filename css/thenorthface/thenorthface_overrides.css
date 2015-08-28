@@ -60,7 +60,8 @@
 	letter-spacing: 0.14em;
 	line-height: 1;
 	padding: 9px 15px 8px 15px;
-	max-width: 300px;
+	margin: 10px auto 20px auto;
+	max-width: 250px;
 }
 
 .pr-snapshot-cobrand,
