@@ -174,25 +174,32 @@
 
 .pr-snapshot-consensus {
 	margin: 0;
+	display: table;
 	position: absolute;
+	right: 0;
 	top: 75px;
 }
 
 .pr-snapshot-consensus-value {
-	background: #74beb7;
+	/*background: #74beb7;*/
+	background: none;
 	background-image: none;
 	border: 0;
-	display: inline-block;
-	font-size: 14px;
+	color: #2a2a34;
+	display: table-cell;
+	font-family: 'HelveticaNeueW02-77BdCn_694066', Helvetica, sans-serif;
+	font-size: 20px;
 	/*height: 40px;*/
 	padding-top: 8px;
 	text-align: center;
 	/*width: 40px;*/
+	vertical-align: middle;
 }
 
 .pr-snapshot-consensus-value.pr-rounded {
 	/*border-radius: 50%;*/
-	border-radius: 3px;
+	display: table-cell;
+	vertical-align: middle;
 }
 
 @media screen and (max-width: 800px) {
