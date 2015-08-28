@@ -3282,29 +3282,6 @@
 							<!-- generated: Fri Aug 28 09:59:40 EDT 2015 -->
 
 
-					<iframe id="cms-contents" class="cms-content-js" data-href="https://www.thenorthface.com/pdp-technology-modules/thermoball.html" frameborder="0" scrolling="no" seamless="seamless" style="max-width: 100%; width: 100%; overflow: hidden;"></iframe>
-					<script>
-						require([
-							'jquery',
-							'cms.iframeContainer'
-							],function($,iframeSizerContainer) {
-
-							// Lazy-Load iframe only after it scrolls into view
-							$(window).on('scroll', function(event){
-								$(".cms-content-js").each (function (){
-									var $this = $(this);
-									var rect = this.getBoundingClientRect();
-									// Check if iframe is onscreen and set source so it can load
-									if ((rect.top <= $(window).height()) && ($this.attr ('src') === "" || $this.attr ('src') === undefined) && $this.data('src')){
-										$this.attr ('src', $this.data('src'));
-									}
-								});
-							});
-
-						});
-					</script>
-
-
 
 
 
