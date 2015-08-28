@@ -693,6 +693,18 @@ a.prReviewAuthorProfileLnk {
 	padding-bottom: 20px;
 }
 
+.pr-pic {
+	background: #eeeeee;
+	background-image: none;
+	border: 0;
+}
+
+.pr-pic-content,
+.wrap1,
+.wrap2 {
+	background: none;
+}
+
 .pr-review-tools {
 	margin-bottom: 10px;
 }
