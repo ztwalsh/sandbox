@@ -161,7 +161,7 @@
 }
 
 .pr-snapshot-rating .pr-snapshot-average-based-on-text {
-	color: #999999;
+	color: #666666;
 	/*left: 50%;*/
 	font-size: 12px;
 	/*margin-left: -35px;*/
@@ -178,7 +178,7 @@
 	position: absolute;
 	right: 0;
 	top: 75px;
-	width: ;
+	width: 220px;
 }
 
 .pr-snapshot-consensus-value {
@@ -191,7 +191,7 @@
 	font-family: 'HelveticaNeueW02-77BdCn_694066', Helvetica, sans-serif;
 	font-size: 26px;
 	/*height: 40px;*/
-	padding-top: 8px;
+	/*padding-top: 8px;*/
 	text-align: center;
 	/*width: 40px;*/
 	vertical-align: middle;
