@@ -181,8 +181,8 @@
 	display: table;
 	position: absolute;
 	right: 0;
-	top: 75px;
-	width: 220px;
+	top: 80px;
+	width: 230px;
 }
 
 .pr-snapshot-consensus-value {
@@ -196,6 +196,7 @@
 	font-size: 26px;
 	/*height: 40px;*/
 	/*padding-top: 8px;*/
+	padding: 0;
 	text-align: center;
 	/*width: 40px;*/
 	vertical-align: middle;
@@ -263,6 +264,17 @@
 
 	.pr-attribute-value {
 		padding: 0 0 15px 0;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.pr-snapshot-consensus {
+		margin: 10px 0;
+		display: table;
+		position: static;
+		right: auto;
+		top: auto;
+		width: 230px;
 	}
 }
 
