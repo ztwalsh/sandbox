@@ -102,7 +102,7 @@
 	   (function() {
 		  var link = document.createElement("link");
 		  link.rel = "javascript";
-		  link.href = "/wcsstore/vf-storefront/js/lib/html5shiv.js";
+		  link.href = "//www.thenorthface.com/wcsstore/vf-storefront/js/lib/html5shiv.js";
 		  document.getElementsByTagName("head")[0].appendChild(link);
 	   })();
 	</script>
@@ -305,7 +305,7 @@
 
 		<script>
 			var AEM = {
-				"PATH"	: '/content/vfcorp/thenorthface/north-america/en_us',
+				"PATH"	: '//www.thenorthface.com/content/vfcorp/thenorthface/north-america/en_us',
 				"MAX"	: '1',
 				"ARTICLE_RESULTS" : '//www.thenorthface.com/en_us/utility/article-search-results.html'
 			};
