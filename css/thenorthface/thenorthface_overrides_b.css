@@ -153,11 +153,13 @@
 }
 
 .pr-snapshot-rating .pr-rating {
+	background: #ffffff;
 	border: 1px solid #cccccc;
 	color: #666666;
 	/*left: 50%;*/
 	/*margin-left: 75px;*/
 	margin-left: 115px;
+	paccing-bottom: 3px;
 	position: absolute;
 	top: 85px;
 }
