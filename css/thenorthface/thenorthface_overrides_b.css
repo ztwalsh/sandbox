@@ -641,6 +641,8 @@ a.prReviewAuthorProfileLnk {
 	background: #ffffff;
 	border: 1px solid #cccccc;
 	color: #666666;
+	height: auto;
+	padding: 0px 5px;
 }
 
 .pr-review-rating .pr-review-rating-headline {
