@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<products xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<product xsi:type="ProductWithReviews" locale="en_US">
+<pageid>1440</pageid>
+<name>NRS 1" HD Tie-Down Strap</name>
+<smallstarimagelocation>pwr/engine/images/stars_small.gif</smallstarimagelocation>
+<largestarimagelocation>pwr/engine/images/stars.gif</largestarimagelocation>
+<newestreviewdate>2012-07-27</newestreviewdate>
+<oldestreviewdate>2012-07-27</oldestreviewdate>
+<averageoverallrating>5</averageoverallrating>
+<average_rating_decimal>5</average_rating_decimal>
+<fullreviews>1</fullreviews>
+<confirmstatusgroup>
+<confirmstatus>Unverified</confirmstatus>
+</confirmstatusgroup>
+<bottom_line_yes_votes>0</bottom_line_yes_votes>
+<bottom_line_no_votes>0</bottom_line_no_votes>
+<customerimages>false</customerimages>
+<customervideos>false</customervideos>
+<inlinefiles>
+<inlinefile reviewpage="1">pwr/r3fy9rfc/inline/02/22/1440-en_US-1-reviews.html</inlinefile>
+</inlinefiles>
+</product>
+
+<product xsi:type="ProductWithReviewsAndQuestions" locale="en_US">
+<pageid>2215</pageid>
+<name>NRS Men's 3mm Farmer John Wetsuit - Closeout</name>
+<smallstarimagelocation>pwr/engine/images/stars_small.gif</smallstarimagelocation>
+<largestarimagelocation>pwr/engine/images/stars.gif</largestarimagelocation>
+<newestreviewdate>2012-08-02</newestreviewdate>
+<oldestreviewdate>2012-07-27</oldestreviewdate>
+<averageoverallrating>4.5</averageoverallrating>
+<average_rating_decimal>4.5</average_rating_decimal>
+<fullreviews>11</fullreviews>
+<confirmstatusgroup>
+<confirmstatus>Verified Reviewer</confirmstatus>
+<confirmstatus>Unverified</confirmstatus>
+</confirmstatusgroup>
+<taggroup key="bestuses" name="Best Uses">
+<tag isuseradded="true" count="2">Kayak / canoe / rafting</tag>
+</taggroup>
+<taggroup key="cons" name="Cons">
+<tag isuseradded="true" count="1">Doesn't dry quickly</tag>
+</taggroup>
+<taggroup key="pros" name="Pros">
+<tag isuseradded="false" count="1">Comfortable</tag>
+<tag isuseradded="true" count="1">Warm</tag>
+</taggroup>
+<bottom_line_yes_votes>2</bottom_line_yes_votes>
+<bottom_line_no_votes>0</bottom_line_no_votes>
+<customerimages>true</customerimages>
+<customervideos>false</customervideos>
+<total_questions>4</total_questions>
+<total_answers>4</total_answers>
+<inlinefiles>
+<inlinefile reviewpage="1">pwr/r3fy9rfc/inline/03/80/2215-en_US-1-reviews.html</inlinefile>
+</inlinefiles>
+<inlinequestionfiles>
+<inlinefile questionpage="1">pwr/r3fy9rfc/inline/03/80/2215-en_US-1-questions.html</inlinefile>
+</inlinequestionfiles>
+</product>
+
+</products>

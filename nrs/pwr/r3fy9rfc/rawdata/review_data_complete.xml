@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<products xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<product xsi:type="ProductWithReviews" locale="en_US">
+<pageid>1440</pageid>
+<name>NRS 1" HD Tie-Down Strap</name>
+<smallstarimagelocation>pwr/engine/images/stars_small.gif</smallstarimagelocation>
+<largestarimagelocation>pwr/engine/images/stars.gif</largestarimagelocation>
+<newestreviewdate>2012-07-27</newestreviewdate>
+<oldestreviewdate>2012-07-27</oldestreviewdate>
+<averageoverallrating>5</averageoverallrating>
+<average_rating_decimal>5</average_rating_decimal>
+<fullreviews>1</fullreviews>
+<confirmstatusgroup>
+<confirmstatus>Unverified</confirmstatus>
+</confirmstatusgroup>
+<bottom_line_yes_votes>0</bottom_line_yes_votes>
+<bottom_line_no_votes>0</bottom_line_no_votes>
+<customerimages>false</customerimages>
+<customervideos>false</customervideos>
+<inlinefiles>
+<inlinefile reviewpage="1">pwr/r3fy9rfc/inline/02/22/1440-en_US-1-reviews.html</inlinefile>
+</inlinefiles>
+<reviews>
+<fullreview>
+<id>34237154</id>
+<merchant_review_id>27436681</merchant_review_id>
+<merchantuserid/>
+<status>Approved</status>
+<createddate>2012-07-27</createddate>
+<helpfulvotes>0</helpfulvotes>
+<nothelpfulvotes>0</nothelpfulvotes>
+<source>web</source>
+<confirmstatusgroup>
+<confirmstatus>Unverified</confirmstatus>
+</confirmstatusgroup>
+<headline>TEST Review 2</headline>
+<overallrating>5</overallrating>
+<comments>TEST</comments>
+<nickname>NRS</nickname>
+<location>Moscow, ID</location>
+<page_id_variant>1440 1</page_id_variant>
+<site_id>1</site_id>
+</fullreview>
+</reviews>
+</product>
+
+<product xsi:type="ProductWithReviewsAndQuestions" locale="en_US">
+<pageid>2215</pageid>
+<name>NRS Men's 3mm Farmer John Wetsuit - Closeout</name>
+<smallstarimagelocation>pwr/engine/images/stars_small.gif</smallstarimagelocation>
+<largestarimagelocation>pwr/engine/images/stars.gif</largestarimagelocation>
+<newestreviewdate>2012-08-02</newestreviewdate>
+<oldestreviewdate>2012-07-27</oldestreviewdate>
+<averageoverallrating>4.5</averageoverallrating>
+<average_rating_decimal>4.5</average_rating_decimal>
+<fullreviews>11</fullreviews>
+<confirmstatusgroup>
+<confirmstatus>Verified Reviewer</confirmstatus>
+<confirmstatus>Unverified</confirmstatus>
+</confirmstatusgroup>
+<taggroup key="bestuses" name="Best Uses">
+<tag isuseradded="true" count="2">Kayak / canoe / rafting</tag>
+</taggroup>
+<taggroup key="cons" name="Cons">
+<tag isuseradded="true" count="1">Doesn't dry quickly</tag>
+</taggroup>
+<taggroup key="pros" name="Pros">
+<tag isuseradded="false" count="1">Comfortable</tag>
+<tag isuseradded="true" count="1">Warm</tag>
+</taggroup>
+<bottom_line_yes_votes>2</bottom_line_yes_votes>
+<bottom_line_no_votes>0</bottom_line_no_votes>
+<customerimages>true</customerimages>
+<customervideos>false</customervideos>
+<total_questions>4</total_questions>
+<total_answers>4</total_answers>
+<inlinefiles>
+<inlinefile reviewpage="1">pwr/r3fy9rfc/inline/03/80/2215-en_US-1-reviews.html</inlinefile>
+</inlinefiles>
+<inlinequestionfiles>
+<inlinefile questionpage="1">pwr/r3fy9rfc/inline/03/80/2215-en_US-1-questions.html</inlinefile>
+</inlinequestionfiles>
+<reviews>
+<fullreview>
+<id>34237128</id>
+<merchant_review_id>27436647</merchant_review_id>
+<merchantuserid/>
+<status>Approved</status>
+<createddate>2012-07-27</createddate>
+<helpfulvotes>1</helpfulvotes>
+<nothelpfulvotes>0</nothelpfulvotes>
+<source>web</source>
+<confirmstatusgroup>
+<confirmstatus>Unverified</confirmstatus>
+</confirmstatusgroup>
+<headline>TEST Review 1</headline>
+<overallrating>5</overallrating>
+<comments>TEST Comments</comments>
+<nickname>NRS</nickname>
+<location>Moscow, ID</location>
+<page_id_variant>2215 MK</page_id_variant>
+<site_id>1</site_id>
+</fullreview>
+<fullreview>
+<id>34265742</id>
+<merchant_review_id>27468818</merchant_review_id>
+<merchantuserid/>
+<status>Approved</status>
+<createddate>2012-07-30</createddate>
+<helpfulvotes>1</helpfulvotes>
+<nothelpfulvotes>0</nothelpfulvotes>
+<source>web</source>
+<confirmstatusgroup>
+<confirmstatus>Unverified</confirmstatus>
+</confirmstatusgroup>
+<headline>TESs 2</headline>
+<overallrating>5</overallrating>
+<bottom_line>recommended</bottom_line>
+<comments>TESt # 2</comments>
+<nickname>Brandon</nickname>
+<location>Moscow</location>
+<page_id_variant>2215 MK</page_id_variant>
+<site_id>1</site_id>
+</fullreview>
+<fullreview>
+<id>34265812</id>
+<merchant_review_id>27468938</merchant_review_id>
+<merchantuserid/>
+<status>Approved</status>
+<createddate>2012-07-30</createddate>
+<helpfulvotes>1</helpfulvotes>
+<nothelpfulvotes>0</nothelpfulvotes>
+<source>web</source>
+<confirmstatusgroup>
+<confirmstatus>Unverified</confirmstatus>
+</confirmstatusgroup>
+<headline>TEST 3</headline>
+<overallrating>5</overallrating>
+<comments>TEST</comments>
+<nickname>TEST</nickname>
+<location>Moscow,ID</location>
+<page_id_variant>2215 MK</page_id_variant>
+<site_id>1</site_id>
+</fullreview>
+<fullreview>
+<id>34265824</id>
+<merchant_review_id>27468940</merchant_review_id>
+<merchantuserid/>
+<status>Approved</status>
+<createddate>2012-07-30</createddate>
+<helpfulvotes>1</helpfulvotes>
+<nothelpfulvotes>0</nothelpfulvotes>
+<source>web</source>
+<confirmstatusgroup>
+<confirmstatus>Unverified</confirmstatus>
+</confirmstatusgroup>
+<headline>TEST 4</headline>
+<overallrating>5</overallrating>
+<comments>asdfasdf asdfa asdf asf</comments>
+<nickname>TEST</nickname>
+<location>Moscow,ID</location>
+<page_id_variant>2215 MK</page_id_variant>
+<site_id>1</site_id>
+</fullreview>
+<fullreview>
+<id>34265838</id>
+<merchant_review_id>27468941</merchant_review_id>
+<merchantuserid/>
+<status>Approved</status>
+<createddate>2012-07-30</createddate>
+<helpfulvotes>1</helpfulvotes>
+<nothelpfulvotes>0</nothelpfulvotes>
+<source>web</source>
+<confirmstatusgroup>
+<confirmstatus>Unverified</confirmstatus>
+</confirmstatusgroup>
+<headline>TEST 5</headline>
+<overallrating>5</overallrating>
+<comments>TEST asdf asdf asdfa sfasdf</comments>
+<nickname>TEST</nickname>
+<location>Moscow,ID</location>
+<page_id_variant>2215 MK</page_id_variant>
+<site_id>1</site_id>
+</fullreview>
+<fullreview>
+<id>34266077</id>
+<merchant_review_id>27469295</merchant_review_id>
+<merchantuserid/>
+<status>Approved</status>
+<createddate>2012-07-30</createddate>
+<helpfulvotes>1</helpfulvotes>
+<nothelpfulvotes>0</nothelpfulvotes>
+<source>web</source>
+<confirmstatusgroup>
+<confirmstatus>Verified Reviewer</confirmstatus>
+</confirmstatusgroup>
+<headline>Very warm wetsuit</headline>
+<overallrating>4</overallrating>
+<taggroup key="pros" name="Pros">
+<tag isuseradded="false" count="1">Comfortable</tag>
+<tag isuseradded="true" count="1">Warm</tag>
+</taggroup>
+<taggroup key="cons" name="Cons">
+<tag isuseradded="true" count="1">Doesn't dry quickly</tag>
+</taggroup>
+<taggroup key="bestuses" name="Best Uses">
+<tag isuseradded="true" count="1">Kayaking</tag>
+<tag isuseradded="true" count="1">Rafting</tag>
+</taggroup>
+<bottom_line>recommended</bottom_line>
+<comments>I love my new suit. It keeps me very warm when I'm on the river either on a raft or in my kayak.</comments>
+<nickname>KK</nickname>
+<location>Seattle, WA</location>
+<customerimage>
+<fullimagelocation>http://powerreviews.s3.amazonaws.com/images_customers/03/80/34266077_260214_raw.jpg</fullimagelocation>
+<thumbnailimagelocation>/pwr/content/03/80/34266077_260214_thumbnail.jpg</thumbnailimagelocation>
+<caption/>
+<taggroup name="Tags">
+<tag isuseradded="false" count="1">Using Product</tag>
+</taggroup>
+</customerimage>
+<email_address_from_user>kzc03@yahoo.com</email_address_from_user>
+<page_id_variant>2215 MK</page_id_variant>
+<site_id>1</site_id>
+</fullreview>
+<fullreview>
+<id>34266236</id>
+<merchant_review_id>27469499</merchant_review_id>
+<merchantuserid/>
+<status>Approved</status>
+<createddate>2012-07-30</createddate>
+<helpfulvotes>1</helpfulvotes>
+<nothelpfulvotes>0</nothelpfulvotes>
+<source>web</source>
+<confirmstatusgroup>
+<confirmstatus>Verified Reviewer</confirmstatus>
+</confirmstatusgroup>
+<headline>All Day Comfort</headline>
+<overallrating>4</overallrating>
+<comments>I bought this suit early spring and starting using it to kayak around the Sound here in Seattle. It provides great warmth and is comforatable to wear. I feel better knowing if I capsize, I'll be protected from the cold waters while in the water and out. Thanks!</comments>
+<nickname>Keli</nickname>
+<location>Seattle</location>
+<email_address_from_user>keli@nrsweb.com</email_address_from_user>
+<page_id_variant>2215 MK</page_id_variant>
+<site_id>1</site_id>
+</fullreview>
+<fullreview>
+<id>34266564</id>
+<merchant_review_id>27469719</merchant_review_id>
+<merchantuserid/>
+<status>Approved</status>
+<createddate>2012-07-30</createddate>
+<helpfulvotes>0</helpfulvotes>
+<nothelpfulvotes>0</nothelpfulvotes>
+<source>web</source>
+<confirmstatusgroup>
+<confirmstatus>Unverified</confirmstatus>
+</confirmstatusgroup>
+<headline>Another Test</headline>
+<overallrating>5</overallrating>
+<comments>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</comments>
+<nickname>Brandon</nickname>
+<location>Moscow, ID</location>
+<page_id_variant>2215 MK</page_id_variant>
+<site_id>1</site_id>
+</fullreview>
+<fullreview>
+<id>34266570</id>
+<merchant_review_id>27469723</merchant_review_id>
+<merchantuserid/>
+<status>Approved</status>
+<createddate>2012-07-30</createddate>
+<helpfulvotes>1</helpfulvotes>
+<nothelpfulvotes>0</nothelpfulvotes>
+<source>web</source>
+<confirmstatusgroup>
+<confirmstatus>Unverified</confirmstatus>
+</confirmstatusgroup>
+<headline>Another Test 2</headline>
+<overallrating>5</overallrating>
+<comments>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</comments>
+<nickname>Brandon</nickname>
+<location>Moscow,ID</location>
+<page_id_variant>2215 MK</page_id_variant>
+<site_id>1</site_id>
+</fullreview>
+<fullreview>
+<id>34266582</id>
+<merchant_review_id>27469731</merchant_review_id>
+<merchantuserid/>
+<status>Approved</status>
+<createddate>2012-07-30</createddate>
+<helpfulvotes>1</helpfulvotes>
+<nothelpfulvotes>0</nothelpfulvotes>
+<source>web</source>
+<confirmstatusgroup>
+<confirmstatus>Unverified</confirmstatus>
+</confirmstatusgroup>
+<headline>TEST</headline>
+<overallrating>5</overallrating>
+<comments>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</comments>
+<nickname>Brandon</nickname>
+<location>Moscow,ID</location>
+<page_id_variant>2215 MK</page_id_variant>
+<site_id>1</site_id>
+</fullreview>
+<fullreview>
+<id>34323325</id>
+<merchant_review_id>27526539</merchant_review_id>
+<merchantuserid/>
+<status>Approved</status>
+<createddate>2012-08-02</createddate>
+<helpfulvotes>0</helpfulvotes>
+<nothelpfulvotes>0</nothelpfulvotes>
+<source>web</source>
+<confirmstatusgroup>
+<confirmstatus>Unverified</confirmstatus>
+</confirmstatusgroup>
+<headline>Another Review</headline>
+<overallrating>1</overallrating>
+<comments>TEST</comments>
+<nickname>Brandon</nickname>
+<location>Moscow, ID</location>
+<page_id_variant>2215 MK</page_id_variant>
+<site_id>1</site_id>
+</fullreview>
+</reviews>
+<questions>
+<question>
+<id>939208</id>
+<date>2012-07-30T09:03:55</date>
+<type>PRE_SALE</type>
+<nickname>Keli</nickname>
+<location>United States</location>
+<text>Am I able to fit a shirt underneath this wetsuit?</text>
+<answers>
+<answer>
+<id>802030</id>
+<date>2012-07-30T09:15:44</date>
+<authored_by_expert>true</authored_by_expert>
+<authored_by_verified_purchaser>false</authored_by_verified_purchaser>
+<nickname/>
+<location/>
+<text>Yes, most layering pieces should fit fine underneath the appropriate size for your height and weight. HydroSkin, HydroSilk rash guards, and light fleece fabric will all fit great.</text>
+</answer>
+</answers>
+</question>
+<question>
+<id>939210</id>
+<date>2012-07-30T09:05:52</date>
+<type>PRE_SALE</type>
+<nickname>KK</nickname>
+<location>United States</location>
+<text>I see that the Large is out of stock. When will you have it available?</text>
+<answers>
+<answer>
+<id>802025</id>
+<date>2012-07-30T09:14:33</date>
+<authored_by_expert>true</authored_by_expert>
+<authored_by_verified_purchaser>false</authored_by_verified_purchaser>
+<nickname/>
+<location/>
+<text>Yes, these should be in stock early next week. You may order it now and we will ship it to you when it arrives.</text>
+</answer>
+</answers>
+</question>
+<question>
+<id>939214</id>
+<date>2012-07-30T09:07:36</date>
+<type>PRE_SALE</type>
+<nickname>Keli</nickname>
+<location>Seattle, WA</location>
+<text>Are these going on sale any time soon?</text>
+<answers>
+<answer>
+<id>802023</id>
+<date>2012-07-30T09:13:52</date>
+<authored_by_expert>true</authored_by_expert>
+<authored_by_verified_purchaser>false</authored_by_verified_purchaser>
+<nickname/>
+<location/>
+<text>It is possible these will go on sale this fall but I do not have a date.</text>
+</answer>
+</answers>
+</question>
+<question>
+<id>953948</id>
+<date>2012-08-16T10:01:22</date>
+<type>PRE_SALE</type>
+<nickname>KK</nickname>
+<location>here</location>
+<text>Are you guys open on labor day?</text>
+<answers>
+<answer>
+<id>816704</id>
+<date>2012-08-17T14:53:46</date>
+<authored_by_expert>true</authored_by_expert>
+<authored_by_verified_purchaser>false</authored_by_verified_purchaser>
+<nickname>KK</nickname>
+<location/>
+<text>Yes, we will have limited hours from 9-12pm.</text>
+</answer>
+</answers>
+</question>
+</questions>
+</product>
+
+</products>
