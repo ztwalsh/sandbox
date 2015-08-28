@@ -568,7 +568,6 @@ ul.pr-ratings-histogram-content li p.pr-histogram-count {
 /**/
 /*REVIEWS*/
 .pr-review-most-helpful,
-.pr-review-rating .pr-rating,
 .pr-review-main-wrapper .pr-review-points,
 .pr-review-text .pr-comments-header {
 	display: none;
@@ -636,6 +635,12 @@ a.prReviewAuthorProfileLnk {
 
 .pr-review-rating .pr-stars {
 	background-image: url('http://sandbox.ztwalsh.com/css/thenorthface/tnf_stars_small.gif');
+}
+
+.pr-review-rating .pr-rating {
+	background: #ffffff;
+	border: 1px solid #cccccc;
+	color: #666666;
 }
 
 .pr-review-rating .pr-review-rating-headline {
