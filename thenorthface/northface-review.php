@@ -51,7 +51,7 @@
 							<!-- generated: Fri Aug 28 09:59:38 EDT 2015 -->
 
 
-		<script type="text/javascript" href="https://www.thenorthface.com/wcsstore/tnf/pwr/engine/js/full.js"></script>
+		<script type="text/javascript" src="https://www.thenorthface.com/wcsstore/tnf/pwr/engine/js/full.js"></script>
 
 		<!-- PoReview Variables -->
 		<script type="text/javascript">
