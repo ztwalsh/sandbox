@@ -695,7 +695,7 @@ a.prReviewAuthorProfileLnk {
 
 .pr-customer-media-user {
 	display: block;
-	font-size: 14px;
+	font-size: 12px;
 	padding-bottom: 10px;
 }
 
@@ -703,6 +703,10 @@ a.prReviewAuthorProfileLnk {
 	background: #eeeeee;
 	background-image: none;
 	border: 0;
+}
+
+.pr-pic .pr-caption {
+	color: #666666;
 }
 
 .pr-pic-content,
