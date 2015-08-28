@@ -321,7 +321,7 @@
 
 
 
-<script src="www.thenorthface.com/wcsstore/vf-storefront/js/wcs-manifest.js?v=10"></script>
+<script src="https://www.thenorthface.com/wcsstore/vf-storefront/js/wcs-manifest.js?v=10"></script>
 <script type="text/javascript">
 	require.urlArgs = "v=" + 10;
 	require.waitSeconds = 120;
