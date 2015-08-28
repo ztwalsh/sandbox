@@ -146,31 +146,36 @@
 
 .pr-snapshot-rating .pr-stars {
 	background-image: url('http://sandbox.ztwalsh.com/css/thenorthface/tnf_stars.gif');
-	left: 50%;
-	margin-left: -45px;
+	/*left: 50%;*/
+	/*margin-left: -45px;*/
 	position: absolute;
 	top: 75px;
 }
 
 .pr-snapshot-rating .pr-rating {
-	left: 50%;
-	margin-left: 75px;
+	/*left: 50%;*/
+	/*margin-left: 75px;*/
+	margin-left: 115px;
 	position: absolute;
 	top: 75px;
 }
 
 .pr-snapshot-rating .pr-snapshot-average-based-on-text {
 	color: #999999;
-	left: 50%;
+	/*left: 50%;*/
 	font-size: 12px;
-	margin-left: -35px;
+	/*margin-left: -35px;*/
+	margin-left: 150px;
 	padding-top: 25px;
 	position: absolute;
-	top: 75px;
+	/*top: 75px;*/
+	top: 50px;
 }
 
 .pr-snapshot-consensus {
-	margin: 20px 0;
+	margin: 0;
+	position: absolute;
+	top: 75px;
 }
 
 .pr-snapshot-consensus-value {
@@ -179,14 +184,15 @@
 	border: 0;
 	display: inline-block;
 	font-size: 14px;
-	height: 40px;
+	/*height: 40px;*/
 	padding-top: 8px;
 	text-align: center;
-	width: 40px;
+	/*width: 40px;*/
 }
 
 .pr-snapshot-consensus-value.pr-rounded {
-	border-radius: 50%;
+	/*border-radius: 50%;*/
+	border-radius: 3px;
 }
 
 @media screen and (max-width: 800px) {
