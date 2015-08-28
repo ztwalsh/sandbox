@@ -463,9 +463,9 @@ ul.pr-ratings-histogram-content li p.pr-histogram-count {
 /*FOOTER*/
 .pr-snapshot-footer {
 	padding: 0;
-	position: absolute;
-	right: 0;
-	text-align: right;
+	/*position: absolute;*/
+	/*right: 0;*/
+	/*text-align: right;*/
 	top: 30px;
 	width: auto;
 }
@@ -475,7 +475,7 @@ ul.pr-ratings-histogram-content li p.pr-histogram-count {
 	color: #ffffff;
 	display: inline-block;
 	font-size: 14px;
-	float: right;
+	/*float: right;*/
 	letter-spacing: 0.14em;
 	line-height: 1;
 	padding: 9px 15px 8px 15px;
