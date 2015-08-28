@@ -56,7 +56,7 @@
 		<!-- PoReview Variables -->
 		<script type="text/javascript">
 			var pr_locale = 'en_US';
-			var pr_zip_location = '/wcsstore/tnf/';
+			var pr_zip_location = 'https://www.thenorthface.com/wcsstore/tnf/';
 			var customCss = "http://sandbox.ztwalsh.com/css/thenorthface/thenorthface_overrides_b.css";
 			if (customCss != null && customCss.indexOf("???") == -1 && customCss != "") {
 				var pr_style_sheet=customCss;
