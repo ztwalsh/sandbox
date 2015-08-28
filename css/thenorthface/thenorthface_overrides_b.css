@@ -728,6 +728,7 @@ a.prReviewAuthorProfileLnk {
 
 .pr-review-most-helpful-bottom {
 	color: #333333;
+	display: block;
 	font-size: 13px;
 }
 
