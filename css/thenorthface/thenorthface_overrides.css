@@ -84,12 +84,17 @@
 	font-style: italic;
 	font-weight: normal;
 	letter-spacing: 0.14em;
+	text-align: center;
 	text-transform: uppercase;
 }
 
 .pr-snapshot-rating-wrapper {
 	float: left;
 	width: 30%;
+}
+
+.pr-snapshot-head-wrapper, .pr-review-engine.pr-review-engine-max-width-690px .pr-snapshot-head-wrapper {
+	width: 100%;
 }
 
 .pr-snapshot-body-wrapper .pr-review-points {
