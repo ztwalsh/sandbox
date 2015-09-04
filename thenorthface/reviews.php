@@ -1,6 +1,7 @@
 
 <?php
-	$stylesheet = 'http://sandbox.ztwalsh.com/css/thenorthface/thenorthface_overrides.css';
+	//$stylesheet = 'http://sandbox.ztwalsh.com/css/thenorthface/thenorthface_overrides.css';
+	$stylesheet = 'http://localhost:8000/sandbox.ztwalsh.com/css/thenorthface/thenorthface_overrides.css';
 ?>
 <!doctype html>
 

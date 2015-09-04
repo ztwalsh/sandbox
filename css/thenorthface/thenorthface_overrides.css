@@ -91,6 +91,7 @@
 
 .pr-snapshot-rating-wrapper {
 	float: left;
+	padding: 45px 0;
 	width: 30%;
 }
 
@@ -101,7 +102,7 @@
 .pr-snapshot-body-wrapper .pr-review-points {
 	float: right;
 	margin: 0;
-	padding-top: 45px;
+	padding-top: 85px;
 	width: 68%;
 }
 
@@ -109,15 +110,11 @@
 	border: 0;
 	border-left: 1px solid #cccccc;
 	margin-right: 2%;
-	width: 49%;
+	width: 32%;
 }
 
-.pr-review-points-attr-wrapper .pr-attribute-group.pr-attribute-cons {
+.pr-attribute-group.pr-attribute-bestuses.pr-last {
 	margin: 0;
-}
-
-.pr-review-points-attr-wrapper .pr-attribute-group.pr-attribute-bestuses {
-	display: none;
 }
 
 .pr-empty {
@@ -175,12 +172,12 @@
 .pr-snapshot-rating .pr-snapshot-average-based-on-text {
 	color: #666666;
 	left: 50%;
-	font-size: 12px;
+	font-size: 13px;
 	margin-left: 10px;
 	/*margin-left: 150px;*/
 	padding-top: 25px;
 	position: absolute;
-	top: 75px;
+	top: 60px;
 	/*top: 60px;*/
 }
 
@@ -188,9 +185,10 @@
 	margin: 0;
 	display: table;
 	position: absolute;
-	right: 0;
-	top: 80px;
-	width: 230px;
+	left: 50%;
+	margin-left: -110px;
+	top: 115px;
+	width: 220px;
 }
 
 .pr-snapshot-consensus-value {
@@ -223,10 +221,40 @@
 }
 
 @media screen and (max-width: 800px) {
+	.pr-snapshot-title	{
+		text-align: left;
+	}
+
 	.pr-snapshot-rating-wrapper {
 		float: none;
-		padding: 0;
+		padding: 50px 0 0 0;
 		width: 100%;
+	}
+
+	.pr-snapshot-body-wrapper .pr-review-points {
+		float: none;
+		margin: 0;
+		padding-top: 20px;
+		width: 100%;
+	}
+
+	.pr-review-points-attr-wrapper .pr-attribute-group {
+		border: 0;
+		margin-right: 0;
+	}
+
+	.pr-attribute-key p {
+		padding: 0;
+	}
+
+	.pr-attribute-value {
+		padding: 0 0 15px 0;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.pr-snapshot-rating-wrapper {
+			padding: 0;
 	}
 
 	.pr-snapshot-rating .pr-stars {
@@ -254,28 +282,6 @@
 		top: auto;
 	}
 
-	.pr-snapshot-body-wrapper .pr-review-points {
-		float: none;
-		margin: 0;
-		padding-top: 20px;
-		width: 100%;
-	}
-
-	.pr-review-points-attr-wrapper .pr-attribute-group {
-		border: 0;
-		margin-right: 0;
-	}
-
-	.pr-attribute-key p {
-		padding: 0;
-	}
-
-	.pr-attribute-value {
-		padding: 0 0 15px 0;
-	}
-}
-
-@media screen and (max-width: 600px) {
 	.pr-snapshot-consensus {
 		margin: 10px 0;
 		display: table;
@@ -487,10 +493,10 @@ ul.pr-ratings-histogram-content li p.pr-histogram-count {
 /*FOOTER*/
 .pr-snapshot-footer {
 	padding: 10px 0;
-	/*position: absolute;*/
-	/*right: 0;*/
-	/*text-align: right;*/
-	top: 30px;
+	position: absolute;
+	right: 0;
+	text-align: right;
+	top: 60px;
 	width: auto;
 }
 
