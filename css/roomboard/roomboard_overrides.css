@@ -1,0 +1,39 @@
+/* Overrides from PR */
+.p-w-r .pr-btn-add-tag-submit {
+	border: none !important;
+	background-color: #cf7600 !important;
+}
+.p-w-r .pr-btn-add-tag a,
+.p-w-r .pr-btn-review,
+.p-w-r .pr-btn-fileinput,
+.p-w-r .pr-star:hover,
+.p-w-r .pr-star-selected {
+	border: none !important;
+	background-color: #cf7600 !important;
+}
+
+.p-w-r .active,
+.p-w-r .checkbox .checked {
+	background-color: #cf7600 !important;
+}
+
+.p-w-r .pr-btn-delete,
+.p-w-r .pr-btn-add-tag a,
+.p-w-r .pr-btn-add-tag a:after,
+.p-w-r .pr-btn-add-tag div,
+.p-w-r .pr-btn-add-tag-submit div,
+.p-w-r .pr-btn-fileinput span,
+.p-w-r .pr-btn-fileinput span:after,
+.p-w-r .pr-star div,
+.p-w-r .pr-star-selected div {
+	color: #fff !important;
+}
+
+.pr-footer-logo-container {
+  display: none;
+}
+
+.p-w-r .control-label .pr-required-indicator,
+.p-w-r .pr-required-indicator {
+  color:  #cf7600 !important;
+}
