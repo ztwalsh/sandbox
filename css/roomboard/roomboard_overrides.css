@@ -1,4 +1,24 @@
 /* Overrides from PR */
+.p-w-r .pr-loading-indicator {
+  margin: 10% auto;
+  border-bottom: 6px solid #Fbb817;
+  border-left: 6px solid #F05e24;
+  border-right: 6px solid #53c7e6;
+  border-top: 6px solid #8cc540;
+  border-radius: 100%;
+  height: 80px;
+  width: 80px;
+  -webkit-animation: pr-spin 1.125s infinite linear;
+  animation: pr-spin 1.125s infinite linear;
+  background-image: none
+}
+
+.p-w-r .pr-loading-indicator-ie {
+  margin-top: 40px;
+  text-align: center;
+  width: 100%;
+}
+
 .p-w-r .pr-btn-add-tag-submit {
 	border: none !important;
 	background-color: #cf7600 !important;
