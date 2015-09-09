@@ -705,6 +705,7 @@ a.prReviewAuthorProfileLnk {
 
 .pr-review-text {
 	clear: both;
+	font-size: 14px;
 	margin: 0 320px 0 0;
 	padding: 0 0 20px 0;
 }
