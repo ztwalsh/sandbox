@@ -289,7 +289,7 @@
 
 
 <link rel="stylesheet" type="text/css" href="https://www.thenorthface.com/wcsstore/vf-storefront/css/scene7-override.css?v=10"/>
-<script type="text/javascript" href="https://images.thenorthface.com/s7viewers/html5/js/ZoomViewer.js"></script>
+<script type="text/javascript" href="//images.thenorthface.com/s7viewers/html5/js/ZoomViewer.js"></script>
 
 
 <script>
@@ -1036,7 +1036,7 @@
 
 			<div class="slide-img">
  	<a href="https://www.thenorthface.com/shop/mens-jackets-vests-running-training/mens-kilowatt-jacket-2?cm_sp=TopNavProducts-_-Men-_-KilowattJkt">
-		<img alt="Dress" href="https://images.thenorthface.com/is/image/TheNorthFace/CBA7_A7U_hero?wid=160">
+		<img alt="Dress" href="//images.thenorthface.com/is/image/TheNorthFace/CBA7_A7U_hero?wid=160">
 	</a>
 </div>
 <div class="name">
@@ -1382,7 +1382,7 @@
 
 			<div class="slide-img">
  	<a href="https://www.thenorthface.com/shop/womens-shirts-tops-running-training/womens-tech-wrap-ture-jacket?cm_sp=TopNavProducts-_-Womens-_-WrapTure">
-<img alt="Dress" href="https://images.thenorthface.com/is/image/TheNorthFace/CDX1_BLF_hero?wid=160">
+<img alt="Dress" href="//images.thenorthface.com/is/image/TheNorthFace/CDX1_BLF_hero?wid=160">
 	</a>
 </div>
 <div class="name">
@@ -1647,7 +1647,7 @@
 
 			<div class="slide-img">
  	<a href="https://www.thenorthface.com/shop/kids-girls-jackets-vests/girls-andes-jacket?&cm_sp=TopNavProducts-_-Kids-_-GirlsAndesJacket">
-		<img alt="Dress" href="https://images.thenorthface.com/is/image/TheNorthFace/CHQ7_JB8_hero?wid=160">
+		<img alt="Dress" href="//images.thenorthface.com/is/image/TheNorthFace/CHQ7_JB8_hero?wid=160">
 	</a>
 </div>
 <div class="name">
@@ -1861,7 +1861,7 @@
 
 			<div class="slide-img">
  	<a href="https://www.thenorthface.com/shop/shoes-womens-winter-boots/womens-thermoball-utility-boot-cxr8?cm_sp=TopNavProducts-_-Shoes-_-WTballUtilityBoot">
-		<img alt="Dress" href="https://images.thenorthface.com/is/image/TheNorthFace/CXR8_CSU_hero?wid=160">
+		<img alt="Dress" href="//images.thenorthface.com/is/image/TheNorthFace/CXR8_CSU_hero?wid=160">
 	</a>
 </div>
 <div class="name">
@@ -2168,7 +2168,7 @@
 
 			<div class="slide-img">
  	<a href="https://www.thenorthface.com/shop/equipment-backpacks-mens-backpacks/microbyte?cm_sp=TopNavProducts-_-Eq-_-Microbyte">
-		<img alt="Dress" href="https://images.thenorthface.com/is/image/TheNorthFace/CHK5_R3Y_hero?wid=160">
+		<img alt="Dress" href="//images.thenorthface.com/is/image/TheNorthFace/CHK5_R3Y_hero?wid=160">
 	</a>
 </div>
 <div class="name">
@@ -2210,7 +2210,7 @@
             	            		<li class="item">
             			            				<a href="https://www.thenorthface.com/shop/custom?productId=p_20104&audience=men&page=configure" class="img">
 
-            				            				<img href="https://images.thenorthface.com/is/image/TheNorthFace/120x120_CLR/-Custom_Mens_120.jpg" alt="Men's Custom Denali" class="show-for-medium-up" />
+            				            				<img href="//images.thenorthface.com/is/image/TheNorthFace/120x120_CLR/-Custom_Mens_120.jpg" alt="Men's Custom Denali" class="show-for-medium-up" />
                             <span>Men's Custom Denali</span>
             			</a>
 						<a href="https://www.thenorthface.com/shop/custom?productId=p_20104&audience=men&page=configure" class="desc show-for-medium-up"><p></p></a>
@@ -2218,7 +2218,7 @@
             	            		<li class="item">
             			            				<a href="https://www.thenorthface.com/shop/custom?productId=p_20105&audience=women&page=configure" class="img">
 
-            				            				<img href="https://images.thenorthface.com/is/image/TheNorthFace/120x120_CLR/-Custom_Womens_120.jpg" alt="Women's Custom Denali" class="show-for-medium-up" />
+            				            				<img href="//images.thenorthface.com/is/image/TheNorthFace/120x120_CLR/-Custom_Womens_120.jpg" alt="Women's Custom Denali" class="show-for-medium-up" />
                             <span>Women's Custom Denali</span>
             			</a>
 						<a href="https://www.thenorthface.com/shop/custom?productId=p_20105&audience=women&page=configure" class="desc show-for-medium-up"><p></p></a>
@@ -2226,7 +2226,7 @@
             	            		<li class="item">
             			            				<a href="https://www.thenorthface.com/shop/custom?productId=p_20527&audience=girls&page=configure" class="img">
 
-            				            				<img href="https://images.thenorthface.com/is/image/TheNorthFace/120x120_CLR/-Custom_Girls_120.jpg" alt="Girls' Custom Denali" class="show-for-medium-up" />
+            				            				<img href="//images.thenorthface.com/is/image/TheNorthFace/120x120_CLR/-Custom_Girls_120.jpg" alt="Girls' Custom Denali" class="show-for-medium-up" />
                             <span>Girls' Custom Denali</span>
             			</a>
 						<a href="https://www.thenorthface.com/shop/custom?productId=p_20527&audience=girls&page=configure" class="desc show-for-medium-up"><p></p></a>
@@ -2234,7 +2234,7 @@
             	            		<li class="item">
             			            				<a href="https://www.thenorthface.com/shop/custom?productId=p_20526&audience=boys&page=configure" class="img">
 
-            				            				<img href="https://images.thenorthface.com/is/image/TheNorthFace/120x120_CLR/-Custom_Boys_120.jpg" alt="Boys' Custom Denali" class="show-for-medium-up" />
+            				            				<img href="//images.thenorthface.com/is/image/TheNorthFace/120x120_CLR/-Custom_Boys_120.jpg" alt="Boys' Custom Denali" class="show-for-medium-up" />
                             <span>Boys' Custom Denali</span>
             			</a>
 						<a href="https://www.thenorthface.com/shop/custom?productId=p_20526&audience=boys&page=configure" class="desc show-for-medium-up"><p></p></a>
@@ -2242,7 +2242,7 @@
 
             	            	            		<li class="item">
             			<a href="https://www.thenorthface.com/custom-products/custom-denali.html" class="img">
-            				            				<img href="https://images.thenorthface.com/is/image/TheNorthFace/94x94_CLR/-Custom_All.jpg" alt="Custom" class="show-for-medium-up" />
+            				            				<img href="//images.thenorthface.com/is/image/TheNorthFace/94x94_CLR/-Custom_All.jpg" alt="Custom" class="show-for-medium-up" />
             				<span>Custom</span>
             			</a>
 						<a href="https://www.thenorthface.com/custom-products/custom-denali.html" class="desc show-for-medium-up"><p></p></a>
@@ -2598,7 +2598,7 @@
 
 			<figure class="selected-view-js">
 
-						<img class="product-img-js" href="https://images.thenorthface.com/is/image/TheNorthFace/CQN1_044_hero?$638x745$" alt="MEN&amp;#8217;S EL MISTI TRENCH">
+						<img class="product-img-js" href="//images.thenorthface.com/is/image/TheNorthFace/CQN1_044_hero?$638x745$" alt="MEN&amp;#8217;S EL MISTI TRENCH">
 
 			</figure>
 
@@ -2680,7 +2680,7 @@
 <!-- generated: Wed Sep 09 10:37:49 EDT 2015 -->
 
 
-				<span class="rating"><img href="https://images.thenorthface.com/is/image/TheNorthFace/0-0?$121x19_CLR$" alt="0.0" /></span>
+				<span class="rating"><img href="//images.thenorthface.com/is/image/TheNorthFace/0-0?$121x19_CLR$" alt="0.0" /></span>
 
 						<a href="#pr-container">
 					<span>0</span> Reviews
@@ -2761,7 +2761,7 @@
 		<label for="color-bnt-1-489154" data-attribute-value="GRAPHITE GREY" data-color-identifier="" data-attribute-long-value="" data-sub-attribute-value="" class="attr-box selected clicked">
 			<img id="CQN1_044_hero" title="GRAPHITE GREY" alt="GRAPHITE GREY" data-product-name="MEN&amp;#8217;S EL MISTI TRENCH"
 				data-product-url="" data-role="swatch" data-product-desc="Tackle transitional weather with a waterproof, hooded trench that&amp;amp;#39;s designed with a 34&amp;amp;#0034; length for adequate coverage when storms roll through."
-				data-main="//images.thenorthface.com/is/image/TheNorthFace/CQN1_044_hero?$638x745$" data-part-number="CQN1" data-variation-id="044" href="https://images.thenorthface.com/is/image/TheNorthFace/CQN1_044_hero?$60x70$" >
+				data-main="//images.thenorthface.com/is/image/TheNorthFace/CQN1_044_hero?$638x745$" data-part-number="CQN1" data-variation-id="044" href="//images.thenorthface.com/is/image/TheNorthFace/CQN1_044_hero?$60x70$" >
 		</label>
 
 
@@ -2769,7 +2769,7 @@
 		<label for="color-bnt-2-489154" data-attribute-value="URBAN NAVY" data-color-identifier="" data-attribute-long-value="" data-sub-attribute-value="" class="attr-box  ">
 			<img id="CQN1_H2G_hero" title="URBAN NAVY" alt="URBAN NAVY" data-product-name="MEN&amp;#8217;S EL MISTI TRENCH"
 				data-product-url="" data-role="swatch" data-product-desc="Tackle transitional weather with a waterproof, hooded trench that&amp;amp;#39;s designed with a 34&amp;amp;#0034; length for adequate coverage when storms roll through."
-				data-main="//images.thenorthface.com/is/image/TheNorthFace/CQN1_H2G_hero?$638x745$" data-part-number="CQN1" data-variation-id="H2G" href="https://images.thenorthface.com/is/image/TheNorthFace/CQN1_H2G_hero?$60x70$" >
+				data-main="//images.thenorthface.com/is/image/TheNorthFace/CQN1_H2G_hero?$638x745$" data-part-number="CQN1" data-variation-id="H2G" href="//images.thenorthface.com/is/image/TheNorthFace/CQN1_H2G_hero?$60x70$" >
 		</label>
 
 
@@ -2777,7 +2777,7 @@
 		<label for="color-bnt-3-489154" data-attribute-value="JUNGLE VINE GREEN" data-color-identifier="" data-attribute-long-value="" data-sub-attribute-value="" class="attr-box  ">
 			<img id="CQN1_BDE_hero" title="JUNGLE VINE GREEN" alt="JUNGLE VINE GREEN" data-product-name="MEN&amp;#8217;S EL MISTI TRENCH"
 				data-product-url="" data-role="swatch" data-product-desc="Tackle transitional weather with a waterproof, hooded trench that&amp;amp;#39;s designed with a 34&amp;amp;#0034; length for adequate coverage when storms roll through."
-				data-main="//images.thenorthface.com/is/image/TheNorthFace/CQN1_BDE_hero?$638x745$" data-part-number="CQN1" data-variation-id="BDE" href="https://images.thenorthface.com/is/image/TheNorthFace/CQN1_BDE_hero?$60x70$" >
+				data-main="//images.thenorthface.com/is/image/TheNorthFace/CQN1_BDE_hero?$638x745$" data-part-number="CQN1" data-variation-id="BDE" href="//images.thenorthface.com/is/image/TheNorthFace/CQN1_BDE_hero?$60x70$" >
 		</label>
 
 
@@ -2785,7 +2785,7 @@
 		<label for="color-bnt-4-489154" data-attribute-value="TNF BLACK" data-color-identifier="" data-attribute-long-value="" data-sub-attribute-value="" class="attr-box  ">
 			<img id="CQN1_JK3_hero" title="TNF BLACK" alt="TNF BLACK" data-product-name="MEN&amp;#8217;S EL MISTI TRENCH"
 				data-product-url="" data-role="swatch" data-product-desc="Tackle transitional weather with a waterproof, hooded trench that&amp;amp;#39;s designed with a 34&amp;amp;#0034; length for adequate coverage when storms roll through."
-				data-main="//images.thenorthface.com/is/image/TheNorthFace/CQN1_JK3_hero?$638x745$" data-part-number="CQN1" data-variation-id="JK3" href="https://images.thenorthface.com/is/image/TheNorthFace/CQN1_JK3_hero?$60x70$" >
+				data-main="//images.thenorthface.com/is/image/TheNorthFace/CQN1_JK3_hero?$638x745$" data-part-number="CQN1" data-variation-id="JK3" href="//images.thenorthface.com/is/image/TheNorthFace/CQN1_JK3_hero?$60x70$" >
 		</label>
 
 
@@ -3169,13 +3169,13 @@
 						<div class="inner-content">
 
 								<div class="benefit">
-									<img class="benefit-icon" href="https://images.thenorthface.com/is/image/TheNorthFace/52x52_CLR/-tnf_benefit_waterproof.jpg" alt="Waterproof" />
+									<img class="benefit-icon" href="//images.thenorthface.com/is/image/TheNorthFace/52x52_CLR/-tnf_benefit_waterproof.jpg" alt="Waterproof" />
 									<h5>Waterproof</h5>
 									<p class="benefit-text">Impenetrable moisture barrier to guarantee dryness.</p>
 								</div>
 
 								<div class="benefit">
-									<img class="benefit-icon" href="https://images.thenorthface.com/is/image/TheNorthFace/52x52_CLR/-breathable.jpg" alt="Breathable" />
+									<img class="benefit-icon" href="//images.thenorthface.com/is/image/TheNorthFace/52x52_CLR/-breathable.jpg" alt="Breathable" />
 									<h5>Breathable</h5>
 									<p class="benefit-text">Lightweight fabrics that help regulate body temperature.</p>
 								</div>
@@ -3437,16 +3437,16 @@
 								<ul>
 									</ul>
 								<div class="subheading" style="font-size: 12px; font-family: tahoma, arial, helvetica, sans-serif;">THE NORTH FACE APP</div><a href="http://itunes.apple.com/us/app/the-north-face/id522990206" style="font-size: 12px; font-family: tahoma, arial, helvetica, sans-serif;">
-	<img href="https://images.thenorthface.com/is/image/TheNorthFaceBrand/app-store?fmt=png-alpha" alt="Download on the App Store">&nbsp;</a><br><br>
+	<img href="//images.thenorthface.com/is/image/TheNorthFaceBrand/app-store?fmt=png-alpha" alt="Download on the App Store">&nbsp;</a><br><br>
 
 
 <a href="http://play.google.com/store/apps/details?id=com.gpshopper.thenorthfaceapp" style="font-size: 12px; font-family: tahoma, arial, helvetica, sans-serif;">
-	<img href="https://images.thenorthface.com/is/image/TheNorthFaceBrand/google-play?fmt=png-alpha" alt="Get it on Google Play">
+	<img href="//images.thenorthface.com/is/image/TheNorthFaceBrand/google-play?fmt=png-alpha" alt="Get it on Google Play">
 </a>
 <br><br><br>
-<div class="subheading" style="font-size: 12px; font-family: tahoma, arial, helvetica, sans-serif;">MOUNTAIN ATHLETICS APP</div><div class="subheading" style="font-size: 12px; font-family: tahoma, arial, helvetica, sans-serif;"><a href="http://itunes.apple.com/us/app/mountain-athletics/id890160960"><img href="https://images.thenorthface.com/is/image/TheNorthFaceBrand/app-store?fmt=png-alpha" alt="Download on the App Store"></a></div><br><div class="subheading" style="font-size: 12px; font-family: tahoma, arial, helvetica, sans-serif;">SNOW REPORT APP</div>
+<div class="subheading" style="font-size: 12px; font-family: tahoma, arial, helvetica, sans-serif;">MOUNTAIN ATHLETICS APP</div><div class="subheading" style="font-size: 12px; font-family: tahoma, arial, helvetica, sans-serif;"><a href="http://itunes.apple.com/us/app/mountain-athletics/id890160960"><img href="//images.thenorthface.com/is/image/TheNorthFaceBrand/app-store?fmt=png-alpha" alt="Download on the App Store"></a></div><br><div class="subheading" style="font-size: 12px; font-family: tahoma, arial, helvetica, sans-serif;">SNOW REPORT APP</div>
 <a href="http://itunes.apple.com/us/app/the-snow-report/id297613771" style="font-size: 12px; font-family: tahoma, arial, helvetica, sans-serif;">
-	<img href="https://images.thenorthface.com/is/image/TheNorthFaceBrand/app-store?fmt=png-alpha" alt="Download on the App Store">
+	<img href="//images.thenorthface.com/is/image/TheNorthFaceBrand/app-store?fmt=png-alpha" alt="Download on the App Store">
 </a>
 <br>
 <br>
