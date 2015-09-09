@@ -138,7 +138,7 @@
 }
 
 .pr-snapshot-rating .pr-stars {
-	background-image: url('http://sandbox.ztwalsh.com/css/thenorthface/tnf_stars.gif');
+	background-image: url('//images.thenorthface.com/is/image/TheNorthFace/tnf_stars?$112x250$');
 	left: 50%;
 	margin-left: -150px;
 	position: absolute;
@@ -684,7 +684,7 @@ a.prReviewAuthorProfileLnk {
 }
 
 .pr-review-rating .pr-stars {
-	background-image: url('http://sandbox.ztwalsh.com/css/thenorthface/tnf_stars_small.gif');
+	background-image: url('//images.thenorthface.com/is/image/TheNorthFace/tnf_stars_small?$83x198$');
 }
 
 .pr-review-rating .pr-rating {
