@@ -6,8 +6,8 @@
   border-right: 6px solid #53c7e6;
   border-top: 6px solid #8cc540;
   border-radius: 100%;
-  height: 80px;
-  width: 80px;
+  height: 70px;
+  width: 70px;
   -webkit-animation: pr-spin 1.125s infinite linear;
   animation: pr-spin 1.125s infinite linear;
   background-image: none
