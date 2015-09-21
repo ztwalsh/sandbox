@@ -433,6 +433,13 @@ a.button.tagsuggest span {
 	width: auto;
 }
 
+div#prProgress {
+	background: #eeeeee !important;
+	border: 0 !important;
+	box-sizing: border-box !important;
+	width: 100% !important;
+}
+
 @media screen and (max-width: 600px) {
 	.prCancelUpload,
 	.prsubmit.upload {
@@ -446,7 +453,7 @@ a.button.tagsuggest span {
 	}
 
 	div#prProgress {
-    margin-left: 0 !important;
+		margin-left: 0 !important;
   }
 }
 
@@ -572,6 +579,10 @@ a.button.tagsuggest span {
 
 	.prfootertext ul {
 		padding-left: 18px;
+	}
+
+	.comments {
+		border-bottom: 0;
 	}
 }
 
