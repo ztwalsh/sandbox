@@ -444,6 +444,10 @@ a.button.tagsuggest span {
 	.prsubmit.upload {
 		padding: 0;
 	}
+
+	div#prProgress {
+    margin-left: 0 !important;
+  }
 }
 
 
@@ -779,4 +783,3 @@ h3.input_label {
 	border-radius: 3px;
 	width: auto;
 }
-
