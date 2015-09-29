@@ -437,6 +437,7 @@ div#prProgress {
 	background: #eeeeee !important;
 	border: 0 !important;
 	box-sizing: border-box !important;
+	color: #333333;
 	width: 100% !important;
 }
 
