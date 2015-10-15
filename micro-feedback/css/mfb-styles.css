@@ -2,13 +2,18 @@
   background: #ffffff;
   border-radius: 2px;
   border-top: 8px solid #4a99ca;
-  bottom: 75px;
+  bottom: 40px;
   box-shadow: 0 0 2px rgba(0,0,0,0.4);
-  min-width: 375px;
   padding: 10px 15px 15px 15px;
   position: fixed;
-  right: 20px;
+  right: -245px;
+  transition: all ease 0.2s;
+  width: 200px;
   z-index: 100000;
+}
+
+.mfb-body.enabled {
+  right: 40px;
 }
 
 .mfb-question {
