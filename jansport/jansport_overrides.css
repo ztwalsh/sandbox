@@ -97,12 +97,17 @@
 .pr-review-points-attr-wrapper .pr-attribute-group {
 	border: 0;
 	border-left: 1px solid #cccccc;
+	height: 172px;
 	margin-right: 2%;
-	width: 32%;
+	width: 49%;
+}
+
+.pr-attribute-group.pr-attribute-cons {
+	margin: 0;
 }
 
 .pr-attribute-group.pr-attribute-bestuses.pr-last {
-	margin: 0;
+	display: none;
 }
 
 .pr-empty {
@@ -228,6 +233,7 @@
 
 	.pr-review-points-attr-wrapper .pr-attribute-group {
 		border: 0;
+		height: auto;
 		margin-right: 0;
 	}
 
@@ -346,7 +352,7 @@ ul.pr-ratings-histogram-content li p {
 .pr-ratings-histogram-bar .pr-ratings-histogram-barValue {
 	background: #f4c00d;
 	background-image: none;
-	height: 16px;
+	height: 100%;
 }
 
 ul.pr-ratings-histogram-content li p.pr-histogram-count {
