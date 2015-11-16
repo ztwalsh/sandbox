@@ -125,6 +125,10 @@
 	padding: 0 15px 15px 15px;
 }
 
+.pr-attribute-value-list li {
+	padding-bottom: 5px;
+}
+
 .pr-snapshot-histogram {
 	padding-top: 20px;
 }
