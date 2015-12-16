@@ -279,7 +279,7 @@ header .header-content .header-content-inner p {
   margin: 0 auto;
 }
 
-.cf_sign_on {
+.mktoForm .cf_widget_socialsignon .cf_sign_on {
   display: none;
 }
 
@@ -297,7 +297,7 @@ header .header-content .header-content-inner p {
 }
 
 .mktoForm .mktoButtonWrap.mktoInset .mktoButton {
-  
+
 }
 
 @media(min-width:992px) {
