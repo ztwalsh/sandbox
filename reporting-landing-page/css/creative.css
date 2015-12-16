@@ -277,15 +277,12 @@ header .header-content .header-content-inner p {
 
 .mktoForm {
   margin: 0 auto;
-  min-width: 280px;
-  width: 100% !important;
 }
 
 .mktoLabel {
   color: #fff;
   font-size: 16px;
   text-align: left;
-  width: 20% !imporant;
 }
 
 .mktoTextField {
@@ -293,7 +290,6 @@ header .header-content .header-content-inner p {
   border-top: 3px solid #eeeeee;
   font-size: 16px;
   padding: 10px;
-  width: 78% !imporant;
 }
 
 .mktoForm .mktoButtonWrap.mktoInset .mktoButton {
