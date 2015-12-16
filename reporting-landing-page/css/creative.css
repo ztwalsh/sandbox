@@ -276,11 +276,7 @@ header .header-content .header-content-inner p {
 }
 
 .mktoForm {
-  margin: 0 auto;
-}
-
-.mktoForm .cf_widget_socialsignon .cf_sign_on {
-  /*display: none;*/
+  margin: 20px auto 0 auto;
 }
 
 .mktoLabel {
@@ -297,7 +293,13 @@ header .header-content .header-content-inner p {
 }
 
 .mktoForm .mktoButtonWrap.mktoInset .mktoButton {
-
+    box-shadow: none;
+    background-image: none;
+    background: #4a90e2;
+    border: 0;
+    border-radius: 2px;
+    color: #fff;
+    padding: 10px 20px;
 }
 
 @media(min-width:992px) {
