@@ -1,0 +1,68 @@
+@import url('reset.css');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,900');
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  color: #ffffff;
+  font-family: 'Lato', arial, sans;
+  font-size: 25px;
+  height: 100%;
+  line-height: 1.5;
+  width: 100%;
+}
+
+.slide {
+  background: #333333;
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+
+.slide div {
+  display: table-cell;
+  padding: 50px;
+  vertical-align: middle;
+}
+
+.teal {
+  background: #75c6b8;
+}
+
+.yellow {
+  background: #fbb817;
+}
+
+.green {
+  background: #8cc540;
+}
+
+.product {
+  background: url('../images/slide-product-managers.jpeg') #333333;
+  background-size: cover;
+}
+
+.merchandisers {
+  background: url('../images/slide-merchandisers.jpeg') #333333;
+  background-size: cover;
+}
+
+.customers {
+  background: url('../images/slide-customer-support.jpeg') #333333;
+  background-size: cover;
+}
+
+.insights {
+  background: url('../images/slide-product-insights.jpeg') #333333;
+  background-size: cover;
+}
+
+
+
+h2 {
+  font-size: 2em;
+  font-weight: 900;
+}
