@@ -1,9 +1,15 @@
+<?php
+	require('lib/config.php');
+	check_login();
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <title>Events | CrewConnect</title>
         <meta name="description" content="A fully featured admin theme which can be used to build CRM, CMS, etc.">
         <?php require_once('lib/include.head.php'); ?>
+        <!-- DataTables -->
+        <link href="assets/datatables/jquery.dataTables.min.css" rel="stylesheet" type="text/css" />
     </head>
 
     <body>
@@ -23,7 +29,7 @@
 
             <div class="wraper container-fluid">
                 <div class="page-title">
-                    <h3 class="title">All Events</h3>
+                    <h3 class="title">All Events</h3><a href="events-add.php" class="btn btn-primary m-b-5">Add Event</a>
                 </div>
 
                 <div class="row">
@@ -45,13 +51,13 @@
                     <div class="tab-content">
                         <div class="tab-pane active" id="home">
                             <div>
-                                <p>Carriage quitting securing be appetite it declared. High eyes kept so busy feel call in. Would day nor ask walls known. But preserved advantage are but and certainty earnestly enjoyment. Passage weather as up am exposed. And natural related man subject. Eagerness get situation his was delighted. </p>
-                                <p>Fulfilled direction use continual set him propriety continued. Saw met applauded favourite deficient engrossed concealed and her. Concluded boy perpetual old supposing. Farther related bed and passage comfort civilly. Dashwoods see frankness objection abilities the. As hastened oh produced prospect formerly up am. Placing forming nay looking old married few has. Margaret disposed add screened rendered six say his striking confined. </p>
+                                <?php display_events($_SESSION['member_id'], $_SESSION['boat_id'], ''); ?>
                             </div>
                         </div>
                         <div class="tab-pane" id="profile">
-                            <p>Fulfilled direction use continual set him propriety continued. Saw met applauded favourite deficient engrossed concealed and her. Concluded boy perpetual old supposing. Farther related bed and passage comfort civilly. Dashwoods see frankness objection abilities the. As hastened oh produced prospect formerly up am. Placing forming nay looking old married few has. Margaret disposed add screened rendered six say his striking confined. </p>
-                            <p>When be draw drew ye. Defective in do recommend suffering. House it seven in spoil tiled court. Sister others marked fat missed did out use. Alteration possession dispatched collecting instrument travelling he or on. Snug give made at spot or late that mr. </p>
+                          <div>
+                              <?php display_events($_SESSION['member_id'], $_SESSION['boat_id'], 'past-all'); ?>
+                          </div>
                         </div>
                     </div>
                   </div> <!-- end col -->
@@ -71,5 +77,15 @@
         </section>
         <!-- Main Content Ends -->
         <?php require_once('lib/include.scripts.php'); ?>
+
+        <script src="assets/datatables/jquery.dataTables.min.js"></script>
+        <script src="assets/datatables/dataTables.bootstrap.js"></script>
+
+
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $('.datatable').dataTable();
+            } );
+        </script>
     </body>
 </html>

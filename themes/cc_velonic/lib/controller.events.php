@@ -73,70 +73,35 @@
 		if (mysqli_num_rows($events) == 0) {
 			echo 'Nothing...';
 		} else {
-			while($event = $events->fetch_assoc()) {
-				$event_status = event_status($member_id, $event['id'], $boat_id);
-
-				echo '<div class="card">';
-					echo '<div class="card-top cf">';
-						echo '<div class="card-status">';
-						member_event_status($event_status['status'], $event['edate'], $event['edate_end']);
-						echo '</div>';
-						echo '<div class="card-info">';
-							echo '<h2 class="heading-4"><a href="event-detail.php?event_id='.$event['id'].'">'.$event['name'].'</a></h2>';
-							echo '<span class="iconworks" data-icon="&#70;"></span> ';
-							echo date('M d, Y', $event['edate']);
+				echo '<table class="table table-striped table-bordered datatable">';
+	        echo '<thead>';
+		        echo '<tr>';
+			        echo '<th>Name</th>';
+			        echo '<th>Start Date</th>';
+							echo '<th>Start Time</th>';
+			        echo '<th>End Date</th>';
+			        echo '<th>Your Status</th>';
+			        echo '<th>Attendees</th>';
+		        echo '</tr>';
+	        echo '</thead> ';
+	        echo '<tbody>';
+					while($event = $events->fetch_assoc()) {
+						$event_status = event_status($member_id, $event['id'], $boat_id);
+						echo '<tr>';
+		          echo '<td><a href="event-detail.php?event_id='.$event['id'].'">'.$event['name'].'</a></td>';
+		          echo '<td>'.date('M d, Y', $event['edate']).'</td>';
+							echo '<td>'.date('h:ia', $event['edate']).'</td>';
 							if ($event['edate_end']) {
-								echo '&ndash;'.date('M d, Y', $event['edate_end']);
+								echo '<td>'.date('M d, Y', $event['edate_end']).'</td>';
+							} else {
+								echo '<td></td>';
 							}
-							echo '<span class="iconworks" data-icon="&#105;"></span> '.date('h:ia', $event['edate']);
-							echo '<span class="iconworks" data-icon="&#80;"></span> '.member_count($event['id'], $boat_id);
-						echo '</div>';
-					echo '</div>';
-					if ($event_status['status'] && $event_status['status'] == 4 && $event['edate'] > time()) {
-						echo '<div class="status-menu">';
-							echo '<a href="event-rsvp.php?event_id='.$event['id'].'&new_status=3">Going</a>';
-							echo '<a href="event-rsvp.php?event_id='.$event['id'].'&new_status=0">Not going</a>';
-							echo '<a href="event-rsvp.php?event_id='.$event['id'].'&new_status=2">Maybe</a>';
-						echo '</div>';
-					} else {
-						echo '<div class="card-menu">';
-							echo '<a href="event-detail.php?event_id='.$event['id'].'">View crew <i class="fa fa-angle-right"></i></a>';
-							echo '<a href="event-sails.php?event_id='.$event['id'].'">View sails <i class="fa fa-angle-right"></i></a>';
-							if ($_SESSION['member_privilege'] > 1) {
-								echo '<a href="event-edit.php?event_id='.$event['id'].'">Edit event <i class="fa fa-angle-right"></i></a>';
-								echo '<a class="delete" href="event-delete.php?delete_id='.$event['id'].'">Delete event <i class="fa fa-angle-right"></i></a>';
-							}
-
-							if ($_SESSION['member_id'] == $member_id && ($event['edate'] > time() || $event['edate_end'] > time())) {
-								if ($event_status['status'] != NULL) {
-									echo '<div class="status-menu">';
-										echo '<a ';
-										if ($event_status['status'] == 3) {
-											echo 'class="positive" ';
-										}
-										echo 'href="event-rsvp.php?event_id='.$event['id'].'&new_status=3">Going</a>';
-
-										echo '<a ';
-										if ($event_status['status'] == 0) {
-											echo 'class="negative" ';
-										}
-										echo 'href="event-rsvp.php?event_id='.$event['id'].'&new_status=0">Not going</a>';
-
-										echo '<a ';
-										if ($event_status['status'] == 2) {
-											echo 'class="neutral" ';
-										}
-										echo 'href="event-rsvp.php?event_id='.$event['id'].'&new_status=2">Maybe</a>';
-									echo '</div>';
-								}
-							}
-						echo '</div>';
-						echo '<div class="card-bottom">';
-							echo '<a href="#">Options <i class="fa fa-angle-down"></i></a>';
-						echo '</div>';
+							echo '<td>Going</td>';
+		          echo '<td>'.member_count($event['id'], $boat_id).'</td>';
+		        echo '</tr>';
 					}
-				echo '</div>';
-			}
+					echo '</tbody>';
+				echo '</table>';
 		}
 	}
 
