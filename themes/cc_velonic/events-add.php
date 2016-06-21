@@ -82,5 +82,11 @@
         </section>
         <!-- Main Content Ends -->
         <?php require_once('lib/include.scripts.php'); ?>
+        <script src="assets/timepicker/bootstrap-datepicker.js"></script>
+        <script type="text/javascript">
+          jQuery(document).ready(function() {
+              jQuery('.datepicker').datepicker();
+          });
+        </script>
     </body>
 </html>

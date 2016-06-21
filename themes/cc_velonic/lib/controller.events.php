@@ -73,7 +73,8 @@
 		if (mysqli_num_rows($events) == 0) {
 			echo 'Nothing...';
 		} else {
-				echo '<table class="table table-striped table-bordered datatable">';
+			echo '<div class="table-responsive">';
+				echo '<table class="table">';
 	        echo '<thead>';
 		        echo '<tr>';
 			        echo '<th>Name</th>';
@@ -88,7 +89,7 @@
 					while($event = $events->fetch_assoc()) {
 						$event_status = event_status($member_id, $event['id'], $boat_id);
 						echo '<tr>';
-		          echo '<td><a href="event-detail.php?event_id='.$event['id'].'">'.$event['name'].'</a></td>';
+		          echo '<td><a href="events-detail.php?event_id='.$event['id'].'">'.$event['name'].'</a></td>';
 		          echo '<td>'.date('M d, Y', $event['edate']).'</td>';
 							echo '<td>'.date('h:ia', $event['edate']).'</td>';
 							if ($event['edate_end']) {
@@ -102,27 +103,8 @@
 					}
 					echo '</tbody>';
 				echo '</table>';
+			echo '</div>';
 		}
-	}
-
-	function event_list_filter($variable) {
-		if ($variable == 'past-all') {
-			$label = 'All past events';
-		} elseif ($variable == 'past-member') {
-			$label = 'Your past events';
-		} elseif ($variable == 'member') {
-			$label = 'Your upcoming events';
-		} else {
-			$label = 'All upcoming events';
-		}
-
-		echo '<a class="action-button" href="#">'.$label.' <i class="fa fa-angle-down"></i></a>';
-		echo '<div class="action-menu">';
-		echo '<a href="event-all.php">All upcoming events</a>';
-		echo '<a href="event-all.php?view=past-all">All past events</a>';
-		echo '<a href="event-all.php?view=member">Your upcoming events</a>';
-		echo '<a href="event-all.php?view=past-member">Your past events</a>';
-		echo '</div>';
 	}
 
 	function add_event($boat_id) {
