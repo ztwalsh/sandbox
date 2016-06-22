@@ -33,6 +33,18 @@
       <?php include('includes/include.card_04.php'); ?>
       <?php include('includes/include.card_05.php'); ?>
       <?php include('includes/include.card_06.php'); ?>
+      <?php include('includes/include.card_02.php'); ?>
+      <?php include('includes/include.card_01.php'); ?>
+      <?php include('includes/include.card_03.php'); ?>
+      <?php include('includes/include.card_04.php'); ?>
+      <?php include('includes/include.card_05.php'); ?>
+      <?php include('includes/include.card_06.php'); ?>
+      <?php include('includes/include.card_02.php'); ?>
+      <?php include('includes/include.card_01.php'); ?>
+      <?php include('includes/include.card_03.php'); ?>
+      <?php include('includes/include.card_04.php'); ?>
+      <?php include('includes/include.card_05.php'); ?>
+      <?php include('includes/include.card_06.php'); ?>
     </div>
 
   </body>

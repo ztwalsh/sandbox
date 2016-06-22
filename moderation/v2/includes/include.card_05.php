@@ -5,11 +5,11 @@
       <div class="product">
         <div class="product-header cf">
           <div class="product-image">
-            <img src="images/baby.jpg" />
+            <img src="images/suitcase.jpeg" />
           </div>
           <div class="product-title truncate">
-            <h3>Baby Alive Better Now Bailey Brunette</h3>
-            <div class="details"><strong>Brand:</strong> Baby Alive</div><div class="details"><strong>Category:</strong> Baby Dolls</div>
+            <h3>Solo Classic 15.6" Rolling Case - Black</h3>
+            <div class="details"><strong>Brand:</strong> Solo</div><div class="details"><strong>Category:</strong> Briefcase</div>
           </div>
           <div class="product-more">
             <i class="fa fa-plus-square-o" aria-hidden="true"></i> More Info
@@ -17,7 +17,7 @@
         </div>
         <div class="product-content">
           <h4>Description</h4>
-          <p>Oh no! Poor Better Now Bailey is home sick today, and she needs someone to take care of her. Give her a checkup to see what’s wrong. She comes with what is needed to take care of her, like a pretend thermometer and stethoscope. Feed her from her bottle- she drinks and wets! Then change her diaper. Taking care of Bailey when she’s sick isn’t always easy, but with a caring mom, she’ll bounce back in no time!</p>
+          <p>Transport your laptop with this stylish rolling computer case by SOLO. The padded computer pocket will hold most laptops with screens measuring 15". The zipped compartment features an accordion fan file and disk and accessory pockets to help keep everything organized.</p>
         </div>
       </div>
       <div class="content">
@@ -28,24 +28,24 @@
             <div class="star"><i class="fa fa-star" aria-hidden="true"></i></div>
             <div class="star"><i class="fa fa-star" aria-hidden="true"></i></div>
             <div class="star"><i class="fa fa-star" aria-hidden="true"></i></div>
-            <div class="star-off"><i class="fa fa-star" aria-hidden="true"></i></div>
+            <div class="star"><i class="fa fa-star" aria-hidden="true"></i></div>
           </div>
         </div>
         <div class="row cf">
           <div class="row-title"><strong>Headline</strong></div>
-          <div class="row-content"><h4>Adorable doll!!!!</h4></div>
+          <div class="row-content"><h4>U.S. Luggage Computer Case B100-4</h4></div>
         </div>
         <div class="row cf">
           <div class="row-title"><strong>Comments</strong></div>
-          <div class="row-content">Such a sweet design a girl can have so much imagination! My daughter loves baby alive babies and this one is perfect. Can't wait to give it to her for Easter</div>
+          <div class="row-content">The price was reasonable. Shipping was prompt. The product is well made. I'm very pleased with this purchase.</div>
         </div>
         <div class="row cf">
           <div class="row-title"><strong>Author Name</strong></div>
-          <div class="row-content">chloemarie693</div>
+          <div class="row-content">richard</div>
         </div>
         <div class="row cf">
           <div class="row-title"><strong>Author Location</strong></div>
-          <div class="row-content">Florida</div>
+          <div class="row-content">Vermont</div>
         </div>
       </div>
       <div class="meta">
