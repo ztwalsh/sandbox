@@ -1,6 +1,7 @@
 @import url('reset.css');
 @import url('type.css');
 @import url('button.css');
+@import url('forms.css');
 @import url('https://fonts.googleapis.com/css?family=Lato:400,700');
 
 body {
@@ -9,17 +10,18 @@ body {
 
 nav {
   background: #303533;
+  margin: 0 auto;
   padding: 20px 50px 25px 50px;
   position: relative;
   text-align: right;
 }
 
 nav .logo {
-  position: absolute;
   left: 50%;
-  margin-left: -70px;
-  top: -15px;
-  width: 140px;
+  margin-left: -20px;
+  position: absolute;
+  top: 15px;
+  width: 40px;
 }
 
 nav a {
@@ -49,8 +51,8 @@ header .counter {
 
 header .counter .count-label {
   background: #cccccc;
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
   color: #303533;
   display: inline-block;
   float: left;
@@ -59,31 +61,37 @@ header .counter .count-label {
 
 header .counter .count-number {
   background: #f29700;
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
   color: #ffffff;
   display: inline-block;
   float: left;
-  padding: 6px 15px 6px 12px;
+  padding: 6px 15px;
 }
 
 header .call-to-action {
   width: 48%;
 }
 
-.primary-card {
-  background: #303533;
-  box-shadow: 0 15px 0 -10px #cccccc;
+.content-space {
   margin: 0 auto;
-  margin-bottom: 50px;
   max-width: 1000px;
   position: relative;
-  transition: ease all 1s;
   width: 100%;
 }
 
-.out {
-  right: 150%;
+.primary-card {
+  background: #eeeeee;
+  box-shadow: 0 3px 5px 0 #cccccc;
+  border-radius: 2px;
+  display: none;
+  margin-bottom: 20px;
+  overflow: hidden;
+  position: absolute;
+}
+
+.primary-card:first-child {
+  display: block;
 }
 
 .primary-card .wrapper {
@@ -121,7 +129,10 @@ header .call-to-action {
 .content-area .product .product-header .product-title {
   float: left;
   padding-top: 10px;
-  width: auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 65%;
 }
 
 .content-area .product .product-header .product-title .details {
@@ -145,7 +156,7 @@ header .call-to-action {
 .content-area .product .product-content {
   display: none;
   font-size: 0.8em;
-  padding: 30px;
+  padding: 0 30px 30px 30px;
 }
 
 .content-area .content {
@@ -157,19 +168,34 @@ header .call-to-action {
   padding: 0 0 10px 0;
 }
 
-.content-area .content .row .row-title {
+.content-area .meta .row {
+  padding: 0 0 5px 0;
+}
+
+.content-area .content .row .row-title,
+.content-area .meta .row .row-title {
   float: left;
   font-size: 0.8em;
   width: 20%;
 }
 
-.content-area .content .row .row-content {
+.content-area .content .row .row-content,
+.content-area .meta .row .row-content {
   float: right;
   width: 78%;
 }
 
+.content-area .meta .row .row-title,
+.content-area .meta .row .row-content {
+  font-size: 0.75em;
+}
+
+.content-area .meta {
+  border-top: 3px solid #e9e9e9;
+  padding: 20px;
+}
+
 .observation-area {
-  background: #303533;
   box-sizing: border-box;
   float: right;
   height: 100%;
@@ -177,43 +203,25 @@ header .call-to-action {
   width: 300px;
 }
 
+.observation-area #stick {
+  width: 270px;
+}
+
+.observation-area #stick.stick {
+  position: fixed;
+  top: 20px;
+}
+
 .observation-area .section {
   padding-bottom: 20px;
 }
 
-/*
 a.option {
+  border: 1px solid #cccccc;
   border-radius: 2px;
-  color: #cccccc;
-  display: block;
-  font-size: 0.8em;
-  padding: 8px;
-  text-decoration: none;
-  transition: ease all 0.25s;
-}
-
-a.option i {
-  color: #707070;
-  margin-right: 5px;
-}
-
-a.option:hover {
-  background: #444444;
-  border-radius: 3px;
-}
-
-a.option:hover i {
-  color: #f2aa00;
-  transition: ease all 0.25s;
-}
-*/
-
-a.option {
-  border: 1px solid #666666;
-  border-radius: 2px;
-  color: #cccccc;
+  color: #666666;
   display: inline-block;
-  font-size: 0.8em;
+  font-size: 0.75em;
   margin-bottom: 5px;
   padding: 5px 8px;
   text-decoration: none;
@@ -232,20 +240,8 @@ a.option i {
 }
 
 a.option:hover {
-  background: #444444;
+  background: #cccccc;
   border-radius: 3px;
-}
-
-.observation-area textarea {
-  box-sizing: border-box;
-  height: 100px;
-  width: 100%;
-}
-
-.observation-area textarea {
-  box-sizing: border-box;
-  height: 100px;
-  width: 100%;
 }
 
 .star,
@@ -276,11 +272,6 @@ a.option:hover {
   right: 0;
   top: 0;
   z-index: 1;
-  transition: ease all 0.25s;
-}
-
-.escalate.on {
-  display: block;
 }
 
 .escalate .wrapper {
@@ -298,4 +289,18 @@ a.option:hover {
 
 .escalate .wrapper a:hover {
   color: #666666;
+}
+
+.login {
+  background: #303533;
+  box-shadow: 0 3px 5px 0 #cccccc;
+  border-radius: 2px;
+  margin: 80px auto 0 auto;
+  padding: 30px 30px 15px 30px;
+  width: 300px;
+}
+
+.login .logo {
+  margin: 0 auto 30px auto;
+  width: 150px;
 }
