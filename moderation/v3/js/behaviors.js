@@ -1,7 +1,9 @@
 $(document).ready(function () {
+  $('.primary-card:first-child').addClass('show');
+
   $('.next-btn').click(function() {
-    $('.primary-card:visible').fadeOut(50, function() {
-      $(this).delay(300).next().fadeIn(50);
+    $('.show').fadeOut(100, function() {
+      $(this).delay(500).next().addClass('show');
     });
     $(this).text('No Comment, Next');
     var count = parseInt($('.today').text());
@@ -33,18 +35,18 @@ $(document).ready(function () {
 
   $('a.option').click(function() {
     $(this).toggleClass('on');
-    $('.next-btn').text('I\'m Done, Next');
+    $(this).parent().siblings('.next-btn').text('I\'m Done, Next');
     return false;
   });
 
-  var s = $("#stick");
+  var s = $('.stick');
   var pos = s.position();
   $(window).scroll(function() {
       var windowpos = $(window).scrollTop();
-      if (windowpos >= pos.top + 138) {
-          s.addClass("stick");
+      if (windowpos >= pos.top + 128) {
+          s.addClass('stick-on');
       } else {
-          s.removeClass("stick");
+          s.removeClass('stick-on');
       }
   });
 });
