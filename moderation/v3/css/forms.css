@@ -1,15 +1,38 @@
 input,
-textarea {
+textarea,
+.dropdown {
   border: 1px solid #dddddd;
   border-radius: 3px;
   box-sizing: border-box;
   color: #565656;
+  display: block;
   font-family: 'Lato', arial, sans;
   font-size: 16px;
+  line-height: 1.5;
   padding: 10px;
+  text-decoration: none;
   width: 100%;
 }
 
 .observation-area textarea {
+  font-size: 14px;
   height: 100px;
+}
+
+.dropdown {
+  border: 3px solid #aaaaaa;
+  padding: 20px 0 0 0;
+  position: relative;
+}
+
+.dropdown:after {
+  font-family: FontAwesome;
+  color: #aaaaaa;
+  content: "\f078";
+  position: absolute;
+  right: 20px;
+}
+
+.dropdown-options {
+  display: none;
 }

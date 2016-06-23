@@ -5,6 +5,7 @@ $(document).ready(function () {
     $('.show').fadeOut(100, function() {
       $(this).delay(500).next().addClass('show');
     });
+    $('.escalate').fadeOut(50);
     $(this).text('No Comment, Next');
     var count = parseInt($('.today').text());
     var new_count = count + 1;
@@ -39,6 +40,11 @@ $(document).ready(function () {
     return false;
   });
 
+  $('a.escalation').click(function() {
+    $(this).toggleClass('on');
+    return false;
+  });
+
   var s = $('.stick');
   var pos = s.position();
   $(window).scroll(function() {
@@ -48,5 +54,14 @@ $(document).ready(function () {
       } else {
           s.removeClass('stick-on');
       }
+  });
+
+  $('.escalate-btn').click(function() {
+    $('.escalate').fadeIn();
+    $('.close').click(function(){
+      $('.escalate').fadeOut();
+      return false;
+    });
+    return false;
   });
 });

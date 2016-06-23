@@ -82,7 +82,7 @@ header .call-to-action {
 
 .primary-card {
   background: #eeeeee;
-  box-shadow: 0 3px 5px 0 #cccccc;
+  box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2);
   border-radius: 2px;
   display: flex;
   height: 0;
@@ -203,12 +203,12 @@ header .call-to-action {
   float: right;
   height: 100%;
   padding: 30px;
-  width: 300px;
+  width: 340px;
 }
 
 .observation-area .stick {
   box-sizing: border-box;
-  width: 240px;
+  width: 280px;
 }
 
 .observation-area .stick.stick-on {
@@ -216,7 +216,8 @@ header .call-to-action {
   top: 20px;
 }
 
-.observation-area .section {
+.observation-area .section,
+.escalate .section {
   padding-bottom: 20px;
 }
 
@@ -237,10 +238,6 @@ a.option.on:hover {
   background: #f29700;
   border: 1px solid #f29700;
   color: #ffffff;
-}
-
-a.option i {
-  display: none;
 }
 
 a.option:hover {
@@ -269,30 +266,39 @@ a.option:hover {
 
 .escalate {
   background: #ffffff;
-  bottom: -6px;
+  border-radius: 2px;
+  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.45);
   display: none;
-  left: 0;
+  left: 20%;
+  padding: 30px;
   position: absolute;
-  right: 0;
-  top: 0;
+  right: 20%;
+  top: 30px;
   z-index: 1;
 }
 
-.escalate .wrapper {
-  position: relative;
-}
-
-.escalate .wrapper a {
-  color: #aaaaaa;
-  font-size: 30px;
-  position: absolute;
-  right: 20px;
-  top: 20px;
-  transition: ease all 0.25s;
-}
-
-.escalate .wrapper a:hover {
+.escalate a.escalation {
+  border: 1px solid #cccccc;
+  border-radius: 2px;
   color: #666666;
+  display: inline-block;
+  font-size: 1.2em;
+  margin-bottom: 5px;
+  padding: 10px 15px;
+  text-decoration: none;
+  transition: all ease 0.25s
+}
+
+.escalate a.escalation.on,
+.escalate a.escalation.on:hover {
+  background: #f29700;
+  border: 1px solid #f29700;
+  color: #ffffff;
+}
+
+.escalate a.escalation:hover {
+  background: #cccccc;
+  border-radius: 3px;
 }
 
 .login {

@@ -24,17 +24,25 @@
 }
 
 .btn.secondary {
-  border: 3px solid #cccccc;
-  color: #cccccc;
+  border: 3px solid #999999;
+  color: #999999;
 }
 
 .btn.secondary:hover {
-  border: 3px solid #ffffff;
-  color: #ffffff;
+  border: 3px solid #303533;
+  color: #303533;
 }
 
 .btn.full {
   box-sizing: border-box;
   display: block;
   width: 100%;
+}
+
+a.close {
+  color: #545454;
+  font-size: 26px;
+  position: absolute;
+  right: 15px;
+  top: 10px;
 }
