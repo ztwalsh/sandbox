@@ -27,6 +27,7 @@
 <link href="css/style.css" rel="stylesheet">
 <link href="css/helper.css" rel="stylesheet">
 <link href="css/style-responsive.css" rel="stylesheet" />
+<link href="css/overrides.css" rel="stylesheet">
 
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 tooltipss and media queries -->
 <!--[if lt IE 9]>

@@ -1,3 +1,7 @@
+<?php
+	require('lib/config.php');
+	check_login();
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -8,7 +12,10 @@
 
     <body>
         <!-- Aside Start-->
-        <?php require_once('lib/include.navigation-sidebar.php'); ?>
+				<?php
+					$section = 'dashboard';
+					require_once('lib/include.navigation-sidebar.php');
+				?>
         <!-- Aside Ends-->
 
         <!--Main Content Start -->

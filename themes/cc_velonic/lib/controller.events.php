@@ -1,52 +1,26 @@
 <?php
-	function member_event_status($status, $start_date, $end_date = null) {
-
-		// if ($date < time()) {
-		// 	$no_go 	= 'Didn\'t go';
-		// 	$go 	= 'Went';
-		// 	$rsvp 	= 'Invited';
-		// 	$maybe 	= 'Maybe';
-		// } else {
-		// 	$no_go 	= 'Not going';
-		// 	$go 	= 'Going';
-		// 	$rsvp 	= 'Invited';
-		// 	$maybe 	= 'Maybe';
-		// }
-		if ( (isset($end_date) && $end_date > time()) || (!isset($end_date) && $start_date > time()) ) {
-			$no_go 	= 'Not going';
-			$go 	= 'Going';
-			$rsvp 	= 'Invited';
-			$maybe 	= 'Maybe';
-		} else {
-			$no_go 	= 'Didn\'t go';
-			$go 	= 'Went';
-			$rsvp 	= 'Invited';
-			$maybe 	= 'Maybe';
-		}
-
+	function member_event_status($status) {
 		switch($status) {
 			case NULL:
-				echo '';
+				return '<div class="status"></div>';
 				break;
 			case 0:
-				echo '<div class="status negative">'.$no_go.'</div>';
+				return '<div class="status negative"></div>';
 				break;
 			case 1:
-				// echo '<div class="status positive">'.$go.'</div>';
-				// save this for volunteering later
-				echo '';
+				return '<div class="status"></div>';
 				break;
 			case 2:
-				echo '<div class="status neutral">'.$maybe.'</div>';
+				return '<div class="status"></div>';
 				break;
 			case 3:
-				echo '<div class="status positive">'.$go.'</div>';
+				return '<div class="status positive"></div>';
 				break;
 			case 4:
-				echo '<div class="status caution">'.$rsvp.'</div>';
+				return '<div class="status caution"></div>';
 				break;
 			default:
-				echo '';
+				return '<div class="status"></div>';
 				break;
 		}
 	}
@@ -74,7 +48,7 @@
 			echo 'Nothing...';
 		} else {
 			echo '<div class="table-responsive">';
-				echo '<table class="table">';
+				echo '<table id="datatable" class="table">';
 	        echo '<thead>';
 		        echo '<tr>';
 			        echo '<th>Name</th>';
@@ -88,8 +62,14 @@
 	        echo '<tbody>';
 					while($event = $events->fetch_assoc()) {
 						$event_status = event_status($member_id, $event['id'], $boat_id);
-						echo '<tr>';
-		          echo '<td><a href="events-detail.php?event_id='.$event['id'].'">'.$event['name'].'</a></td>';
+						echo '<tr';
+						if ($event['edate_end'] && $event['edate_end'] < time()) {
+							echo ' class="past"';
+						} elseif ($event['edate'] < time()) {
+							echo ' class="past"';
+						}
+						echo '>';
+		          echo '<td class="name"><a href="events-detail.php?event_id='.$event['id'].'">'.$event['name'].'</a></td>';
 		          echo '<td>'.date('M d, Y', $event['edate']).'</td>';
 							echo '<td>'.date('h:ia', $event['edate']).'</td>';
 							if ($event['edate_end']) {
@@ -97,7 +77,7 @@
 							} else {
 								echo '<td></td>';
 							}
-							echo '<td>Going</td>';
+							echo '<td>'.member_event_status($event_status['status']).'</td>';
 		          echo '<td>'.member_count($event['id'], $boat_id).'</td>';
 		        echo '</tr>';
 					}
@@ -114,7 +94,7 @@
 		    if(empty($errors)) {
 				$new_event_id = insert_event($boat_id);
 				//echo $new_event_id;
-				header('Location: event-detail.php?event_id='.$new_event_id);
+				header('Location: events-detail.php?event_id='.$new_event_id);
 			} else {
 				return 'error_missing_fields';
 			}
@@ -127,7 +107,7 @@
 		global $root;
 
 		if (empty($event_id)) {
-			header('Location: '.$root.'dashboard/event-all.php');
+			header('Location: '.$root.'events-all.php');
 		} else {
 			$event = get_single_event($event_id);
 			$event =  mysqli_fetch_assoc($event);
@@ -180,35 +160,37 @@
 					echo '</div>';
 				echo '</div>';
 			} else {
-				echo '<div class="content">';
-					echo '<section>';
-						echo '<h2 class="heading-3">Crew members</h2>';
-						if ($_SESSION['member_privilege'] > 1) {
-							echo '<a class="secondary right load" href="event-detail.php?event_id='.$event_id.'&action=addall"><i class="fa fa-plus-circle"></i> Invite all</a>';
-						}
-					echo '</section>';
-					echo '<section>';
-						echo '<table class="info">';
+					if ($_SESSION['member_privilege'] > 1) {
+						echo '<a class="btn btn-primary" href="events-detail.php?event_id='.$event_id.'&action=addall"><i class="fa fa-plus-circle"></i> Invite all</a>';
+					}
+					echo '<div class="table-responsive">';
+						echo '<table id="member-datatable" class="table">';
+							echo '<thead>';
+								echo '<tr>';
+									echo '<th>Member</th>';
+									echo '<th>Position</th>';
+									echo '<th>Status</th>';
+									echo '<th>Invite</th>';
+								echo '</tr>';
+							echo '</thead> ';
 							echo '<tbody>';
 								while($member = $members->fetch_assoc()) {
 									$event_status = event_status($member['id'], $event_id, $boat_id);
 
 									echo '<tr>';
-									echo '<td class="crew-image"><img class="profile-thumb" src="'.$member_images.$member['user_image'].'" /></td>';
-									echo '<td class="name">'.$member['fname'].' '.$member['lname'].'<br />';
-									member_position($member['id'], $_SESSION['boat_id']);
-									echo '</td>';
+									echo '<td class="name"><img class="profile-thumb" src="'.$member_images.$member['user_image'].'" /> '.$member['fname'].' '.$member['lname'].'<br />';
+									echo '<td>'.member_position($member['id'], $_SESSION['boat_id']).'</td>';
 									echo '<td class="invite-status">';
 										if(in_array($member['id'], $invited)) {
-											member_event_status($event_status['status'], $event['edate'], $event['edate_end']);
+											echo member_event_status($event_status['status']);
 										}
 									echo '</td>';
 									if ($_SESSION['member_privilege'] > 1) {
-										echo '<td class="action add-remove-crew">';
+										echo '<td>';
 										if(in_array($member['id'], $invited)) {
-											echo '<a class="secondary load invited" href="event-detail.php?event_id='.$event_id.'&action=remove&member_id='.$member['id'].'"><i class="fa fa-check"></i></a>';
+											echo '<a class="btn btn-default btn-sm" href="events-detail.php?event_id='.$event_id.'&action=remove&member_id='.$member['id'].'"><i class="fa fa-check"></i> Invited</a>';
 										} else {
-											echo '<a class="secondary load" href="event-detail.php?event_id='.$event_id.'&action=add&member_id='.$member['id'].'"><i class="fa fa-plus-circle"></i></a>';
+											echo '<a class="btn btn-default btn-sm" href="events-detail.php?event_id='.$event_id.'&action=add&member_id='.$member['id'].'"><i class="fa fa-plus-circle"></i> Invite</a>';
 										}
 										echo '</td>';
 									}
@@ -216,9 +198,7 @@
 								}
 							echo '</tbody>';
 						echo '</table>';
-					echo '</section>';
-				echo '</div>';
-
+						echo '</div>';
 			}
 		}
 	}
@@ -242,9 +222,9 @@
 						$contents 	.= 	'<p><span style="color: #343e48;font-size: 18px;">'.$event['name'].'</span><br />';
 						$contents 	.= 	date('M d, Y', $event['edate']).' at '.date('h:ia', $event['edate']).'<br />';
 						$contents 	.= 	'<p>Take a second and let the skipper know if you are going. Will you be going to the event?</p>';
-						$contents 	.= 	'<p><a href="'.$root.'dashboard/event-rsvp.php?event_id='.$event['id'].'&new_status=3" style="background: #8cc540;border-bottom: 2px solid #679825;border-radius: 3px;color: #ffffff;display: inline-block;font-size: 16px;margin-right: 10px;padding: 10px 15px 8px 15px;text-decoration: none;">Yes</a>';
-						$contents 	.= 	'<a href="'.$root.'dashboard/event-rsvp.php?event_id='.$event['id'].'&new_status=0" style="background: #ce5637;border-bottom: 2px solid #822912;border-radius: 3px;color: #ffffff;display: inline-block;font-size: 16px;margin-right: 10px;padding: 10px 15px 8px 15px;text-decoration: none;">No</a>';
-						$contents 	.= 	'<a href="'.$root.'dashboard/event-rsvp.php?event_id='.$event['id'].'&new_status=2" style="background: #aaaaaa;border-bottom: 2px solid #666666;border-radius: 3px;color: #ffffff;display: inline-block;font-size: 16px;margin-right: 10px;padding: 10px 15px 8px 15px;text-decoration: none;">Maybe</a></p>';
+						$contents 	.= 	'<p><a href="'.$root.'events-rsvp.php?event_id='.$event['id'].'&new_status=3" style="background: #8cc540;border-bottom: 2px solid #679825;border-radius: 3px;color: #ffffff;display: inline-block;font-size: 16px;margin-right: 10px;padding: 10px 15px 8px 15px;text-decoration: none;">Yes</a>';
+						$contents 	.= 	'<a href="'.$root.'events-rsvp.php?event_id='.$event['id'].'&new_status=0" style="background: #ce5637;border-bottom: 2px solid #822912;border-radius: 3px;color: #ffffff;display: inline-block;font-size: 16px;margin-right: 10px;padding: 10px 15px 8px 15px;text-decoration: none;">No</a>';
+						$contents 	.= 	'<a href="'.$root.'events-rsvp.php?event_id='.$event['id'].'&new_status=2" style="background: #aaaaaa;border-bottom: 2px solid #666666;border-radius: 3px;color: #ffffff;display: inline-block;font-size: 16px;margin-right: 10px;padding: 10px 15px 8px 15px;text-decoration: none;">Maybe</a></p>';
 
 						send_email($email, $subject, $contents);
 					}
@@ -274,9 +254,9 @@
 						$contents 	.= 	'<p><span style="color: #343e48;font-size: 18px;">'.$event['name'].'</span><br />';
 						$contents 	.= 	date('M d, Y', $event['edate']).' at '.date('h:ia', $event['edate']).'<br />';
 						$contents 	.= 	'<p>Take a second and let the skipper know if you are going. Will you be going to the event?</p>';
-						$contents 	.= 	'<p><a href="'.$root.'dashboard/event-rsvp.php?event_id='.$event['id'].'&new_status=3" style="background: #8cc540;border-bottom: 2px solid #679825;border-radius: 3px;color: #ffffff;display: inline-block;font-size: 16px;margin-right: 10px;padding: 10px 15px 8px 15px;text-decoration: none;">Yes</a>';
-						$contents 	.= 	'<a href="'.$root.'dashboard/event-rsvp.php?event_id='.$event['id'].'&new_status=0" style="background: #ce5637;border-bottom: 2px solid #822912;border-radius: 3px;color: #ffffff;display: inline-block;font-size: 16px;margin-right: 10px;padding: 10px 15px 8px 15px;text-decoration: none;">No</a>';
-						$contents 	.= 	'<a href="'.$root.'dashboard/event-rsvp.php?event_id='.$event['id'].'&new_status=2" style="background: #aaaaaa;border-bottom: 2px solid #666666;border-radius: 3px;color: #ffffff;display: inline-block;font-size: 16px;margin-right: 10px;padding: 10px 15px 8px 15px;text-decoration: none;">Maybe</a></p>';
+						$contents 	.= 	'<p><a href="'.$root.'events-rsvp.php?event_id='.$event['id'].'&new_status=3" style="background: #8cc540;border-bottom: 2px solid #679825;border-radius: 3px;color: #ffffff;display: inline-block;font-size: 16px;margin-right: 10px;padding: 10px 15px 8px 15px;text-decoration: none;">Yes</a>';
+						$contents 	.= 	'<a href="'.$root.'events-rsvp.php?event_id='.$event['id'].'&new_status=0" style="background: #ce5637;border-bottom: 2px solid #822912;border-radius: 3px;color: #ffffff;display: inline-block;font-size: 16px;margin-right: 10px;padding: 10px 15px 8px 15px;text-decoration: none;">No</a>';
+						$contents 	.= 	'<a href="'.$root.'events-rsvp.php?event_id='.$event['id'].'&new_status=2" style="background: #aaaaaa;border-bottom: 2px solid #666666;border-radius: 3px;color: #ffffff;display: inline-block;font-size: 16px;margin-right: 10px;padding: 10px 15px 8px 15px;text-decoration: none;">Maybe</a></p>';
 
 						send_email($email, $subject, $contents);
 					}
@@ -330,9 +310,9 @@
 									if ($_SESSION['member_privilege'] > 1) {
 										echo '<td class="action add-remove-sails">';
 										if(in_array($sail['id'], $selected)) {
-											echo '<a class="secondary load invited" href="event-sails.php?event_id='.$event_id.'&action=remove&sail_id='.$sail['id'].'"><i class="fa fa-check"></i></a>';
+											echo '<a class="secondary load invited" href="events-sails.php?event_id='.$event_id.'&action=remove&sail_id='.$sail['id'].'"><i class="fa fa-check"></i></a>';
 										} else {
-											echo '<a class="secondary load" href="event-sails.php?event_id='.$event_id.'&action=add&sail_id='.$sail['id'].'"><i class="fa fa-plus-circle"></i></a>';
+											echo '<a class="secondary load" href="events-sails.php?event_id='.$event_id.'&action=add&sail_id='.$sail['id'].'"><i class="fa fa-plus-circle"></i></a>';
 										}
 										echo '</td>';
 									}
@@ -366,10 +346,10 @@
 		global $root;
 
 		if (empty($event_id)) {
-			header('Location: '.$root.'dashboard/event-all.php');
+			header('Location: '.$root.'events-all.php');
 		} else {
 			delete_event($event_id);
-			header('Location: '.$root.'dashboard/event-all.php?delete='.$event_id);
+			header('Location: '.$root.'events-all.php?delete='.$event_id);
 		}
 	}
 ?>

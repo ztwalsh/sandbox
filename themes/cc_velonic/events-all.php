@@ -14,7 +14,10 @@
 
     <body>
         <!-- Aside Start-->
-        <?php require_once('lib/include.navigation-sidebar.php'); ?>
+				<?php
+					$section = 'events';
+					require_once('lib/include.navigation-sidebar.php');
+				?>
         <!-- Aside Ends-->
 
         <!--Main Content Start -->
@@ -29,41 +32,21 @@
 
             <div class="wraper container-fluid">
                 <div class="page-title">
-                    <h3 class="title">All Events</h3><a href="events-add.php" class="btn btn-primary m-b-5">Add Event</a>
+                    <h2>
+											Events
+											<div class="pull-right"><a href="events-add.php" class="btn btn-primary btn-lg m-b-5"><i class="fa fa-plus-circle"></i> Add Event</a></div>
+										</h2>
                 </div>
 
                 <div class="row">
                   <div class="col-lg-12">
-                    <ul class="nav nav-tabs">
-                        <li class="active">
-                            <a href="#home" data-toggle="tab" aria-expanded="true">
-                                <span class="visible-xs"><i class="fa fa-home"></i></span>
-                                <span class="hidden-xs">Upcoming Events</span>
-                            </a>
-                        </li>
-                        <li class="">
-                            <a href="#profile" data-toggle="tab" aria-expanded="false">
-                                <span class="visible-xs"><i class="fa fa-user"></i></span>
-                                <span class="hidden-xs">Past Events</span>
-                            </a>
-                        </li>
-                    </ul>
-                    <div class="tab-content">
-                        <div class="tab-pane active" id="home">
-                            <div>
-                                <?php display_events($_SESSION['member_id'], $_SESSION['boat_id'], ''); ?>
-                            </div>
-                        </div>
-                        <div class="tab-pane" id="profile">
-                          <div>
-                              <?php display_events($_SESSION['member_id'], $_SESSION['boat_id'], 'past-all'); ?>
-                          </div>
-                        </div>
-                    </div>
+									  <div class="portlet">
+											<div class="portlet-body">
+                        <?php display_events($_SESSION['member_id'], $_SESSION['boat_id'], ''); ?>
+										  </div>
+									  </div>
                   </div> <!-- end col -->
                 </div> <!-- End row -->
-
-
             </div>
             <!-- Page Content Ends -->
             <!-- ================== -->
@@ -78,14 +61,20 @@
         <!-- Main Content Ends -->
         <?php require_once('lib/include.scripts.php'); ?>
 
+				<script src="js/jquery.app.js"></script>
+
         <script src="assets/datatables/jquery.dataTables.min.js"></script>
         <script src="assets/datatables/dataTables.bootstrap.js"></script>
 
-
-        <script type="text/javascript">
+				<script type="text/javascript">
             $(document).ready(function() {
-                $('.datatable').dataTable();
-            } );
+                $('#datatable').dataTable({
+								  "order": [1, 'desc'],
+									"searching": false,
+									"lengthChange": false
+								});
+            });
         </script>
+
     </body>
 </html>

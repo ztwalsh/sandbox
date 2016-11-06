@@ -6,30 +6,16 @@
 		$query .= 	"FROM cc_events ";
 		$query .=	"WHERE status = ".$status." ";
 		$query .= 	"AND bid = ".$boat_id." ";
-		if ($view == 'past-all') {
-			$query .= 	"AND edate < ".time()." ";
-			$query .= 	"AND edate_end < ".time()." ";
-			$query .=	"ORDER BY edate DESC";
-		} elseif ($view == 'past-member') {
-			if ($member_id) {
-				$query .= 	"AND id IN ";
-				$query .= 	"(SELECT DISTINCT(eid) FROM cc_event_signup WHERE cc_event_signup.bid = ".$boat_id." AND cc_event_signup.uid = ".$member_id.") ";
-				$query .= 	"AND edate < ".time()." ";
-				$query .= 	"AND edate_end < ".time()." ";
-				$query .=	"ORDER BY edate DESC";
-			}
-		} elseif ($view == 'member') {
+		if ($view == 'member') {
 			if ($member_id) {
 				$query .= 	"AND id IN ";
 				$query .= 	"(SELECT DISTINCT(eid) FROM cc_event_signup WHERE cc_event_signup.bid = ".$boat_id." AND cc_event_signup.uid = ".$member_id.") ";
 				$query .= 	"AND (edate > ".time()." ";
 				$query .= 	"OR edate_end > ".time().") ";
-				$query .=	"ORDER BY edate ASC";
+				$query .=	"ORDER BY edate DESC";
 			}
 		} else {
-			$query .= 	"AND (edate > ".time()." ";
-			$query .= 	"OR edate_end > ".time().") ";
-			$query .=	"ORDER BY edate ASC";
+			$query .=	"ORDER BY edate DESC";
 		}
 
 		$result = $mysqli->query($query);

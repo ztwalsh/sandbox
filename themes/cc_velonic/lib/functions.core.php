@@ -256,4 +256,10 @@
 			return false;
 		}
 	}
+
+	function page_active($variable, $page) {
+		if ($page == $variable) {
+			echo 'class="active"';
+		}
+	}
 ?>

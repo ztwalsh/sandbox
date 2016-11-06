@@ -27,9 +27,9 @@
 				insert_user_level($_SESSION['member_id'], $_SESSION['boat_id'], 1);
 				unset($_SESSION['invite_boat_id']);
 				unset($_SESSION['invite_boat_pin']);
-				redirect_login($root.'dashboard');
+				redirect_login($root);
 			} else {
-				redirect_login($root.'dashboard');
+				redirect_login($root);
 			}
 		} elseif (isset($_GET['boat_id'])) {
 			$_SESSION['boat_id'] = $_GET['boat_id'];
@@ -42,7 +42,7 @@
 				$_SESSION['member_privilege'] = member_set_privilege($_SESSION['member_id'], $_GET['boat_id']);
 			}
 
-			redirect_login($root.'dashboard');
+			redirect_login($root);
 		} else {
 			return false;
 		}
@@ -52,7 +52,7 @@
 		global $root;
 
 		if (empty($boat_id)) {
-			//Need to show what happens when there is no boat 
+			//Need to show what happens when there is no boat
 		} else {
 			$boat = get_single_boat($boat_id);
 			$boat =  mysqli_fetch_assoc($boat);
@@ -78,7 +78,7 @@
 				$_SESSION['boat_count'] = $_SESSION['boat_count'] + 1;
 				$_SESSION['member_privilege'] = member_set_privilege($_SESSION['member_id'], $query);
 				admin_new_boat_email($_POST['boatname']);
-				header('Location: '.$root.'dashboard');
+				header('Location: '.$root);
 			} else {
 				return 'error_missing_fields';
 			}

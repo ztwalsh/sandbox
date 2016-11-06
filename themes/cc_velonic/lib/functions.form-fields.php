@@ -14,7 +14,7 @@
 			$value = $value;
 		}
 
-		echo '<input class="text';
+		echo '<input class="form-control';
 		if ($class) {
 			echo ' '.$class;
 		} else {
@@ -89,8 +89,9 @@
 		}
 		echo '<textarea ';
 		if ($class) {
-			echo 'class="'.$class.'" ';
+			echo 'class="form-control '.$class.'" ';
 		} else {
+			echo 'class="form-control"';
 		}
 		echo 'name="'.$name.'" placeholder="'.$placeholder.'">'.$value.'</textarea>';
 	}
@@ -100,7 +101,7 @@
 
 		$countries = $mysqli->query("SELECT * FROM cc_countries");
 
-		echo '<select name="country">';
+		echo '<select name="country" class="form-control">';
 		echo '<option value="">Select a country</option>';
 		while ($country = $countries->fetch_array()) {
 			echo '<option value ="'.$country['id'].'"';
@@ -135,7 +136,7 @@
 		global $mysqli;
 		$types = $mysqli->query("SELECT * FROM cc_event_types");
 
-		echo '<select name="type">';
+		echo '<select name="type" class="form-control">';
 		echo '<option value="">Select a type</option>';
 		while ($type = $types->fetch_assoc()) {
 			echo '<option value ="'.$type['id'].'"';
@@ -152,7 +153,7 @@
 	}
 
 	function form_am_pm($am_pm = NULL) {
-		echo '<select class="short" name="am-pm">';
+		echo '<select class="form-control short" name="am-pm">';
 		echo '<option value="am"';
 		if ($am_pm && $am_pm == 'am') {
 			echo ' selected ';
@@ -167,7 +168,7 @@
 	}
 
 	function form_priority($priority = NULL) {
-		echo '<select name="priority">';
+		echo '<select class="form-control" name="priority">';
 		echo '<option value="0"';
 		if ($priority && $priority == 0 || $_POST && $_POST['priority'] == 0) {
 			echo ' selected ';
@@ -205,7 +206,7 @@
 	}
 
 	function primary_submit($value) {
-		echo '<button class="primary" name="submit">';
+		echo '<button class="btn btn-primary btn-lg" name="submit">';
 		echo $value;
 		echo '</button>';
 	}

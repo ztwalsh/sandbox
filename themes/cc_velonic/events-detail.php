@@ -1,6 +1,9 @@
 <?php
 	require('lib/config.php');
 	check_login();
+	$event = display_event_detail($_GET['event_id']);
+	check_item_for_boat($event['bid'], $_SESSION['boat_id']);
+	add_remove_event_members();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -14,7 +17,10 @@
 
     <body>
         <!-- Aside Start-->
-        <?php require_once('lib/include.navigation-sidebar.php'); ?>
+        <?php
+					$section = 'events';
+					require_once('lib/include.navigation-sidebar.php');
+				?>
         <!-- Aside Ends-->
 
         <!--Main Content Start -->
@@ -29,7 +35,13 @@
 
             <div class="wraper container-fluid">
                 <div class="page-title">
-                    <h3 class="title">All Events</h3><a href="events-add.php" class="btn btn-primary m-b-5">Add Event</a>
+                    <h2><a href="events-all.php">Events</a> // <?php echo $event['name']; ?></h2>
+										<span class="meta"><i class="ion-calendar"></i> <?php echo date('M d, Y', $event['edate']);
+											if (isset($event['edate_end'])) {
+												echo '&ndash;'.date('M d, Y', $event['edate_end']);
+											}
+										?></span>
+										<span class="meta"><i class="ion-location"></i> <?php echo $event['location']; ?></span>
                 </div>
 
                 <div class="row">
@@ -38,25 +50,24 @@
                         <li class="active">
                             <a href="#home" data-toggle="tab" aria-expanded="true">
                                 <span class="visible-xs"><i class="fa fa-home"></i></span>
-                                <span class="hidden-xs">View Crew</span>
+                                <span class="hidden-xs">Crew Members</span>
                             </a>
                         </li>
                         <li class="">
                             <a href="#profile" data-toggle="tab" aria-expanded="false">
                                 <span class="visible-xs"><i class="fa fa-user"></i></span>
-                                <span class="hidden-xs">View Sails</span>
+                                <span class="hidden-xs">Sails</span>
                             </a>
                         </li>
                     </ul>
                     <div class="tab-content">
                         <div class="tab-pane active" id="home">
                             <div>
-                                <?php display_events($_SESSION['member_id'], $_SESSION['boat_id'], ''); ?>
+															<?php display_available_event_members($event['id'], $_SESSION['boat_id']); ?>
                             </div>
                         </div>
                         <div class="tab-pane" id="profile">
                           <div>
-                              <?php display_events($_SESSION['member_id'], $_SESSION['boat_id'], 'past-all'); ?>
                           </div>
                         </div>
                     </div>
@@ -84,7 +95,16 @@
 
         <script type="text/javascript">
             $(document).ready(function() {
-                $('.datatable').dataTable();
+                $('#member-datatable').dataTable( {
+								  "columns": [
+								    null,
+								    null,
+								    null,
+								    { "orderable": false }
+								  ],
+									"searching": false,
+									"lengthChange": false
+								});
             } );
         </script>
     </body>

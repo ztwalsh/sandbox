@@ -3,7 +3,7 @@
 	if ($_SERVER['HTTP_HOST'] == 'localhost:8000') {
 		if (!ini_get('display_errors')) { ini_set('display_errors', '1'); }
 		if (!ini_get('display_startup_errors')) { ini_set('display_startup_errors', '1'); }
-		$root 			= 'http://localhost:8000/crewconnect.com/';
+		$root 			= 'http://localhost:8000/sandbox.ztwalsh.com/themes/cc_velonic/';
 		$host 			= 'localhost';
 		$username 		= 'root';
 		$password 		= 'root';

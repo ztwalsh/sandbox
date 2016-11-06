@@ -14,7 +14,10 @@
 
     <body>
         <!-- Aside Start-->
-        <?php require_once('lib/include.navigation-sidebar.php'); ?>
+				<?php
+					$section = 'events';
+					require_once('lib/include.navigation-sidebar.php');
+				?>
         <!-- Aside Ends-->
 
         <!--Main Content Start -->
@@ -29,11 +32,11 @@
 
             <div class="wraper container-fluid">
                 <div class="page-title">
-                    <h3 class="title">All Events</h3><a href="events-add.php" class="btn btn-primary m-b-5">Add Event</a>
+                    <h2><a href="events-all.php">Events</a> // Add an Event</h2>
                 </div>
 
                 <div class="row">
-                  <div class="col-lg-12">
+                  <div class="col-lg-6">
                     <div class="panel">
                       <?php display_error_alert($submission); ?>
             					<form action="events-add.php" id="form" method="post">

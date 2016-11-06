@@ -10,7 +10,7 @@
 
 		    	if ($login_confirm) {
 		    		$member = get_member_account($login_confirm);
-		    		
+
 		    		$_SESSION['login'] = true;
 		    		$_SESSION['member_id'] = $member['id'];
 		    		$_SESSION['firstname'] = $member['fname'];
@@ -24,22 +24,22 @@
 		    		if ($member['admin'] == 1) {
 		    			$_SESSION['admin'] = true;
 		    			$_SESSION['member_privilege'] = 99;
-		    			header('Location: dashboard/select-boat.php');
+		    			header('Location: '.$root.'select-boat.php');
 		    		} else {
 		    			$_SESSION['admin'] = false;
 
 			    		if ($boat_count > 1) {
-			    			header('Location: dashboard/select-boat.php');
+			    			header('Location: '.$root.'select-boat.php');
 			    		} elseif ($boat_count == 0) {
 			    			$_SESSION['member_privilege'] = member_set_privilege($_SESSION['member_id'], $boat_id['bid']);
-		    				redirect_login($root.'dashboard');
+		    				redirect_login($root);
 			    		} else {
 			    			while ($boat_id = mysqli_fetch_assoc($boat)) {
 			    				$_SESSION['boat_id'] = $boat_id['bid'];
 			    				$members = get_all_active_members($boat_id['bid']);
 			    				$_SESSION['member_count'] = mysqli_num_rows($members);
 			    				$_SESSION['member_privilege'] = member_set_privilege($_SESSION['member_id'], $boat_id['bid']);
-			    				redirect_login($root.'dashboard');
+			    				redirect_login($root);
 			    			}
 			    		}
 		    		}
@@ -51,9 +51,9 @@
 			}
 		} elseif (isset($_SESSION['login'])) {
 			if ($_SESSION['boat_count'] > 1) {
-				header('Location: '.$root.'dashboard/select-boat.php');
+				header('Location: '.$root.'select-boat.php');
 			} else {
-				header('Location:'.$root.'dashboard');
+				header('Location:'.$root);
 			}
 		}
 	}
@@ -103,7 +103,7 @@
 			    	} else {
 			    		$member = get_single_member($_POST['uid']);
 			    		$member = $member->fetch_assoc();
-			    		
+
 				    	if ($member['ActivationToken'] == $_POST['ut']) {
 							update_member_password($_POST['password'], $_POST['ut'], $_POST['uid']);
 						} else {
