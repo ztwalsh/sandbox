@@ -1,0 +1,24 @@
+.btn-primary {
+  @include btn-primary(18px, 10px 20px);
+}
+
+.btn-secondary {
+  @include btn-secondary(12px, 8px 12px);
+}
+
+.btn-reveal {
+  color: $color-link-blue;
+  font-size: 12px;
+  font-weight: bold;
+  transition: all ease 0.25s;
+
+  &:hover {
+    color: $color-link-blue-dark;
+  }
+
+  &.open {
+    i {
+      @include rotate(180deg);
+    }
+  }
+}

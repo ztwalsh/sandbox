@@ -1,0 +1,66 @@
+body {
+  background: #f3f3f3;
+  color: $color-grey-2;
+  font-family: arial, sans;
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+p {
+  padding-bottom: 15px;
+
+  &:last-child {
+    padding-bottom: 0;
+  }
+
+  &.small {
+    font-size: 0.85rem;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+strong {
+  color: $color-brand-black;
+  font-family: "BrandonText-Bold", arial, sans;
+  line-height: 1;
+  padding-bottom: 10px;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 26px;
+}
+
+h3 {
+  font-size: 22px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+a {
+  color: $color-link-blue;
+  text-decoration: none;
+
+  &:hover {
+    color: $color-link-blue-dark;
+  }
+}
+
+mark {
+  background: $color-brand-yellow-light;
+  color: inherit;
+}

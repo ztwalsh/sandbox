@@ -1,0 +1,130 @@
+article.card {
+  @include global-card();
+  display: table;
+  margin-top: 20px;
+  width: 100%;
+
+  .content {
+    display: table-cell;
+
+    .content-product {
+      border-bottom: 2px solid $color-grey-5;
+      padding: 20px;
+
+      .product-top {
+        position: relative;
+
+        .product-image {
+          height: 60px;
+          left: 0;
+          position: absolute;
+          top: 0;
+          width: 60px;
+
+          img {
+            height: auto;
+            width: 100%;
+          }
+        }
+
+        .product-title {
+          margin-left: 80px;
+          min-height: 60px;
+          padding-top: 8px;
+
+          .product-details {
+            float: left;
+            font-size: 0.85rem;
+            padding-right: 20px;
+          }
+        }
+
+        .product-expand {
+          margin-top: -12px;
+          position: absolute;
+          right: 0;
+          top: 50%;
+        }
+      }
+
+      .product-bottom {
+        display: none;
+        margin-top: 20px;
+      }
+    }
+
+    .content-ugc {
+      padding: 20px;
+
+      .rating {
+        padding: 0 0 5px 0;
+      }
+
+      .content-meta {
+        display: none;
+      }
+    }
+
+    .content-response {
+      border-top: 2px solid $color-grey-5;
+      padding: 20px;
+
+      textarea {
+        height: 35px;
+        transition: all ease 0.15s;
+
+        &:focus {
+          height: 100px;
+        }
+      }
+    }
+  }
+
+  .actions {
+    background: $color-grey-6;
+    display: table-cell;
+    width: 260px;
+
+    .actions-publishing {
+      padding: 20px;
+
+      .actions-btn {
+        @extend .btn-primary;
+        display: block;
+        padding: 15px 20px;
+
+        .on {
+          background: red;
+        }
+      }
+    }
+
+    .actions-tools {
+      padding: 0 20px 20px 20px;
+
+      p {
+        padding-bottom: 5px;
+      }
+
+      .tools-btn {
+        @extend .btn-secondary;
+        display: block;
+        padding: 8px 12px;
+      }
+    }
+  }
+}
+
+#single {
+  position: relative;
+
+  article.card {
+    background: #ffffff;
+    @include border-radius(2px);
+    @include box-shadow(0, 2px, 2px);
+    display: table;
+    margin-top: 20px;
+    position: absolute;
+    width: 100%;
+  }
+}

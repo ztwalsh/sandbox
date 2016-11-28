@@ -1,0 +1,169 @@
+[
+   {
+      "subject":{
+         "subject_id":1394,
+         "subject_type":"product",
+         "name":"Product",
+         "description":"The Dyson V6 Absolute cordless vacuum comes equipped with two Dyson-engineered cleaner heads. Invented for hard floors, the Soft roller cleaner head removes large debris and fine dust simultaneously. The Direct-drive cleaner head provides 75% more power than the Dyson V6 vacuum. HEPA filtration captures allergens and expels cleaner air. Extra Dyson-engineered tools for homes with pets.",
+         "category_name":"Category",
+         "brand_name":"Brand",
+         "page_id":"1",
+         "page_id_variant":"",
+         "product_id":44347653,
+         "product_url":null,
+         "product_image_url":null,
+         "catalog_information":{
+            "id":333056,
+            "group_id":12846
+         }
+      },
+      "ugc":{
+         "ugc_id":7611,
+         "subject_id":1394,
+         "ugc_type":"review",
+         "created_date":"2016-07-21 13:06:28.0",
+         "updated_date":"2016-11-07 12:44:40.163",
+         "author":"Donny Osmond",
+         "location":"Standford, CA",
+         "review_headline":"This thing is seriously amazing",
+         "review_comments":"This is my first review comment",
+         "reviewer_type":"Anonymous",
+         "email_confirm_status":"UNVERIFIED",
+         "source":"web",
+         "helpful_votes":0,
+         "not_helpful_votes":0,
+         "rating":4,
+         "ugc_related_content":{
+            "media":[
+
+            ]
+         }
+      },
+      "existing_observations":[
+         {
+            "observation_ugc_id":126,
+            "created_date":"2016-11-07 11:44:39.9213",
+            "updated_date":"2016-11-07 11:44:39.9213",
+            "observation_type_code":"NR"
+         },
+         {
+            "observation_ugc_id":127,
+            "created_date":"2016-11-07 11:53:15.262021",
+            "updated_date":"2016-11-07 11:53:15.262021",
+            "observation_type_code":"CC"
+         },
+         {
+            "observation_ugc_id":128,
+            "created_date":"2016-11-07 11:53:49.82932",
+            "updated_date":"2016-11-07 11:53:49.82932",
+            "observation_type_code":"CC"
+         },
+         {
+            "observation_ugc_id":129,
+            "created_date":"2016-11-07 11:55:01.387349",
+            "updated_date":"2016-11-07 11:55:01.387349",
+            "observation_type_code":"PR"
+         },
+         {
+            "observation_ugc_id":130,
+            "created_date":"2016-11-07 12:44:40.16352",
+            "updated_date":"2016-11-07 12:44:40.16352",
+            "observation_type_code":"PII"
+         }
+      ],
+      "pwr_observations":[
+         {
+            "name":"Safety Concern",
+            "description":"Content has evidence of potential danger, violence, child pornography, serious injury or death.   Content contains statement that can be construed as soliciting or providing medical advice",
+            "created_date":"2016-10-24 10:25:42.996925",
+            "updated_date":"2016-10-24 10:25:42.996925",
+            "observation_type_code":"SC"
+         }
+      ],
+      "merchant_observations":[
+
+      ]
+   },
+   {
+      "subject":{
+         "subject_id":1394,
+         "subject_type":"product",
+         "page_id":"1",
+         "page_id_variant":"",
+         "product_id":44347653,
+         "product_url":null,
+         "product_image_url":null,
+         "catalog_information":{
+            "id":333056,
+            "group_id":12846
+         }
+      },
+      "ugc":{
+         "ugc_id":7611,
+         "subject_id":1394,
+         "ugc_type":"review",
+         "created_date":"2016-07-20 13:06:28.0",
+         "updated_date":"2016-11-07 12:44:40.163",
+         "author":"Pulicharla",
+         "location":"1890 W Hillcrest Dr",
+         "review_headline":"Review from RealSatisfied",
+         "review_comments":"This is my first review comment",
+         "email":"90834938gautam@powerreviews.com",
+         "reviewer_type":"Anonymous",
+         "email_confirm_status":"UNVERIFIED",
+         "source":"web",
+         "helpful_votes":0,
+         "not_helpful_votes":0,
+         "rating":5,
+         "ugc_related_content":{
+            "media":[
+
+            ]
+         }
+      },
+      "existing_observations":[
+         {
+            "observation_ugc_id":126,
+            "created_date":"2016-11-07 11:44:39.9213",
+            "updated_date":"2016-11-07 11:44:39.9213",
+            "observation_type_code":"NR"
+         },
+         {
+            "observation_ugc_id":127,
+            "created_date":"2016-11-07 11:53:15.262021",
+            "updated_date":"2016-11-07 11:53:15.262021",
+            "observation_type_code":"CC"
+         },
+         {
+            "observation_ugc_id":128,
+            "created_date":"2016-11-07 11:53:49.82932",
+            "updated_date":"2016-11-07 11:53:49.82932",
+            "observation_type_code":"CC"
+         },
+         {
+            "observation_ugc_id":129,
+            "created_date":"2016-11-07 11:55:01.387349",
+            "updated_date":"2016-11-07 11:55:01.387349",
+            "observation_type_code":"PR"
+         },
+         {
+            "observation_ugc_id":130,
+            "created_date":"2016-11-07 12:44:40.16352",
+            "updated_date":"2016-11-07 12:44:40.16352",
+            "observation_type_code":"PII"
+         }
+      ],
+      "pwr_observations":[
+         {
+            "name":"Safety Concern",
+            "description":"Content has evidence of potential danger, violence, child pornography, serious injury or death.   Content contains statement that can be construed as soliciting or providing medical advice",
+            "created_date":"2016-10-24 10:25:42.996925",
+            "updated_date":"2016-10-24 10:25:42.996925",
+            "observation_type_code":"SC"
+         }
+      ],
+      "merchant_observations":[
+
+      ]
+   }
+]
