@@ -5,6 +5,10 @@ body {
 section {
   padding: 70px 20px 50px 230px;
 
+  &.home {
+    padding-left: 80px;
+  }
+
   header {
     padding: 10px 0;
   }
@@ -109,6 +113,7 @@ section {
 
 .channels {
   @include global-card();
+  margin-bottom: 20px;
   padding: 60px 20px 40px 20px;
   position: relative;
   text-align: center;
@@ -133,5 +138,15 @@ section {
   img {
     height: auto;
     width: 70px;
+  }
+
+  &.add {
+    background: $color-grey-6;
+    border: 3px dotted $color-grey-3;
+    box-shadow: none;
+
+    &:hover {
+      box-shadow: none;
+    }
   }
 }

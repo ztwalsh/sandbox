@@ -96,7 +96,8 @@
 
         <!--START INDV CARD-->
         <div id="list">
-        <?php display_content($datapath); ?>
+        <?php display_content($datapath, 'search'); ?>
+        <?php //include('lib/include.bamreviews.php'); ?>
         </div>
         <!--END INDV CARD-->
       </div>

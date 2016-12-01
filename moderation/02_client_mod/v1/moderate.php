@@ -97,6 +97,7 @@
         <!--START INDV CARD-->
         <div id="list">
         <?php display_content($datapath); ?>
+        <?php //include('lib/include.bammoderation.php'); ?>
         </div>
         <!--END INDV CARD-->
       </div>

@@ -1,6 +1,6 @@
 <?php
-  $clientname = 'Books-a-Million';
-  $datapath = 'json/bam.json';
+  $clientname = 'Timberland';
+  $datapath = 'json/timberland.json';
 
   function status_icon($status) {
     if ($status == 'published') {
@@ -15,9 +15,10 @@
 ?>
 
 <?php
-  function display_content($filepath, $listtype = 'list') {
-    $json = json_decode(file_get_contents($filepath), true);
-
+  function display_content($filepath, $type = 'moderation') {
+    $json = str_replace('&quot;', '"', file_get_contents($filepath));
+    $json = json_decode($json, true);
+    $content_count = 1;
     foreach ($json as $ugc) {
 ?>
 
@@ -35,7 +36,7 @@
             <?php if ($ugc[subject][product_image_url]) { echo '<img src="'.$ugc[subject][product_image_url].'" />';} else { echo '<img src="images/no-image.jpg" />';} ?>
           </div>
           <div class="product-title cf truncate">
-            <?php if ($ugc[subject][product_url]) { echo '<h3><a href="'.$ugc[subject][product_url].'" target="_blank">'.$ugc[subject][brand_name].' '.$ugc[subject][name].'</a></h3>';} else { echo '<h3>'.$ugc[subject][brand_name].' '.$ugc[subject][name].'</h3>';} ?>
+            <?php if ($ugc[subject][product_url]) { echo '<h3><a href="'.$ugc[subject][product_url].'" target="_blank">'.$ugc[subject][name].'</a></h3>';} else { echo '<h3>'.$ugc[subject][brand_name].' '.$ugc[subject][name].'</h3>';} ?>
             <?php if ($ugc[subject][brand_name]) { echo '<div class="product-details"><strong>Brand:</strong> '.$ugc[subject][brand_name].'</div>';} ?>
             <?php if ($ugc[subject][category_name]) { echo '<div class="product-details"><strong>Category:</strong> '.$ugc[subject][category_name].'</div>';} ?>
           </div>
@@ -109,7 +110,13 @@
         <div class="actions-publishing">
           <p>
             <label><?php status_icon($ugc[ugc][site_status]); ?>Site Status</label>
-            <select>
+            <?php
+              if($type == "moderation") {
+                echo '<select data="btn-'.$content_count.'">';
+              } else {
+                echo '<select state="btn-'.$content_count.'">';
+              }
+            ?>
               <?php if ($ugc[ugc][site_status] == 'published') { echo ' selected="selected"'; } ?>
               <option<?php if ($ugc[ugc][site_status] == 'published') { echo ' selected="selected"'; } ?>>Published</option>
               <option<?php if ($ugc[ugc][site_status] == 'unpublished') { echo ' selected="selected"'; } ?>>Unpublished</option>
@@ -140,7 +147,13 @@
             <textarea placeholder="Add notes..."></textarea>
           </p>
           <p>
-            <?php if ($listtype == 'single') { echo '<a class="actions-btn btn-change save" href="#">Next</a>'; } else { echo '<a class="actions-btn save" href="#">Save</a>'; } ?>
+            <?php
+              if($type == "moderation") {
+                echo '<a class="actions-btn save" id="btn-'.$content_count.'" href="#">Dismiss</a>';
+              } else {
+                echo '<a class="actions-btn save disabled" href="#" id="btn-'.$content_count.'">Save</a>';
+              }
+            ?>
           </p>
         </div>
         <div class="actions-tools">
@@ -153,6 +166,7 @@
   </article>
 
 <?php
+      $content_count++;
     }
   }
 ?>

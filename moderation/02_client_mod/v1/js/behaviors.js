@@ -39,4 +39,15 @@ $(document).ready(function () {
   $('#single .save').click(function() {
     alert('Fuck it all!!!');
   });
+
+
+  $('select').on('change', function() {
+    var btn = $(this).attr('data');
+    $('#' + btn).html('Save');
+  });
+
+  $('select').on('change', function() {
+    var btn = $(this).attr('state');
+    $('#' + btn).removeClass('disabled');
+  });
 });

@@ -29,6 +29,10 @@ article.card {
 
         .product-title {
           margin-left: 80px;
+          width: 400px;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
           min-height: 60px;
           padding-top: 8px;
 

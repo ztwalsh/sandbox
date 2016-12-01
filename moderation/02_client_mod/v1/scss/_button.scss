@@ -1,5 +1,10 @@
 .btn-primary {
   @include btn-primary(18px, 10px 20px);
+
+  &.disabled {
+      background: $color-grey-4;
+      cursor: default;
+  }
 }
 
 .btn-secondary {
