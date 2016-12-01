@@ -96,8 +96,8 @@
 
         <!--START INDV CARD-->
         <div id="list">
-        <?php display_content($datapath); ?>
-        <?php //include('lib/include.bammoderation.php'); ?>
+        <?php //display_content($datapath); ?>
+        <?php include('lib/include.timbmoderation.php'); ?>
         </div>
         <!--END INDV CARD-->
       </div>
