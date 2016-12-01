@@ -127,7 +127,13 @@
           ?>
           <p>
             <label><span class="status unpub"></span>Network Status</label>
-            <select>
+            <?php
+              if($type == "moderation") {
+                echo '<select data="btn-'.$content_count.'">';
+              } else {
+                echo '<select state="btn-'.$content_count.'">';
+              }
+            ?>
               <option>Published</option>
               <option selected="selected">Unpublished</option>
             </select>
@@ -135,7 +141,13 @@
           <?php } ?>
           <p>
             <label>Observations</label>
-            <select>
+            <?php
+              if($type == "moderation") {
+                echo '<select data="btn-'.$content_count.'">';
+              } else {
+                echo '<select state="btn-'.$content_count.'">';
+              }
+            ?>
               <option selected="selected">None</option>
               <option>Safety Alert</option>
               <option>Profanity</option>
@@ -144,7 +156,13 @@
             </select>
           </p>
           <p>
-            <textarea placeholder="Add notes..."></textarea>
+            <?php
+              if($type == "moderation") {
+                echo '<textarea placeholder="Add notes..." data="btn-'.$content_count.'"></textarea>';
+              } else {
+                echo '<textarea placeholder="Add notes..." state="btn-'.$content_count.'"></textarea>';
+              }
+            ?>
           </p>
           <p>
             <?php
