@@ -10,6 +10,7 @@ article.card {
     .content-product {
       border-bottom: 2px solid $color-grey-5;
       padding: 20px;
+      overflow: hidden;
 
       .product-top {
         position: relative;
@@ -29,12 +30,12 @@ article.card {
 
         .product-title {
           margin-left: 80px;
-          width: 400px;
-          white-space: nowrap;
-          overflow: hidden;
-          text-overflow: ellipsis;
           min-height: 60px;
           padding-top: 8px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          width: 350px;
 
           .product-details {
             float: left;

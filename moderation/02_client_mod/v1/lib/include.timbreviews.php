@@ -148,18 +148,18 @@
       <div class="actions-wrapper">
         <div class="actions-publishing">
           <p>
-            <label><span class="status pub"></span>Site Status</label>
+            <label><span class="status unpub"></span>Site Status</label>
             <select state="btn-2">
-              <option selected="selected">Published</option>
-              <option>Unpublished</option>
+              <option>Published</option>
+              <option selected="selected">Unpublished</option>
             </select>
           </p>
                     <p>
             <label>Observations</label>
             <select>
-              <option selected="selected">None</option>
+              <option>None</option>
               <option>Safety Alert</option>
-              <option>Profanity</option>
+              <option selected="selected">Profanity</option>
               <option>Pricing</option>
               <option>Competitors</option>
             </select>
