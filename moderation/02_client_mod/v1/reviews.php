@@ -97,7 +97,7 @@
         <!--START INDV CARD-->
         <div id="list">
         <?php //display_content($datapath, 'search'); ?>
-        <?php include('lib/include.timbreviews.php'); ?>
+        <?php include('lib/include.hammacherreviews.php'); ?>
         </div>
         <!--END INDV CARD-->
       </div>

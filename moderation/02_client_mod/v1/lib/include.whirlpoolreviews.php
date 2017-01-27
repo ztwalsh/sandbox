@@ -9,33 +9,34 @@
       <div class="content-product">
         <div class="product-top">
           <div class="product-image">
-            <img src="https://images.timberland.com/is/image/timberland/10061024-HERO" />          </div>
+            <img src="http://www.whirlpool.com/digitalassets/WFW87HEDW/Standalone_1175X1290.jpg" />          </div>
           <div class="product-title cf truncate">
-            <h3><a href="https://www.timberland.com/shop/mens-boots/mens-6-inch-premium-waterproof-boots-wheat-10061024" target="_blank">MEN'S 6-INCH PREMIUM WATERPROOF BOOTS</a></h3>            <div class="product-details"><strong>Brand:</strong> Timberland</div>            <div class="product-details"><strong>Category:</strong> Boots</div>          </div>
+            <h3><a href="http://www.whirlpool.com/laundry-1/laundry-2/washers-3/-[WFW87HEDW]-1022124/WFW87HEDW/" target="_blank">4.3 cu. ft. Front Load Washer with Precision Dispense</a></h3>            <div class="product-details"><strong>Brand:</strong> Whirlpool</div>            <div class="product-details"><strong>Category:</strong> High-Efficiency Washer</div>          </div>
           <div class="product-expand">
             <a href="#" class="product-more btn-reveal">Product Info <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
           </div>
         </div>
         <div class="product-bottom">
-          <h5>MEN'S 6-INCH PREMIUM WATERPROOF BOOTS</h5>
-          <p>When you think of Timberland® boots, you're thinking of these. Our original waterproof boot was designed more than 40 years ago and remains a best-seller today, with tireless waterproof performance and instantly recognizable work-boot styling.</p>
+          <h5>4.3 cu. ft. Front Load Washer with Precision Dispense</h5>
+          <p>Protect clothes from damage and give them the fabric care they deserve with this high-efficiency front load washer. Featuring Precision dispense to release detergent at just the right time for optimal cleaning, this 4.3 cu. ft. high-efficiency washer also uses the Cold Wash cycle to gently lift stains while protecting clothes from heat damage. The Smooth Wave stainless steel basket in this front load washer helps to prevent fabrics from fraying and snagging and you can even clean lightly soiled loads in less time with the Quick Wash cycle.</p>
           <table width="100%">
             <tr>
               <td width="25%"><h5>Page ID</h5></td>
               <td width="5%"></td>
-              <td width="70%">10061024</td>
+              <td width="70%">WFW87HEDW</td>
             </tr>
           </table>
         </div>
       </div>
       <div class="content-ugc">
         <div class="rating">
-          <div class="star"><i class="fa fa-star" aria-hidden="true"></i></div><div class="star"><i class="fa fa-star" aria-hidden="true"></i></div><div class="star-off"><i class="fa fa-star" aria-hidden="true"></i></div><div class="star-off"><i class="fa fa-star" aria-hidden="true"></i></div><div class="star-off"><i class="fa fa-star" aria-hidden="true"></i></div><div class="numeric">4.0</div>
+          <div class="star"><i class="fa fa-star" aria-hidden="true"></i></div><div class="star"><i class="fa fa-star" aria-hidden="true"></i></div><div class="star"><i class="fa fa-star" aria-hidden="true"></i></div><div class="star"><i class="fa fa-star" aria-hidden="true"></i></div><div class="star"><i class="fa fa-star" aria-hidden="true"></i></div>          <div class="numeric">5.0</div>
         </div>
 
-        <h3><mark>Good not great</mark></h3>
+        <h3><mark>So Far...So Great!</mark></h3>
         <p class="small">Submitted on <mark>07/21/2016</mark> by <mark>Marlie</mark> from <mark>undisclosed</mark></p>
-        <p><mark>This is actually a late review, I bought my first pair of these boots around the same time last year. I figured out after a year of wearing them, I can now give a proper review :)<br /><br />So, to start, I decided on getting the men's instead of the women's because my feet are wider than most women's and men's shoes usually fit me nicely. I also ended up having 2 pairs of these boots. At the beginning, I heard that these boots run big, so I went down half a size. For men's size, I normally wear 10.5 (for running shoes etc). It was all good then because it was winter, and the thick socks I wore fits nicely in them, and in order to keep the snow and wind out, they are always laced up properly. One of the things I love about these boots is that they managed to keep my feet completely dry even when I walk through the thick snow, and they also managed to keep my feet warm throughout the winter with just a pair of thick socks. One thing to note, though, is that they are especially prone to water stain and scratch easily, but I like them rugged, so I don't mind that.<br /><br />All was good till the weather started getting warmer and I have to trade my thick socks for something much thinner. The looser fit isn't that apparent if I keep my laces properly tied up like I did all winter, but once I started wearing them loose, it just won't stay on properly anymore. Since I am a lazy person, and I really wanted to enjoy these boots properly together with the joy of throwing them on in seconds and kicking them off as I like, I bought a second pair, size 9.5. The second pair fits me nicely like a pair of running shoes would. I have also worn these boots in summer and it still remains comfortable.</mark></p>
+        <p><mark>For some reason we have a lot of whites and after being laundered in the new Maytag they seem whiter. The size of the drum allows for larger items that you might take to a pay laundry for a larger machine.
+Our last Whirlpool set lasted for over twenty years and is still going in a young couple's home. So it was an easy choice getting the new Whirlpool with updated options.</mark></p>
         <table width="100%">
           <tr><td width="25%"><h5>Reviewer Type</h5></td><td width="5%"></td><td width="70%">Verified Buyer</td></tr>        </table>
         <a href="#" class="ugc-more btn-reveal">Meta Info <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
@@ -58,14 +59,13 @@
         <div class="actions-publishing">
           <p>
             <label><span class="status pub"></span>Site Status</label>
-            <select data="btn-1">
-              <option selected="selected">Published</option>
+            <select state="btn-1"><option selected="selected">Published</option>
               <option>Unpublished</option>
             </select>
           </p>
                     <p>
             <label>Observations</label>
-            <select>
+            <select state="btn-1">
               <option selected="selected">None</option>
               <option>Safety Alert</option>
               <option>Profanity</option>
@@ -74,10 +74,9 @@
             </select>
           </p>
           <p>
-            <textarea placeholder="Add notes..."></textarea>
-          </p>
+            <textarea placeholder="Add notes..." state="btn-1"></textarea>          </p>
           <p>
-            <a class="actions-btn save" id="btn-1" href="#">Dismiss</a>          </p>
+            <a class="actions-btn save disabled" href="#" id="btn-1">Save</a>          </p>
         </div>
         <div class="actions-tools">
           <p><a class="tools-btn" href="#">Forward this Review</a></p>
@@ -100,33 +99,33 @@
       <div class="content-product">
         <div class="product-top">
           <div class="product-image">
-            <img src="https://images.timberland.com/is/image/timberland/10061024-HERO" />          </div>
+            <img src="http://www.whirlpool.com/digitalassets/WFG520S0FS/Standalone_1175X1290.jpg" />          </div>
           <div class="product-title cf truncate">
-            <h3><a href="https://www.timberland.com/shop/mens-boots/mens-6-inch-premium-waterproof-boots-wheat-10061024" target="_blank">MEN'S 6-INCH PREMIUM WATERPROOF BOOTS</a></h3>            <div class="product-details"><strong>Brand:</strong> Timberland</div>            <div class="product-details"><strong>Category:</strong> Boots</div>          </div>
+            <h3><a href="http://www.whirlpool.com/kitchen-1/cooking-2/ranges-3/-[WFG520S0FS]-5891597/WFG520S0FS/" target="_blank">5.0 cu. ft. Freestanding Gas Range With Fan Convection Cooking</a></h3>            <div class="product-details"><strong>Brand:</strong> Ranges</div>            <div class="product-details"><strong>Category:</strong> Boots</div>          </div>
           <div class="product-expand">
             <a href="#" class="product-more btn-reveal">Product Info <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
           </div>
         </div>
         <div class="product-bottom">
-          <h5>MEN'S 6-INCH PREMIUM WATERPROOF BOOTS</h5>
-          <p>When you think of Timberland® boots, you're thinking of these. Our original waterproof boot was designed more than 40 years ago and remains a best-seller today, with tireless waterproof performance and instantly recognizable work-boot styling.</p>
+          <h5>5.0 cu. ft. Freestanding Gas Range With Fan Convection Cooking</h5>
+          <p>Cook for the family, even on a hectic schedule with our 5.0 cu. ft. freestanding convection gas range with cast-iron grates. This cooking range is designed with features that help you get dinner to the table quickly. Skip preheating for favorites like pizza and lasagna with Frozen Bake™ technology featured on this kitchen range.</p>
           <table width="100%">
             <tr>
               <td width="25%"><h5>Page ID</h5></td>
               <td width="5%"></td>
-              <td width="70%">10061024</td>
+              <td width="70%">WFG520S0FS</td>
             </tr>
           </table>
         </div>
       </div>
       <div class="content-ugc">
         <div class="rating">
-          <div class="star"><i class="fa fa-star" aria-hidden="true"></i></div><div class="star"><i class="fa fa-star" aria-hidden="true"></i></div><div class="star-off"><i class="fa fa-star" aria-hidden="true"></i></div><div class="star-off"><i class="fa fa-star" aria-hidden="true"></i></div><div class="star-off"><i class="fa fa-star" aria-hidden="true"></i></div><div class="numeric">4.0</div>
+          <div class="star"><i class="fa fa-star" aria-hidden="true"></i></div><div class="star"><i class="fa fa-star" aria-hidden="true"></i></div><div class="star"><i class="fa fa-star" aria-hidden="true"></i></div><div class="star"><i class="fa fa-star" aria-hidden="true"></i></div><div class="star-off"><i class="fa fa-star" aria-hidden="true"></i></div>          <div class="numeric">4.0</div>
         </div>
 
-        <h3><mark>Ran a little large</mark></h3>
-        <p class="small">Submitted on <mark>07/21/2016</mark> by <mark>Marlie</mark> from <mark>undisclosed</mark></p>
-        <p><mark>Overall I love the boots, just that it's causing a lot of pain wearing in, and I'm not sure if it's a matter of breaking it in.</mark></p>
+        <h3><mark>New Range</mark></h3>
+        <p class="small">Submitted on <mark>07/21/2016</mark> by <mark>CMHguy</mark> from <mark>Columbus, OH</mark></p>
+        <p><mark>Very happy with my purchase of the Whirlpool gas range i just purchased. I have had it for not quite a month and has exceeded expectations on all fronts. Very easy to set up and get ready to use. the full stove top grate is fantastic for being able to move things off of the heat and not have to worry about trying to locate a hot pad or someplace else to set things. Also having the 5 burners is a huge benefit. The oven size is great and have had it completely full already on New Years with a house full of people. Only thing i feel is missing is a griddle to place over the top but other than that - fantastic!!!</mark></p>
         <table width="100%">
           <tr><td width="25%"><h5>Reviewer Type</h5></td><td width="5%"></td><td width="70%">Verified Buyer</td></tr>        </table>
         <a href="#" class="ugc-more btn-reveal">Meta Info <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
@@ -149,26 +148,25 @@
         <div class="actions-publishing">
           <p>
             <label><span class="status unpub"></span>Site Status</label>
-            <select data="btn-2">
+            <select state="btn-2">
               <option>Published</option>
               <option selected="selected">Unpublished</option>
             </select>
           </p>
                     <p>
             <label>Observations</label>
-            <select>
+            <select state="btn-2">
               <option>None</option>
               <option>Safety Alert</option>
-              <option selected="selected">Profanity</option>
-              <option>Pricing</option>
+              <option>Profanity</option>
+              <option selected="selected">Pricing</option>
               <option>Competitors</option>
             </select>
           </p>
           <p>
-            <textarea placeholder="Add notes..."></textarea>
-          </p>
+            <textarea placeholder="Add notes..." state="btn-2"></textarea>          </p>
           <p>
-            <a class="actions-btn save" id="btn-2" href="#">Dismiss</a>          </p>
+            <a class="actions-btn save disabled" href="#" id="btn-2">Save</a>          </p>
         </div>
         <div class="actions-tools">
           <p><a class="tools-btn" href="#">Forward this Review</a></p>
@@ -191,33 +189,33 @@
       <div class="content-product">
         <div class="product-top">
           <div class="product-image">
-            <img src="https://images.timberland.com/is/image/timberland/10061024-HERO" />          </div>
+            <img src="http://www.whirlpool.com/digitalassets/WFW87HEDW/Standalone_1175X1290.jpg" />          </div>
           <div class="product-title cf truncate">
-            <h3><a href="https://www.timberland.com/shop/mens-boots/mens-6-inch-premium-waterproof-boots-wheat-10061024" target="_blank">MEN'S 6-INCH PREMIUM WATERPROOF BOOTS</a></h3>            <div class="product-details"><strong>Brand:</strong> Timberland</div>            <div class="product-details"><strong>Category:</strong> Boots</div>          </div>
+            <h3><a href="http://www.whirlpool.com/laundry-1/laundry-2/washers-3/-[WFW87HEDW]-1022124/WFW87HEDW/" target="_blank">4.3 cu. ft. Front Load Washer with Precision Dispense</a></h3>            <div class="product-details"><strong>Brand:</strong> Whirlpool</div>            <div class="product-details"><strong>Category:</strong> High-Efficiency Washer</div>          </div>
           <div class="product-expand">
             <a href="#" class="product-more btn-reveal">Product Info <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
           </div>
         </div>
         <div class="product-bottom">
-          <h5>MEN'S 6-INCH PREMIUM WATERPROOF BOOTS</h5>
-          <p>When you think of Timberland® boots, you're thinking of these. Our original waterproof boot was designed more than 40 years ago and remains a best-seller today, with tireless waterproof performance and instantly recognizable work-boot styling.</p>
+          <h5>4.3 cu. ft. Front Load Washer with Precision Dispense</h5>
+          <p>Protect clothes from damage and give them the fabric care they deserve with this high-efficiency front load washer. Featuring Precision dispense to release detergent at just the right time for optimal cleaning, this 4.3 cu. ft. high-efficiency washer also uses the Cold Wash cycle to gently lift stains while protecting clothes from heat damage. The Smooth Wave stainless steel basket in this front load washer helps to prevent fabrics from fraying and snagging and you can even clean lightly soiled loads in less time with the Quick Wash cycle.</p>
           <table width="100%">
             <tr>
               <td width="25%"><h5>Page ID</h5></td>
               <td width="5%"></td>
-              <td width="70%">10061024</td>
+              <td width="70%">WFW87HEDW</td>
             </tr>
           </table>
         </div>
       </div>
       <div class="content-ugc">
         <div class="rating">
-          <div class="star"><i class="fa fa-star" aria-hidden="true"></i></div><div class="star"><i class="fa fa-star" aria-hidden="true"></i></div><div class="star-off"><i class="fa fa-star" aria-hidden="true"></i></div><div class="star-off"><i class="fa fa-star" aria-hidden="true"></i></div><div class="star-off"><i class="fa fa-star" aria-hidden="true"></i></div><div class="numeric">4.0</div>
+          <div class="star"><i class="fa fa-star" aria-hidden="true"></i></div><div class="star"><i class="fa fa-star" aria-hidden="true"></i></div><div class="star"><i class="fa fa-star" aria-hidden="true"></i></div><div class="star"><i class="fa fa-star" aria-hidden="true"></i></div><div class="star-off"><i class="fa fa-star" aria-hidden="true"></i></div>          <div class="numeric">4.0</div>
         </div>
 
-        <h3><mark>Slow shipping time</mark></h3>
-        <p class="small">Submitted on <mark>07/21/2016</mark> by <mark>Marlie</mark> from <mark>undisclosed</mark></p>
-        <p><mark>Great boot to wear in the winter and the blue colorway is something unique and different opposed to getting the same wheat colorway everybody has.</mark></p>
+        <h3><mark>Everything is Just Right</mark></h3>
+        <p class="small">Submitted on <mark>07/21/2016</mark> by <mark>Con</mark> from <mark>Broomfield, CO</mark></p>
+        <p><mark>Bought a Washer Dryer Combo. Front Loaders. I love that they are so easy to use. The auto detergent dispenser gets filled once for so many wash loads; I don't have to get the cup and detergent out each time. Love the sensing feature. Extra spinning feature to get more water out than ever. Gas Dryer is a dream. I'm now officially spoiled.</mark></p>
         <table width="100%">
           <tr><td width="25%"><h5>Reviewer Type</h5></td><td width="5%"></td><td width="70%">Verified Buyer</td></tr>        </table>
         <a href="#" class="ugc-more btn-reveal">Meta Info <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
@@ -240,14 +238,13 @@
         <div class="actions-publishing">
           <p>
             <label><span class="status pub"></span>Site Status</label>
-            <select data="btn-3">
-              <option selected="selected">Published</option>
+            <select state="btn-3"><option selected="selected">Published</option>
               <option>Unpublished</option>
             </select>
           </p>
                     <p>
             <label>Observations</label>
-            <select>
+            <select state="btn-3">
               <option selected="selected">None</option>
               <option>Safety Alert</option>
               <option>Profanity</option>
@@ -256,10 +253,9 @@
             </select>
           </p>
           <p>
-            <textarea placeholder="Add notes..."></textarea>
-          </p>
+            <textarea placeholder="Add notes..." state="btn-3"></textarea>          </p>
           <p>
-            <a class="actions-btn save" id="btn-3" href="#">Dismiss</a>          </p>
+            <a class="actions-btn save disabled" href="#" id="btn-3">Save</a>          </p>
         </div>
         <div class="actions-tools">
           <p><a class="tools-btn" href="#">Forward this Review</a></p>
@@ -282,33 +278,33 @@
       <div class="content-product">
         <div class="product-top">
           <div class="product-image">
-            <img src="https://images.timberland.com/is/image/timberland/A1I8P604-HERO" />          </div>
+            <img src="http://www.whirlpool.com/digitalassets/WFG520S0FS/Standalone_1175X1290.jpg" />          </div>
           <div class="product-title cf truncate">
-            <h3><a href="https://www.timberland.com/shop/womens-best-sellers/womens-limited-release-nice-6-inch-premium-waterproof-boots-red-a1i8p604" target="_blank">WOMEN'S LIMITED RELEASE "NICE" 6-INCH PREMIUM WATERPROOF BOOTS</a></h3>            <div class="product-details"><strong>Brand:</strong> Timberland</div>            <div class="product-details"><strong>Category:</strong> Boots</div>          </div>
+            <h3><a href="http://www.whirlpool.com/kitchen-1/cooking-2/ranges-3/-[WFG520S0FS]-5891597/WFG520S0FS/" target="_blank">5.0 cu. ft. Freestanding Gas Range With Fan Convection Cooking</a></h3>            <div class="product-details"><strong>Brand:</strong> Ranges</div>            <div class="product-details"><strong>Category:</strong> Boots</div>          </div>
           <div class="product-expand">
             <a href="#" class="product-more btn-reveal">Product Info <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
           </div>
         </div>
         <div class="product-bottom">
-          <h5>WOMEN'S LIMITED RELEASE "NICE" 6-INCH PREMIUM WATERPROOF BOOTS</h5>
-          <p>Ask yourself: Have you been Naughty or Nice this year? Exclusive to timberland.com and Timberland stores, our Naughty and Nice limited-edition women's boots get into the holiday spirit. Unique materials and styling make these our most exclusive waterproof boots yet.</p>
+          <h5>5.0 cu. ft. Freestanding Gas Range With Fan Convection Cooking</h5>
+          <p>Cook for the family, even on a hectic schedule with our 5.0 cu. ft. freestanding convection gas range with cast-iron grates. This cooking range is designed with features that help you get dinner to the table quickly. Skip preheating for favorites like pizza and lasagna with Frozen Bake™ technology featured on this kitchen range.</p>
           <table width="100%">
             <tr>
               <td width="25%"><h5>Page ID</h5></td>
               <td width="5%"></td>
-              <td width="70%">a1i8p604</td>
+              <td width="70%">WFG520S0FS</td>
             </tr>
           </table>
         </div>
       </div>
       <div class="content-ugc">
         <div class="rating">
-          <div class="star"><i class="fa fa-star" aria-hidden="true"></i></div><div class="star"><i class="fa fa-star" aria-hidden="true"></i></div><div class="star-off"><i class="fa fa-star" aria-hidden="true"></i></div><div class="star-off"><i class="fa fa-star" aria-hidden="true"></i></div><div class="star-off"><i class="fa fa-star" aria-hidden="true"></i></div><div class="numeric">4.0</div>
+          <div class="star"><i class="fa fa-star" aria-hidden="true"></i></div><div class="star"><i class="fa fa-star" aria-hidden="true"></i></div><div class="star"><i class="fa fa-star" aria-hidden="true"></i></div><div class="star"><i class="fa fa-star" aria-hidden="true"></i></div><div class="star-off"><i class="fa fa-star" aria-hidden="true"></i></div>          <div class="numeric">4.0</div>
         </div>
 
-        <h3><mark>I ordered the wrong size</mark></h3>
-        <p class="small">Submitted on <mark>07/21/2016</mark> by <mark>Mog</mark> from <mark>UK</mark></p>
-        <p><mark>Very comfortable and beautiful vibrant colour that wears well. Easy to clean- I use a suede brush. Had to get a half size bigger than I usually would but that may be because of the thicker socks I would tend to wear with them due to the colder weather.</mark></p>
+        <h3><mark>Great Stove!</mark></h3>
+        <p class="small">Submitted on <mark>07/21/2016</mark> by <mark>Erica</mark> from <mark>Duluth, MN</mark></p>
+        <p><mark>I bought this only 2 weeks ago. It's beautiful!! I love the pan drawer and the huge capacity. This is my first convection oven so I'm still playing with that feature but so far the actual things I have baked have turned out amazing. The convention didn't work so well on my chicken, however that was my first time using the oven save I expected a learning curve. Only complaint is that there isn't an actual griddle for it for me to purchase other than a generic whirlpool model.</mark></p>
         <table width="100%">
           <tr><td width="25%"><h5>Reviewer Type</h5></td><td width="5%"></td><td width="70%">Verified Buyer</td></tr>        </table>
         <a href="#" class="ugc-more btn-reveal">Meta Info <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
@@ -331,14 +327,13 @@
         <div class="actions-publishing">
           <p>
             <label><span class="status pub"></span>Site Status</label>
-            <select data="btn-4">
-              <option selected="selected">Published</option>
+            <select state="btn-4"><option selected="selected">Published</option>
               <option>Unpublished</option>
             </select>
           </p>
                     <p>
             <label>Observations</label>
-            <select>
+            <select state="btn-4">
               <option selected="selected">None</option>
               <option>Safety Alert</option>
               <option>Profanity</option>
@@ -347,10 +342,9 @@
             </select>
           </p>
           <p>
-            <textarea placeholder="Add notes..."></textarea>
-          </p>
+            <textarea placeholder="Add notes..." state="btn-4"></textarea>          </p>
           <p>
-            <a class="actions-btn save" id="btn-4" href="#">Dismiss</a>          </p>
+            <a class="actions-btn save disabled" href="#" id="btn-4">Save</a>          </p>
         </div>
         <div class="actions-tools">
           <p><a class="tools-btn" href="#">Forward this Review</a></p>

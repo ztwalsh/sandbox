@@ -1,41 +1,41 @@
 <article class="card cf">
     <span class="attributes">
-      <span class="rating" data="5"></span>
-      <span class="category" data="5"></span>
-      <span class="brand" data="5"></span>
-      <span class="rating" data="5"></span>
+      <span class="rating" data="4"></span>
+      <span class="category" data="4"></span>
+      <span class="brand" data="4"></span>
+      <span class="rating" data="4"></span>
     </span>
     <div class="content">
       <div class="content-product">
         <div class="product-top">
           <div class="product-image">
-            <img src="https://images.timberland.com/is/image/timberland/10061024-HERO" />          </div>
+            <img src="http://demandware.edgesuite.net/aais_prd/on/demandware.static/-/Sites-tmag-master-catalog/default/v1485249820421/zoom/B13301_zoom_D.jpg" />          </div>
           <div class="product-title cf truncate">
-            <h3><a href="https://www.timberland.com/shop/mens-boots/mens-6-inch-premium-waterproof-boots-wheat-10061024" target="_blank">MEN'S 6-INCH PREMIUM WATERPROOF BOOTS</a></h3>            <div class="product-details"><strong>Brand:</strong> Timberland</div>            <div class="product-details"><strong>Category:</strong> Boots</div>          </div>
+            <h3><a href="http://taylormadegolf.com/Project-%28a%29-Golf-Ball/DW-SY682.html#start=1" target="_blank">Project (A) Golf Ball</a></h3>            <div class="product-details"><strong>Brand:</strong> Taylor Made</div>            <div class="product-details"><strong>Category:</strong> Balls</div>          </div>
           <div class="product-expand">
             <a href="#" class="product-more btn-reveal">Product Info <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
           </div>
         </div>
         <div class="product-bottom">
-          <h5>MEN'S 6-INCH PREMIUM WATERPROOF BOOTS</h5>
-          <p>When you think of Timberland® boots, you're thinking of these. Our original waterproof boot was designed more than 40 years ago and remains a best-seller today, with tireless waterproof performance and instantly recognizable work-boot styling.</p>
+          <h5>Project (A) Golf Ball</h5>
+          <p>TaylorMade has designed an incredible golf ball for competitive mid-handicappers who need more approach-shot spin. Project (a) is long off every club and feels great around the greens.</p>
           <table width="100%">
             <tr>
               <td width="25%"><h5>Page ID</h5></td>
               <td width="5%"></td>
-              <td width="70%">10061024</td>
+              <td width="70%">DW-SY682</td>
             </tr>
           </table>
         </div>
       </div>
       <div class="content-ugc">
         <div class="rating">
-          <div class="star"><i class="fa fa-star" aria-hidden="true"></i></div><div class="star"><i class="fa fa-star" aria-hidden="true"></i></div><div class="star-off"><i class="fa fa-star" aria-hidden="true"></i></div><div class="star-off"><i class="fa fa-star" aria-hidden="true"></i></div><div class="star-off"><i class="fa fa-star" aria-hidden="true"></i></div><div class="numeric">4.0</div>
+          <div class="star"><i class="fa fa-star" aria-hidden="true"></i></div><div class="star"><i class="fa fa-star" aria-hidden="true"></i></div><div class="star"><i class="fa fa-star" aria-hidden="true"></i></div><div class="star"><i class="fa fa-star" aria-hidden="true"></i></div><div class="star-off"><i class="fa fa-star" aria-hidden="true"></i></div>          <div class="numeric">4.0</div>
         </div>
 
-        <h3><mark>Good not great</mark></h3>
-        <p class="small">Submitted on <mark>07/21/2016</mark> by <mark>Marlie</mark> from <mark>undisclosed</mark></p>
-        <p><mark>This is actually a late review, I bought my first pair of these boots around the same time last year. I figured out after a year of wearing them, I can now give a proper review :)<br /><br />So, to start, I decided on getting the men's instead of the women's because my feet are wider than most women's and men's shoes usually fit me nicely. I also ended up having 2 pairs of these boots. At the beginning, I heard that these boots run big, so I went down half a size. For men's size, I normally wear 10.5 (for running shoes etc). It was all good then because it was winter, and the thick socks I wore fits nicely in them, and in order to keep the snow and wind out, they are always laced up properly. One of the things I love about these boots is that they managed to keep my feet completely dry even when I walk through the thick snow, and they also managed to keep my feet warm throughout the winter with just a pair of thick socks. One thing to note, though, is that they are especially prone to water stain and scratch easily, but I like them rugged, so I don't mind that.<br /><br />All was good till the weather started getting warmer and I have to trade my thick socks for something much thinner. The looser fit isn't that apparent if I keep my laces properly tied up like I did all winter, but once I started wearing them loose, it just won't stay on properly anymore. Since I am a lazy person, and I really wanted to enjoy these boots properly together with the joy of throwing them on in seconds and kicking them off as I like, I bought a second pair, size 9.5. The second pair fits me nicely like a pair of running shoes would. I have also worn these boots in summer and it still remains comfortable.</mark></p>
+        <h3><mark>Nice Ball Flight</mark></h3>
+        <p class="small">Submitted on <mark>07/21/2016</mark> by <mark>GJS</mark> from <mark>Martinsburg,WV</mark></p>
+        <p><mark>REACT™ 40 compression core - Faster Driver Speeds SPIN MANTLE™ technology - More Iron Distance URETHANE SOFT TECH™ COVER - Soft Feel and Tour Spin I found everything to be true about this ball except for one thing..... Tour spin, not even close. Just doesn't have the spin around the green that the previous version had, other than that a pretty good ball. Great driver and iron distance, nice soft feel.</mark></p>
         <table width="100%">
           <tr><td width="25%"><h5>Reviewer Type</h5></td><td width="5%"></td><td width="70%">Verified Buyer</td></tr>        </table>
         <a href="#" class="ugc-more btn-reveal">Meta Info <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
@@ -65,7 +65,7 @@
           </p>
                     <p>
             <label>Observations</label>
-            <select>
+            <select data="btn-1">
               <option selected="selected">None</option>
               <option>Safety Alert</option>
               <option>Profanity</option>
@@ -74,8 +74,7 @@
             </select>
           </p>
           <p>
-            <textarea placeholder="Add notes..."></textarea>
-          </p>
+            <textarea placeholder="Add notes..." data="btn-1"></textarea>          </p>
           <p>
             <a class="actions-btn save" id="btn-1" href="#">Dismiss</a>          </p>
         </div>
@@ -91,42 +90,42 @@
 
   <article class="card cf">
     <span class="attributes">
-      <span class="rating" data="4"></span>
-      <span class="category" data="4"></span>
-      <span class="brand" data="4"></span>
-      <span class="rating" data="4"></span>
+      <span class="rating" data="5"></span>
+      <span class="category" data="5"></span>
+      <span class="brand" data="5"></span>
+      <span class="rating" data="5"></span>
     </span>
     <div class="content">
       <div class="content-product">
         <div class="product-top">
           <div class="product-image">
-            <img src="https://images.timberland.com/is/image/timberland/10061024-HERO" />          </div>
+            <img src="http://demandware.edgesuite.net/aais_prd/on/demandware.static/-/Sites-tmag-master-catalog/default/v1485249820421/zoom/SY652_zoom_D.jpg" />          </div>
           <div class="product-title cf truncate">
-            <h3><a href="https://www.timberland.com/shop/mens-boots/mens-6-inch-premium-waterproof-boots-wheat-10061024" target="_blank">MEN'S 6-INCH PREMIUM WATERPROOF BOOTS</a></h3>            <div class="product-details"><strong>Brand:</strong> Timberland</div>            <div class="product-details"><strong>Category:</strong> Boots</div>          </div>
+            <h3><a href="http://taylormadegolf.com/Lethal-50-Pack/DW-SY652.html#start=7" target="_blank">Lethal 50 Pack</a></h3>            <div class="product-details"><strong>Brand:</strong> Taylor Made</div>            <div class="product-details"><strong>Category:</strong> Balls</div>          </div>
           <div class="product-expand">
             <a href="#" class="product-more btn-reveal">Product Info <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
           </div>
         </div>
         <div class="product-bottom">
-          <h5>MEN'S 6-INCH PREMIUM WATERPROOF BOOTS</h5>
-          <p>When you think of Timberland® boots, you're thinking of these. Our original waterproof boot was designed more than 40 years ago and remains a best-seller today, with tireless waterproof performance and instantly recognizable work-boot styling.</p>
+          <h5>Lethal 50 Pack</h5>
+          <p>We created the 50 pack for the die-hard golfers who are looking for a great value on a Tour caliber golf ball.  We kept packaging simple and useful.  Keep this box in your car, on a garage shelf or in your locker at your golf club.  Providing accessibility and transportation, the Lethal Pack has an easy-to-open tab and an extending side carry handle.</p>
           <table width="100%">
             <tr>
               <td width="25%"><h5>Page ID</h5></td>
               <td width="5%"></td>
-              <td width="70%">10061024</td>
+              <td width="70%">DW-SY652</td>
             </tr>
           </table>
         </div>
       </div>
       <div class="content-ugc">
         <div class="rating">
-          <div class="star"><i class="fa fa-star" aria-hidden="true"></i></div><div class="star"><i class="fa fa-star" aria-hidden="true"></i></div><div class="star-off"><i class="fa fa-star" aria-hidden="true"></i></div><div class="star-off"><i class="fa fa-star" aria-hidden="true"></i></div><div class="star-off"><i class="fa fa-star" aria-hidden="true"></i></div><div class="numeric">4.0</div>
+          <div class="star"><i class="fa fa-star" aria-hidden="true"></i></div><div class="star"><i class="fa fa-star" aria-hidden="true"></i></div><div class="star"><i class="fa fa-star" aria-hidden="true"></i></div><div class="star"><i class="fa fa-star" aria-hidden="true"></i></div><div class="star"><i class="fa fa-star" aria-hidden="true"></i></div>          <div class="numeric">5.0</div>
         </div>
 
-        <h3><mark>Ran a little large</mark></h3>
-        <p class="small">Submitted on <mark>07/21/2016</mark> by <mark>Marlie</mark> from <mark>undisclosed</mark></p>
-        <p><mark>Overall I love the boots, just that it's causing a lot of pain wearing in, and I'm not sure if it's a matter of breaking it in.</mark></p>
+        <h3><mark>I prefer this golf ball over all the others</mark></h3>
+        <p class="small">Submitted on <mark>07/21/2016</mark> by <mark>Jimeverydaygolfer</mark> from <mark>Danville Arkansas</mark></p>
+        <p><mark>Used daily, play everyday possible. Love the Letheal golf ball, second purchase, bought the 144 pack. Bought TWO 50 packs this time! I prefer this ball over all others! C 't find nothing wrong with ball at all.</mark></p>
         <table width="100%">
           <tr><td width="25%"><h5>Reviewer Type</h5></td><td width="5%"></td><td width="70%">Verified Buyer</td></tr>        </table>
         <a href="#" class="ugc-more btn-reveal">Meta Info <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
@@ -148,25 +147,24 @@
       <div class="actions-wrapper">
         <div class="actions-publishing">
           <p>
-            <label><span class="status unpub"></span>Site Status</label>
+            <label><span class="status pub"></span>Site Status</label>
             <select data="btn-2">
-              <option>Published</option>
-              <option selected="selected">Unpublished</option>
+              <option selected="selected">Published</option>
+              <option>Unpublished</option>
             </select>
           </p>
                     <p>
             <label>Observations</label>
-            <select>
-              <option>None</option>
+            <select data="btn-2">
+              <option selected="selected">None</option>
               <option>Safety Alert</option>
-              <option selected="selected">Profanity</option>
+              <option>Profanity</option>
               <option>Pricing</option>
               <option>Competitors</option>
             </select>
           </p>
           <p>
-            <textarea placeholder="Add notes..."></textarea>
-          </p>
+            <textarea placeholder="Add notes..." data="btn-2"></textarea>          </p>
           <p>
             <a class="actions-btn save" id="btn-2" href="#">Dismiss</a>          </p>
         </div>
@@ -191,33 +189,33 @@
       <div class="content-product">
         <div class="product-top">
           <div class="product-image">
-            <img src="https://images.timberland.com/is/image/timberland/10061024-HERO" />          </div>
+            <img src="http://www.golfalot.com/Portals/0/images/m1%20driver%203_4_300x300.jpg?v2" />          </div>
           <div class="product-title cf truncate">
-            <h3><a href="https://www.timberland.com/shop/mens-boots/mens-6-inch-premium-waterproof-boots-wheat-10061024" target="_blank">MEN'S 6-INCH PREMIUM WATERPROOF BOOTS</a></h3>            <div class="product-details"><strong>Brand:</strong> Timberland</div>            <div class="product-details"><strong>Category:</strong> Boots</div>          </div>
+            <h3><a href="http://taylormadegolf.com/M1-Driver/DW-WZ396.html#start=4" target="_blank">M1 Driver</a></h3>            <div class="product-details"><strong>Brand:</strong> Taylor Made</div>            <div class="product-details"><strong>Category:</strong> Drivers</div>          </div>
           <div class="product-expand">
             <a href="#" class="product-more btn-reveal">Product Info <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
           </div>
         </div>
         <div class="product-bottom">
-          <h5>MEN'S 6-INCH PREMIUM WATERPROOF BOOTS</h5>
-          <p>When you think of Timberland® boots, you're thinking of these. Our original waterproof boot was designed more than 40 years ago and remains a best-seller today, with tireless waterproof performance and instantly recognizable work-boot styling.</p>
+          <h5>M1 Driver</h5>
+          <p>Our longest driver*, the M1 has a multi-material construction - featuring an ultra-thin, ultra-light and high-strength carbon composite crown – that unlocks breakthroughs in distance, playability, and feel for all golfers.</p>
           <table width="100%">
             <tr>
               <td width="25%"><h5>Page ID</h5></td>
               <td width="5%"></td>
-              <td width="70%">10061024</td>
+              <td width="70%">DW-WZ396</td>
             </tr>
           </table>
         </div>
       </div>
       <div class="content-ugc">
         <div class="rating">
-          <div class="star"><i class="fa fa-star" aria-hidden="true"></i></div><div class="star"><i class="fa fa-star" aria-hidden="true"></i></div><div class="star-off"><i class="fa fa-star" aria-hidden="true"></i></div><div class="star-off"><i class="fa fa-star" aria-hidden="true"></i></div><div class="star-off"><i class="fa fa-star" aria-hidden="true"></i></div><div class="numeric">4.0</div>
+          <div class="star"><i class="fa fa-star" aria-hidden="true"></i></div><div class="star"><i class="fa fa-star" aria-hidden="true"></i></div><div class="star"><i class="fa fa-star" aria-hidden="true"></i></div><div class="star"><i class="fa fa-star" aria-hidden="true"></i></div><div class="star-off"><i class="fa fa-star" aria-hidden="true"></i></div>          <div class="numeric">4.0</div>
         </div>
 
-        <h3><mark>Slow shipping time</mark></h3>
-        <p class="small">Submitted on <mark>07/21/2016</mark> by <mark>Marlie</mark> from <mark>undisclosed</mark></p>
-        <p><mark>Great boot to wear in the winter and the blue colorway is something unique and different opposed to getting the same wheat colorway everybody has.</mark></p>
+        <h3><mark>Great Driver</mark></h3>
+        <p class="small">Submitted on <mark>07/21/2016</mark> by <mark>tic test</mark> from <mark>New York</mark></p>
+        <p><mark>M stands for Multi-Material and it's the key that unlocks performance in M1. This construction is highlighted by our proprietary 7-layer Carbon Composite Crown that is precision-formed and built ultra-thin, ultra-lite and high strength to maximize weight savings. This addition has allowed us to build a weight-loaded sole and move overall clubhead weight (and, thus, the center-of-gravity) lower for a more efficient power transfer; giving golfers more ball speed.</mark></p>
         <table width="100%">
           <tr><td width="25%"><h5>Reviewer Type</h5></td><td width="5%"></td><td width="70%">Verified Buyer</td></tr>        </table>
         <a href="#" class="ugc-more btn-reveal">Meta Info <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
@@ -239,15 +237,15 @@
       <div class="actions-wrapper">
         <div class="actions-publishing">
           <p>
-            <label><span class="status pub"></span>Site Status</label>
+            <label><span class="status unpub"></span>Site Status</label>
             <select data="btn-3">
-              <option selected="selected">Published</option>
-              <option>Unpublished</option>
+              <option>Published</option>
+              <option selected="selected">Unpublished</option>
             </select>
           </p>
                     <p>
             <label>Observations</label>
-            <select>
+            <select data="btn-3">
               <option selected="selected">None</option>
               <option>Safety Alert</option>
               <option>Profanity</option>
@@ -256,8 +254,7 @@
             </select>
           </p>
           <p>
-            <textarea placeholder="Add notes..."></textarea>
-          </p>
+            <textarea placeholder="Add notes..." data="btn-3"></textarea>          </p>
           <p>
             <a class="actions-btn save" id="btn-3" href="#">Dismiss</a>          </p>
         </div>
@@ -282,33 +279,33 @@
       <div class="content-product">
         <div class="product-top">
           <div class="product-image">
-            <img src="https://images.timberland.com/is/image/timberland/A1I8P604-HERO" />          </div>
+            <img src="http://demandware.edgesuite.net/aais_prd/on/demandware.static/-/Sites-tmag-master-catalog/default/v1485249820421/zoom/B13301_zoom_D.jpg" />          </div>
           <div class="product-title cf truncate">
-            <h3><a href="https://www.timberland.com/shop/womens-best-sellers/womens-limited-release-nice-6-inch-premium-waterproof-boots-red-a1i8p604" target="_blank">WOMEN'S LIMITED RELEASE "NICE" 6-INCH PREMIUM WATERPROOF BOOTS</a></h3>            <div class="product-details"><strong>Brand:</strong> Timberland</div>            <div class="product-details"><strong>Category:</strong> Boots</div>          </div>
+            <h3><a href="http://taylormadegolf.com/Project-%28a%29-Golf-Ball/DW-SY682.html#start=1" target="_blank">Project (A) Golf Ball</a></h3>            <div class="product-details"><strong>Brand:</strong> Taylor Made</div>            <div class="product-details"><strong>Category:</strong> Balls</div>          </div>
           <div class="product-expand">
             <a href="#" class="product-more btn-reveal">Product Info <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
           </div>
         </div>
         <div class="product-bottom">
-          <h5>WOMEN'S LIMITED RELEASE "NICE" 6-INCH PREMIUM WATERPROOF BOOTS</h5>
-          <p>Ask yourself: Have you been Naughty or Nice this year? Exclusive to timberland.com and Timberland stores, our Naughty and Nice limited-edition women's boots get into the holiday spirit. Unique materials and styling make these our most exclusive waterproof boots yet.</p>
+          <h5>Project (A) Golf Ball</h5>
+          <p>TaylorMade has designed an incredible golf ball for competitive mid-handicappers who need more approach-shot spin. Project (a) is long off every club and feels great around the greens.</p>
           <table width="100%">
             <tr>
               <td width="25%"><h5>Page ID</h5></td>
               <td width="5%"></td>
-              <td width="70%">a1i8p604</td>
+              <td width="70%">DW-SY682</td>
             </tr>
           </table>
         </div>
       </div>
       <div class="content-ugc">
         <div class="rating">
-          <div class="star"><i class="fa fa-star" aria-hidden="true"></i></div><div class="star"><i class="fa fa-star" aria-hidden="true"></i></div><div class="star-off"><i class="fa fa-star" aria-hidden="true"></i></div><div class="star-off"><i class="fa fa-star" aria-hidden="true"></i></div><div class="star-off"><i class="fa fa-star" aria-hidden="true"></i></div><div class="numeric">4.0</div>
+          <div class="star"><i class="fa fa-star" aria-hidden="true"></i></div><div class="star"><i class="fa fa-star" aria-hidden="true"></i></div><div class="star"><i class="fa fa-star" aria-hidden="true"></i></div><div class="star"><i class="fa fa-star" aria-hidden="true"></i></div><div class="star-off"><i class="fa fa-star" aria-hidden="true"></i></div>          <div class="numeric">4.0</div>
         </div>
 
-        <h3><mark>I ordered the wrong size</mark></h3>
-        <p class="small">Submitted on <mark>07/21/2016</mark> by <mark>Mog</mark> from <mark>UK</mark></p>
-        <p><mark>Very comfortable and beautiful vibrant colour that wears well. Easy to clean- I use a suede brush. Had to get a half size bigger than I usually would but that may be because of the thicker socks I would tend to wear with them due to the colder weather.</mark></p>
+        <h3><mark>Excellent Ball</mark></h3>
+        <p class="small">Submitted on <mark>07/21/2016</mark> by <mark>Bill</mark> from <mark>Thomasville, GA</mark></p>
+        <p><mark>A 79 year old who plays 2 to 3 times a week, I received a sleeve from Taylor. I normally play Srixon and found this ball better than both the Z-Star and Q-Star. I get more distance and control with all clubs, from driver to fairways, hybrids and irons. It has more feel and control with shorter ironsand wedges. I will definately be changing in spite of being a loyal Srixon plater for several years. This ball is better than the Titleist NXTs I have tried.</mark></p>
         <table width="100%">
           <tr><td width="25%"><h5>Reviewer Type</h5></td><td width="5%"></td><td width="70%">Verified Buyer</td></tr>        </table>
         <a href="#" class="ugc-more btn-reveal">Meta Info <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
@@ -338,7 +335,7 @@
           </p>
                     <p>
             <label>Observations</label>
-            <select>
+            <select data="btn-4">
               <option selected="selected">None</option>
               <option>Safety Alert</option>
               <option>Profanity</option>
@@ -347,8 +344,7 @@
             </select>
           </p>
           <p>
-            <textarea placeholder="Add notes..."></textarea>
-          </p>
+            <textarea placeholder="Add notes..." data="btn-4"></textarea>          </p>
           <p>
             <a class="actions-btn save" id="btn-4" href="#">Dismiss</a>          </p>
         </div>

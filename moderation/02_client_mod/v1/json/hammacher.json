@@ -1,0 +1,350 @@
+[
+   {
+      "subject":{
+         "subject_id":1394,
+         "subject_type":"product",
+         "name":"The Best Portable Bluetooth Speaker",
+         "description":"This is the Bose Soundlink portable Bluetooth speaker that earned The Best rating by the Hammacher Schlemmer Institute because it produced the clearest sound and was the easiest to use. During evaluations, a panel of listeners raved about The Best Portable Bluetooth Speaker’s “perfect” amount of bass, “crisp” transmission of speech, and its full tones in musical genres ranging from easy listening to hip-hop, all produced by its two speakers. While distortion garbled the output of lesser units, The Best Portable Bluetooth Speaker’s passive radiators and custom transducers helped prevent muddled audio. Panelists also deemed The Best unit easy to use, pairing quickly with Bluetooth-enabled devices and remembering up to eight devices. The Best Portable Bluetooth Speaker has a range of at least 30' and during testing maintained a connection 219' from an iPhone—over double the range of lesser speakers. With a micro-USB port (cable included) and a 3.5mm auxiliary input. A full-charge using its charging cradle provides up to 10 hours of portable power. Charging station plugs into AC.",
+         "category_name":"Portable Electronics",
+         "brand_name":"Bose",
+         "page_id":"88995",
+         "page_id_variant":"",
+         "product_id":2308263,
+         "product_url":"http://www.hammacher.com/Product/Default.aspx?sku=88995&promo=Electronics-Portable-Electronics&catid=105",
+         "product_image_url":"http://digital.hammacher.com/Items/88995/88995_64x64.jpg",
+         "catalog_information":{
+            "id":333056,
+            "group_id":12846
+         }
+      },
+      "ugc":{
+         "ugc_id":7611,
+         "subject_id":1394,
+         "ugc_type":"review",
+         "created_date":"2016-07-21 13:06:28.0",
+         "updated_date":"2016-11-07 12:44:40.163",
+         "author":"Launa S.",
+         "location":"Crowley Lake, CA",
+         "review_headline":"It was a gift",
+         "review_comments":"The recipient said, \" I love it! This is exactly what I wanted.\" He charged it up, synced it with his cell phone and we listened. The sound was phenomenal! The clarity and depth are equal to much larger, high-quality speakers. He bought a case for it and takes it everywhere he wants to listen to music.",
+         "reviewer_type":"Verified Buyer",
+         "email_confirm_status":"UNVERIFIED",
+         "source":"email",
+         "helpful_votes":0,
+         "not_helpful_votes":0,
+         "rating":5,
+         "site_status":"published",
+         "network_status":null,
+         "ugc_related_content":{
+            "media":[
+
+            ]
+         }
+      },
+      "existing_observations":[
+         {
+            "observation_ugc_id":126,
+            "created_date":"2016-11-07 11:44:39.9213",
+            "updated_date":"2016-11-07 11:44:39.9213",
+            "observation_type_code":"NR"
+         },
+         {
+            "observation_ugc_id":127,
+            "created_date":"2016-11-07 11:53:15.262021",
+            "updated_date":"2016-11-07 11:53:15.262021",
+            "observation_type_code":"CC"
+         },
+         {
+            "observation_ugc_id":128,
+            "created_date":"2016-11-07 11:53:49.82932",
+            "updated_date":"2016-11-07 11:53:49.82932",
+            "observation_type_code":"CC"
+         },
+         {
+            "observation_ugc_id":129,
+            "created_date":"2016-11-07 11:55:01.387349",
+            "updated_date":"2016-11-07 11:55:01.387349",
+            "observation_type_code":"PR"
+         },
+         {
+            "observation_ugc_id":130,
+            "created_date":"2016-11-07 12:44:40.16352",
+            "updated_date":"2016-11-07 12:44:40.16352",
+            "observation_type_code":"PII"
+         }
+      ],
+      "pwr_observations":[
+         {
+            "name":"Safety Concern",
+            "description":"Content has evidence of potential danger, violence, child pornography, serious injury or death.   Content contains statement that can be construed as soliciting or providing medical advice",
+            "created_date":"2016-10-24 10:25:42.996925",
+            "updated_date":"2016-10-24 10:25:42.996925",
+            "observation_type_code":"SC"
+         }
+      ],
+      "merchant_observations":[
+
+      ]
+   },
+   {
+     "subject":{
+        "subject_id":1394,
+        "subject_type":"product",
+        "name":"The Truly Cordless Earbuds",
+        "description":"We created the 50 pack for the die-hard golfers who are looking for a great value on a Tour caliber golf ball.  We kept packaging simple and useful.  Keep this box in your car, on a garage shelf or in your locker at your golf club.  Providing accessibility and transportation, the Lethal Pack has an easy-to-open tab and an extending side carry handle.",
+        "category_name":"iPad Accessories",
+        "brand_name":"Hammacher Schlemmer",
+        "page_id":"89183",
+        "page_id_variant":"",
+        "product_id":2308263,
+        "product_url":"http://www.hammacher.com/Product/Default.aspx?sku=89183&promo=Electronics-iPad-Accessories&catid=1689",
+        "product_image_url":"http://digital.hammacher.com/Items/89183/89183_64x64.jpg",
+        "catalog_information":{
+           "id":333056,
+           "group_id":12846
+        }
+     },
+      "ugc":{
+         "ugc_id":7611,
+         "subject_id":1394,
+         "ugc_type":"review",
+         "created_date":"2016-07-21 13:06:28.0",
+         "updated_date":"2016-11-07 12:44:40.163",
+         "author":"Rony",
+         "location":"Crockett",
+         "review_headline":"Excellent Product",
+         "review_comments":"I garden so I need my hands to be free, buds came at the right time. Also they sound fantastic.",
+         "reviewer_type":"Verified Buyer",
+         "email_confirm_status":"UNVERIFIED",
+         "source":"email",
+         "helpful_votes":0,
+         "not_helpful_votes":0,
+         "rating":5,
+         "site_status":"published",
+         "network_status":null,
+         "ugc_related_content":{
+            "media":[
+
+            ]
+         }
+      },
+      "existing_observations":[
+         {
+            "observation_ugc_id":126,
+            "created_date":"2016-11-07 11:44:39.9213",
+            "updated_date":"2016-11-07 11:44:39.9213",
+            "observation_type_code":"NR"
+         },
+         {
+            "observation_ugc_id":127,
+            "created_date":"2016-11-07 11:53:15.262021",
+            "updated_date":"2016-11-07 11:53:15.262021",
+            "observation_type_code":"CC"
+         },
+         {
+            "observation_ugc_id":128,
+            "created_date":"2016-11-07 11:53:49.82932",
+            "updated_date":"2016-11-07 11:53:49.82932",
+            "observation_type_code":"CC"
+         },
+         {
+            "observation_ugc_id":129,
+            "created_date":"2016-11-07 11:55:01.387349",
+            "updated_date":"2016-11-07 11:55:01.387349",
+            "observation_type_code":"PR"
+         },
+         {
+            "observation_ugc_id":130,
+            "created_date":"2016-11-07 12:44:40.16352",
+            "updated_date":"2016-11-07 12:44:40.16352",
+            "observation_type_code":"PII"
+         }
+      ],
+      "pwr_observations":[
+         {
+            "name":"Safety Concern",
+            "description":"Content has evidence of potential danger, violence, child pornography, serious injury or death.   Content contains statement that can be construed as soliciting or providing medical advice",
+            "created_date":"2016-10-24 10:25:42.996925",
+            "updated_date":"2016-10-24 10:25:42.996925",
+            "observation_type_code":"SC"
+         }
+      ],
+      "merchant_observations":[
+
+      ]
+   },
+   {
+     "subject":{
+        "subject_id":1394,
+        "subject_type":"product",
+        "name":"The Best Portable Bluetooth Speaker",
+        "description":"This is the Bose Soundlink portable Bluetooth speaker that earned The Best rating by the Hammacher Schlemmer Institute because it produced the clearest sound and was the easiest to use. During evaluations, a panel of listeners raved about The Best Portable Bluetooth Speaker’s “perfect” amount of bass, “crisp” transmission of speech, and its full tones in musical genres ranging from easy listening to hip-hop, all produced by its two speakers. While distortion garbled the output of lesser units, The Best Portable Bluetooth Speaker’s passive radiators and custom transducers helped prevent muddled audio. Panelists also deemed The Best unit easy to use, pairing quickly with Bluetooth-enabled devices and remembering up to eight devices. The Best Portable Bluetooth Speaker has a range of at least 30' and during testing maintained a connection 219' from an iPhone—over double the range of lesser speakers. With a micro-USB port (cable included) and a 3.5mm auxiliary input. A full-charge using its charging cradle provides up to 10 hours of portable power. Charging station plugs into AC.",
+        "category_name":"Portable Electronics",
+        "brand_name":"Bose",
+        "page_id":"88995",
+        "page_id_variant":"",
+        "product_id":2308263,
+        "product_url":"http://www.hammacher.com/Product/Default.aspx?sku=88995&promo=Electronics-Portable-Electronics&catid=105",
+        "product_image_url":"http://digital.hammacher.com/Items/88995/88995_64x64.jpg",
+        "catalog_information":{
+           "id":333056,
+           "group_id":12846
+        }
+     },
+     "ugc":{
+        "ugc_id":7611,
+        "subject_id":1394,
+        "ugc_type":"review",
+        "created_date":"2016-07-21 13:06:28.0",
+        "updated_date":"2016-11-07 12:44:40.163",
+        "author":"Launa S.",
+        "location":"Crowley Lake, CA",
+        "review_headline":"It was a gift",
+        "review_comments":"The recipient said, \" I love it! This is exactly what I wanted.\" He charged it up, synced it with his cell phone and we listened. The sound was phenomenal! The clarity and depth are equal to much larger, high-quality speakers. He bought a case for it and takes it everywhere he wants to listen to music.",
+        "reviewer_type":"Verified Buyer",
+        "email_confirm_status":"UNVERIFIED",
+        "source":"email",
+        "helpful_votes":0,
+        "not_helpful_votes":0,
+        "rating":5,
+        "site_status":"published",
+        "network_status":null,
+        "ugc_related_content":{
+           "media":[
+
+           ]
+        }
+     },
+      "existing_observations":[
+         {
+            "observation_ugc_id":126,
+            "created_date":"2016-11-07 11:44:39.9213",
+            "updated_date":"2016-11-07 11:44:39.9213",
+            "observation_type_code":"NR"
+         },
+         {
+            "observation_ugc_id":127,
+            "created_date":"2016-11-07 11:53:15.262021",
+            "updated_date":"2016-11-07 11:53:15.262021",
+            "observation_type_code":"CC"
+         },
+         {
+            "observation_ugc_id":128,
+            "created_date":"2016-11-07 11:53:49.82932",
+            "updated_date":"2016-11-07 11:53:49.82932",
+            "observation_type_code":"CC"
+         },
+         {
+            "observation_ugc_id":129,
+            "created_date":"2016-11-07 11:55:01.387349",
+            "updated_date":"2016-11-07 11:55:01.387349",
+            "observation_type_code":"PR"
+         },
+         {
+            "observation_ugc_id":130,
+            "created_date":"2016-11-07 12:44:40.16352",
+            "updated_date":"2016-11-07 12:44:40.16352",
+            "observation_type_code":"PII"
+         }
+      ],
+      "pwr_observations":[
+         {
+            "name":"Safety Concern",
+            "description":"Content has evidence of potential danger, violence, child pornography, serious injury or death.   Content contains statement that can be construed as soliciting or providing medical advice",
+            "created_date":"2016-10-24 10:25:42.996925",
+            "updated_date":"2016-10-24 10:25:42.996925",
+            "observation_type_code":"SC"
+         }
+      ],
+      "merchant_observations":[
+
+      ]
+   },
+   {
+     "subject":{
+        "subject_id":1394,
+        "subject_type":"product",
+        "name":"The Truly Cordless Earbuds",
+        "description":"We created the 50 pack for the die-hard golfers who are looking for a great value on a Tour caliber golf ball.  We kept packaging simple and useful.  Keep this box in your car, on a garage shelf or in your locker at your golf club.  Providing accessibility and transportation, the Lethal Pack has an easy-to-open tab and an extending side carry handle.",
+        "category_name":"iPad Accessories",
+        "brand_name":"Hammacher Schlemmer",
+        "page_id":"89183",
+        "page_id_variant":"",
+        "product_id":2308263,
+        "product_url":"http://www.hammacher.com/Product/Default.aspx?sku=89183&promo=Electronics-iPad-Accessories&catid=1689",
+        "product_image_url":"http://digital.hammacher.com/Items/89183/89183_64x64.jpg",
+        "catalog_information":{
+           "id":333056,
+           "group_id":12846
+        }
+     },
+     "ugc":{
+        "ugc_id":7611,
+        "subject_id":1394,
+        "ugc_type":"review",
+        "created_date":"2016-07-21 13:06:28.0",
+        "updated_date":"2016-11-07 12:44:40.163",
+        "author":"Rony",
+        "location":"Crockett",
+        "review_headline":"Excellent Product",
+        "review_comments":"I garden so I need my hands to be free, buds came at the right time. Also they sound fantastic.",
+        "reviewer_type":"Verified Buyer",
+        "email_confirm_status":"UNVERIFIED",
+        "source":"email",
+        "helpful_votes":0,
+        "not_helpful_votes":0,
+        "rating":5,
+        "site_status":"published",
+        "network_status":null,
+        "ugc_related_content":{
+           "media":[
+
+           ]
+        }
+     },
+      "existing_observations":[
+         {
+            "observation_ugc_id":126,
+            "created_date":"2016-11-07 11:44:39.9213",
+            "updated_date":"2016-11-07 11:44:39.9213",
+            "observation_type_code":"NR"
+         },
+         {
+            "observation_ugc_id":127,
+            "created_date":"2016-11-07 11:53:15.262021",
+            "updated_date":"2016-11-07 11:53:15.262021",
+            "observation_type_code":"CC"
+         },
+         {
+            "observation_ugc_id":128,
+            "created_date":"2016-11-07 11:53:49.82932",
+            "updated_date":"2016-11-07 11:53:49.82932",
+            "observation_type_code":"CC"
+         },
+         {
+            "observation_ugc_id":129,
+            "created_date":"2016-11-07 11:55:01.387349",
+            "updated_date":"2016-11-07 11:55:01.387349",
+            "observation_type_code":"PR"
+         },
+         {
+            "observation_ugc_id":130,
+            "created_date":"2016-11-07 12:44:40.16352",
+            "updated_date":"2016-11-07 12:44:40.16352",
+            "observation_type_code":"PII"
+         }
+      ],
+      "pwr_observations":[
+         {
+            "name":"Safety Concern",
+            "description":"Content has evidence of potential danger, violence, child pornography, serious injury or death.   Content contains statement that can be construed as soliciting or providing medical advice",
+            "created_date":"2016-10-24 10:25:42.996925",
+            "updated_date":"2016-10-24 10:25:42.996925",
+            "observation_type_code":"SC"
+         }
+      ],
+      "merchant_observations":[
+
+      ]
+   }
+]

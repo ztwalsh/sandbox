@@ -1,6 +1,6 @@
 <?php
-  $clientname = 'Timberland';
-  $datapath = 'json/timberland.json';
+  $clientname = 'HammacherSchlemmer';
+  $datapath = 'json/hammacher.json';
 
   function status_icon($status) {
     if ($status == 'published') {
