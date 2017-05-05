@@ -8,6 +8,8 @@
 
 	<link rel="stylesheet" href="http://i.nordstromimage.com/images/default/shop/consolidated/global/2015/1008/_consolidated.global.css" />
 	<link rel="stylesheet" href="http://i.nordstromimage.com/images/default/shop/consolidated/main-shop/2015/0617/_consolidated.main-shop.css" />
+	<link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet">
+	<link href="css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" />
 
 
 	<!-- Begin CoreJsLibraryScript --><script src="http://i.nordstromimage.com/images/store/common/js/jquery-1.10.1_modernizr-2.5.3_mustache-0.5.0_raygun.min.js">
