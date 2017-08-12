@@ -1,0 +1,84 @@
+body {
+	color: $black;
+	font-family: "Open Sans", arial, sans;
+	font-size: 16px;
+	font-weight: 300;
+  line-height: 1.5rem;
+}
+
+.big {
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+
+  @media screen and (max-width: $breakpoint-1) {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+  }
+}
+
+.heading-1,
+.heading-2,
+.heading-3,
+.heading-4,
+.heading-5 {
+	font-family: "Oswald", arial, sans;
+	font-size: 2.2rem;
+  font-weight: 300;
+  line-height: 1.75rem;
+  margin: 0;
+	padding: 0 0 20px 0;
+	text-transform: uppercase;
+
+  &.small {
+    text-transform: lowercase;
+    font-family: "Open Sans", arial, sans;
+  }
+}
+
+.heading-2 {
+	font-size: 1.8rem;
+}
+
+.heading-3 {
+	font-size: 1.4rem;
+
+  &.small {
+    font-size: 1.0rem;
+  }
+}
+
+.heading-4 {
+	font-size: 1.0rem;
+}
+
+.heading-5 {
+	font-size: 0.6rem;
+}
+
+p {
+  padding-bottom: 40px;
+
+  &:last-child {
+    padding-bottom: 0;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+.secondary {
+	background: #eeeeee;
+	@include border-radius(3px);
+	color: #666666;
+	display: inline-block;
+	padding: 10px 15px;
+	text-decoration: none;
+	text-transform: lowercase;
+	transition: all 0.25s ease;
+}
+
+.secondary:hover {
+	background: $green;
+	color: #ffffff;
+}

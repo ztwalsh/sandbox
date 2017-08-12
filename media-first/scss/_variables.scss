@@ -1,0 +1,31 @@
+$black:         #303137;
+$grey:          #666666;
+$medium-grey:   #bbbbbb;
+$light-grey:    #eeeeee;
+$green:         #1de9B6;
+$yellow:        #f2aa00;
+$dark-yellow:   #c68c04;
+
+$breakpoint-1:  750px;
+
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+@mixin rotate($degrees) {
+      -webkit-transform: rotate($degrees);
+         -moz-transform: rotate($degrees);
+           -o-transform: rotate($degrees);
+              transform: rotate($degrees);
+}
+
+@mixin transition($value) {
+     -webkit-transition: $value;
+        -moz-transition: $value;
+          -o-transition: $value;
+             transition: $value;
+}

@@ -1,0 +1,110 @@
+header {
+	min-height: 400px;
+	overflow: hidden;
+	position: relative;
+
+	.hero-image {
+		img {
+			height: auto;
+			min-width: 667px;
+			width: 100%;
+		}
+	}
+
+	.title {
+		background: rgba(0, 0, 0, 0.75);
+		bottom: 0;
+		color: #ffffff;
+		padding: 15% 22% 0 22%;
+		position: absolute;
+		text-align: left;
+		top: 0;
+
+		@media screen and (max-width: $breakpoint-1) {
+			padding: 20% 20px 0 20px;
+		}
+
+		.heading-1 {
+			font-size: 4rem;
+			line-height: 1.2;
+			padding: 0 0 20px 0;
+
+			@media screen and (max-width: $breakpoint-1) {
+				font-size: 2.5rem;
+			}
+		}
+
+		span {
+			background: $green;
+			display: block;
+			height: 3px;
+			margin-bottom: 20px;
+			max-width: 200px;
+		}
+	}
+}
+
+section.content {
+	box-sizing: border-box;
+	margin: 0 auto;
+	max-width: 700px;
+	padding: 80px 20px;
+
+	&.spacer {
+		padding: 100px 20px;
+	}
+}
+
+section.images {
+	margin: 0 auto;
+	max-width: 100%;
+
+	figure {
+		position: relative;
+
+		img {
+			height: auto;
+			width: 100%;
+		}
+
+		figcaption {
+			background: rgba(0, 0, 0, 0.75);
+			@include border-radius(3px);
+			color: #ffffff;
+			font-size: 0.9rem;
+			line-height: 1.2rem;
+			max-width: 300px;
+			padding: 20px;
+			position: absolute;
+			top: 50px;
+
+			@media screen and (max-width: $breakpoint-1) {
+				display: none;
+			}
+
+			&.left {
+				left: 50px;
+			}
+
+			&.right {
+				right: 50px;
+			}
+
+			h3::after {
+				background: $green;
+				content: " ";
+				display: block;
+				height: 2px;
+				margin-top: 12px;
+				width: 50px;
+			}
+		}
+	}
+}
+
+img.zach {
+	@include border-radius(50%);
+	height: auto;
+	margin: 40px auto;
+	width: 100px;
+}
