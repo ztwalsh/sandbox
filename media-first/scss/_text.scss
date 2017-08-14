@@ -1,19 +1,9 @@
 body {
 	color: $black;
-	font-family: "Open Sans", arial, sans;
+	font-family: arial, sans;
 	font-size: 16px;
 	font-weight: 300;
   line-height: 1.5rem;
-}
-
-.big {
-  font-size: 1.5rem;
-  line-height: 2.2rem;
-
-  @media screen and (max-width: $breakpoint-1) {
-    font-size: 1.2rem;
-    line-height: 1.6rem;
-  }
 }
 
 .heading-1,
@@ -21,9 +11,8 @@ body {
 .heading-3,
 .heading-4,
 .heading-5 {
-	font-family: "Oswald", arial, sans;
 	font-size: 2.2rem;
-  font-weight: 300;
+  font-weight: bold;
   line-height: 1.75rem;
   margin: 0;
 	padding: 0 0 20px 0;
@@ -41,10 +30,6 @@ body {
 
 .heading-3 {
 	font-size: 1.4rem;
-
-  &.small {
-    font-size: 1.0rem;
-  }
 }
 
 .heading-4 {

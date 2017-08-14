@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<title>Add a Photo</title>
+		<link href="" />
 	</head>
 	<body>
 
