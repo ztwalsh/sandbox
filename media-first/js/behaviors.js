@@ -6,8 +6,8 @@ $(document).ready(function() {
 
       	reader.onload = function (e) {
         	var file = e.target.result;
-        	var html_image = '<div class="uploaded_image cf"><img class="file_placeholder" src="' + file + '" alt="" /><input class="text caption" type="text" value="" placeholder="write a caption" /><a class="trash" href="#"><i class="fa fa-trash-o"></i></a></div>';
-        	$(html_image).insertBefore($('.file'));
+        	var html_image = '<h1 class="heading-1">Add a Caption</h1><h3 class="heading-4 small">Point out what we should be looking at.</h3><div class="uploaded_image cf"><img class="file_placeholder" src="' + file + '" alt="" /><input class="text caption" type="text" value="" placeholder="write a caption" /><a class="trash" href="#"><i class="fa fa-trash-o"></i></a></div>';
+        	$('.review-form .wrapper').html(html_image);
 
         	$('a.trash').click(function() {
         		$(this).closest('.uploaded_image').remove();
