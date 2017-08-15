@@ -17,7 +17,6 @@ $(document).ready(function() {
               $(this).parent().fadeOut(200, function() {
                 $(this).remove();
                 if ($('.image').length){
-                  alert('no');
                 } else {
                   $('#submit').remove();
                   $('#step-info').html('<h1 class="heading-1">Add a Photo</h1><h3 class="heading-4 small">Your photos help future shoppers make decisions on what they buy.</h3>');
