@@ -1,3 +1,4 @@
+<?php require('lib/functions.php') ?>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -15,12 +16,12 @@
 				</header>
 
 				<section id="images">
-					<input type="file" class="file" multiple id="add-media">
-					<label for="add-media" class="secondary action add-image">
-						<p><img class="empty" src="images/image-placeholder.png" /></p>
-						<p><span class="btn-primary full">Find Photos or Videos</span></p>
-					</label>
+					<!-- Images Here -->
 				</section>
+
+        <section id="war">
+          <?php require('lib/include.war.php'); ?>
+        </section>
 			</div>
 		</section>
 	</body>
