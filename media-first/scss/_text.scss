@@ -11,16 +11,18 @@ body {
 .heading-3,
 .heading-4,
 .heading-5 {
-	font-size: 2.2rem;
+	color: $black;
+	font-size: 2.0rem;
   font-weight: bold;
   line-height: 1.75rem;
   margin: 0;
 	padding: 0 0 20px 0;
-	text-transform: uppercase;
 
   &.small {
-    text-transform: lowercase;
-    font-family: "Open Sans", arial, sans;
+		color: $grey;
+    font-family: arial, sans;
+		font-weight: normal;
+		line-height: 1.25rem;
   }
 }
 
@@ -37,7 +39,7 @@ body {
 }
 
 .heading-5 {
-	font-size: 0.6rem;
+	font-size: 0.8rem;
 }
 
 p {
@@ -52,18 +54,25 @@ p {
   text-align: center;
 }
 
-.secondary {
-	background: #eeeeee;
+.btn-primary {
+	background: #007bc3;
 	@include border-radius(3px);
-	color: #666666;
+	box-shadow: 0 2px 0 0 #004e7c;
+	box-sizing: border-box;
+	color: #ffffff;
+	cursor: pointer;
 	display: inline-block;
+	font-weight: bold;
+	max-width: 400px;
 	padding: 10px 15px;
 	text-decoration: none;
-	text-transform: lowercase;
 	transition: all 0.25s ease;
-}
 
-.secondary:hover {
-	background: $green;
-	color: #ffffff;
+	&:hover {
+		background: #004e7c;
+	}
+
+	&.full {
+		width: 100%;
+	}
 }
