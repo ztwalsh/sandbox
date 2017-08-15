@@ -1,25 +1,32 @@
 $(document).ready(function() {
-  // Inputs for images
-	function readURL(input) {
-    if (input.files && input.files[0]) {
-      	var reader = new FileReader();
+  var imagesPreview = function(input, location) {
+      if (input.files) {
+        var filesAmount = input.files.length;
+        var count = 1;
 
-      	reader.onload = function (e) {
-        	var file = e.target.result;
-        	var html_image = '<h1 class="heading-1">Add a Caption</h1><h3 class="heading-4 small">Point out what we should be looking at.</h3><div class="uploaded_image cf"><img class="file_placeholder" src="' + file + '" alt="" /><input class="text caption" type="text" value="" placeholder="write a caption" /><a class="trash" href="#"><i class="fa fa-trash-o"></i></a></div>';
-        	$('.review-form .wrapper').html(html_image);
+        for (i = 0; i < filesAmount; i++) {
+          var reader = new FileReader();
 
-        	$('a.trash').click(function() {
-        		$(this).closest('.uploaded_image').remove();
-        		return false;
-        	});
-      	}
+          reader.onload = function(event) {
+            //$($.parseHTML('<img>')).attr('src', event.target.result).appendTo(placeToInsertImagePreview);
+            var html_image = '<div class="image cf"><div class="thumbnail"><img src="' + event.target.result + '" alt="" /></div><input class="text caption" type="text" value="" placeholder="Add a Caption (Optional)" /><a class="remove" href="#"><i class="fa fa-times"></i></a></div>';
+            html_image += '<input name="image-' + count + '" type="hidden" value="' + event.target.result + '" />';
+            $(html_image).appendTo(location);
 
-      	reader.readAsDataURL(input.files[0]);
-    	}
-  	}
+            $('.remove').click(function() {
+              $(this).parent().fadeOut();
+            });
+          }
+          reader.readAsDataURL(input.files[i]);
+          count++;
+        }
+      }
+    };
 
-  	$("input.file").change(function(){
-      	readURL(this);
-  	});
-  });
+    $('#add-media').on('change', function() {
+        $('#step-info').html('<h1 class="heading-1">Add a Caption</h1><h3 class="heading-4 small">Point out what we should be looking at.</h3>');
+        $('#images').html('');
+        imagesPreview(this, '#images');
+        $('<a class="btn-primary full" href="confirmation.php">Submit Photos or Videos</a>').insertAfter('#images');
+    });
+});

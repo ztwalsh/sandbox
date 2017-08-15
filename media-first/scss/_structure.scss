@@ -30,17 +30,58 @@
     padding: 0 20px;
     text-align: center;
 
-    .heading-1 {
-      padding: 0 0 5px 0;
+    #step-info {
+      .heading-1 {
+        padding: 0 0 5px 0;
+      }
     }
 
-    input.file {
-      display: none;
-    }
+    #images {
+      input.file {
+        display: none;
+      }
 
-    img {
-      max-width: 220px;
-      width: 100%;
+      img.empty {
+        cursor: pointer;
+        max-width: 220px;
+        width: 100%;
+      }
+
+      .image {
+        position: relative;
+        margin-bottom: 20px;
+
+        .thumbnail {
+          border-radius: 2px;
+          height: 80px;
+          overflow: hidden;
+          width: 80px;
+
+          img {
+            width: 100%;
+          }
+        }
+
+        input.text {
+          font-size: 14px;
+          left: 100px;
+          position: absolute;
+          padding: 5px;
+          top: 25px;
+        }
+
+        .remove {
+        	background: rgba(0,0,0,0.6);
+        	border-radius: 50px;
+        	color: #ffffff;
+        	display: block;
+          left: -12px;
+          line-height: 0;
+          padding: 7px 9px;
+        	position: absolute;
+          top: -12px;
+        }
+      }
     }
   }
 }
