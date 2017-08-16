@@ -1,6 +1,6 @@
 <?php
-  require('lib/functions.php');
-  review_submission($_POST);
+  require('lib/config.php');
+  $submission = review_submission();
 ?>
 
 <!DOCTYPE html>
@@ -15,17 +15,9 @@
 		<section class="review-form">
 			<div class="wrapper">
 				<header id="step-info">
-					<h1 class="heading-1">Got it, Thanks!</h1>
-					<h3 class="heading-4 small">These are some good ones! Nice work.</h3>
+					<h1 class="heading-1">Thanks for your review!</h1>
+					<h3 class="heading-4 small">This will really help shoppers.</h3>
 				</header>
-
-				<section id="image-display" class="cf">
-					<?php image_display($_SESSION['images']); ?>
-				</section>
-
-        <section id="war">
-          <?php require('lib/include.war.php'); ?>
-        </section>
 			</div>
 		</section>
 	</body>

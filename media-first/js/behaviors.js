@@ -9,12 +9,12 @@ $(document).ready(function() {
 
         reader.onload = function(event) {
           //$($.parseHTML('<img>')).attr('src', event.target.result).appendTo(placeToInsertImagePreview);
-          var html_image = '<div class="image cf"><div class="thumbnail"><img src="' + event.target.result + '" alt="" /></div><input class="text caption" type="text" value="" placeholder="Add a Caption (Optional)" /><a class="remove" href="#"><i class="fa fa-times"></i></a></div>';
+          var html_image = '<div class="image cf"><div class="thumbnail"><img src="' + event.target.result + '" alt="" /><a class="remove" href="#"><i class="fa fa-times"></i></a></div><input class="text caption" type="text" value="" placeholder="Add a Caption (Optional)" /></div>';
           html_image += '<input name="images[]" type="hidden" value="' + event.target.result + '" />';
           $(html_image).appendTo(location);
 
           $('.remove').click(function() {
-            $(this).parent().fadeOut(200, function() {
+            $(this).parent().parent().fadeOut(200, function() {
               $(this).remove();
               if ($('.image').length){
               } else {

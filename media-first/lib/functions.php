@@ -1,6 +1,4 @@
 <?php
-	session_start();
-
 	function form_input($name, $value, $id, $placeholder) {
 		if (empty($value) && !empty($_POST)) {
 			$value = stripslashes($_POST[$name]);
@@ -10,6 +8,10 @@
 			$value = $value;
 		}
 		echo '<input class="text" type="text" id="'.$id.'" name="'.$name.'" placeholder="'.$placeholder.'" value="'.$value.'" />';
+	}
+
+	function form_hidden($name, $value = '') {
+		echo '<input type="hidden" name="'.$name.'" value="'.$value.'" />';
 	}
 
 	function form_checkbox($name, $value, $id) {
@@ -142,42 +144,77 @@
 		}
 	}
 
-	function review_submission($post) {
-		// Define requirements
-		$required = array('rating', 'headline', 'product_comments', 'firstname', 'location');
-
-		// Check for missing required fields
+	function required_fields($fields, $post) {
 		$missing = array();
-		foreach ($required as $key) {
-	        if (empty($post[$key])) {
-	            $missing = $key;
-	        }
-	    }
+		foreach ($fields as $field) {
+      if (empty($post[$field])) {
+        $missing[] = $field;
+      }
+    }
+    return $missing;
+	}
 
-	    // Process
-	    if(empty($missing)) {
-			$review = array('rating', 'headline', 'pros', 'cons', 'best', 'product_comments', 'service_comments', 'similar_products', 'firstname', 'location', 'describe', 'bottom_line');
-
-			session_start();
-		    $_SESSION['review'] = array();
-		    foreach ($review as $key) {
-		        if (isset($post[$key])) {
-		            $_SESSION['review'][$key] = $post[$key];
-		        }
-		    }
-
-		    return $_SESSION['review'];
+	function display_error_alert($submission, $success = '') {
+		$error_state = substr($submission, 0, 5);
+		$error_type = substr($submission, 6);
+		if ($error_state == 'error') {
+			switch ($error_type) {
+				case 'missing_fields':
+			    $message = 'You have some missing fields';
+			    break;
+			}
+			echo '<div class="error-alert"><i class="fa fa-exclamation-triangle"></i> '.$message.'</div>';
 		} else {
-			$error = '<div class="error">We have missing fields</div>';
-			return $error;
+			if ($_POST) {
+				header("Location: confirmation.php");
+			} else {
+				echo '';
+			}
 		}
 	}
 
-	function image_submission($post) {
-		if($post) {
-			$_SESSION['images'] = $post['images'];
+	function insert_event() {
+		global $mysqli;
 
-			header('Location: confirmation.php');
+		$rating							= trim($_POST['rating']);
+		$comments 					= trim($_POST['comments']);
+		$headline 					= trim($_POST['headline']);
+		$nickname 					= trim($_POST['nickname']);
+		$location 					= trim($_POST['location']);
+		$merchant_group_id 	= trim($_POST['merchant_group_id']);
+		$page_id 						= trim($_POST['page_id']);
+		$test_group 				= trim($_POST['test_group']);
+		$ip	 								= trim($_POST['ip']);
+
+		$query = 	"INSERT INTO reviews (";
+		$query .= 	"rating, comments, headline, nickname, location, merchant_group_id, page_id, test_group, ip";
+		$query .= 	") VALUES ('";
+		$query .= 	$rating."', '".$comments."', '".$headline."', '".$nickname."', '".$location."', '".$merchant_group_id."', '".$page_id."', '".$test_group."', '".$ip."'";
+		$query .= 	")";
+		$mysqli->query($query);
+		//return $query;
+		return $mysqli->insert_id;
+	}
+
+	function review_submission() {
+		if ($_POST) {
+			$required_fields = array('rating', 'headline', 'comments', 'nickname', 'location');
+			$errors = required_fields($required_fields, $_POST);
+		   if(empty($errors)) {
+				$review_id = insert_event();
+				//echo 'Success! '.$new_event_id;
+			} else {
+				return 'error_missing_fields';
+			}
+		} else {
+			return 'no_submit';
+		}
+	}
+
+	function image_submission() {
+		if($_POST) {
+			// $_SESSION['images'] = $_POST['images'];
+			// header('Location: confirmation.php');
 		}
 	}
 

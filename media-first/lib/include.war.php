@@ -1,4 +1,10 @@
-<form action="index.php" id="form" method="post">
+<form action="confirmation.php" id="form" method="post">
+	<?php
+		form_hidden('merchant_group_id', '11');
+		form_hidden('page_id', '22');
+		form_hidden('test_group', 'A');
+		form_hidden('ip', $_SERVER['REMOTE_ADDR']);
+	?>
 	<section class="cf">
 		<div class="span2">
 			<p><label class="heading-2" for="rating">How's your experience been with this product?<span class="required">*</span> <span class="rating-text"></span></label></p>
@@ -28,18 +34,17 @@
 			<label class="main">Add some comments<span class="required">*</span></label>
 		</div>
 		<div class="span4">
-			<?php display_error('product_comments'); ?>
-			<?php form_textarea('product_comments', ''); ?>
+			<?php display_error('comments'); ?>
+			<?php form_textarea('comments', ''); ?>
 		</div>
 	</section>
-	<p class="small">Written by John on <?php echo date('m/d/Y'); ?></p>
-	<!-- <section class="cf">
+	<section class="cf">
 		<div class="span2">
 			<label class="main">Nickname<span class="required">*</span></label>
 		</div>
 		<div class="span4">
-			<?php display_error('firstname'); ?>
-			<?php form_input('firstname', '', 'firstname', 'ex. DavidS, Jim the Runner'); ?>
+			<?php display_error('nickname'); ?>
+			<?php form_input('nickname', '', 'nickname', 'ex. DavidS, Jim the Runner'); ?>
 		</div>
 	</section>
 	<section class="cf">
@@ -50,7 +55,7 @@
 			<?php display_error('location'); ?>
 			<?php form_input('location', '', 'location', 'ex. San Jose, CA'); ?>
 		</div>
-	</section> -->
+	</section>
 	<section>
 		<p class="small">By submitting, you agree to our <a class="legal_link" href="http://www.powerreviews.com/legal/terms_of_use_en_US.html">Terms of Use</a> and that you have read our <a class="legal_link" href="http://www.powerreviews.com/legal/privacy_policy_en_US.html">Privacy Policy</a>.</p>
 		<p><?php primary_submit('Submit Review'); ?></p>

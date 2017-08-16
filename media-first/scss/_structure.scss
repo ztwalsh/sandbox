@@ -22,6 +22,10 @@
   }
 }
 
+form {
+  padding-bottom: 30px;
+}
+
 .review-form {
   .wrapper {
     box-sizing: border-box;
@@ -48,26 +52,36 @@
       }
 
       .image {
-        position: relative;
         margin-bottom: 20px;
 
         .thumbnail {
           border-radius: 2px;
-          height: 80px;
-          overflow: hidden;
-          width: 80px;
+          height: auto;
+          margin: 0 auto;
+          position: relative;
+          width: 150px;
 
           img {
             width: 100%;
+          }
+
+          .remove {
+          	background: rgba(0,0,0,0.6);
+          	border-radius: 50px;
+          	color: #ffffff;
+          	display: block;
+            left: -12px;
+            line-height: 0;
+            padding: 7px 9px;
+          	position: absolute;
+            top: -12px;
           }
         }
 
         input.text {
           font-size: 14px;
-          left: 100px;
-          position: absolute;
-          padding: 5px;
-          top: 25px;
+          float: none;
+          margin: 15px auto;
         }
 
         ::-webkit-input-placeholder,
@@ -75,18 +89,6 @@
         ::-moz-placeholder,
         :-ms-input-placeholder {
            color: #cccccc;
-        }
-
-        .remove {
-        	background: rgba(0,0,0,0.6);
-        	border-radius: 50px;
-        	color: #ffffff;
-        	display: block;
-          left: -12px;
-          line-height: 0;
-          padding: 7px 9px;
-        	position: absolute;
-          top: -12px;
         }
       }
     }

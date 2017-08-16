@@ -1,5 +1,5 @@
 <?php
-	require('lib/functions.php');
+	require('lib/config.php');
 	image_submission($_POST);
 ?>
 
