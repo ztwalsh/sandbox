@@ -1,4 +1,8 @@
-<?php require('lib/functions.php') ?>
+<?php
+  require('lib/functions.php');
+  review_submission($_POST);
+?>
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -15,8 +19,8 @@
 					<h3 class="heading-4 small">These are some good ones! Nice work.</h3>
 				</header>
 
-				<section id="images">
-					<!-- Images Here -->
+				<section id="image-display" class="cf">
+					<?php image_display($_SESSION['images']); ?>
 				</section>
 
         <section id="war">

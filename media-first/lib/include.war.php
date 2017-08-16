@@ -1,7 +1,7 @@
 <form action="index.php" id="form" method="post">
 	<section class="cf">
 		<div class="span2">
-			<label class="heading-3" for="rating">How's your experience been with this product?<span class="required">*</span> <span class="rating-text"></span></label>
+			<p><label class="heading-2" for="rating">How's your experience been with this product?<span class="required">*</span> <span class="rating-text"></span></label></p>
 		</div>
 		<div class="span4">
 			<span class="rating cf">
@@ -52,7 +52,7 @@
 		</div>
 	</section> -->
 	<section>
-		<p class="legal">By submitting, you agree to our <a class="legal_link" href="http://www.powerreviews.com/legal/terms_of_use_en_US.html">Terms of Use</a> and that you have read our <a class="legal_link" href="http://www.powerreviews.com/legal/privacy_policy_en_US.html">Privacy Policy</a>.</p>
+		<p class="small">By submitting, you agree to our <a class="legal_link" href="http://www.powerreviews.com/legal/terms_of_use_en_US.html">Terms of Use</a> and that you have read our <a class="legal_link" href="http://www.powerreviews.com/legal/privacy_policy_en_US.html">Privacy Policy</a>.</p>
 		<p><?php primary_submit('Submit Review'); ?></p>
 	</section>
 </form>

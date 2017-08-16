@@ -91,6 +91,23 @@
       }
     }
 
+    #image-display {
+      padding-bottom: 30px;
+
+      .thumbnail {
+        border-radius: 2px;
+        height: 100px;
+        float: left;
+        margin-right: 10px;
+        overflow: hidden;
+        width: 100px;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+
     #war {
       padding-bottom: 40px;
       text-align: left;

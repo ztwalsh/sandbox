@@ -10,7 +10,7 @@ $(document).ready(function() {
         reader.onload = function(event) {
           //$($.parseHTML('<img>')).attr('src', event.target.result).appendTo(placeToInsertImagePreview);
           var html_image = '<div class="image cf"><div class="thumbnail"><img src="' + event.target.result + '" alt="" /></div><input class="text caption" type="text" value="" placeholder="Add a Caption (Optional)" /><a class="remove" href="#"><i class="fa fa-times"></i></a></div>';
-          html_image += '<input name="image-' + count + '" type="hidden" value="' + event.target.result + '" />';
+          html_image += '<input name="images[]" type="hidden" value="' + event.target.result + '" />';
           $(html_image).appendTo(location);
 
           $('.remove').click(function() {
@@ -36,7 +36,7 @@ $(document).ready(function() {
       $('#step-info').html('<h1 class="heading-1">Add a Caption</h1><h3 class="heading-4 small">Point out what we should be looking at.</h3>');
       $('#images').html('');
       imagesPreview(this, '#images');
-      $('<a id="submit" class="btn-primary full" href="confirmation.php">Submit Photos or Videos</a>').insertAfter('#images');
+      $('<input type="submit" name="submit" id="submit" class="btn-primary full" />').appendTo('form');
   });
 
   $('input[type=radio]').change(function() {
@@ -44,4 +44,8 @@ $(document).ready(function() {
     	$('input[name="'+tmp+'"]').parent('label').removeClass('selected');
 		$(this).closest('label').toggleClass('selected', this.selected);
 	});
+
+  $('.btn-primary').click(function() {
+    $(this).val('<i class="fa fa-circle-o-notch fa-spin fa-3x fa-fw"></i>');
+  });
 });

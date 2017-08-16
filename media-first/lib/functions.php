@@ -1,4 +1,6 @@
 <?php
+	session_start();
+
 	function form_input($name, $value, $id, $placeholder) {
 		if (empty($value) && !empty($_POST)) {
 			$value = stripslashes($_POST[$name]);
@@ -140,14 +142,14 @@
 		}
 	}
 
-	function single_processor() {
+	function review_submission($post) {
 		// Define requirements
-		$required = array('rating', 'headline', 'product_comments', 'firstname', 'location', 'bottom_line');
+		$required = array('rating', 'headline', 'product_comments', 'firstname', 'location');
 
 		// Check for missing required fields
 		$missing = array();
 		foreach ($required as $key) {
-	        if (empty($_POST[$key])) {
+	        if (empty($post[$key])) {
 	            $missing = $key;
 	        }
 	    }
@@ -159,8 +161,8 @@
 			session_start();
 		    $_SESSION['review'] = array();
 		    foreach ($review as $key) {
-		        if (isset($_POST[$key])) {
-		            $_SESSION['review'][$key] = $_POST[$key];
+		        if (isset($post[$key])) {
+		            $_SESSION['review'][$key] = $post[$key];
 		        }
 		    }
 
@@ -168,6 +170,24 @@
 		} else {
 			$error = '<div class="error">We have missing fields</div>';
 			return $error;
+		}
+	}
+
+	function image_submission($post) {
+		if($post) {
+			$_SESSION['images'] = $post['images'];
+
+			header('Location: confirmation.php');
+		}
+	}
+
+	function image_display($images) {
+		foreach($images as $image) {
+			if ($image) {
+				echo '<div class="thumbnail"><img src="'.$image.'" /></div>';
+			} else {
+				echo 'Nothin';
+			}
 		}
 	}
 ?>
