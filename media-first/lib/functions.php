@@ -162,6 +162,9 @@
 				case 'missing_fields':
 			    $message = 'You have some missing fields';
 			    break;
+				case 'error_cant_process':
+					$message = 'Sorry, we can\'t upload your image. Please try again';
+					break;
 			}
 			echo '<div class="error-alert"><i class="fa fa-exclamation-triangle"></i> '.$message.'</div>';
 		} else {
@@ -173,36 +176,40 @@
 		}
 	}
 
-	function insert_event() {
-		global $mysqli;
-
-		$rating							= trim($_POST['rating']);
-		$comments 					= trim($_POST['comments']);
-		$headline 					= trim($_POST['headline']);
-		$nickname 					= trim($_POST['nickname']);
-		$location 					= trim($_POST['location']);
-		$merchant_group_id 	= trim($_POST['merchant_group_id']);
-		$page_id 						= trim($_POST['page_id']);
-		$test_group 				= trim($_POST['test_group']);
-		$ip	 								= trim($_POST['ip']);
-
-		$query = 	"INSERT INTO reviews (";
-		$query .= 	"rating, comments, headline, nickname, location, merchant_group_id, page_id, test_group, ip";
-		$query .= 	") VALUES ('";
-		$query .= 	$rating."', '".$comments."', '".$headline."', '".$nickname."', '".$location."', '".$merchant_group_id."', '".$page_id."', '".$test_group."', '".$ip."'";
-		$query .= 	")";
-		$mysqli->query($query);
-		//return $query;
-		return $mysqli->insert_id;
-	}
-
 	function review_submission() {
 		if ($_POST) {
 			$required_fields = array('rating', 'headline', 'comments', 'nickname', 'location');
 			$errors = required_fields($required_fields, $_POST);
-		   if(empty($errors)) {
-				$review_id = insert_event();
-				//echo 'Success! '.$new_event_id;
+		  if(empty($errors)) {
+				 global $mysqli;
+
+ 				$rating							= trim($_POST['rating']);
+ 				$comments 					= trim($_POST['comments']);
+ 				$headline 					= trim($_POST['headline']);
+ 				$nickname 					= trim($_POST['nickname']);
+ 				$location 					= trim($_POST['location']);
+ 				$merchant_group_id 	= trim($_POST['merchant_group_id']);
+ 				$page_id 						= trim($_POST['page_id']);
+ 				$test_group 				= trim($_POST['test_group']);
+ 				$ip	 								= trim($_POST['ip']);
+
+ 				$query = 	"INSERT INTO reviews (";
+ 				$query .= 	"rating, comments, headline, nickname, location, merchant_group_id, page_id, test_group, ip";
+ 				$query .= 	") VALUES ('";
+ 				$query .= 	$rating."', '".$comments."', '".$headline."', '".$nickname."', '".$location."', '".$merchant_group_id."', '".$page_id."', '".$test_group."', '".$ip."'";
+ 				$query .= 	")";
+ 				$mysqli->query($query);
+				$_SESSION['review_id'] = $mysqli->insert_id;
+ 				//return $query;
+
+ 				if($_SESSION['image_id']) {
+					$update = "UPDATE images SET review_id = '".$mysqli->insert_id."' WHERE id = '".$_SESSION['image_id']."'";
+					//echo $update;
+					$mysqli->query($update);
+					header('Location: confirmation.php');
+ 				} else {
+					header('Location: confirmation.php');
+ 				}
 			} else {
 				return 'error_missing_fields';
 			}
@@ -211,20 +218,55 @@
 		}
 	}
 
-	function image_submission() {
+	function add_photo() {
 		if($_POST) {
-			// $_SESSION['images'] = $_POST['images'];
-			// header('Location: confirmation.php');
+			$required_fields = array('image');
+			$errors = required_fields($required_fields, $_POST);
+
+	    if(empty($errors)) {
+		    $data = $_POST['image'];
+
+				list($type, $data) = explode(';', $data);
+				list(, $data)      = explode(',', $data);
+				$data = base64_decode($data);
+
+				$new_file_name = date('mdYgisu').'_'.rand().'.jpg';
+
+				if(file_put_contents('images/reviews/'.$new_file_name, $data)) {
+					global $mysqli;
+
+					$caption				= trim($_POST['caption']);
+
+					$query = 	"INSERT INTO images (";
+					$query .= 	"file_name, caption";
+					$query .= 	") VALUES (";
+					$query .= 	"'".$new_file_name."', '".$caption."'";
+					$query .= 	")";
+					$mysqli->query($query);
+					//return $query;
+					$_SESSION['image_id'] = $mysqli->insert_id;
+					header('Location: review.php');
+				} else {
+					return 'error_cant_process';
+				}
+			} else {
+				return 'error_missing_fields';
+				echo 'not done 2';
+			}
+		} else {
+			return false;
 		}
 	}
 
-	function image_display($images) {
-		foreach($images as $image) {
-			if ($image) {
-				echo '<div class="thumbnail"><img src="'.$image.'" /></div>';
-			} else {
-				echo 'Nothin';
-			}
-		}
+	function image_display($image_id) {
+		global $mysqli;
+
+		$query = 	"SELECT * ";
+		$query .= 	"FROM images ";
+		$query .= 	"WHERE id = ".$image_id;
+
+		$result = $mysqli->query($query);
+		$result = $result->fetch_assoc();
+		echo '<div class="thumbnail"><p><img src="images/reviews/'.$result['file_name'].'" /><br /><span class="caption">'.$result['caption'].'</span></p></div>';
 	}
 ?>

@@ -20,7 +20,7 @@
 				</header>
 
 				<section id="image-display" class="cf">
-					<?php image_display($_SESSION['images']); ?>
+					<?php image_display($_SESSION['image_id']); ?>
 				</section>
 
         <section id="war">
