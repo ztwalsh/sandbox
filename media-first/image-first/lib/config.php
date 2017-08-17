@@ -7,6 +7,12 @@
     $username 		= 'root';
     $password 		= 'root';
     $database 		= 'review_collection';
+  } elseif ($_SERVER['HTTP_HOST'] == 'x.ztwalsh.com/media-first/image-first') {
+    $root 			= 'http://x.ztwalsh.com/media-first/image-first';
+    $host 			= 'localhost';
+    $username 		= 'ztwalshdb';
+    $password 		= 'Z#twrz843';
+    $database 		= 'review_collection';
   }
 
   $review_images 	= $root.'images/reviews/';
