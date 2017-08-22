@@ -1,0 +1,115 @@
+.product-information {
+  background: #f0f0f0;
+  margin: 0 0 30px 0;
+  padding: 15px 20px;
+
+  .wrapper {
+    box-sizing: border-box;
+    margin: 0 auto;
+    max-width: 600px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    min-width: 0;
+
+    img {
+      border-radius: 50px;
+      height: 40px;
+      vertical-align: middle;
+      width: 40px;
+    }
+  }
+}
+
+form {
+  padding-bottom: 30px;
+}
+
+.review-form {
+  .wrapper {
+    box-sizing: border-box;
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 0 20px;
+    text-align: center;
+
+    #step-info {
+      .heading-1 {
+        padding: 0 0 5px 0;
+      }
+    }
+
+    #images {
+      input.file {
+        display: none;
+      }
+
+      img.empty {
+        cursor: pointer;
+        max-width: 220px;
+        width: 100%;
+      }
+
+      .image {
+        margin-bottom: 20px;
+
+        .thumbnail {
+          border-radius: 2px;
+          height: auto;
+          margin: 0 auto;
+          position: relative;
+          width: 150px;
+
+          img {
+            width: 100%;
+          }
+
+          .remove {
+          	background: rgba(0,0,0,0.6);
+          	border-radius: 50px;
+          	color: #ffffff;
+          	display: block;
+            left: -12px;
+            line-height: 0;
+            padding: 7px 9px;
+          	position: absolute;
+            top: -12px;
+          }
+        }
+
+        input.text {
+          font-size: 14px;
+          float: none;
+          margin: 15px auto;
+        }
+
+        ::-webkit-input-placeholder,
+        :-moz-placeholder,
+        ::-moz-placeholder,
+        :-ms-input-placeholder {
+           color: #cccccc;
+        }
+      }
+    }
+
+    #image-display {
+      padding-bottom: 30px;
+
+      .thumbnail {
+        height: auto;
+        margin: 0 auto 15px auto;
+        text-align: center;
+
+        img {
+          max-width: 150px;
+        }
+      }
+    }
+
+    #war {
+      padding-bottom: 40px;
+      text-align: left;
+    }
+  }
+}

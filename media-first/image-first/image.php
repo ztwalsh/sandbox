@@ -14,7 +14,7 @@
 		<?php require('lib/include.product.php'); ?>
 		<section class="review-form">
 			<div class="wrapper">
-				<form action="index.php" enctype="multipart/form-data" method="post">
+				<form action="image.php" enctype="multipart/form-data" method="post">
 					<header id="step-info">
 						<h1 class="heading-1">Add a Photo</h1>
 						<h3 class="heading-4 small">Your photos help future shoppers make decisions on what they buy.</h3>
