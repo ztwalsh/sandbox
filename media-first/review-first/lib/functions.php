@@ -200,16 +200,8 @@
  				$query .= 	")";
  				$mysqli->query($query);
 				$_SESSION['review_id'] = $mysqli->insert_id;
- 				//return $query;
-
- 				if($_SESSION['image_id']) {
-					$update = "UPDATE images SET review_id = '".$mysqli->insert_id."' WHERE id = '".$_SESSION['image_id']."'";
-					//echo $update;
-					$mysqli->query($update);
-					header('Location: confirmation.php');
- 				} else {
-					header('Location: confirmation.php');
- 				}
+				//return $query;
+				header('Location: image.php');
 			} else {
 				return 'error_missing_fields';
 			}
@@ -236,16 +228,20 @@
 					global $mysqli;
 
 					$caption				= trim($_POST['caption']);
+					if ($_SESSION['review_id']) {
+						$review_id = $_SESSION['review_id'];
+					} else {
+						$review_id = '';
+					}
 
 					$query = 	"INSERT INTO images (";
-					$query .= 	"file_name, caption";
+					$query .= 	"file_name, caption, review_id";
 					$query .= 	") VALUES (";
-					$query .= 	"'".$new_file_name."', '".$caption."'";
+					$query .= 	"'".$new_file_name."', '".$caption."', '".$review_id."'";
 					$query .= 	")";
 					$mysqli->query($query);
-					//return $query;
-					$_SESSION['image_id'] = $mysqli->insert_id;
-					header('Location: review.php');
+					// echo $query;
+					header('Location: confirmation.php');
 				} else {
 					return 'error_cant_process';
 				}

@@ -6,9 +6,6 @@
 		form_hidden('ip', $_SERVER['REMOTE_ADDR']);
 	?>
 	<section class="cf">
-		<div class="span2">
-			<p><label class="heading-2" for="rating">How's your experience been with this product?<span class="required">*</span> <span class="rating-text"></span></label></p>
-		</div>
 		<div class="span4">
 			<span class="rating cf">
 				<?php form_stars('rating', '5', 'star_5'); ?>
