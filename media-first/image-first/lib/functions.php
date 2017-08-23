@@ -226,7 +226,28 @@
 	    if(empty($errors)) {
 		    $data = $_POST['image'];
 
-				list($type, $data) = explode(';', $data);
+				$image = \Cloudinary\Uploader::upload($data);
+
+				if($image) {
+					global $mysqli;
+
+					$caption				= trim($_POST['caption']);
+
+					$query = 	"INSERT INTO images (";
+					$query .= 	"file_name, caption";
+					$query .= 	") VALUES (";
+					$query .= 	"'".$image['url']."', '".$caption."'";
+					$query .= 	")";
+					$mysqli->query($query);
+					//return $query;
+					$_SESSION['image_id'] = $mysqli->insert_id;
+					header('Location: review.php');
+				} else {
+					return 'error_cant_process';
+				}
+
+				/* OLD WAY, STILL HANDY FOR SOME THINGS*/
+				/*list($type, $data) = explode(';', $data);
 				list(, $data)      = explode(',', $data);
 				$data = base64_decode($data);
 
@@ -248,7 +269,7 @@
 					header('Location: review.php');
 				} else {
 					return 'error_cant_process';
-				}
+				}*/
 			} else {
 				return 'error_missing_fields';
 				echo 'not done 2';
@@ -267,6 +288,6 @@
 
 		$result = $mysqli->query($query);
 		$result = $result->fetch_assoc();
-		echo '<div class="thumbnail"><p><img src="images/reviews/'.$result['file_name'].'" /><br /><span class="caption">'.$result['caption'].'</span></p></div>';
+		echo '<div class="thumbnail"><p><img src="'.$result['file_name'].'" /><br /><span class="caption">'.$result['caption'].'</span></p></div>';
 	}
 ?>

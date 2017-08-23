@@ -15,10 +15,18 @@
     $database 		= 'review_collection';
   }
 
-  echo $_SERVER['HTTP_HOST'];
+  require 'cloudinary/Cloudinary.php';
+  require 'cloudinary/Uploader.php';
+  require 'cloudinary/Api.php';
 
   $review_images 	= $root.'images/reviews/';
   $mysqli         = new mysqli($host, $username, $password, $database);
+
+  \Cloudinary::config(array(
+    "cloud_name" => "deycjf1yb",
+    "api_key" => "573789383394411",
+    "api_secret" => "J2jA0gYUbAL6oKeaMIxzD2pmAaQ"
+  ));
 
   session_start();
   require('lib/functions.php');
