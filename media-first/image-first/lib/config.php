@@ -6,14 +6,19 @@
     $host 			= 'localhost';
     $username 		= 'root';
     $password 		= 'root';
-    $database 		= 'review_collection';
   } elseif ($_SERVER['HTTP_HOST'] == 'x.ztwalsh.com') {
     $root 			= 'http://x.ztwalsh.com/media-first/image-first';
     $host 			= 'localhost';
     $username 		= 'ztwalshdb';
     $password 		= 'Z#twrz843';
-    $database 		= 'review_collection';
+  } elseif ($_SERVER['HTTP_HOST'] == 'reviewlab.tech') {
+    $root 			= 'http://www.reviewlab.tech/media-first/image-first';
+    $host 			= 'mysql.reviewlab.tech';
+    $username 		= 'ztwalsh';
+    $password 		= 'Z#twrz843';
   }
+
+  $database 		= 'review_collection';
 
   require 'cloudinary/Cloudinary.php';
   require 'cloudinary/Uploader.php';
