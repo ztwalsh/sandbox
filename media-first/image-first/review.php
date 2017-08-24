@@ -6,7 +6,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Add a Photo</title>
+		<title>Add a Review</title>
 		<?php require('lib/include.head.php'); ?>
 	</head>
 

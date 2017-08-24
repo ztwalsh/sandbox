@@ -48,4 +48,42 @@ $(document).ready(function() {
   $('.btn-primary').click(function() {
     $(this).val('<i class="fa fa-circle-o-notch fa-spin fa-3x fa-fw"></i>');
   });
+
+  // Rating Text
+	$('.rating input[type=radio]').click(function() {
+		var selection = $('.rating input[type=radio]:checked').attr('id');
+
+		if (selection == 'star_1') {
+			var rating_text = 'Not good.';
+		} else if (selection == 'star_2') {
+			var rating_text = 'Nothing special.';
+		} else if (selection == 'star_3') {
+			var rating_text = 'Average, ordinary.';
+		} else if (selection == 'star_4') {
+			var rating_text = 'Good stuff.';
+		} else if (selection == 'star_5') {
+			var rating_text = 'Perfect! Doesn\'t get better.';
+		}
+
+		$('.rating-text').text(rating_text);
+	});
+
+  // Rating Text
+	$('.star').hover(function() {
+		var selection = $(this).children('input').attr('id');
+
+		if (selection == 'star_1') {
+			var rating_text = 'Not good.';
+		} else if (selection == 'star_2') {
+			var rating_text = 'Nothing special.';
+		} else if (selection == 'star_3') {
+			var rating_text = 'Average, ordinary.';
+		} else if (selection == 'star_4') {
+			var rating_text = 'Good stuff.';
+		} else if (selection == 'star_5') {
+			var rating_text = 'Perfect! Doesn\'t get better.';
+		}
+
+		$('.rating-text').text(rating_text);
+	});
 });

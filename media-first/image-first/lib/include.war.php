@@ -7,7 +7,7 @@
 	?>
 	<section class="cf">
 		<div class="span2">
-			<p><label class="heading-2" for="rating">How's your experience been with this product?<span class="required">*</span> <span class="rating-text"></span></label></p>
+			<label class="main" for="rating">Give a rating<span class="required">*</span> <span class="rating-text"></span></label>
 		</div>
 		<div class="span4">
 			<span class="rating cf">
@@ -25,17 +25,17 @@
 		</div>
 		<div class="span4">
 			<?php display_error('headline'); ?>
-			<?php form_input('headline', '', 'headline', ''); ?>
+			<?php form_input('headline', '', 'headline', 'ex. I would buy this product again and again'); ?>
 			<span id="counter"></span>
 		</div>
 	</section>
 	<section class="cf">
 		<div class="span2">
-			<label class="main">Add some comments<span class="required">*</span></label>
+			<label class="main">Add your comments<span class="required">*</span></label>
 		</div>
 		<div class="span4">
 			<?php display_error('comments'); ?>
-			<?php form_textarea('comments', ''); ?>
+			<?php form_textarea('comments', 'How do you use the product? What things are great about it? What things aren\'t so great about it?'); ?>
 		</div>
 	</section>
 	<section class="cf">

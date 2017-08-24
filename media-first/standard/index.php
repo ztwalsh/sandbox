@@ -1,14 +1,6 @@
 <?php
-	include('lib/functions.php');
-	if (isset($_POST['submit'])) {
-		$result = single_processor();
-		if(is_array($result)) {
-			header('Location: thanks.php');
-		} else {
-			$error = $result;
-		}
-	}
-	session_start();
+	include('lib/config.php');
+	$submission = review_submission();
 ?>
 <!doctype html>
 <html lang="en">
@@ -22,7 +14,7 @@
 		<div class="wrapper cf">
 			<div class="header cf">
 				<div class="product-image">
-					<img src="http://images.buzzillions.com/images_products/10/11/22730758_100.jpg" height="auto" width="100%" />
+					<img src="images/rayban.jpeg" height="auto" width="100%" />
 				</div>
 				<div class="product-info">
 					<h1 class="headline1">Write a review</h1>
@@ -31,23 +23,17 @@
 			</div>
 			<form action="index.php" id="form" method="post">
 				<?php
-					if(isset($error)) {
-						echo $error;
-					}
+					display_error_alert($submission);
+				?>
+				<?php
+					form_hidden('merchant_group_id', '11');
+					form_hidden('page_id', '22');
+					form_hidden('test_group', 'A');
+					form_hidden('ip', $_SERVER['REMOTE_ADDR']);
 				?>
 				<section class="cf">
 					<div class="span2">
-						<label class="main" for="headline">Review headline<span class="required">*</span></label>
-					</div>
-					<div class="span4">
-						<?php display_error('headline'); ?>
-						<?php form_input('headline', '', 'headline', 'ex. I would buy this product again and again'); ?>
-						<span id="counter"></span>
-					</div>
-				</section>
-				<section class="cf">
-					<div class="span2">
-						<label class="main" for="rating">Overall rating<span class="required">*</span> <span class="rating-text"></span></label>
+						<label class="main" for="rating">Give a rating<span class="required">*</span> <span class="rating-text"></span></label>
 					</div>
 					<div class="span4">
 						<span class="rating cf">
@@ -61,11 +47,21 @@
 				</section>
 				<section class="cf">
 					<div class="span2">
-						<label class="main">Describe your experience with the product<span class="required">*</span></label>
+						<label class="main" for="headline">Summarize with a headline<span class="required">*</span></label>
 					</div>
 					<div class="span4">
-						<?php display_error('product_comments'); ?>
-						<?php form_textarea('product_comments', 'How do you use the product? What things are great about it? What things aren\'t so great about it?'); ?>
+						<?php display_error('headline'); ?>
+						<?php form_input('headline', '', 'headline', 'ex. I would buy this product again and again'); ?>
+						<span id="counter"></span>
+					</div>
+				</section>
+				<section class="cf">
+					<div class="span2">
+						<label class="main">Add your comments<span class="required">*</span></label>
+					</div>
+					<div class="span4">
+						<?php display_error('comments'); ?>
+						<?php form_textarea('comments', 'How do you use the product? What things are great about it? What things aren\'t so great about it?'); ?>
 					</div>
 				</section>
 				<section class="cf">
@@ -73,8 +69,8 @@
 						<label class="main">Nickname<span class="required">*</span></label>
 					</div>
 					<div class="span4">
-						<?php display_error('firstname'); ?>
-						<?php form_input('firstname', '', 'firstname', 'ex. DavidS, Jim the Runner'); ?>
+						<?php display_error('nickname'); ?>
+						<?php form_input('nickname', '', 'nickname', 'ex. DavidS, Jim the Runner'); ?>
 					</div>
 				</section>
 				<section class="cf">

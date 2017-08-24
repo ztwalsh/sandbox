@@ -65,8 +65,28 @@ a {
 	text-decoration: none;
 }
 
+section {
+  padding: 0 0 25px 0;
+}
+
 .text-center {
   text-align: center;
+}
+
+::-webkit-input-placeholder {
+   color: #cccccc;
+}
+
+:-moz-placeholder {
+   color: #cccccc;
+}
+
+::-moz-placeholder {
+   color: #cccccc;
+}
+
+:-ms-input-placeholder {
+   color: #cccccc;
 }
 
 .btn-primary {

@@ -10,6 +10,10 @@
 		echo '<input class="text" type="text" id="'.$id.'" name="'.$name.'" placeholder="'.$placeholder.'" value="'.$value.'" />';
 	}
 
+	function form_hidden($name, $value = '') {
+		echo '<input type="hidden" name="'.$name.'" value="'.$value.'" />';
+	}
+
 	function form_checkbox($name, $value, $id) {
 		$clean_name = str_replace('[]', '', $name);
 		if (!empty($_POST)) {
@@ -140,34 +144,69 @@
 		}
 	}
 
-	function single_processor() {
-		// Define requirements
-		$required = array('rating', 'headline', 'product_comments', 'firstname', 'location');
-
-		// Check for missing required fields
-		$missing = array();
-		foreach ($required as $key) {
-	        if (empty($_POST[$key])) {
-	            $missing = $key;
-	        }
-	    }
-
-	    // Process
-	    if(empty($missing)) {
-			$review = array('rating', 'headline', 'pros', 'cons', 'best', 'product_comments', 'service_comments', 'similar_products', 'firstname', 'location', 'describe', 'bottom_line');
-
-			session_start();
-		    $_SESSION['review'] = array();
-		    foreach ($review as $key) {
-		        if (isset($_POST[$key])) {
-		            $_SESSION['review'][$key] = $_POST[$key];
-		        }
-		    }
-
-		    return $_SESSION['review'];
+	function display_error_alert($submission, $success = '') {
+		$error_state = substr($submission, 0, 5);
+		$error_type = substr($submission, 6);
+		if ($error_state == 'error') {
+			switch ($error_type) {
+				case 'missing_fields':
+			    $message = 'You have some missing fields';
+			    break;
+				case 'error_cant_process':
+					$message = 'Sorry, we can\'t upload your image. Please try again';
+					break;
+			}
+			echo '<div class="error-alert"><i class="fa fa-exclamation-triangle"></i> '.$message.'</div>';
 		} else {
-			$error = '<div class="error">We have missing fields</div>';
-			return $error;
+			if ($_POST) {
+				header("Location: confirmation.php");
+			} else {
+				echo '';
+			}
+		}
+	}
+
+	function required_fields($fields, $post) {
+		$missing = array();
+		foreach ($fields as $field) {
+      if (empty($post[$field])) {
+        $missing[] = $field;
+      }
+    }
+    return $missing;
+	}
+
+	function review_submission() {
+		if ($_POST) {
+			$required_fields = array('rating', 'headline', 'comments', 'nickname', 'location');
+			$errors = required_fields($required_fields, $_POST);
+		  if(empty($errors)) {
+				 global $mysqli;
+
+ 				$rating							= trim($_POST['rating']);
+ 				$comments 					= trim($_POST['comments']);
+ 				$headline 					= trim($_POST['headline']);
+ 				$nickname 					= trim($_POST['nickname']);
+ 				$location 					= trim($_POST['location']);
+ 				$merchant_group_id 	= trim($_POST['merchant_group_id']);
+ 				$page_id 						= trim($_POST['page_id']);
+ 				$test_group 				= trim($_POST['test_group']);
+ 				$ip	 								= trim($_POST['ip']);
+
+ 				$query = 	"INSERT INTO reviews (";
+ 				$query .= 	"rating, comments, headline, nickname, location, merchant_group_id, page_id, test_group, ip";
+ 				$query .= 	") VALUES ('";
+ 				$query .= 	$rating."', '".$comments."', '".$headline."', '".$nickname."', '".$location."', '".$merchant_group_id."', '".$page_id."', '".$test_group."', '".$ip."'";
+ 				$query .= 	")";
+ 				$mysqli->query($query);
+				$_SESSION['review_id'] = $mysqli->insert_id;
+				//return $query;
+				header('Location: image.php');
+			} else {
+				return 'error_missing_fields';
+			}
+		} else {
+			return 'no_submit';
 		}
 	}
 ?>
