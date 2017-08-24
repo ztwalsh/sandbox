@@ -1,23 +1,23 @@
 /* line 1, ../scss/_reset.scss */
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { 
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
 	font-size: 100%;
 }
 
-.cf:before, 
-.cf:after { 
-	content: " "; 
-	display: table; 
+.cf:before,
+.cf:after {
+	content: " ";
+	display: table;
 }
 
-.cf:after { 
-	clear: both; 
+.cf:after {
+	clear: both;
 }
 
-.cf { 
-	*zoom: 1; 
+.cf {
+	*zoom: 1;
 }
 
 body {
@@ -133,6 +133,10 @@ p.legal {
 	color: #aaaaaa;
 	font-size: 12px;
 	line-height: 1.2;
+}
+
+.text-center {
+	text-align: center;
 }
 
 a {
@@ -292,21 +296,21 @@ label.star img {
 }
 
 div.star,
-div.star-selected { 
-	font-size: 1.125rem; 
-	padding: 6px; 
+div.star-selected {
+	font-size: 1.125rem;
+	padding: 6px;
 }
 
-label.star input { 
-	display: none; 
+label.star input {
+	display: none;
 }
 
-label.star:hover, 
-label.star:hover ~ label.star, 
-.rating label.selected ~ label.star, 
-label.star:active, 
-.rating label.selected, 
-div.star-selected { 
+label.star:hover,
+label.star:hover ~ label.star,
+.rating label.selected ~ label.star,
+label.star:active,
+.rating label.selected,
+div.star-selected {
 	background: #f7941d;
 }
 
@@ -411,20 +415,20 @@ input.caption {
 	padding: 8px 12px 6px 12px;
 }
 
-::-webkit-input-placeholder {  
-   color: #cccccc;  
+::-webkit-input-placeholder {
+   color: #cccccc;
 }
 
-:-moz-placeholder {  
-   color: #cccccc;  
+:-moz-placeholder {
+   color: #cccccc;
 }
 
-::-moz-placeholder {  
-   color: #cccccc;  
+::-moz-placeholder {
+   color: #cccccc;
 }
 
-:-ms-input-placeholder {  
-   color: #cccccc;  
+:-ms-input-placeholder {
+   color: #cccccc;
 }
 
 .primary {

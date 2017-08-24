@@ -11,12 +11,20 @@
 	</head>
 
 	<body>
-		<?php require('lib/include.product.php'); ?>
 		<section class="review-form">
 			<div class="wrapper">
+        <div class="header cf">
+          <div class="product-image">
+            <img src="images/rayban.jpeg" height="auto" width="100%" />
+          </div>
+          <div class="product-info">
+            <h1 class="headline1">Write a review</h1>
+            <p>Samsung 43" Black Plasma 720P HDTV by Samsung</p>
+          </div>
+        </div>
 				<header id="step-info">
-					<h1 class="heading-1">Thanks for your review!</h1>
-					<h3 class="heading-4 small">This will really help shoppers.</h3>
+					<h1 class="headline1 text-center">Thanks for your review!</h1>
+					<p class="text-center">This will really help shoppers.</p>
 				</header>
 			</div>
 		</section>
