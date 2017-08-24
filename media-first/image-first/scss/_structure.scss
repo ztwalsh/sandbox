@@ -26,6 +26,10 @@ form {
   padding-bottom: 30px;
 }
 
+input.file {
+  display: none;
+}
+
 .review-form {
   .wrapper {
     box-sizing: border-box;
@@ -41,10 +45,6 @@ form {
     }
 
     #images {
-      input.file {
-        display: none;
-      }
-
       img.empty {
         cursor: pointer;
         max-width: 220px;
