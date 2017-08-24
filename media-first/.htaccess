@@ -1,1 +1,4 @@
-LimitRequestBody 10240000
+<IfModule mod_security.c>
+  SecFilterEngine Off
+  SecFilterScanPOST Off
+</IfModule>
