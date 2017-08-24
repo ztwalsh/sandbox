@@ -224,7 +224,8 @@
 			$errors = required_fields($required_fields, $_POST);
 
 	    if(empty($errors)) {
-		    $data = $_POST['image'];
+		    //$data = $_POST['image'];
+				$data = $_FILES["review_image"]["tmp_name"];
 
 				$image = \Cloudinary\Uploader::upload($data);
 
