@@ -216,9 +216,9 @@
 			$errors = required_fields($required_fields, $_POST);
 
 	    if(empty($errors)) {
-		    $data = $_POST['image'];
-
-				$image = \Cloudinary\Uploader::upload($data);
+		    //$data = $_POST['image'];
+				//$image = \Cloudinary\Uploader::upload($data);
+				$image = 1;
 
 				if($image) {
 					global $mysqli;
@@ -233,7 +233,7 @@
 					$query = 	"INSERT INTO images (";
 					$query .= 	"file_name, caption, review_id";
 					$query .= 	") VALUES (";
-					$query .= 	"'".$image['url']."', '".$caption."', '".$review_id."'";
+					$query .= 	"'No Data', '".$caption."', '".$review_id."'";
 					$query .= 	")";
 					$mysqli->query($query);
 					$_SESSION['image_id'] = $mysqli->insert_id;
