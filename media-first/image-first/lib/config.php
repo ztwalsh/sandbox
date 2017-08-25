@@ -35,4 +35,11 @@
 
   session_start();
   require('lib/functions.php');
+
+  $merchant_group_id = set_session_var('merchant_group_id');
+  $page_id = set_session_var('page_id');
+  $test_group = set_session_var('test_group', 'Image First');
+  $ip = $_SERVER['REMOTE_ADDR'];
+  $product_name = set_session_var('product_name', 'Ray-Ban New Wayfarer Classic Tortoise');
+  $product_image_url = set_session_var('product_image_url', 'images/rayban.jpeg');
 ?>

@@ -15,6 +15,12 @@
 		<section class="review-form">
 			<div class="wrapper">
 				<form action="image.php" enctype="multipart/form-data" method="post">
+					<?php
+						form_hidden('merchant_group_id', $merchant_group_id);
+						form_hidden('page_id', $page_id);
+						form_hidden('test_group', $test_group);
+						form_hidden('ip', $ip);
+					?>
 					<header id="step-info">
 						<h1 class="heading-1">Add a Photo</h1>
 						<h3 class="heading-4 small">Your photos help future shoppers make decisions on what they buy.</h3>

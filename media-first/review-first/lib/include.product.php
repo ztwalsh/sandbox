@@ -6,7 +6,7 @@
   <div class="name">
     <h3 class="heading-4">Tide Laundry Detergent, Original, 32 HE Loads</h3>
   </div>-->
-    <img src="images/rayban.jpeg" />
-    <span class="heading-5">Ray-Ban New Wayfarer Classic Tortoise</span>
+  <img src="<?php echo $product_image_url; ?>" />
+  <span class="heading-5"><?php echo $product_name; ?></span>
   </div>
 </section>

@@ -228,11 +228,15 @@
 				global $mysqli;
 
 				$caption				= trim($_POST['caption']);
+				$merchant_group_id 	= trim($_POST['merchant_group_id']);
+ 				$page_id 						= trim($_POST['page_id']);
+ 				$test_group 				= trim($_POST['test_group']);
+ 				$ip	 								= trim($_POST['ip']);
 
 				$query = 	"INSERT INTO images (";
-				$query .= 	"file_name, caption";
+				$query .= 	"file_name, caption, merchant_group_id, page_id, test_group, ip";
 				$query .= 	") VALUES (";
-				$query .= 	"'".$image['url']."', '".$caption."'";
+				$query .= 	"'".$image['url']."', '".$caption."', '".$merchant_group_id."', '".$page_id."', '".$test_group."', '".$ip."'";
 				$query .= 	")";
 				$mysqli->query($query);
 				$_SESSION['image_id'] = $mysqli->insert_id;
@@ -255,5 +259,16 @@
 		$result = $mysqli->query($query);
 		$result = $result->fetch_assoc();
 		echo '<div class="thumbnail"><p><img src="'.$result['file_name'].'" /><br /><span class="caption">'.$result['caption'].'</span></p></div>';
+	}
+
+	function set_session_var($key, $default='No Data') {
+		if ($_GET[$key]) {
+			$_SESSION[$key] = $_GET[$key];
+			return $_GET[$key];
+		} elseif ($_SESSION[$key]) {
+			return $_SESSION[$key];
+		} else {
+			return $default;
+		}
 	}
 ?>

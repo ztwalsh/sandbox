@@ -1,8 +1,8 @@
 <form action="confirmation.php" id="form" method="post">
 	<?php
-		form_hidden('merchant_group_id', '11');
-		form_hidden('page_id', '22');
-		form_hidden('test_group', 'A');
+		form_hidden('merchant_group_id', $merchant_group_id);
+		form_hidden('page_id', $page_id);
+		form_hidden('test_group', $test_group);
 		form_hidden('ip', $_SERVER['REMOTE_ADDR']);
 	?>
 	<section class="cf">
