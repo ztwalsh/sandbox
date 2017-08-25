@@ -220,7 +220,7 @@
 
 	function add_photo() {
 		if($_POST) {
-			$required_fields = array('image');
+			$required_fields = array('review_image');
 			$errors = required_fields($required_fields, $_POST);
 
 	    if(empty($errors)) {
