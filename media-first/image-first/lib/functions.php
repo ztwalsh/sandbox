@@ -208,7 +208,7 @@
 					$mysqli->query($update);
 					header('Location: confirmation.php');
  				} else {
-					header('Location: confirmation.php');
+					return false;
  				}
 			} else {
 				return 'error_missing_fields';
@@ -220,34 +220,26 @@
 
 	function add_photo() {
 		if($_POST) {
-			$required_fields = array('review_image');
-			$errors = required_fields($required_fields, $_POST);
+			$data = $_FILES["review_image"]["tmp_name"];
 
-	    if(empty($errors)) {
-		    //$data = $_POST['image'];
-				$data = $_FILES["review_image"]["tmp_name"];
+			$image = \Cloudinary\Uploader::upload($data);
 
-				$image = \Cloudinary\Uploader::upload($data);
+			if($image) {
+				global $mysqli;
 
-				if($image) {
-					global $mysqli;
+				$caption				= trim($_POST['caption']);
 
-					$caption				= trim($_POST['caption']);
-
-					$query = 	"INSERT INTO images (";
-					$query .= 	"file_name, caption";
-					$query .= 	") VALUES (";
-					$query .= 	"'".$image['url']."', '".$caption."'";
-					$query .= 	")";
-					$mysqli->query($query);
-					$_SESSION['image_id'] = $mysqli->insert_id;
-					header('Location: review.php');
-				} else {
-					return 'error_cant_process';
-				}
+				$query = 	"INSERT INTO images (";
+				$query .= 	"file_name, caption";
+				$query .= 	") VALUES (";
+				$query .= 	"'".$image['url']."', '".$caption."'";
+				$query .= 	")";
+				$mysqli->query($query);
+				$_SESSION['image_id'] = $mysqli->insert_id;
+				header('Location: review.php');
+				//header('Location: http://www.google.com');
 			} else {
-				return 'error_missing_fields';
-				echo 'not done 2';
+				return 'error_cant_process';
 			}
 		} else {
 			return false;

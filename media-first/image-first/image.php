@@ -1,6 +1,6 @@
 <?php
 	require('lib/config.php');
-	$submission = add_photo();
+	add_photo();
 ?>
 
 <!DOCTYPE html>
@@ -19,9 +19,6 @@
 						<h1 class="heading-1">Add a Photo</h1>
 						<h3 class="heading-4 small">Your photos help future shoppers make decisions on what they buy.</h3>
 					</header>
-					<?php
-  					display_error_alert($submission);
-  				?>
 					<input type="file" class="file" name="review_image" id="add-media">
 					<section id="images">
 						<label for="add-media" class="secondary action add-image">
