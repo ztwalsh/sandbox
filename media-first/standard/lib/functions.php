@@ -155,6 +155,15 @@
 				case 'error_cant_process':
 					$message = 'Sorry, we can\'t upload your image. Please try again';
 					break;
+				case 'test_01':
+					$message = 'Issue 01';
+					break;
+				case 'test_02':
+					$message = 'Issue 02';
+					break;
+				case 'test_03':
+					$message = 'Issue 03';
+					break;
 			}
 			echo '<div class="error-alert"><i class="fa fa-exclamation-triangle"></i> '.$message.'</div>';
 		} else {
@@ -200,8 +209,35 @@
  				$query .= 	")";
  				$mysqli->query($query);
 				$_SESSION['review_id'] = $mysqli->insert_id;
-				//return $query;
-				header('Location: image.php');
+
+				$data = $_FILES["review_image"]["tmp_name"];
+				$image = \Cloudinary\Uploader::upload($data);
+
+				if($image) {
+					global $mysqli;
+
+					$caption				= trim($_POST['caption']);
+					if ($_SESSION['review_id']) {
+						$review_id = $_SESSION['review_id'];
+					} else {
+						$review_id = '';
+					}
+
+					$query = 	"INSERT INTO images (";
+					$query .= 	"file_name, caption, review_id";
+					$query .= 	") VALUES (";
+					$query .= 	"'".$image['url']."', '".$caption."', '".$review_id."'";
+					$query .= 	")";
+					$mysqli->query($query);
+					$_SESSION['image_id'] = $mysqli->insert_id;
+					return 'test_01';
+					//header('Location: confirmation.php');
+				} else {
+					//return 'error_cant_process';
+					return 'test_02';
+				}
+
+				header('Location: confirmation.php');
 			} else {
 				return 'error_missing_fields';
 			}

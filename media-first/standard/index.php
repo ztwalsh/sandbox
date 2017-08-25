@@ -18,10 +18,10 @@
 				</div>
 				<div class="product-info">
 					<h1 class="headline1">Write a review</h1>
-					<p>Samsung 43" Black Plasma 720P HDTV by Samsung</p>
+					<p>Ray-Ban New Wayfarer Classic Tortoise</p>
 				</div>
 			</div>
-			<form action="index.php" id="form" method="post">
+			<form action="index.php" id="form" enctype="multipart/form-data" method="post">
 				<?php
 					display_error_alert($submission);
 				?>
@@ -84,7 +84,7 @@
 				</section>
 				<section>
 					<p>
-						<input class="file" type="file" id="file_upload">
+						<input class="file" type="file" name="review_image" id="file_upload">
 						<label for="file_upload" class="secondary action add-image">
 							Add an Image <i class="fa fa-plus"></i>
 						</label>

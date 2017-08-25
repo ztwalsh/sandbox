@@ -62,7 +62,7 @@ $(document).ready(function () {
 		$('a.add-tag').click(function() {
 			checkbox_value = $('.add-tag-input').val();
 			checkbox = '<label class="tags selected" for="new-tag"><input type="checkbox" id="new-tag" name="' + field_name + '" value="' + checkbox_value + '" />' + checkbox_value + '</label>';
-			
+
 			$(this).remove();
 			$('.add-tag-input').remove();
 			$(checkbox).insertBefore(root_element);
@@ -75,7 +75,7 @@ $(document).ready(function () {
 		    	e.preventDefault();
 		        checkbox_value = $('.add-tag-input').val();
 				checkbox = '<label class="tags selected" for="new-tag"><input type="checkbox" id="new-tag" name="' + field_name + '" value="' + checkbox_value + '" />' + checkbox_value + '</label>';
-				
+
 				$('a.add-tag').remove();
 				$('.add-tag-input').remove();
 				$(checkbox).insertBefore(root_element);
@@ -97,19 +97,19 @@ $(document).ready(function () {
 	});
 
 	// Character counter
-	$('input#headline').keyup(function () {
-		var max = 40;
-
-		$(this).prop('maxlength', max);
-
-    	var left = max - $(this).val().length;
-    	if (left < 0) {
-        	left = 0;
-    	}
-    	if (left < 20) {
-    		$('#counter').text(left + ' characters left');
-    	}
-	});
+	// $('input#headline').keyup(function () {
+	// 	var max = 40;
+	//
+	// 	$(this).prop('maxlength', max);
+	//
+  //   	var left = max - $(this).val().length;
+  //   	if (left < 0) {
+  //       	left = 0;
+  //   	}
+  //   	if (left < 20) {
+  //   		$('#counter').text(left + ' characters left');
+  //   	}
+	// });
 
 	// Inputs for images
 	function readURL(input) {
@@ -118,7 +118,7 @@ $(document).ready(function () {
 
         	reader.onload = function (e) {
             	var file = e.target.result;
-            	var html_image = '<div class="uploaded_image cf"><img class="file_placeholder" src="' + file + '" alt="" /><input class="text caption" type="text" value="" placeholder="write a caption" /><a class="trash" href="#"><i class="fa fa-trash-o"></i></a></div>';
+            	var html_image = '<div class="uploaded_image cf"><img class="file_placeholder" src="' + file + '" alt="" /><input class="text caption" name="caption" type="text" value="" placeholder="write a caption" /><a class="trash" href="#"><i class="fa fa-trash-o"></i></a></div>';
             	$(html_image).insertBefore($('.file'));
 
             	$('a.trash').click(function() {
@@ -152,10 +152,10 @@ $(document).ready(function () {
 		}
 	});
 
-	$('.legal_link').popupWindow({ 
-		height:500, 
-		width:800, 
-		top:50, 
-		left:50 
+	$('.legal_link').popupWindow({
+		height:500,
+		width:800,
+		top:50,
+		left:50
 	});
 });
