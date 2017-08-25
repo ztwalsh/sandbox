@@ -212,66 +212,29 @@
 
 	function add_photo() {
 		if($_POST) {
-			$required_fields = array('image');
-			$errors = required_fields($required_fields, $_POST);
+			$data = $_FILES["review_image"]["tmp_name"];
+			$image = \Cloudinary\Uploader::upload($data);
 
-	    if(empty($errors)) {
-		    $data = $_POST['image'];
+			if($image) {
+				global $mysqli;
 
-				$image = \Cloudinary\Uploader::upload($data);
-
-				if($image) {
-					global $mysqli;
-
-					$caption				= trim($_POST['caption']);
-					if ($_SESSION['review_id']) {
-						$review_id = $_SESSION['review_id'];
-					} else {
-						$review_id = '';
-					}
-
-					$query = 	"INSERT INTO images (";
-					$query .= 	"file_name, caption, review_id";
-					$query .= 	") VALUES (";
-					$query .= 	"'".$image['url']."', '".$caption."', '".$review_id."'";
-					$query .= 	")";
-					$mysqli->query($query);
-					$_SESSION['image_id'] = $mysqli->insert_id;
-					header('Location: confirmation.php');
+				$caption				= trim($_POST['caption']);
+				if ($_SESSION['review_id']) {
+					$review_id = $_SESSION['review_id'];
 				} else {
-					return 'error_cant_process';
+					$review_id = '';
 				}
 
-				/* OLD WAY, STILL HANDY FOR SOME THINGS*/
-				/*list($type, $data) = explode(';', $data);
-				list(, $data)      = explode(',', $data);
-				$data = base64_decode($data);
-
-				$new_file_name = date('mdYgisu').'_'.rand().'.jpg';
-
-				if(file_put_contents('images/reviews/'.$new_file_name, $data)) {
-					global $mysqli;
-
-					$caption				= trim($_POST['caption']);
-					if ($_SESSION['review_id']) {
-						$review_id = $_SESSION['review_id'];
-					} else {
-						$review_id = '';
-					}
-
-					$query = 	"INSERT INTO images (";
-					$query .= 	"file_name, caption, review_id";
-					$query .= 	") VALUES (";
-					$query .= 	"'".$new_file_name."', '".$caption."', '".$review_id."'";
-					$query .= 	")";
-					$mysqli->query($query);
-					header('Location: confirmation.php');
-				} else {
-					return 'error_cant_process';
-				}*/
+				$query = 	"INSERT INTO images (";
+				$query .= 	"file_name, caption, review_id";
+				$query .= 	") VALUES (";
+				$query .= 	"'".$image['url']."', '".$caption."', '".$review_id."'";
+				$query .= 	")";
+				$mysqli->query($query);
+				$_SESSION['image_id'] = $mysqli->insert_id;
+				header('Location: confirmation.php');
 			} else {
-				return 'error_missing_fields';
-				echo 'not done 2';
+				return 'error_cant_process';
 			}
 		} else {
 			return false;

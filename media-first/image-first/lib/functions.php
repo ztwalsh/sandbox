@@ -237,7 +237,6 @@
 				$mysqli->query($query);
 				$_SESSION['image_id'] = $mysqli->insert_id;
 				header('Location: review.php');
-				//header('Location: http://www.google.com');
 			} else {
 				return 'error_cant_process';
 			}
