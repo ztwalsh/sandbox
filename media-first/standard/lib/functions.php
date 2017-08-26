@@ -245,4 +245,15 @@
 			return 'no_submit';
 		}
 	}
+
+	function set_session_var($key, $default='No Data') {
+		if ($_GET[$key]) {
+			$_SESSION[$key] = $_GET[$key];
+			return $_GET[$key];
+		} elseif ($_SESSION[$key]) {
+			return $_SESSION[$key];
+		} else {
+			return $default;
+		}
+	}
 ?>

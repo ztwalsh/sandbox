@@ -14,11 +14,11 @@
 		<div class="wrapper cf">
 			<div class="header cf">
 				<div class="product-image">
-					<img src="images/rayban.jpeg" height="auto" width="100%" />
+					<img src="<?php echo $product_image_url; ?>" height="auto" width="100%" />
 				</div>
 				<div class="product-info">
 					<h1 class="headline1">Write a review</h1>
-					<p>Ray-Ban New Wayfarer Classic Tortoise</p>
+					<p><?php echo $product_name; ?></p>
 				</div>
 			</div>
 			<form action="index.php" id="form" enctype="multipart/form-data" method="post">
@@ -26,9 +26,9 @@
 					display_error_alert($submission);
 				?>
 				<?php
-					form_hidden('merchant_group_id', '11');
-					form_hidden('page_id', '22');
-					form_hidden('test_group', 'A');
+					form_hidden('merchant_group_id', $merchant_group_id);
+					form_hidden('page_id', $page_id);
+					form_hidden('test_group', $test_group);
 					form_hidden('ip', $_SERVER['REMOTE_ADDR']);
 				?>
 				<section class="cf">
