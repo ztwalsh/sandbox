@@ -2,19 +2,14 @@
   if ($_SERVER['HTTP_HOST'] == 'localhost:8000') {
     //if (!ini_get('display_errors')) { ini_set('display_errors', '1'); }
     //if (!ini_get('display_startup_errors')) { ini_set('display_startup_errors', '1'); }
-    $root 			= 'http://localhost:8000/sandbox.ztwalsh.com/media-first/image-first';
+    $root 			= 'http://localhost:8000/sandbox.ztwalsh.com/media-first/';
     $host 			= 'localhost';
     $username 		= 'root';
     $password 		= 'root';
   } elseif ($_SERVER['HTTP_HOST'] == 'x.ztwalsh.com') {
-    $root 			= 'http://x.ztwalsh.com/media-first/image-first';
+    $root 			= 'http://x.ztwalsh.com/media-first/';
     $host 			= 'localhost';
     $username 		= 'ztwalshdb';
-    $password 		= 'Z#twrz843';
-  } elseif ($_SERVER['HTTP_HOST'] == 'reviewlab.tech') {
-    $root 			= 'http://www.reviewlab.tech/media-first/review-first';
-    $host 			= 'mysql.reviewlab.tech';
-    $username 		= 'ztwalsh';
     $password 		= 'Z#twrz843';
   }
 
@@ -24,7 +19,6 @@
   require 'cloudinary/Uploader.php';
   require 'cloudinary/Api.php';
 
-  $review_images 	= $root.'images/reviews/';
   $mysqli         = new mysqli($host, $username, $password, $database);
 
   \Cloudinary::config(array(
@@ -34,12 +28,11 @@
   ));
 
   session_start();
-  require('lib/functions.php');
+  require('functions.php');
 
   $merchant_group_id = set_session_var('merchant_group_id');
   $page_id = set_session_var('page_id');
-  $test_group = set_session_var('test_group', 'Review First');
   $ip = $_SERVER['REMOTE_ADDR'];
   $product_name = set_session_var('product_name', 'Ray-Ban New Wayfarer Classic Tortoise');
-  $product_image_url = set_session_var('product_image_url', 'images/rayban.jpeg');
+  $product_image_url = set_session_var('product_image_url', $root.'images/rayban.jpeg');
 ?>

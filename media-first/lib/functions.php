@@ -167,16 +167,10 @@
 					break;
 			}
 			echo '<div class="error-alert"><i class="fa fa-exclamation-triangle"></i> '.$message.'</div>';
-		} else {
-			if ($_POST) {
-				header("Location: confirmation.php");
-			} else {
-				echo '';
-			}
 		}
 	}
 
-	function review_submission() {
+	function add_review($session_image_id=NULL) {
 		if ($_POST) {
 			$required_fields = array('rating', 'headline', 'comments', 'nickname', 'location');
 			$errors = required_fields($required_fields, $_POST);
@@ -200,8 +194,14 @@
  				$query .= 	")";
  				$mysqli->query($query);
 				$_SESSION['review_id'] = $mysqli->insert_id;
-				//return $query;
-				header('Location: image.php');
+
+				if($session_image_id) {
+					$update = "UPDATE images SET review_id = '".$mysqli->insert_id."' WHERE id = '".$_SESSION['image_id']."'";
+					$mysqli->query($update);
+					header('Location: confirmation.php');
+ 				} else {
+					header('Location: image.php');
+ 				}
 			} else {
 				return 'error_missing_fields';
 			}
@@ -210,7 +210,7 @@
 		}
 	}
 
-	function add_photo() {
+	function add_photo($session_review_id=NULL) {
 		if($_POST) {
 			$data = $_FILES["review_image"]["tmp_name"];
 			$image = \Cloudinary\Uploader::upload($data);
@@ -224,20 +224,19 @@
  				$test_group 				= trim($_POST['test_group']);
  				$ip	 								= trim($_POST['ip']);
 
-				if ($_SESSION['review_id']) {
-					$review_id = $_SESSION['review_id'];
-				} else {
-					$review_id = '';
-				}
-
 				$query = 	"INSERT INTO images (";
 				$query .= 	"file_name, caption, review_id, merchant_group_id, page_id, test_group, ip";
 				$query .= 	") VALUES (";
-				$query .= 	"'".$image['url']."', '".$caption."', '".$review_id."', '".$merchant_group_id."', '".$page_id."', '".$test_group."', '".$ip."'";
+				$query .= 	"'".$image['url']."', '".$caption."', '".$session_review_id."', '".$merchant_group_id."', '".$page_id."', '".$test_group."', '".$ip."'";
 				$query .= 	")";
 				$mysqli->query($query);
 				$_SESSION['image_id'] = $mysqli->insert_id;
-				header('Location: confirmation.php');
+
+				if ($session_review_id) {
+					header('Location: confirmation.php');
+				} else {
+					header('Location: review.php');
+				}
 			} else {
 				return 'error_cant_process';
 			}
@@ -255,7 +254,7 @@
 
 		$result = $mysqli->query($query);
 		$result = $result->fetch_assoc();
-		echo '<div class="thumbnail"><p><img src="images/reviews/'.$result['file_name'].'" /><br /><span class="caption">'.$result['caption'].'</span></p></div>';
+		echo '<div class="thumbnail"><p><img src="'.$result['file_name'].'" /><br /><span class="caption">'.$result['caption'].'</span></p></div>';
 	}
 
 	function set_session_var($key, $default='No Data') {

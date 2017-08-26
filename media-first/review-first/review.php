@@ -1,17 +1,18 @@
 <?php
-  require('lib/config.php');
-  $submission = review_submission();
+  require('../lib/config.php');
+  $test_group = set_session_var('test_group', 'Review First');
+  $submission = add_review();
 ?>
 
 <!DOCTYPE html>
 <html>
 	<head>
 		<title>Add a Review</title>
-		<?php require('lib/include.head.php'); ?>
+		<?php require('../lib/include.head.php'); ?>
 	</head>
 
 	<body>
-		<?php require('lib/include.product.php'); ?>
+		<?php require('../lib/include.product.php'); ?>
 		<section class="review-form">
 			<div class="wrapper">
         <header id="step-info">
@@ -21,7 +22,7 @@
         <section id="war">
           <?php
   					display_error_alert($submission);
-            require('lib/include.war.php');
+            require('../lib/include.war.php');
   				?>
         </section>
 			</div>

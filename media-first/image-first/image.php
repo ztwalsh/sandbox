@@ -1,5 +1,6 @@
 <?php
-	require('lib/config.php');
+	require('../lib/config.php');
+	$test_group = set_session_var('test_group', 'Image First');
 	add_photo();
 ?>
 
@@ -7,11 +8,11 @@
 <html>
 	<head>
 		<title>Add a Photo</title>
-		<?php require('lib/include.head.php'); ?>
+		<?php require('../lib/include.head.php'); ?>
 	</head>
 
 	<body>
-		<?php require('lib/include.product.php'); ?>
+		<?php require('../lib/include.product.php'); ?>
 		<section class="review-form">
 			<div class="wrapper">
 				<form action="image.php" enctype="multipart/form-data" method="post">
@@ -28,7 +29,7 @@
 					<input type="file" class="file" name="review_image" id="add-media">
 					<section id="images">
 						<label for="add-media" class="secondary action add-image">
-							<p><img class="empty" src="images/image-placeholder.png" /></p>
+							<p><img class="empty" src="../images/image-placeholder.png" /></p>
 							<p><span class="btn-primary full">Find Photos or Videos</span></p>
 						</label>
 					</section>
