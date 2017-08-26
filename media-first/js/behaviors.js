@@ -38,6 +38,31 @@ $(document).ready(function() {
       $('<input type="submit" name="submit" id="submit" class="btn-primary full" />').appendTo('form');
   });
 
+  // ORIGNAL IMAGE UPLOAD
+  function readURL(input) {
+  	if (input.files && input.files[0]) {
+    	var reader = new FileReader();
+
+    	reader.onload = function (e) {
+      	var file = e.target.result;
+      	var html_image = '<div class="uploaded_image cf"><img class="file_placeholder" src="' + file + '" alt="" /><input class="text caption" name="caption" type="text" value="" placeholder="write a caption" /><a class="trash" href="#"><i class="fa fa-trash-o"></i></a></div>';
+      	$(html_image).insertBefore($('.file_original'));
+
+      	$('a.trash').click(function() {
+      		$(this).closest('.uploaded_image').remove();
+      		return false;
+      	});
+    	}
+
+    	reader.readAsDataURL(input.files[0]);
+  	}
+	}
+
+	$("input.file_original").change(function(){
+    readURL(this);
+	});
+
+
   $('input[type=radio]').change(function() {
 		var tmp=$(this).attr('name');
     	$('input[name="'+tmp+'"]').parent('label').removeClass('selected');

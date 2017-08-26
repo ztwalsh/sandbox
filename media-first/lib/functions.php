@@ -170,46 +170,6 @@
 		}
 	}
 
-	function add_review($session_image_id=NULL) {
-		if ($_POST) {
-			$required_fields = array('rating', 'headline', 'comments', 'nickname', 'location');
-			$errors = required_fields($required_fields, $_POST);
-		  if(empty($errors)) {
-				 global $mysqli;
-
- 				$rating							= trim($_POST['rating']);
- 				$comments 					= trim($_POST['comments']);
- 				$headline 					= trim($_POST['headline']);
- 				$nickname 					= trim($_POST['nickname']);
- 				$location 					= trim($_POST['location']);
- 				$merchant_group_id 	= trim($_POST['merchant_group_id']);
- 				$page_id 						= trim($_POST['page_id']);
- 				$test_group 				= trim($_POST['test_group']);
- 				$ip	 								= trim($_POST['ip']);
-
- 				$query = 	"INSERT INTO reviews (";
- 				$query .= 	"rating, comments, headline, nickname, location, merchant_group_id, page_id, test_group, ip";
- 				$query .= 	") VALUES ('";
- 				$query .= 	$rating."', '".$comments."', '".$headline."', '".$nickname."', '".$location."', '".$merchant_group_id."', '".$page_id."', '".$test_group."', '".$ip."'";
- 				$query .= 	")";
- 				$mysqli->query($query);
-				$_SESSION['review_id'] = $mysqli->insert_id;
-
-				if($session_image_id) {
-					$update = "UPDATE images SET review_id = '".$mysqli->insert_id."' WHERE id = '".$_SESSION['image_id']."'";
-					$mysqli->query($update);
-					header('Location: confirmation.php');
- 				} else {
-					header('Location: image.php');
- 				}
-			} else {
-				return 'error_missing_fields';
-			}
-		} else {
-			return 'no_submit';
-		}
-	}
-
 	function add_photo($session_review_id=NULL) {
 		if($_POST) {
 			$data = $_FILES["review_image"]["tmp_name"];
@@ -242,6 +202,54 @@
 			}
 		} else {
 			return false;
+		}
+	}
+
+	function add_review($session_image_id=NULL, $control=NULL) {
+		if ($_POST) {
+			$required_fields = array('rating', 'headline', 'comments', 'nickname', 'location');
+			$errors = required_fields($required_fields, $_POST);
+		  if(empty($errors)) {
+				 global $mysqli;
+
+ 				$rating							= trim($_POST['rating']);
+ 				$comments 					= trim($_POST['comments']);
+ 				$headline 					= trim($_POST['headline']);
+ 				$nickname 					= trim($_POST['nickname']);
+ 				$location 					= trim($_POST['location']);
+ 				$merchant_group_id 	= trim($_POST['merchant_group_id']);
+ 				$page_id 						= trim($_POST['page_id']);
+ 				$test_group 				= trim($_POST['test_group']);
+ 				$ip	 								= trim($_POST['ip']);
+
+ 				$query = 	"INSERT INTO reviews (";
+ 				$query .= 	"rating, comments, headline, nickname, location, merchant_group_id, page_id, test_group, ip";
+ 				$query .= 	") VALUES ('";
+ 				$query .= 	$rating."', '".$comments."', '".$headline."', '".$nickname."', '".$location."', '".$merchant_group_id."', '".$page_id."', '".$test_group."', '".$ip."'";
+ 				$query .= 	")";
+ 				$mysqli->query($query);
+				$_SESSION['review_id'] = $mysqli->insert_id;
+
+				if($control) {
+					if($_FILES["review_image"]["tmp_name"]) {
+						add_photo($mysqli->insert_id);
+					} else {
+						header('Location: confirmation.php');
+					}
+				} else {
+					if($session_image_id) {
+						$update = "UPDATE images SET review_id = '".$mysqli->insert_id."' WHERE id = '".$_SESSION['image_id']."'";
+						$mysqli->query($update);
+						header('Location: confirmation.php');
+	 				} else {
+						header('Location: image.php');
+	 				}
+				}
+			} else {
+				return 'error_missing_fields';
+			}
+		} else {
+			return 'no_submit';
 		}
 	}
 

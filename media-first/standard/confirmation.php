@@ -1,13 +1,12 @@
 <?php
-  require('lib/config.php');
-  $submission = review_submission();
+  require('../lib/config.php');
 ?>
 
 <!DOCTYPE html>
 <html>
 	<head>
 		<title>Thank You</title>
-		<?php require('lib/include.head.php'); ?>
+		<?php require('../lib/include.head.php'); ?>
 	</head>
 
 	<body>

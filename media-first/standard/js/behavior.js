@@ -131,8 +131,8 @@ $(document).ready(function () {
     	}
 	}
 
-	$("input.file").change(function(){
-    	readURL(this);
+	$("input.file_original").change(function(){
+    readURL(this);
 	});
 
 	// Accessories drop down

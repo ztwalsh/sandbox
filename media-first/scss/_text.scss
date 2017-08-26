@@ -114,3 +114,29 @@ section {
 		width: 100%;
 	}
 }
+
+.btn-secondary {
+	background: #f6f6f6;
+	border: solid #dddddd 1px;
+	border-radius: 2px;
+	@include border-radius(2px);
+	box-shadow: 0 1px 0 0 #dddddd;
+	color: #007bc3;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 14px;
+	font-weight: normal;
+	padding: 8px 15px;
+	transition: all 0.25s ease;
+	-webkit-appearance: none;
+
+	&:hover {
+		background: #dddddd;
+		border: solid #cccccc 1px;
+		box-shadow: 0 1px 0 0 #cccccc;
+	}
+
+	&.full {
+		width: 100%;
+	}
+}
