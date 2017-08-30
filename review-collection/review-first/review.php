@@ -16,8 +16,8 @@
 		<section class="review-form">
 			<div class="wrapper">
         <header id="step-info">
-          <h1 class="heading-1">Add a Review</h1>
-          <h3 class="heading-4 small">Your photos help future shoppers make decisions on what they buy.</h3>
+          <h1 class="heading-1">Write a Review</h1>
+          <h3 class="heading-4 small">Reviews help future shoppers make decisions on what they buy.</h3>
         </header>
         <section id="war">
           <?php

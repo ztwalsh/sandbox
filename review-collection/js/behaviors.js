@@ -18,8 +18,8 @@ $(document).ready(function() {
               if ($('.image').length){
               } else {
                 $('#submit').remove();
-                $('#step-info').html('<h1 class="heading-1">Add a Photo</h1><h3 class="heading-4 small">Your photos help future shoppers make decisions on what they buy.</h3>');
-                $('#images').html('<input type="file" class="file" multiple id="add-media"><label for="add-media" class="secondary action add-image"><p><img class="empty" src="images/image-placeholder.png" /></p><p><span class="btn-primary full">Find Photos or Videos</span></p></label>');
+                $('#step-info').html('<h1 class="heading-1">Share a Photo</h1><h3 class="heading-4 small">Photos help future shoppers make decisions on what they buy.</h3>');
+                $('#images').html('<input type="file" class="file" multiple id="add-media"><label for="add-media" class="secondary action add-image"><p><img class="empty" src="images/image-placeholder.png" /></p><p><span class="btn-primary full">Find or Take a Photo</span></p></label>');
               }
             });
             return false;

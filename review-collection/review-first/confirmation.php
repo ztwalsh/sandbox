@@ -14,8 +14,8 @@
 		<section class="review-form">
 			<div class="wrapper">
 				<header id="step-info">
-					<h1 class="heading-1">Thanks for your review!</h1>
-					<h3 class="heading-4 small">This will really help shoppers.</h3>
+					<h1 class="heading-1">Thanks for everything!</h1>
+					<h3 class="heading-4 small">This feedback will really help your fellow shoppers.</h3>
 				</header>
 			</div>
 		</section>

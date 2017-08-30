@@ -16,8 +16,8 @@
 		<section class="review-form">
 			<div class="wrapper">
 				<header id="step-info">
-					<h1 class="heading-1">Got it, Thanks!</h1>
-					<h3 class="heading-4 small">Nice photo! Shoppers will love this.</h3>
+					<h1 class="heading-1">Thank you! Great photo.</h1>
+					<h3 class="heading-4 small">Now add a review to go with it.</h3>
 				</header>
 
 				<section id="image-display" class="cf">
