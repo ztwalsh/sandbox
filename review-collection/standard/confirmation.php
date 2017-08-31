@@ -6,7 +6,10 @@
 <html>
 	<head>
 		<title>Thank You</title>
-		<?php require('../lib/include.head.php'); ?>
+    <?php
+			$page_title = 'Control: Step 2: Confirmation';
+			require('../lib/include.head.php');
+		?>
 	</head>
 
 	<body>

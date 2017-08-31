@@ -1,14 +1,15 @@
 <?php
-	include('../lib/config.php');
+	require('../lib/config.php');
 	$test_group = set_session_var('test_group', 'Control');
 	$submission = add_review(NULL, 'Control');
 ?>
 <!doctype html>
 <html lang="en">
 	<head>
+		<title>Write a Review</title>
 		<?php
-			$title = 'Write a review';
-			include('../lib/include.head.php');
+			$page_title = 'Control: Step 1: Review & Image';
+			require('../lib/include.head.php');
 		?>
 	</head>
 	<body>

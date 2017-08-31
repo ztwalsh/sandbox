@@ -8,7 +8,10 @@
 <html>
 	<head>
 		<title>Share a Photo</title>
-		<?php require('../lib/include.head.php'); ?>
+		<?php
+			$page_title = 'Image First: Step 1: Image';
+			require('../lib/include.head.php');
+		?>
 	</head>
 
 	<body>

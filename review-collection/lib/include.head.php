@@ -3,3 +3,4 @@
 <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 <script type="text/javascript" src="<?php echo $root; ?>js/jquery.js"></script>
 <script type="text/javascript" src="<?php echo $root; ?>js/behaviors.js"></script>
+<?php require('include.tracking.php'); ?>

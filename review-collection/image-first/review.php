@@ -8,7 +8,10 @@
 <html>
 	<head>
 		<title>Add a Review</title>
-		<?php require('../lib/include.head.php'); ?>
+    <?php
+			$page_title = 'Image First: Step 2: Review';
+			require('../lib/include.head.php');
+		?>
 	</head>
 
 	<body>
