@@ -1,6 +1,6 @@
 <?php
   require('../lib/config.php');
-  $test_group = set_session_var('test_group', 'Review First');
+  $test_group = set_session_var('test_group', 'Review First'.($sweepstakes ? ': Sweepstakes' : ''));
   $submission = add_review();
 ?>
 

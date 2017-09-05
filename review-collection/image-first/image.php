@@ -1,6 +1,6 @@
 <?php
 	require('../lib/config.php');
-	$test_group = set_session_var('test_group', 'Image First');
+	$test_group = set_session_var('test_group', 'Image First'.($sweepstakes ? ': Sweepstakes' : ''));
 	add_photo();
 ?>
 

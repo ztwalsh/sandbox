@@ -38,4 +38,5 @@
   $product_name = set_session_var('product_name', 'Ray-Ban New Wayfarer Classic Tortoise');
   $product_image_url = set_session_var('product_image_url', $root.'images/rayban.jpeg');
   $page_title = 'No Data';
+  $sweepstakes = set_session_var('sweepstakes', false);
 ?>
