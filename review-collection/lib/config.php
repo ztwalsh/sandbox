@@ -6,11 +6,13 @@
     $host 			= 'localhost';
     $username 		= 'root';
     $password 		= 'root';
+    $tracking     = false;
   } elseif ($_SERVER['HTTP_HOST'] == 'x.ztwalsh.com') {
     $root 			= 'http://x.ztwalsh.com/review-collection/';
     $host 			= 'localhost';
     $username 		= 'ztwalshdb';
     $password 		= 'Z#twrz843';
+    $tracking     = true;
   }
 
   $database 		= 'review_collection';
