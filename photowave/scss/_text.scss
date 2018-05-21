@@ -1,0 +1,64 @@
+body {
+	color: $brand-navy-light;
+	font-family: helvetica, arial, sans;
+	font-size: 16px;
+	font-weight: 300;
+  line-height: 1.5rem;
+}
+
+.big {
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+
+  @media screen and (max-width: $breakpoint-1) {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+  }
+}
+
+.heading-1,
+.heading-2,
+.heading-3,
+.heading-4,
+.heading-5 {
+	color: $brand-navy;
+	font-family: "Poppins", arial, sans;
+	font-size: 2.2rem;
+  font-weight: 900;
+  line-height: 1.75rem;
+  margin: 0;
+	padding: 0 0 10px 0;
+	text-transform: uppercase;
+}
+
+.heading-2 {
+	font-size: 1.8rem;
+}
+
+.heading-3 {
+	font-size: 1.4rem;
+}
+
+.heading-4 {
+	font-size: 1.0rem;
+}
+
+.heading-5 {
+	font-size: 0.6rem;
+}
+
+p {
+  padding-bottom: 20px;
+
+  &:last-child {
+    padding-bottom: 0;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+.hidden {
+	display: none;
+}

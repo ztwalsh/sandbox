@@ -1,0 +1,51 @@
+.wrapper {
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 20px;
+  
+  &.signup {
+    max-width: 540px;
+  }
+}
+
+.input-text,
+.input-textarea {
+  border: 1px solid $grey-medium;
+  @include border-radius(3px);
+  box-sizing: border-box;
+  color: $brand-navy-light;
+  font-size: 18px;
+  padding: 10px;
+  width: 100%;
+  
+  &::-webkit-input-placeholder, 
+  &::-moz-placeholder, 
+  &:-ms-input-placeholder,
+  &:-moz-placeholder { /* Chrome/Opera/Safari */
+    color: $grey-light;
+  }
+}
+
+.primary {
+  background: $brand-navy;
+  border: none;
+  @include border-radius(2px);
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Poppins", arial, sans;
+  font-size: 1.125rem;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  transition: all ease 0.15s;
+  
+  &:hover,
+  &:active {
+    background: $brand-navy-light;
+  }
+  
+  &.full {
+    width: 100%;
+  }
+}

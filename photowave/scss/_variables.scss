@@ -1,0 +1,45 @@
+$black:             #000000;
+$brand-navy:        #223d47;
+$brand-navy-light:  #3a6879;
+$grey-dark:         #9facb1;
+$grey-medium:       #cbd3d6;
+$grey-light:        #e6ebed;
+$green-dark:        #1de9B6;
+$green-dark:        #59742a;
+$green-light:       #f0fbe5;
+$yellow:            #ffbf00;
+
+$breakpoint-1:  750px;
+
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+@mixin rotate($degrees) {
+      -webkit-transform: rotate($degrees);
+         -moz-transform: rotate($degrees);
+           -o-transform: rotate($degrees);
+              transform: rotate($degrees);
+}
+
+@mixin transition($value) {
+     -webkit-transition: $value;
+        -moz-transition: $value;
+          -o-transition: $value;
+             transition: $value;
+}
+
+@mixin placeholder {
+  ::-webkit-input-placeholder   {@content}
+  :-moz-placeholder             {@content}
+  ::-moz-placeholder            {@content}
+  :-ms-input-placeholder        {@content}  
+}
+
+@include placeholder {
+    color: $grey-medium;
+}
