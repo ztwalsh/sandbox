@@ -10,6 +10,7 @@
 
 .input-text,
 .input-textarea {
+  -webkit-appearance: none;
   border: 1px solid $grey-medium;
   @include border-radius(3px);
   box-sizing: border-box;
@@ -27,6 +28,7 @@
 }
 
 .primary {
+  -webkit-appearance: none;
   background: $brand-navy;
   border: none;
   @include border-radius(2px);
