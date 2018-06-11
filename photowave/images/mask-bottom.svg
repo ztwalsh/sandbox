@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="1024px" height="43px" viewBox="0 0 1024 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Mask</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M0,442.421875 L1027,442.421875 L1027,476.17896 C856.682292,464.417573 686.643229,464.417573 516.882812,476.17896 C347.122396,487.940347 174.828125,487.940347 0,476.17896 L0,442.421875 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="01---Home-Page" transform="translate(0.000000, -442.000000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="Mask" fill="#FFFFFF" style="mix-blend-mode: multiply;" transform="translate(513.500000, 463.710937) scale(1, -1) translate(-513.500000, -463.710937) " xlink:href="#path-1"></use>
+        </g>
+    </g>
+</svg>

@@ -1,3 +1,5 @@
+// STRUCTURE STYLES
+
 .wrapper {
   margin: 0 auto;
   max-width: 960px;
@@ -8,6 +10,157 @@
   }
 }
 
+nav {
+  height: 90px;
+  position: fixed;
+  transition: all ease 0.5s;
+  width: 100%;
+  z-index: 1000000;
+  
+  .nav-logo {
+    left: 20px;
+    position: absolute;
+    top: 15px;
+    
+    a {
+      background: url('../images/logo-full-white.svg');
+      display: inline-block;
+      height: 48px;
+      text-indent: -999999px;
+      width: 182px;
+    }
+  }
+  
+  .nav-menu {
+    right: 20px;
+    position: absolute;
+    top: 25px;
+    
+    a {
+      color: #ffffff;
+      font-family: 'Lato', arial, sans;
+    	font-size: 0.80rem;
+      font-weight: 900;
+      margin-left: 20px;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+  }
+  
+  &.light {
+    background: rgba(255,255,255,0.75);
+    
+    
+    .nav-logo {
+      a {
+        background: url('../images/logo-full-navy.svg');
+      }
+    }
+    
+    .nav-menu {
+      a {
+        color: $brand-navy-dark;
+        
+        &.primary.transparent {
+          background: rgba(249,171,61,1);
+          color: #ffffff;
+        }
+      }
+    }
+  }
+  
+  &.motion {
+    background: rgba(255,255,255,0.75);
+  }
+}
+
+header {
+  background-size: cover;
+  height: 485px;
+  margin-bottom: 30px;
+  position: relative;
+  text-align: center;
+  
+  .copy {
+    position: absolute;
+    top: 220px;
+    width: 100%;
+    
+    .heading-1 {
+      color: #ffffff;
+      font-weight: 900;
+      font-size: 2.75rem;
+      font-style: italic;
+      padding-bottom: 10px;
+    }
+    
+    .heading-2 {
+      color: $grey-medium;
+      font-weight: 300;
+      font-size: 1.625rem;
+      font-style: italic;
+      padding-bottom: 15px;
+    }
+  }
+  
+  &.main-image-home {
+    background: url('../images/background-home-page-header.png') center center no-repeat;
+  }
+}
+
+.get-started {
+  border: 1px solid $grey-medium;
+  @include border-radius(2px);
+  margin: 0 auto;
+  max-width: 800px;
+  
+  div {
+    box-sizing: border-box;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    padding: 20px 30px;
+    width: 50%;
+    
+    &:first-child {
+      border-right: 1px solid $grey-medium;
+    }
+  }
+}
+
+footer {
+  background: $grey-light;
+  margin: 40px 0 0 0;
+  padding: 60px 40px 40px 40px;
+  position: relative;
+  text-align: center;
+  
+  p {
+    padding-bottom: 10px;
+  }
+  
+  a {
+    color: $brand-navy-dark;
+    display: inline-block;
+    font-family: 'Lato', arial, sans;
+    font-size: 0.75rem;
+    font-weight: 900;
+    padding: 0 20px 0 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all ease 0.15s;
+    
+    &:hover {
+      color: $brand-navy-light;
+    }
+    
+    &:last-child {
+      padding: 0;
+    }
+  }
+}
+
+// TOOL STYLES
+
 .left {
   float: left;
 }
@@ -15,6 +168,50 @@
 .right {
   float: right;
 }
+
+.table {
+  border-collapse: collapse;
+  display: table;
+  width: 100%;
+  
+  .cell {
+    display: table-cell;
+    padding: 50px 0;
+    vertical-align: middle;
+    width: 50%;
+    
+    &:last-child {
+      margin: 0;
+    }
+  }
+}
+
+.mask-bottom {
+  background: url('../images/mask-bottom.svg');
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  height: 25px;
+  width: 100%;
+}
+
+.mask-top {
+  background: url('../images/mask-top.svg');
+  position: absolute;
+  height: 42px;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.divider {
+  background: $brand-yellow;
+  height: 2px;
+  margin: 10px 0;
+  width: 250px;
+}
+
+// FORM STYLES
 
 .input-text,
 .input-textarea {
@@ -37,16 +234,18 @@
 
 .primary {
   -webkit-appearance: none;
-  background: $brand-navy;
+  background: $brand-navy-dark;
   border: none;
   @include border-radius(2px);
   box-sizing: border-box;
   color: #ffffff;
   cursor: pointer;
   display: inline-block;
-  font-family: "Poppins", arial, sans;
+  font-family: 'Lato', arial, sans;
   font-size: 1.125rem;
+  font-weight: 900;
   padding: 10px 20px;
+  text-decoration: none;
   text-transform: uppercase;
   transition: all ease 0.15s;
   
@@ -57,5 +256,27 @@
   
   &.full {
     width: 100%;
+  }
+  
+  &.transparent {
+    background: rgba(255,255,255,0.3);
+    
+    &:hover {
+      background: rgba(255,255,255,0.5);
+    }
+  }
+}
+
+.tertiary {
+  color: $blue-medium;
+  font-family: 'Lato', arial, sans;
+  font-size: 0.75rem;
+  font-weight: 900;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all ease 0.15s;
+  
+  &:hover {
+    color: $blue-dark;
   }
 }
