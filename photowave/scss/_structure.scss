@@ -11,7 +11,7 @@
 }
 
 nav {
-  height: 90px;
+  height: 75px;
   position: fixed;
   transition: all ease 0.5s;
   width: 100%;
@@ -25,16 +25,16 @@ nav {
     a {
       background: url('../images/logo-full-white.svg');
       display: inline-block;
-      height: 48px;
+      height: 35px;
       text-indent: -999999px;
-      width: 182px;
+      width: 187px;
     }
   }
   
   .nav-menu {
     right: 20px;
     position: absolute;
-    top: 25px;
+    top: 15px;
     
     a {
       color: #ffffff;
@@ -44,13 +44,16 @@ nav {
       margin-left: 20px;
       text-decoration: none;
       text-transform: uppercase;
+      
+      &.on {
+        border-bottom: 2px solid $brand-yellow;
+        padding-bottom: 5px;
+      }
     }
   }
   
-  &.light {
-    background: rgba(255,255,255,0.75);
-    
-    
+  &.light,
+  &.override {  
     .nav-logo {
       a {
         background: url('../images/logo-full-navy.svg');
@@ -67,6 +70,14 @@ nav {
         }
       }
     }
+  }
+  
+  &.light {
+    background: rgba(255,255,255,0.75);
+  }
+  
+  &.override {
+    background: rgba(255,255,255,0);
   }
   
   &.motion {
@@ -106,12 +117,30 @@ header {
   &.main-image-home {
     background: url('../images/background-home-page-header.png') center center no-repeat;
   }
+  
+  &.main-image-content {
+    background: url('../images/background-content-page-header.png') center center no-repeat;
+    height: 320px;
+    
+    .copy {
+      position: absolute;
+      top: 120px;
+    
+      .heading-1 {
+        color: $brand-navy-dark;
+      }
+      
+      .heading-2 {
+        color: $grey-dark;
+      }
+    }
+  }
 }
 
 .get-started {
   border: 1px solid $grey-medium;
   @include border-radius(2px);
-  margin: 0 auto;
+  margin: 0 auto 30px auto;
   max-width: 800px;
   
   div {
