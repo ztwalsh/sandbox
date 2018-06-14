@@ -4,7 +4,7 @@
   margin: 0 auto;
   max-width: 960px;
   padding: 20px;
-  
+
   &.signup {
     max-width: 540px;
   }
@@ -16,12 +16,12 @@ nav {
   transition: all ease 0.5s;
   width: 100%;
   z-index: 1000000;
-  
+
   .nav-logo {
     left: 20px;
     position: absolute;
     top: 15px;
-    
+
     a {
       background: url('../images/logo-full-white.svg');
       display: inline-block;
@@ -30,12 +30,12 @@ nav {
       width: 187px;
     }
   }
-  
+
   .nav-menu {
     right: 20px;
     position: absolute;
     top: 15px;
-    
+
     a {
       color: #ffffff;
       font-family: 'Lato', arial, sans;
@@ -44,26 +44,26 @@ nav {
       margin-left: 20px;
       text-decoration: none;
       text-transform: uppercase;
-      
+
       &.on {
         border-bottom: 2px solid $brand-yellow;
         padding-bottom: 5px;
       }
     }
   }
-  
+
   &.light,
-  &.override {  
+  &.override {
     .nav-logo {
       a {
         background: url('../images/logo-full-navy.svg');
       }
     }
-    
+
     .nav-menu {
       a {
         color: $brand-navy-dark;
-        
+
         &.primary.transparent {
           background: rgba(249,171,61,1);
           color: #ffffff;
@@ -71,15 +71,15 @@ nav {
       }
     }
   }
-  
+
   &.light {
     background: rgba(255,255,255,0.75);
   }
-  
+
   &.override {
     background: rgba(255,255,255,0);
   }
-  
+
   &.motion {
     background: rgba(255,255,255,0.75);
   }
@@ -91,12 +91,12 @@ header {
   margin-bottom: 30px;
   position: relative;
   text-align: center;
-  
+
   .copy {
     position: absolute;
     top: 220px;
     width: 100%;
-    
+
     .heading-1 {
       color: #ffffff;
       font-weight: 900;
@@ -104,7 +104,7 @@ header {
       font-style: italic;
       padding-bottom: 10px;
     }
-    
+
     .heading-2 {
       color: $grey-medium;
       font-weight: 300;
@@ -113,23 +113,23 @@ header {
       padding-bottom: 15px;
     }
   }
-  
+
   &.main-image-home {
     background: url('../images/background-home-page-header.png') center center no-repeat;
   }
-  
+
   &.main-image-content {
     background: url('../images/background-content-page-header.png') center center no-repeat;
     height: 320px;
-    
+
     .copy {
       position: absolute;
       top: 120px;
-    
+
       .heading-1 {
         color: $brand-navy-dark;
       }
-      
+
       .heading-2 {
         color: $grey-dark;
       }
@@ -142,14 +142,14 @@ header {
   @include border-radius(2px);
   margin: 0 auto 30px auto;
   max-width: 800px;
-  
+
   div {
     box-sizing: border-box;
     font-size: 0.875rem;
     line-height: 1.5;
     padding: 20px 30px;
     width: 50%;
-    
+
     &:first-child {
       border-right: 1px solid $grey-medium;
     }
@@ -162,11 +162,11 @@ footer {
   padding: 60px 40px 40px 40px;
   position: relative;
   text-align: center;
-  
+
   p {
     padding-bottom: 10px;
   }
-  
+
   a {
     color: $brand-navy-dark;
     display: inline-block;
@@ -177,11 +177,11 @@ footer {
     text-decoration: none;
     text-transform: uppercase;
     transition: all ease 0.15s;
-    
+
     &:hover {
       color: $brand-navy-light;
     }
-    
+
     &:last-child {
       padding: 0;
     }
@@ -199,19 +199,36 @@ footer {
 }
 
 .table {
-  border-collapse: collapse;
-  display: table;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
-  
+
+  @media screen and (max-width: $breakpoint-1) {
+		box-sizing: border-box;
+    display: block;
+    margin-bottom: 20px;
+    text-align: center;
+	}
+
   .cell {
-    display: table-cell;
     padding: 50px 0;
-    vertical-align: middle;
     width: 50%;
-    
+
     &:last-child {
       margin: 0;
     }
+
+    @media screen and (max-width: $breakpoint-1) {
+  		display: block;
+      padding: 0;
+      text-align: center;
+      width: 100%;
+  	}
+  }
+
+  .cell-second {
+    order: 2;
   }
 }
 
@@ -238,6 +255,10 @@ footer {
   height: 2px;
   margin: 10px 0;
   width: 250px;
+
+  @media screen and (max-width: $breakpoint-1) {
+    margin: 10px auto;
+  }
 }
 
 // FORM STYLES
@@ -252,9 +273,9 @@ footer {
   font-size: 18px;
   padding: 10px;
   width: 100%;
-  
-  &::-webkit-input-placeholder, 
-  &::-moz-placeholder, 
+
+  &::-webkit-input-placeholder,
+  &::-moz-placeholder,
   &:-ms-input-placeholder,
   &:-moz-placeholder { /* Chrome/Opera/Safari */
     color: $grey-light;
@@ -277,19 +298,19 @@ footer {
   text-decoration: none;
   text-transform: uppercase;
   transition: all ease 0.15s;
-  
+
   &:hover,
   &:active {
     background: $brand-navy-light;
   }
-  
+
   &.full {
     width: 100%;
   }
-  
+
   &.transparent {
     background: rgba(255,255,255,0.3);
-    
+
     &:hover {
       background: rgba(255,255,255,0.5);
     }
@@ -304,7 +325,7 @@ footer {
   text-decoration: none;
   text-transform: uppercase;
   transition: all ease 0.15s;
-  
+
   &:hover {
     color: $blue-dark;
   }
