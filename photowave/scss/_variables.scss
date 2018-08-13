@@ -10,7 +10,7 @@ $green-light:       #f0fbe5;
 $blue-medium:       #007bc3;
 $blue-dark:         #007bc3;
 
-$breakpoint-1:  750px;
+$breakpoint-1:  650px;
 
 
 @mixin border-radius($radius) {
@@ -38,7 +38,7 @@ $breakpoint-1:  750px;
   ::-webkit-input-placeholder   {@content}
   :-moz-placeholder             {@content}
   ::-moz-placeholder            {@content}
-  :-ms-input-placeholder        {@content}  
+  :-ms-input-placeholder        {@content}
 }
 
 @include placeholder {
