@@ -2,7 +2,6 @@
   background: #ffffff;
   box-shadow: 0 20px 50px 5px rgba(0, 0, 0, .5);
   border-radius: 2px;
-  padding: 30px;
   position: absolute;
   transition: all ease 0.4s;
   top: 10%;
@@ -42,4 +41,17 @@
   bottom: 25%;
   left: 20%;
   right: 20%;
+}
+
+.image-space {
+  background: #000000;
+  min-height: 350px;
+  min-width: 350px;
+  float: left;
+}
+
+.image-info {
+  background: #f0f0f0;
+  width: 230px;
+  float: right;
 }
